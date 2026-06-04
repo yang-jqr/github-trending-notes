@@ -2,7 +2,7 @@ import { getAllPosts, getStats, extractRepoNames, extractLanguages, type Post } 
 import Link from "next/link";
 
 export default function HomePage() {
-  const posts = getAllPosts();
+  const posts = getAllPosts().filter(p => p.meta.date); // 只显示 trending 笔记
   const stats = getStats();
 
   return (
