@@ -45,37 +45,47 @@ export function getPost(slug: string): Post | null {
   return { meta: { slug, title: data.title || slug, date: m ? m[1] : data.date || "" }, content };
 }
 
+export function extractRepoNames(content: string): string[] {
+  const names: string[] = [];
+  for (const line of content.split("\n")) {
+    let m = line.match(/^## \d+\. (.+)/);
+    if (!m) m = line.match(/^\*\*\d+\. (.+?)\*\*/);
+    if (m) {
+      const name = m[1].trim().replace(/\s*⭐.*$/, "").trim();
+      if (name && name.length > 2) names.push(name);
+    }
+  }
+  return names;
+}
+
 export function extractLanguages(content: string): string[] {
   const langs = new Set<string>();
-  for (const line of content.split("\n")) {
-    const m = line.match(/⭐[^|]+\|\s*(?:🔥[^|]+\|\s*)?(\w[\w\s+#.-]*)/);
+  const lines = content.split("\n");
+  for (const line of lines) {
+    let m = line.match(/⭐[^|]+\|[^|]*\|\s*(\w[\w\s+#.-]*)/);
+    if (!m) m = line.match(/today\s*\|\s*(\w[\w+#.-]+)/);
+    if (!m) {
+      const parts = line.split("·");
+      const last = parts[parts.length - 1]?.trim();
+      if (last && /^[A-Z]/.test(last) && last.length < 20) langs.add(last);
+    }
     if (m) {
       const lang = m[1].trim();
-      if (lang && !lang.startsWith("📌") && !lang.startsWith("🆕") && lang.length < 20) {
-        langs.add(lang);
-      }
+      if (lang && /^[A-Z]/.test(lang) && lang.length < 20) langs.add(lang);
     }
   }
   return Array.from(langs).slice(0, 5);
 }
 
-export function extractRepoNames(content: string): string[] {
-  const names: string[] = [];
-  for (const line of content.split("\n")) {
-    const m = line.match(/^## \d+\. (.+)/);
-    if (m) names.push(m[1].trim());
-  }
-  return names;
-}
-
 export function getStats(): BlogStats {
-  const posts = getAllPosts();
-  const trendingPosts = posts.filter(p => p.meta.date);
+  const posts = getAllPosts().filter(p => p.meta.date);
   const repoMap = new Map<string, string[]>();
   const langMap = new Map<string, number>();
-  for (const post of trendingPosts) {
+  let totalRepos = 0;
+  for (const post of posts) {
     const names = extractRepoNames(post.content);
     const langs = extractLanguages(post.content);
+    totalRepos += names.length;
     for (const name of names) {
       const dates = repoMap.get(name) || [];
       if (!dates.includes(post.meta.date)) dates.push(post.meta.date);
@@ -90,7 +100,7 @@ export function getStats(): BlogStats {
     .filter(r => r.count >= 2).sort((a, b) => b.count - a.count);
   const topLanguages = Array.from(langMap.entries())
     .map(([lang, count]) => ({ lang, count })).sort((a, b) => b.count - a.count).slice(0, 6);
-  return { totalDays: trendingPosts.length, totalRepos: trendingPosts.reduce((s, p) => s + extractRepoNames(p.content).length, 0), uniqueRepos: repoMap.size, topLanguages, recurringRepos: recurring };
+  return { totalDays: posts.length, totalRepos, uniqueRepos: repoMap.size, topLanguages, recurringRepos: recurring };
 }
 
 export function getRecurringRepos(): RepoStats[] { return getStats().recurringRepos; }
