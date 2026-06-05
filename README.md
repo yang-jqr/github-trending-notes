@@ -2,7 +2,7 @@
 
 每日自动抓取 GitHub Trending 热榜，AI 分析技术趋势与学习价值。
 
-[👉 访问博客](https://github-trending-blog.vercel.app)
+[👉 访问博客](https://github-trending-notes.vercel.app/)
 
 ## 技术栈
 - **Next.js 15** — SSG 静态博客
