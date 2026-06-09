@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Search from "@/components/Search";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,11 +12,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-CN">
       <body>
         <header className="border-b border-border bg-surface">
-          <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="/" className="text-lg font-bold text-[#f0f6fc] no-underline">
+          <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+            <a href="/" className="text-lg font-bold text-[#f0f6fc] no-underline shrink-0">
               🔥 GitHub Trending 笔记
             </a>
-            <span className="text-sm text-muted">每日自动 · AI 分析</span>
+            <div className="flex items-center gap-3">
+              <span className="text-sm text-muted hidden sm:inline">每日自动 · AI 分析</span>
+              <Search />
+            </div>
           </div>
         </header>
         <main className="max-w-3xl mx-auto px-4 py-8">{children}</main>
