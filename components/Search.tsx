@@ -8,6 +8,7 @@ interface SearchEntry {
   date: string;
   repos: string[];
   langs: string[];
+  content: string;
 }
 
 export default function Search() {
@@ -37,7 +38,8 @@ export default function Search() {
       entry.repos.some(r => r.toLowerCase().includes(q)) ||
       entry.langs.some(l => l.toLowerCase().includes(q)) ||
       entry.date.includes(q) ||
-      entry.slug.toLowerCase().includes(q)
+      entry.slug.toLowerCase().includes(q) ||
+      entry.content.toLowerCase().includes(q)
     ).slice(0, 10);
     setResults(filtered);
     setOpen(filtered.length > 0);
@@ -70,7 +72,7 @@ export default function Search() {
     <div ref={containerRef} className="relative w-48 sm:w-56">
       <input
         type="text"
-        placeholder="搜索仓库、语言、日期…"
+        placeholder="搜索仓库、内容、日期…"
         value={query}
         onChange={e => setQuery(e.target.value)}
         onKeyDown={handleKey}
@@ -78,7 +80,7 @@ export default function Search() {
         className="w-full px-3 py-1.5 text-sm bg-[#0d1117] border border-border rounded-md text-[#c9d1d9] placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
       />
       {open && (
-        <div className="absolute top-full mt-1 left-0 right-0 bg-surface border border-border rounded-md shadow-lg z-50 max-h-72 overflow-y-auto">
+        <div className="absolute top-full mt-1 left-0 right-0 bg-surface border border-border rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
           {results.map((entry, i) => (
             <button
               key={entry.slug}
@@ -92,7 +94,7 @@ export default function Search() {
               }`}
             >
               <div className="font-semibold text-accent text-xs mb-1">{entry.date}</div>
-              <div className="flex flex-wrap gap-1 items-center">
+              <div className="flex flex-wrap gap-1 items-center mb-1">
                 {entry.repos.slice(0, 3).map(r => (
                   <span key={r} className="px-1.5 py-0.5 bg-[#0d1117] border border-border rounded text-xs text-muted">{r}</span>
                 ))}
@@ -101,6 +103,11 @@ export default function Search() {
                   <span className="text-xs text-muted ml-1">{entry.langs.slice(0, 2).join(' · ')}</span>
                 )}
               </div>
+              {entry.content && (
+                <div className="text-xs text-muted leading-relaxed line-clamp-2">
+                  {entry.content.slice(0, 150)}
+                </div>
+              )}
             </button>
           ))}
         </div>

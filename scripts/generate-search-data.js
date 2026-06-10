@@ -42,7 +42,22 @@ for (const file of files) {
     }
   }
 
-  results.push({ slug, date, repos, langs: Array.from(langs) });
+  // 提取正文纯文本（去 markdown 语法），最多 1000 字符
+  const content = raw
+    .replace(/^---[\s\S]*?---/, '')
+    .replace(/#{1,6}\s+/g, '')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/`{1,3}[^`]*`{1,3}/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '')
+    .replace(/\n{2,}/g, '\n')
+    .replace(/\n/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+    .slice(0, 1000);
+
+  results.push({ slug, date, repos, langs: Array.from(langs), content });
 }
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
