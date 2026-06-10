@@ -48,12 +48,19 @@ export default function HomePage() {
         <section className="mt-10">
           <h2 className="text-lg font-semibold text-[#f0f6fc] mb-4">🔁 反复上榜</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {stats.recurringRepos.slice(0, 8).map(repo => (
-              <div key={repo.name} className="flex items-center justify-between bg-surface border border-border rounded-md px-3 py-2 text-sm">
-                <span className="text-accent truncate mr-2">{repo.name}</span>
-                <span className="text-muted shrink-0">{repo.count} 次</span>
-              </div>
-            ))}
+            {stats.recurringRepos.slice(0, 8).map(repo => {
+              const slug = `trending-${repo.dates[0]}`;
+              return (
+                <Link
+                  key={repo.name}
+                  href={`/posts/${encodeURIComponent(slug)}`}
+                  className="flex items-center justify-between bg-surface border border-border rounded-md px-3 py-2 text-sm hover:border-accent/50 transition-colors"
+                >
+                  <span className="text-accent truncate mr-2">{repo.name}</span>
+                  <span className="text-muted shrink-0">{repo.count} 次</span>
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}
