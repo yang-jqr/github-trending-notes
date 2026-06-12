@@ -3,6 +3,8 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-12]]
+- [[trending-2026-06-10]]
 - [[trending-2026-06-09]]
 - [[trending-2026-06-08]]
 - [[trending-2026-06-07]]
@@ -17,27 +19,31 @@
 ## 🔁 反复上榜仓库
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
-| mvanhorn/last30days-skill | 5 | 06-09 |
-| CopilotKit/CopilotKit | 3 | 06-07 |
+| mvanhorn/last30days-skill | 6 | 06-10 |
+| harry0703/MoneyPrinterTurbo | 4 | 06-10 |
+| refactoringhq/tolaria | 3 | 06-12 |
+| x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
+| addyosmani/agent-skills | 2 | 06-12 |
+| obra/superpowers | 2 | 06-12 |
+| phuryn/pm-skills | 2 | 06-12 |
+| maziyarpanahi/openmed | 2 | 06-12 |
+| soxoj/maigret | 2 | 06-12 |
 | [[仓库/microsoft_markitdown]] | 3 | 06-04 |
 | [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
 | [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
 | [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
-| NousResearch/hermes-agent | 2 | 06-08 |
 | Panniantong/Agent-Reach | 2 | 06-07 |
+| CopilotKit/CopilotKit | 2 | 06-07 |
 | MemPalace/mempalace | 2 | 06-07 |
-| opencv/opencv | 2 | 06-09 |
-| aaif-goose/goose | 2 | 06-09 |
-| RyanCodrai/turbovec | 2 | 06-09 |
-| yikart/AiToEarn | 2 | 06-09 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — Agent-Reach, CopilotKit, last30days-skill, openai/plugins, hermes-agent, goose
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill（2026年6月核心趋势）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描，新赛道）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure
-- #基础设施 — trivy, nginx, golang/go
+- #AIGC视频 — MoneyPrinterTurbo
+- #SystemPrompt — system-prompts-and-models-of-ai-tools（逆向工程学习）
+- #知识库工具 — tolaria（本地优先 Markdown 管理）
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container
 - #前端 — CopilotKit, svelte
-- #数据采集 — Agent-Reach, last30days-skill, Scrapling
-- #学习路线 — coding-interview-university
-- #计算机视觉 — opencv, supervision, PaddleOCR
-- #向量检索 — turbovec
-- #边缘AI — opencv, llama.cpp, whichllm
+- #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret
