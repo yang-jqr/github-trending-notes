@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-13]]
 - [[trending-2026-06-12]]
 - [[trending-2026-06-10]]
 - [[trending-2026-06-09]]
@@ -21,13 +22,14 @@
 |------|---------|---------|
 | mvanhorn/last30days-skill | 6 | 06-10 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
-| refactoringhq/tolaria | 3 | 06-12 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
-| addyosmani/agent-skills | 2 | 06-12 |
-| obra/superpowers | 2 | 06-12 |
-| phuryn/pm-skills | 2 | 06-12 |
-| maziyarpanahi/openmed | 2 | 06-12 |
+| addyosmani/agent-skills | 3 | 06-13 |
+| obra/superpowers | 3 | 06-13 |
+| phuryn/pm-skills | 3 | 06-13 |
+| maziyarpanahi/openmed | 3 | 06-13 |
 | soxoj/maigret | 2 | 06-12 |
+| apple/container | 2 | 06-13 |
+| refactoringhq/tolaria | 4 | 06-13 |
 | [[仓库/microsoft_markitdown]] | 3 | 06-04 |
 | [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
 | [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
