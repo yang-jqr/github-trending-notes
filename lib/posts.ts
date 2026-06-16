@@ -45,14 +45,23 @@ export function getPost(slug: string): Post | null {
   return { meta: { slug, title: data.title || slug, date: m ? m[1] : data.date || "" }, content };
 }
 
+/** Normalize repo name: strip trailing decorators, normalize spaces around / */
+function normalizeRepoName(raw: string): string {
+  return raw
+    .replace(/\s*[⭐\|].*$/, "")      // strip trailing ⭐ or | content
+    .replace(/\s*\/\s*/g, "/")        // normalize "a / b" → "a/b"
+    .trim();
+}
+
 export function extractRepoNames(content: string): string[] {
   const names: string[] = [];
   for (const line of content.split("\n")) {
-    let m = line.match(/^## \d+\. (.+)/);
-    if (!m) m = line.match(/^\*\*\d+\. (.+?)\*\*/);
+    let m = line.match(/^## \d+\. (.+)/);              // ## 1. repo/name
+    if (!m) m = line.match(/^\*\*\d+\. (.+?)\*\*/);    // **1. repo/name**
+    if (!m) m = line.match(/^\*\*#\d+\s+(.+?)\*\*/);   // **#1 repo/name**
     if (m) {
-      const name = m[1].trim().replace(/\s*⭐.*$/, "").trim();
-      if (name && name.length > 2) names.push(name);
+      const name = normalizeRepoName(m[1]);
+      if (name && name.length > 2 && name.includes("/")) names.push(name);
     }
   }
   return names;
@@ -62,19 +71,28 @@ export function extractLanguages(content: string): string[] {
   const langs = new Set<string>();
   const lines = content.split("\n");
   for (const line of lines) {
-    let m = line.match(/⭐[^|]+\|[^|]*\|\s*(\w[\w\s+#.-]*)/);
+    let m: RegExpMatchArray | null = null;
+
+    // Format A: **#1 repo/name** | Language · ...  (current)
+    m = line.match(/^\*\*#\d+\s+.+?\*\*\s*\|\s*([A-Za-z][\w\s+#.-]*?)\s*·/);
+    // Format B: **1. repo/name**（Language · ...） (old)
+    if (!m) m = line.match(/^\*\*\d+\. .+?\*\*[（(]\s*([A-Za-z][\w\s+#.-]*?)\s*·/);
+    // Format C: two-pipe after ⭐ pattern (legacy)
+    if (!m) m = line.match(/⭐[^|]+\|[^|]*\|\s*(\w[\w\s+#.-]*)/);
+    // Format D: "today | Language" (legacy)
     if (!m) m = line.match(/today\s*\|\s*(\w[\w+#.-]+)/);
-    if (!m) {
+
+    if (m) {
+      const lang = m[1].trim();
+      if (lang && /^[A-Z]/.test(lang) && lang.length < 20) langs.add(lang);
+    } else {
+      // Fallback: split by · and check last segment
       const parts = line.split("·");
       const last = parts[parts.length - 1]?.trim();
       if (last && /^[A-Z]/.test(last) && last.length < 20) langs.add(last);
     }
-    if (m) {
-      const lang = m[1].trim();
-      if (lang && /^[A-Z]/.test(lang) && lang.length < 20) langs.add(lang);
-    }
   }
-  return Array.from(langs).slice(0, 5);
+  return Array.from(langs).slice(0, 10);
 }
 
 export function getStats(): BlogStats {
