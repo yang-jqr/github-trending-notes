@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-17]]
 - [[trending-2026-06-16]]
 - [[trending-2026-06-14]]
 - [[trending-2026-06-13]]
@@ -36,8 +37,12 @@
 | [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
 | [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
 | soxoj/maigret | 2 | 06-12 |
-| iptv-org/iptv | 3 | 06-16 |
-| music-assistant/server | 3 | 06-16 |
+| iptv-org/iptv | 4 | 06-17 |
+| music-assistant/server | 4 | 06-17 |
+| OpenBMB/VoxCPM | 4 | 06-17 |
+| freeCodeCamp/freeCodeCamp | 2 | 06-17 |
+| meshery/meshery | 2 | 06-17 |
+| teslamate-org/teslamate | 2 | 06-17 |
 | LMCache/LMCache | 2 | 06-14 |
 | Panniantong/Agent-Reach | 3 | 06-16 |
 | CopilotKit/CopilotKit | 2 | 06-07 |
@@ -60,7 +65,9 @@
 - #AIGC视频 — MoneyPrinterTurbo
 - #SystemPrompt — system-prompts-and-models-of-ai-tools（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
-- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh
+- #向量数据库 — zvec（边缘嵌入式向量库，阿里出品）
+- #语音AI — VoxCPM（Tokenizer-Free TTS）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
 - #前端 — CopilotKit, svelte
 - #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret
