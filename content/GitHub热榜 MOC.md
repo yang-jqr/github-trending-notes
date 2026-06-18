@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-18]]
 - [[trending-2026-06-17]]
 - [[trending-2026-06-16]]
 - [[trending-2026-06-14]]
@@ -25,7 +26,7 @@
 |------|---------|---------|
 | mvanhorn/last30days-skill | 6 | 06-10 |
 | addyosmani/agent-skills | 4 | 06-14 |
-| obra/superpowers | 4 | 06-14 |
+| obra/superpowers | 5 | 06-18 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 4 | 06-13 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
@@ -40,14 +41,18 @@
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
-| freeCodeCamp/freeCodeCamp | 2 | 06-17 |
-| meshery/meshery | 2 | 06-17 |
+| freeCodeCamp/freeCodeCamp | 3 | 06-18 |
+| meshery/meshery | 3 | 06-18 |
 | teslamate-org/teslamate | 2 | 06-17 |
 | LMCache/LMCache | 2 | 06-14 |
-| Panniantong/Agent-Reach | 3 | 06-16 |
+| Panniantong/Agent-Reach | 4 | 06-18 |
 | CopilotKit/CopilotKit | 2 | 06-07 |
 | MemPalace/mempalace | 2 | 06-07 |
-| chatwoot/chatwoot | 2 | 06-16 |
+| chatwoot/chatwoot | 3 | 06-18 |
+| krahets/hello-algo | 2 | 06-18 |
+| n0-computer/iroh | 2 | 06-18 |
+| Universal-Debloater-Alliance/universal-android-debloater-next-generation | 2 | 06-18 |
+| mattpocock/skills | 1 | 06-18 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 1 | 06-14 |
 | andrewyng/aisuite | 1 | 06-14 |
@@ -56,7 +61,9 @@
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, trycua/cua
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill（2026年6月核心趋势）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills（2026年6月核心趋势）
+- #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描，新赛道）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch
