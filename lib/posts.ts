@@ -152,12 +152,14 @@ function linkifyText(text: string, names: string[]): string {
       result += remaining.slice(0, idx);
       const before = result;
 
-      // 检查是否已在 markdown 链接内：查找最近未闭合的 [ 和 ](
-      const lastOpen = before.lastIndexOf('[');
+      // 检查是否已在 markdown 链接文本内（[text](url)），排除 wiki 链接 [[text]]
       const lastClose = before.lastIndexOf('](');
+      const lastOpen = before.lastIndexOf('[');
+      const isWikiLink = lastOpen > 0 && before[lastOpen - 1] === '[';
+      const insideLink = !isWikiLink && lastOpen > lastClose;
 
-      if (lastOpen > lastClose) {
-        // 在链接文本 [xxx] 内，不转换
+      if (insideLink) {
+        // 在链接文本内，不转换
         result += name;
       } else {
         result += '[' + name + '](https://github.com/' + name + ')';
