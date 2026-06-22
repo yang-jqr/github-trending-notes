@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-22]]
 - [[trending-2026-06-21]]
 - [[trending-2026-06-18]]
 - [[trending-2026-06-17]]
@@ -30,7 +31,7 @@
 | addyosmani/agent-skills | 4 | 06-14 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 4 | 06-13 |
-| chopratejas/headroom | 4 | 06-21 |
+| chopratejas/headroom | 5 | 06-22 |
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
@@ -54,25 +55,26 @@
 | krahets/hello-algo | 2 | 06-18 |
 | n0-computer/iroh | 2 | 06-18 |
 | Universal-Debloater-Alliance/universal-android-debloater-next-generation | 2 | 06-18 |
-| mattpocock/skills | 2 | 06-21 |
+| mattpocock/skills | 3 | 06-22 |
 | NVIDIA/SkillSpector | 2 | 06-16 |
 | jwasham/coding-interview-university | 2 | 06-16 |
-| calesthio/OpenMontage | 2 | 06-21 |
-| penpot/penpot | 2 | 06-21 |
-| DeusData/codebase-memory-mcp | 2 | 06-21 |
-| byoungd/English-level-up-tips | 2 | 06-21 |
+| calesthio/OpenMontage | 3 | 06-22 |
+| penpot/penpot | 3 | 06-22 |
+| DeusData/codebase-memory-mcp | 3 | 06-22 |
+| byoungd/English-level-up-tips | 3 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 1 | 06-14 |
 | andrewyng/aisuite | 1 | 06-14 |
-| bytedance/deer-flow | 1 | 06-21 |
-| topoteretes/cognee | 1 | 06-21 |
-| asgeirtj/system_prompts_leaks | 1 | 06-21 |
-| mukul975/Anthropic-Cybersecurity-Skills | 1 | 06-21 |
-| palmier-io/palmier-pro | 1 | 06-21 |
-| ZhuLinsen/daily_stock_analysis | 1 | 06-21 |
-| koala73/worldmonitor | 1 | 06-21 |
-| tursodatabase/turso | 1 | 06-21 |
-| smicallef/spiderfoot | 1 | 06-21 |
+| bytedance/deer-flow | 2 | 06-22 |
+| topoteretes/cognee | 2 | 06-22 |
+| asgeirtj/system_prompts_leaks | 2 | 06-22 |
+| mukul975/Anthropic-Cybersecurity-Skills | 2 | 06-22 |
+| palmier-io/palmier-pro | 2 | 06-22 |
+| ZhuLinsen/daily_stock_analysis | 2 | 06-22 |
+| koala73/worldmonitor | 2 | 06-22 |
+| tursodatabase/turso | 2 | 06-22 |
+| smicallef/spiderfoot | 2 | 06-22 |
+| mikumifa/biliTickerBuy | 2 | 06-22 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, trycua/cua, deer-flow
