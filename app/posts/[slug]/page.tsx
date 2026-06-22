@@ -1,4 +1,4 @@
-import { getPost, getAllPosts, resolveWikiLinks, extractLanguages, extractRepoNames } from "@/lib/posts";
+import { getPost, getAllPosts, resolveWikiLinks, linkifyRepoNames, extractLanguages, extractRepoNames } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
@@ -14,7 +14,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = getPost(decodedSlug);
   if (!post) notFound();
   const allSlugs = new Set(getAllPosts().map(p => p.meta.slug));
-  const text = resolveWikiLinks(post.content, allSlugs);
+  const text = linkifyRepoNames(resolveWikiLinks(post.content, allSlugs));
   const all = getAllPosts();
   const i = all.findIndex(p => p.meta.slug === decodedSlug);
   const prev = i < all.length - 1 ? all[i + 1] : null;

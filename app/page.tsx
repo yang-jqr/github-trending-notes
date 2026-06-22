@@ -51,14 +51,25 @@ export default function HomePage() {
             {stats.recurringRepos.slice(0, 8).map(repo => {
               const slug = `trending-${repo.dates[0]}`;
               return (
-                <Link
+                <div
                   key={repo.name}
-                  href={`/posts/${encodeURIComponent(slug)}`}
-                  className="flex items-center justify-between bg-surface border border-border rounded-md px-3 py-2 text-sm hover:border-accent/50 transition-colors"
+                  className="flex items-center justify-between bg-surface border border-border rounded-md px-3 py-2 text-sm"
                 >
-                  <span className="text-accent truncate mr-2">{repo.name}</span>
-                  <span className="text-muted shrink-0">{repo.count} 次</span>
-                </Link>
+                  <a
+                    href={`https://github.com/${repo.name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent truncate mr-2 hover:underline"
+                  >
+                    {repo.name}
+                  </a>
+                  <Link
+                    href={`/posts/${encodeURIComponent(slug)}`}
+                    className="text-muted shrink-0 hover:text-accent transition-colors"
+                  >
+                    {repo.count} 次
+                  </Link>
+                </div>
               );
             })}
           </div>
@@ -105,11 +116,17 @@ function PostCard({ post }: { post: Post }) {
       {preview.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {preview.map((name, i) => (
-            <span key={name} className={`px-2 py-1 rounded text-xs ${
-              i === 0 ? 'bg-accent/10 text-accent border border-accent/20' : 'bg-[#0d1117] text-muted border border-border'
-            }`}>
+            <a
+              key={name}
+              href={`https://github.com/${name}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-2 py-1 rounded text-xs hover:underline ${
+                i === 0 ? 'bg-accent/10 text-accent border border-accent/20' : 'bg-[#0d1117] text-muted border border-border hover:text-accent'
+              }`}
+            >
               {name}
-            </span>
+            </a>
           ))}
           {names.length > 3 && <span className="px-2 py-1 text-xs text-muted">+{names.length - 3}</span>}
         </div>

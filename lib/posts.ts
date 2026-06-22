@@ -123,6 +123,71 @@ export function getStats(): BlogStats {
 
 export function getRecurringRepos(): RepoStats[] { return getStats().recurringRepos; }
 
+/**
+ * 把内容中的 owner/repo 转为可点击的 GitHub 链接。
+ * 跳过代码块和内联代码，跳过已经在 [text](url) 里的链接。
+ */
+export function linkifyRepoNames(content: string): string {
+  const names = extractRepoNames(content);
+  if (names.length === 0) return content;
+
+  const unique = [...new Set(names)].sort((a, b) => b.length - a.length);
+  const segments = splitCodeSegments(content);
+
+  return segments.map(seg => {
+    if (seg.isCode) return seg.text;
+    return linkifyText(seg.text, unique);
+  }).join('');
+}
+
+/** 对非代码文本做仓库名链接化 */
+function linkifyText(text: string, names: string[]): string {
+  for (const name of names) {
+    let result = '';
+    let remaining = text;
+    while (remaining.length > 0) {
+      const idx = remaining.indexOf(name);
+      if (idx === -1) { result += remaining; break; }
+
+      result += remaining.slice(0, idx);
+      const before = result;
+
+      // 检查是否已在 markdown 链接内：查找最近未闭合的 [ 和 ](
+      const lastOpen = before.lastIndexOf('[');
+      const lastClose = before.lastIndexOf('](');
+
+      if (lastOpen > lastClose) {
+        // 在链接文本 [xxx] 内，不转换
+        result += name;
+      } else {
+        result += '[' + name + '](https://github.com/' + name + ')';
+      }
+      remaining = remaining.slice(idx + name.length);
+    }
+    text = result;
+  }
+  return text;
+}
+
+/** 拆分为代码段（内联代码 + 围栏代码块）和非代码段 */
+function splitCodeSegments(content: string): { text: string; isCode: boolean }[] {
+  const regex = /(`[^`]+`|```[\s\S]*?```)/g;
+  const segments: { text: string; isCode: boolean }[] = [];
+  let lastIdx = 0;
+  let m: RegExpExecArray | null;
+  while ((m = regex.exec(content)) !== null) {
+    if (m.index > lastIdx) {
+      segments.push({ text: content.slice(lastIdx, m.index), isCode: false });
+    }
+    segments.push({ text: m[0], isCode: true });
+    lastIdx = m.index + m[0].length;
+  }
+  if (lastIdx < content.length) {
+    segments.push({ text: content.slice(lastIdx), isCode: false });
+  }
+  return segments;
+}
+
 export function resolveWikiLinks(content: string, allSlugs: Set<string>): string {
   return content.replace(/\[\[([^\]]+)\]\]/g, (_, slug: string) => {
     const [target, alias] = slug.split("|");
