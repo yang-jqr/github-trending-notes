@@ -91,7 +91,6 @@ function StatCard({ value, label }: { value: number; label: string }) {
 function PostCard({ post }: { post: Post }) {
   const names = extractRepoNames(post.content);
   const langs = extractLanguages(post.content);
-  const preview = names.slice(0, 3);
 
   return (
     <Link
@@ -113,9 +112,9 @@ function PostCard({ post }: { post: Post }) {
           ))}
         </div>
       </div>
-      {preview.length > 0 && (
+      {names.length > 0 && (
         <div className="flex flex-wrap gap-2">
-          {preview.map((name, i) => (
+          {names.map((name, i) => (
             <a
               key={name}
               href={`https://github.com/${name}`}
@@ -128,7 +127,6 @@ function PostCard({ post }: { post: Post }) {
               {name}
             </a>
           ))}
-          {names.length > 3 && <span className="px-2 py-1 text-xs text-muted">+{names.length - 3}</span>}
         </div>
       )}
     </Link>
