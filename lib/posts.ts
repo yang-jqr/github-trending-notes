@@ -173,13 +173,16 @@ function linkifyText(text: string, patterns: { pattern: string; url: string }[])
       const idx = remaining.indexOf(pattern);
       if (idx === -1) { result += remaining; break; }
 
-      // 简称需要检查词边界（不在更长单词内部匹配）
+      // 简称需要检查词边界（不在更长单词内部匹配，不在连字符复合词中）
       const isPartial = !pattern.includes('/');
       if (isPartial) {
-        const before = idx > 0 ? remaining[idx - 1] : ' ';
-        const after = idx + pattern.length < remaining.length ? remaining[idx + pattern.length] : ' ';
-        if (/[a-zA-Z0-9]/.test(before) || /[a-zA-Z0-9]/.test(after)) {
-          // 在更长的单词内，比如 "headroom" 不应匹配 "headrooms"
+        const charBefore = idx > 0 ? remaining[idx - 1] : ' ';
+        const charAfter = idx + pattern.length < remaining.length ? remaining[idx + pattern.length] : ' ';
+        // 前/后有字母数字 → 在更长单词内；前一个字符是 - 且再前一个是字母数字 → 复合词
+        const prevIsAlphaNum = /[a-zA-Z0-9]/.test(charBefore);
+        const nextIsAlphaNum = /[a-zA-Z0-9]/.test(charAfter);
+        const isCompoundWord = charBefore === '-' && idx > 1 && /[a-zA-Z0-9]/.test(remaining[idx - 2]);
+        if (prevIsAlphaNum || nextIsAlphaNum || isCompoundWord) {
           result += remaining.slice(0, idx + pattern.length);
           remaining = remaining.slice(idx + pattern.length);
           continue;
