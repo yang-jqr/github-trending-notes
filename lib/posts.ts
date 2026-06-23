@@ -125,46 +125,97 @@ export function getRecurringRepos(): RepoStats[] { return getStats().recurringRe
 
 /**
  * 把内容中的 owner/repo 转为可点击的 GitHub 链接。
+ * 同时将 repo 简称（owner/repo 的 repo 部分）也链接到同一仓库。
  * 跳过代码块和内联代码，跳过已经在 [text](url) 里的链接。
  */
 export function linkifyRepoNames(content: string): string {
   const names = extractRepoNames(content);
   if (names.length === 0) return content;
 
-  const unique = [...new Set(names)].sort((a, b) => b.length - a.length);
+  // 构建匹配模式：全名 + 简称（repo 名部分，最少 4 字符避免过度匹配）
+  const patterns: { pattern: string; url: string }[] = [];
+  const seen = new Set<string>();
+
+  for (const name of names) {
+    if (!seen.has(name)) {
+      seen.add(name);
+      patterns.push({ pattern: name, url: `https://github.com/${name}` });
+    }
+    // 提取 repo 简称（/ 后面的部分），作为额外匹配
+    const slashIdx = name.indexOf('/');
+    if (slashIdx > 0 && slashIdx < name.length - 4) {
+      const partial = name.slice(slashIdx + 1);
+      const key = 'partial:' + partial;
+      if (!seen.has(key)) {
+        seen.add(key);
+        patterns.push({ pattern: partial, url: `https://github.com/${name}` });
+      }
+    }
+  }
+
+  // 按长度降序排列（长名优先匹配，避免短名误伤）
+  patterns.sort((a, b) => b.pattern.length - a.pattern.length);
+
   const segments = splitCodeSegments(content);
 
   return segments.map(seg => {
     if (seg.isCode) return seg.text;
-    return linkifyText(seg.text, unique);
+    return linkifyText(seg.text, patterns);
   }).join('');
 }
 
-/** 对非代码文本做仓库名链接化 */
-function linkifyText(text: string, names: string[]): string {
-  for (const name of names) {
+/** 对非代码文本做仓库名/简称链接化 */
+function linkifyText(text: string, patterns: { pattern: string; url: string }[]): string {
+  for (const { pattern, url } of patterns) {
     let result = '';
     let remaining = text;
     while (remaining.length > 0) {
-      const idx = remaining.indexOf(name);
+      const idx = remaining.indexOf(pattern);
       if (idx === -1) { result += remaining; break; }
 
-      result += remaining.slice(0, idx);
-      const before = result;
+      // 简称需要检查词边界（不在更长单词内部匹配）
+      const isPartial = !pattern.includes('/');
+      if (isPartial) {
+        const before = idx > 0 ? remaining[idx - 1] : ' ';
+        const after = idx + pattern.length < remaining.length ? remaining[idx + pattern.length] : ' ';
+        if (/[a-zA-Z0-9]/.test(before) || /[a-zA-Z0-9]/.test(after)) {
+          // 在更长的单词内，比如 "headroom" 不应匹配 "headrooms"
+          result += remaining.slice(0, idx + pattern.length);
+          remaining = remaining.slice(idx + pattern.length);
+          continue;
+        }
+      }
 
-      // 检查是否已在 markdown 链接文本内（[text](url)），排除 wiki 链接 [[text]]
-      const lastClose = before.lastIndexOf('](');
-      const lastOpen = before.lastIndexOf('[');
-      const isWikiLink = lastOpen > 0 && before[lastOpen - 1] === '[';
-      const insideLink = !isWikiLink && lastOpen > lastClose;
+      result += remaining.slice(0, idx);
+      const preceding = result;
+
+      // 检查是否在 markdown 链接内
+      // 情况1: 链接文本 [text](url) — [ 之后、]( 之前
+      // 情况2: 链接 URL — ]( 之后、) 之前
+      // 情况3: wiki 链接 [[text]] — [[ 不算 markdown 链接
+      const lastClose = preceding.lastIndexOf('](');
+      const lastOpen = preceding.lastIndexOf('[');
+      const isWikiLink = lastOpen > 0 && preceding[lastOpen - 1] === '[';
+
+      let insideLink = false;
+      if (!isWikiLink && lastOpen > lastClose) {
+        // 在链接文本内
+        insideLink = true;
+      } else if (lastClose !== -1) {
+        // 检查是否在链接 URL 内（]( 之后尚未遇到 ) 闭合）
+        const afterLinkStart = preceding.slice(lastClose + 2);
+        if (!afterLinkStart.includes(')')) {
+          insideLink = true;
+        }
+      }
 
       if (insideLink) {
         // 在链接文本内，不转换
-        result += name;
+        result += pattern;
       } else {
-        result += '[' + name + '](https://github.com/' + name + ')';
+        result += '[' + pattern + '](' + url + ')';
       }
-      remaining = remaining.slice(idx + name.length);
+      remaining = remaining.slice(idx + pattern.length);
     }
     text = result;
   }
