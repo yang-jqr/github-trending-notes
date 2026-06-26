@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-26]]
 - [[trending-2026-06-25]]
 - [[trending-2026-06-24]]
 - [[trending-2026-06-23]]
@@ -39,14 +40,14 @@
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
 | Panniantong/Agent-Reach | 4 | 06-18 |
-| calesthio/OpenMontage | 6 | 06-25 |
+| calesthio/OpenMontage | 7 | 06-26 |
 | penpot/penpot | 4 | 06-23 |
 | DeusData/codebase-memory-mcp | 5 | 06-24 |
 | mattpocock/skills | 4 | 06-23 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
-| apple/container | 4 | 06-25 |
+| apple/container | 5 | 06-26 |
 | [[仓库/microsoft_markitdown]] | 3 | 06-04 |
 | [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
 | [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
@@ -58,7 +59,7 @@
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 4 | 06-24 |
-| mukul975/Anthropic-Cybersecurity-Skills | 4 | 06-24 |
+| mukul975/Anthropic-Cybersecurity-Skills | 5 | 06-26 |
 | palmier-io/palmier-pro | 4 | 06-24 |
 | ZhuLinsen/daily_stock_analysis | 5 | 06-25 |
 | affaan-m/ECC | 4 | 06-24 |
@@ -83,26 +84,35 @@
 | andrewyng/aisuite | 1 | 06-14 |
 | jamiepine/voicebox | 2 | 06-24 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
-| garrytan/gstack | 2 | 06-24 |
+| garrytan/gstack | 3 | 06-26 |
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 1 | 06-23 |
-| JCodesMore/ai-website-cloner-template | 3 | 06-25 |
+| JCodesMore/ai-website-cloner-template | 4 | 06-26 |
 | lyogavin/airllm | 1 | 06-23 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
-| shanraisshan/claude-code-best-practice | 1 | 06-24 |
+| shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
 | flutter/flutter | 1 | 06-25 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
 | stablyai/orca | 1 | 06-25 |
-| google-labs-code/design.md | 1 | 06-25 |
+| google-labs-code/design.md | 2 | 06-26 |
 | Flowseal/zapret-discord-youtube | 1 | 06-25 |
 | kunchenguid/no-mistakes | 1 | 06-25 |
+| Free-TV/IPTV | 2 | 06-26 |
+| mauriceboe/TREK | 1 | 06-26 |
+| every-app/open-seo | 1 | 06-26 |
+| aws/agent-toolkit-for-aws | 1 | 06-26 |
+| alibaba/page-agent | 1 | 06-26 |
+| IceWhaleTech/CasaOS | 1 | 06-26 |
+| opendatalab/MinerU | 1 | 06-26 |
+| NanmiCoder/MediaCrawler | 1 | 06-26 |
+| xbtlin/ai-berkshire | 1 | 06-26 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）
-- #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API）
-- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent）
+- #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
@@ -118,10 +128,11 @@
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
 - #前端 — CopilotKit, svelte, ai-website-cloner-template
-- #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl
+- #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
-- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）
+- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）
 - #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
+- #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）
