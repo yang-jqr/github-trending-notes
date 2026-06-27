@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-27]]
 - [[trending-2026-06-26]]
 - [[trending-2026-06-25]]
 - [[trending-2026-06-24]]
@@ -39,8 +40,8 @@
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
-| Panniantong/Agent-Reach | 4 | 06-18 |
-| calesthio/OpenMontage | 7 | 06-26 |
+| Panniantong/Agent-Reach | 5 | 06-27 |
+| calesthio/OpenMontage | 8 | 06-27 |
 | penpot/penpot | 4 | 06-23 |
 | DeusData/codebase-memory-mcp | 5 | 06-24 |
 | mattpocock/skills | 4 | 06-23 |
@@ -84,10 +85,10 @@
 | andrewyng/aisuite | 1 | 06-14 |
 | jamiepine/voicebox | 2 | 06-24 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
-| garrytan/gstack | 3 | 06-26 |
+| garrytan/gstack | 4 | 06-27 |
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 1 | 06-23 |
-| JCodesMore/ai-website-cloner-template | 4 | 06-26 |
+| JCodesMore/ai-website-cloner-template | 5 | 06-27 |
 | lyogavin/airllm | 1 | 06-23 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
@@ -95,22 +96,27 @@
 | flutter/flutter | 1 | 06-25 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
 | stablyai/orca | 1 | 06-25 |
-| google-labs-code/design.md | 2 | 06-26 |
+| google-labs-code/design.md | 3 | 06-27 |
 | Flowseal/zapret-discord-youtube | 1 | 06-25 |
-| kunchenguid/no-mistakes | 1 | 06-25 |
+| kunchenguid/no-mistakes | 2 | 06-27 |
 | Free-TV/IPTV | 2 | 06-26 |
-| mauriceboe/TREK | 1 | 06-26 |
+| mauriceboe/TREK | 2 | 06-27 |
 | every-app/open-seo | 1 | 06-26 |
-| aws/agent-toolkit-for-aws | 1 | 06-26 |
+| aws/agent-toolkit-for-aws | 2 | 06-27 |
 | alibaba/page-agent | 1 | 06-26 |
-| IceWhaleTech/CasaOS | 1 | 06-26 |
-| opendatalab/MinerU | 1 | 06-26 |
-| NanmiCoder/MediaCrawler | 1 | 06-26 |
-| xbtlin/ai-berkshire | 1 | 06-26 |
+| IceWhaleTech/CasaOS | 2 | 06-27 |
+| opendatalab/MinerU | 2 | 06-27 |
+| NanmiCoder/MediaCrawler | 2 | 06-27 |
+| xbtlin/ai-berkshire | 2 | 06-27 |
+| simplex-chat/simplex-chat | 1 | 06-27 |
+| commaai/openpilot | 1 | 06-27 |
+| grafana/grafana | 1 | 06-27 |
+| ripienaar/free-for-dev | 1 | 06-27 |
+| alchaincyf/zhangxuefeng-skill | 1 | 06-27 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）
@@ -132,7 +138,10 @@
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
 - #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）
-- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）
+- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
 - #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）
+- #可观测性 — grafana（可视化监控平台）
+- #开发者资源 — free-for-dev（免费层资源清单）
+- #隐私通讯 — simplex-chat（零标识符通讯网络）
