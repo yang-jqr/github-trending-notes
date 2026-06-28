@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-28]]
 - [[trending-2026-06-27]]
 - [[trending-2026-06-26]]
 - [[trending-2026-06-25]]
@@ -75,20 +76,20 @@
 | Universal-Debloater-Alliance/universal-android-debloater-next-generation | 2 | 06-18 |
 | NVIDIA/SkillSpector | 2 | 06-16 |
 | jwasham/coding-interview-university | 2 | 06-16 |
-| topoteretes/cognee | 2 | 06-22 |
+| topoteretes/cognee | 3 | 06-28 |
 | asgeirtj/system_prompts_leaks | 2 | 06-22 |
 | koala73/worldmonitor | 3 | 06-24 |
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
-| microsoft/PowerToys | 1 | 06-14 |
+| microsoft/PowerToys | 2 | 06-28 |
 | andrewyng/aisuite | 1 | 06-14 |
 | jamiepine/voicebox | 2 | 06-24 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
-| garrytan/gstack | 4 | 06-27 |
+| garrytan/gstack | 5 | 06-28 |
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 1 | 06-23 |
-| JCodesMore/ai-website-cloner-template | 5 | 06-27 |
+| JCodesMore/ai-website-cloner-template | 6 | 06-28 |
 | lyogavin/airllm | 1 | 06-23 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
@@ -96,23 +97,31 @@
 | flutter/flutter | 1 | 06-25 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
 | stablyai/orca | 1 | 06-25 |
-| google-labs-code/design.md | 3 | 06-27 |
+| google-labs-code/design.md | 4 | 06-28 |
 | Flowseal/zapret-discord-youtube | 1 | 06-25 |
 | kunchenguid/no-mistakes | 2 | 06-27 |
 | Free-TV/IPTV | 2 | 06-26 |
 | mauriceboe/TREK | 2 | 06-27 |
-| every-app/open-seo | 1 | 06-26 |
+| every-app/open-seo | 2 | 06-28 |
 | aws/agent-toolkit-for-aws | 2 | 06-27 |
 | alibaba/page-agent | 1 | 06-26 |
-| IceWhaleTech/CasaOS | 2 | 06-27 |
+| IceWhaleTech/CasaOS | 3 | 06-28 |
 | opendatalab/MinerU | 2 | 06-27 |
-| NanmiCoder/MediaCrawler | 2 | 06-27 |
-| xbtlin/ai-berkshire | 2 | 06-27 |
-| simplex-chat/simplex-chat | 1 | 06-27 |
-| commaai/openpilot | 1 | 06-27 |
+| NanmiCoder/MediaCrawler | 3 | 06-28 |
+| xbtlin/ai-berkshire | 3 | 06-28 |
+| simplex-chat/simplex-chat | 2 | 06-28 |
+| commaai/openpilot | 2 | 06-28 |
 | grafana/grafana | 1 | 06-27 |
-| ripienaar/free-for-dev | 1 | 06-27 |
+| ripienaar/free-for-dev | 2 | 06-28 |
 | alchaincyf/zhangxuefeng-skill | 1 | 06-27 |
+| hugohe3/ppt-master | 2 | 06-28 |
+| keycloak/keycloak | 2 | 06-28 |
+| Anil-matcha/Open-Generative-AI | 1 | 06-28 |
+| dbt-labs/dbt-core | 1 | 06-28 |
+| luongnv89/claude-howto | 1 | 06-28 |
+| anomalyco/opencode | 1 | 06-28 |
+| Fission-AI/OpenSpec | 1 | 06-28 |
+| HKUDS/Vibe-Trading | 1 | 06-28 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
