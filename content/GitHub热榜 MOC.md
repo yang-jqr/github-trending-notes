@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-29]]
 - [[trending-2026-06-28]]
 - [[trending-2026-06-27]]
 - [[trending-2026-06-26]]
@@ -82,7 +83,7 @@
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
-| microsoft/PowerToys | 2 | 06-28 |
+| microsoft/PowerToys | 3 | 06-29 |
 | andrewyng/aisuite | 1 | 06-14 |
 | jamiepine/voicebox | 2 | 06-24 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
@@ -105,14 +106,14 @@
 | every-app/open-seo | 2 | 06-28 |
 | aws/agent-toolkit-for-aws | 2 | 06-27 |
 | alibaba/page-agent | 1 | 06-26 |
-| IceWhaleTech/CasaOS | 3 | 06-28 |
+| IceWhaleTech/CasaOS | 4 | 06-29 |
 | opendatalab/MinerU | 2 | 06-27 |
 | NanmiCoder/MediaCrawler | 3 | 06-28 |
 | xbtlin/ai-berkshire | 3 | 06-28 |
-| simplex-chat/simplex-chat | 2 | 06-28 |
+| simplex-chat/simplex-chat | 3 | 06-29 |
 | commaai/openpilot | 2 | 06-28 |
 | grafana/grafana | 1 | 06-27 |
-| ripienaar/free-for-dev | 2 | 06-28 |
+| ripienaar/free-for-dev | 3 | 06-29 |
 | alchaincyf/zhangxuefeng-skill | 1 | 06-27 |
 | hugohe3/ppt-master | 2 | 06-28 |
 | keycloak/keycloak | 2 | 06-28 |
@@ -122,6 +123,23 @@
 | anomalyco/opencode | 1 | 06-28 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
 | HKUDS/Vibe-Trading | 1 | 06-28 |
+| vinta/awesome-python | 1 | 06-29 |
+| veracrypt/VeraCrypt | 1 | 06-29 |
+| rustdesk/rustdesk | 1 | 06-29 |
+| mullvad/mullvadvpn-app | 1 | 06-29 |
+| siyuan-note/siyuan | 1 | 06-29 |
+| sharkdp/fd | 1 | 06-29 |
+| Project-MONAI/MONAI | 1 | 06-29 |
+| pydantic/pydantic | 1 | 06-29 |
+| supabase/cli | 1 | 06-29 |
+| DioxusLabs/dioxus | 1 | 06-29 |
+| tokio-rs/tokio | 1 | 06-29 |
+| termux/termux-packages | 1 | 06-29 |
+| dlt-hub/dlt | 1 | 06-29 |
+| make-all/tuya-local | 1 | 06-29 |
+| sktime/sktime | 1 | 06-29 |
+| volcano-sh/volcano | 1 | 06-29 |
+| GeyserMC/Geyser | 1 | 06-29 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
