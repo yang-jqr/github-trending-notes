@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-06-30]]
 - [[trending-2026-06-29]]
 - [[trending-2026-06-28]]
 - [[trending-2026-06-27]]
@@ -46,7 +47,7 @@
 | calesthio/OpenMontage | 8 | 06-27 |
 | penpot/penpot | 4 | 06-23 |
 | DeusData/codebase-memory-mcp | 5 | 06-24 |
-| mattpocock/skills | 4 | 06-23 |
+| mattpocock/skills | 5 | 06-30 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -55,17 +56,17 @@
 | [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
 | [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
 | [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
-| freeCodeCamp/freeCodeCamp | 3 | 06-18 |
+| freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 3 | 06-18 |
-| NousResearch/hermes-agent | 4 | 06-25 |
+| NousResearch/hermes-agent | 5 | 06-30 |
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 4 | 06-24 |
 | mukul975/Anthropic-Cybersecurity-Skills | 5 | 06-26 |
 | palmier-io/palmier-pro | 4 | 06-24 |
 | ZhuLinsen/daily_stock_analysis | 5 | 06-25 |
-| affaan-m/ECC | 4 | 06-24 |
+| affaan-m/ECC | 5 | 06-30 |
 | tursodatabase/turso | 3 | 06-23 |
 | soxoj/maigret | 2 | 06-12 |
 | teslamate-org/teslamate | 2 | 06-17 |
@@ -95,7 +96,7 @@
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
-| flutter/flutter | 1 | 06-25 |
+| flutter/flutter | 2 | 06-30 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
 | stablyai/orca | 1 | 06-25 |
 | google-labs-code/design.md | 4 | 06-28 |
@@ -120,10 +121,10 @@
 | Anil-matcha/Open-Generative-AI | 1 | 06-28 |
 | dbt-labs/dbt-core | 1 | 06-28 |
 | luongnv89/claude-howto | 1 | 06-28 |
-| anomalyco/opencode | 1 | 06-28 |
+| anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
 | HKUDS/Vibe-Trading | 1 | 06-28 |
-| vinta/awesome-python | 1 | 06-29 |
+| vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
 | mullvad/mullvadvpn-app | 1 | 06-29 |
@@ -140,6 +141,24 @@
 | sktime/sktime | 1 | 06-29 |
 | volcano-sh/volcano | 1 | 06-29 |
 | GeyserMC/Geyser | 1 | 06-29 |
+| EbookFoundation/free-programming-books | 1 | 06-30 |
+| openclaw/openclaw | 1 | 06-30 |
+| nilbuild/developer-roadmap | 1 | 06-30 |
+| awesome-selfhosted/awesome-selfhosted | 1 | 06-30 |
+| react/react | 1 | 06-30 |
+| tensorflow/tensorflow | 1 | 06-30 |
+| n8n-io/n8n | 1 | 06-30 |
+| microsoft/vscode | 1 | 06-30 |
+| Significant-Gravitas/AutoGPT | 1 | 06-30 |
+| ollama/ollama | 1 | 06-30 |
+| twbs/bootstrap | 1 | 06-30 |
+| yt-dlp/yt-dlp | 1 | 06-30 |
+| f/prompts.chat | 1 | 06-30 |
+| 521xueweihan/HelloGitHub | 1 | 06-30 |
+| huggingface/transformers | 1 | 06-30 |
+| langflow-ai/langflow | 1 | 06-30 |
+| langgenius/dify | 1 | 06-30 |
+| open-webui/open-webui | 1 | 06-30 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
