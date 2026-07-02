@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-02]]
 - [[trending-2026-07-01]]
 - [[trending-2026-06-30]]
 - [[trending-2026-06-29]]
@@ -40,7 +41,7 @@
 | chopratejas/headroom | 5 | 06-22 |
 | addyosmani/agent-skills | 4 | 06-14 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
-| refactoringhq/tolaria | 4 | 06-13 |
+| refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
@@ -124,7 +125,7 @@
 | luongnv89/claude-howto | 2 | 07-01 |
 | anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
-| HKUDS/Vibe-Trading | 2 | 07-01 |
+| HKUDS/Vibe-Trading | 3 | 07-02 |
 | vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
@@ -166,12 +167,13 @@
 | Yu9191/wloc | 1 | 07-01 |
 | vercel-labs/deepsec | 1 | 07-01 |
 | pbakaus/impeccable | 1 | 07-01 |
-| Unclecheng-li/VulnClaw | 1 | 07-01 |
+| Unclecheng-li/VulnClaw | 2 | 07-02 |
 | rtk-ai/rtk | 1 | 07-01 |
 | EverMind-AI/EverOS | 1 | 07-01 |
 | tinyhumansai/openhuman | 1 | 07-01 |
 | Robbyant/lingbot-map | 1 | 07-01 |
-| altic-dev/FluidVoice | 1 | 07-01 |
+| altic-dev/FluidVoice | 2 | 07-02 |
+| yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 
 ## 🏷️ 主题标签
