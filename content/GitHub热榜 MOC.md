@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-03]]
 - [[trending-2026-07-02]]
 - [[trending-2026-07-01]]
 - [[trending-2026-06-30]]
@@ -37,7 +38,7 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 6 | 06-10 |
-| obra/superpowers | 5 | 06-18 |
+| obra/superpowers | 6 | 07-03 |
 | chopratejas/headroom | 5 | 06-22 |
 | addyosmani/agent-skills | 4 | 06-14 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
@@ -68,7 +69,7 @@
 | mukul975/Anthropic-Cybersecurity-Skills | 6 | 07-01 |
 | palmier-io/palmier-pro | 4 | 06-24 |
 | ZhuLinsen/daily_stock_analysis | 6 | 07-01 |
-| affaan-m/ECC | 5 | 06-30 |
+| affaan-m/ECC | 6 | 07-03 |
 | tursodatabase/turso | 3 | 06-23 |
 | soxoj/maigret | 2 | 06-12 |
 | teslamate-org/teslamate | 2 | 06-17 |
@@ -125,7 +126,7 @@
 | luongnv89/claude-howto | 2 | 07-01 |
 | anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
-| HKUDS/Vibe-Trading | 3 | 07-02 |
+| HKUDS/Vibe-Trading | 4 | 07-03 |
 | vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
@@ -158,7 +159,7 @@
 | f/prompts.chat | 1 | 06-30 |
 | 521xueweihan/HelloGitHub | 1 | 06-30 |
 | huggingface/transformers | 1 | 06-30 |
-| langflow-ai/langflow | 1 | 06-30 |
+| langflow-ai/langflow | 2 | 07-03 |
 | langgenius/dify | 1 | 06-30 |
 | open-webui/open-webui | 1 | 06-30 |
 | bikini/exploitarium | 1 | 07-01 |
@@ -175,6 +176,19 @@
 | altic-dev/FluidVoice | 2 | 07-02 |
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
+| usestrix/strix | 2 | 07-03 |
+| msitarzewski/agency-agents | 2 | 07-03 |
+| hasaneyldrm/exercises-dataset | 2 | 07-03 |
+| browser-use/video-use | 2 | 07-03 |
+| JuliusBrussee/caveman | 1 | 07-03 |
+| santifer/career-ops | 1 | 07-03 |
+| ChromeDevTools/chrome-devtools-mcp | 1 | 07-03 |
+| actions/checkout | 1 | 07-03 |
+| agentskills/agentskills | 1 | 07-03 |
+| openai/codex-plugin-cc | 1 | 07-03 |
+| pytorch/pytorch | 1 | 07-03 |
+| harvard-edge/cs249r_book | 1 | 07-03 |
+| ryanmcdermott/clean-code-javascript | 1 | 07-03 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
