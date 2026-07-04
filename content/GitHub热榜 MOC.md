@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-04]]
 - [[trending-2026-07-03]]
 - [[trending-2026-07-02]]
 - [[trending-2026-07-01]]
@@ -38,7 +39,7 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 6 | 06-10 |
-| obra/superpowers | 6 | 07-03 |
+| obra/superpowers | 7 | 07-04 |
 | chopratejas/headroom | 5 | 06-22 |
 | addyosmani/agent-skills | 4 | 06-14 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
@@ -176,19 +177,28 @@
 | altic-dev/FluidVoice | 2 | 07-02 |
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
-| usestrix/strix | 2 | 07-03 |
-| msitarzewski/agency-agents | 2 | 07-03 |
+| usestrix/strix | 3 | 07-04 |
+| msitarzewski/agency-agents | 3 | 07-04 |
 | hasaneyldrm/exercises-dataset | 2 | 07-03 |
 | browser-use/video-use | 2 | 07-03 |
-| JuliusBrussee/caveman | 1 | 07-03 |
+| JuliusBrussee/caveman | 2 | 07-04 |
 | santifer/career-ops | 1 | 07-03 |
-| ChromeDevTools/chrome-devtools-mcp | 1 | 07-03 |
-| actions/checkout | 1 | 07-03 |
-| agentskills/agentskills | 1 | 07-03 |
-| openai/codex-plugin-cc | 1 | 07-03 |
-| pytorch/pytorch | 1 | 07-03 |
-| harvard-edge/cs249r_book | 1 | 07-03 |
+| ChromeDevTools/chrome-devtools-mcp | 2 | 07-04 |
+| actions/checkout | 2 | 07-04 |
+| agentskills/agentskills | 2 | 07-04 |
+| openai/codex-plugin-cc | 2 | 07-04 |
+| pytorch/pytorch | 2 | 07-04 |
+| harvard-edge/cs249r_book | 2 | 07-04 |
 | ryanmcdermott/clean-code-javascript | 1 | 07-03 |
+| facebook/astryx | 2 | 07-04 |
+| ogulcancelik/herdr | 2 | 07-04 |
+| TencentCloud/CubeSandbox | 2 | 07-04 |
+| elastic/elasticsearch | 1 | 07-04 |
+| ansible/ansible | 1 | 07-04 |
+| rommapp/romm | 1 | 07-04 |
+| anthropics/claude-code | 1 | 07-04 |
+| supabase/supabase | 1 | 07-04 |
+| apache/maven | 1 | 07-04 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
