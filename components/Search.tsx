@@ -61,7 +61,7 @@ export default function Search() {
     if (e.key === 'ArrowDown') { e.preventDefault(); setSelected(s => Math.min(s + 1, results.length - 1)); }
     if (e.key === 'ArrowUp') { e.preventDefault(); setSelected(s => Math.max(s - 1, 0)); }
     if (e.key === 'Enter' && results[selected]) {
-      router.push(`/posts/${encodeURIComponent(results[selected].slug)}`);
+      router.push(`/posts/${encodeURIComponent(results[selected].slug)}?q=${encodeURIComponent(query)}`);
       setOpen(false);
       setQuery('');
     }
@@ -85,7 +85,7 @@ export default function Search() {
             <button
               key={entry.slug}
               onClick={() => {
-                router.push(`/posts/${encodeURIComponent(entry.slug)}`);
+                router.push(`/posts/${encodeURIComponent(entry.slug)}?q=${encodeURIComponent(query)}`);
                 setOpen(false);
                 setQuery('');
               }}

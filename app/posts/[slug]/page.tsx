@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Suspense } from "react";
+import PostSearchHighlight from "@/components/PostSearchHighlight";
 
 export function generateStaticParams() {
   return getAllPosts().map(p => ({ slug: p.meta.slug }));
@@ -43,7 +45,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <span>{langs.length} 种语言</span>
         </div>
       </div>
-      <div className="prose prose-invert max-w-none">
+      <Suspense fallback={null}>
+      <PostSearchHighlight>
+        <div className="prose prose-invert max-w-none">
         <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
           a: ({href,children,...p}) => <a href={href} target={href?.startsWith("http")?"_blank":undefined} rel={href?.startsWith("http")?"noopener noreferrer":undefined} className="text-accent hover:underline" {...p}>{children}</a>,
           del: ({children}) => <span className="text-muted line-through">{children}</span>,
@@ -54,6 +58,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           strong: ({children}) => <strong className="text-[#f0f6fc]">{children}</strong>,
         }}>{text}</ReactMarkdown>
       </div>
+      </PostSearchHighlight>
+      </Suspense>
       <div className="mt-10 pt-4 border-t border-border">
         <div className="flex justify-between text-sm">
           {prev ? <Link href={`/posts/${encodeURIComponent(prev.meta.slug)}`} className="text-accent hover:underline">← {prev.meta.date}</Link> : <span />}
