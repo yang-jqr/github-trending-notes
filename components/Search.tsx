@@ -3,18 +3,108 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
-interface SearchEntry {
+// ─── Types ──────────────────────────────────────────────────────
+interface SearchDoc {
   slug: string;
   date: string;
   repos: string[];
   langs: string[];
   content: string;
+  tf: [number, number][];
 }
+
+interface EmbeddingsData {
+  docEmbeddings: number[][];
+  tokenEmbeddings: Record<string, number[]>;
+}
+
+interface SearchIndex {
+  vocab: string[];
+  idf: Record<string, number>;
+  docs: SearchDoc[];
+  embeddings?: EmbeddingsData;
+}
+
+// ─── Tokenization (same as build script) ────────────────────────
+function tokenize(text: string): string[] {
+  const tokens: string[] = [];
+  const words = text.toLowerCase().match(/[a-z]{2,}|[a-z][a-z0-9]+/g) || [];
+  tokens.push(...words);
+  const chinese = text.match(/[\u4e00-\u9fff]/g);
+  if (chinese) {
+    for (let i = 0; i < chinese.length - 1; i++) {
+      tokens.push(chinese[i] + chinese[i + 1]);
+    }
+    tokens.push(...chinese);
+  }
+  return tokens;
+}
+
+// ─── TF-IDF cosine similarity (existing logic) ──────────────────
+function tfidfSimilarity(
+  queryVec: Map<number, number>,
+  docTf: [number, number][],
+  idf: Record<string, number>,
+  vocab: string[],
+): number {
+  let dot = 0;
+  let docMagSq = 0;
+  for (const [ti, tf] of docTf) {
+    const term = vocab[ti];
+    if (!term) continue;
+    const weight = tf * (idf[term] || 0);
+    docMagSq += weight * weight;
+    const qw = queryVec.get(ti);
+    if (qw !== undefined) dot += qw * weight;
+  }
+  if (docMagSq === 0) return 0;
+  let qMagSq = 0;
+  for (const w of queryVec.values()) qMagSq += w * w;
+  return qMagSq === 0 ? 0 : dot / (Math.sqrt(qMagSq) * Math.sqrt(docMagSq));
+}
+
+// ─── Embedding cosine similarity ────────────────────────────────
+function dotProduct(a: number[], b: number[]): number {
+  let d = 0;
+  for (let i = 0; i < a.length; i++) d += a[i] * b[i];
+  return d;
+}
+
+function composeQueryEmbedding(
+  queryTokens: string[],
+  tokenEmbeddings: Record<string, number[]>,
+  idf: Record<string, number>,
+): number[] | null {
+  const dim = Object.values(tokenEmbeddings)[0]?.length;
+  if (!dim) return null;
+
+  const vec = new Array(dim).fill(0);
+  let totalWeight = 0;
+
+  for (const t of queryTokens) {
+    const emb = tokenEmbeddings[t];
+    if (!emb) continue;
+    const w = idf[t] || 1;
+    for (let i = 0; i < dim; i++) vec[i] += emb[i] * w;
+    totalWeight += w;
+  }
+
+  if (totalWeight === 0) return null;
+  // L2 normalize
+  const mag = Math.sqrt(vec.reduce((s, v) => s + v * v, 0));
+  if (mag === 0) return null;
+  return vec.map(v => v / mag);
+}
+
+// ─── Component ──────────────────────────────────────────────────
+// ponytail: embedding vector dim from build-time model (384 for all-MiniLM-L6-v2)
+const EMBEDDING_DIM = 384;
 
 export default function Search() {
   const [query, setQuery] = useState('');
-  const [data, setData] = useState<SearchEntry[]>([]);
-  const [results, setResults] = useState<SearchEntry[]>([]);
+  const [index, setIndex] = useState<SearchIndex | null>(null);
+  const [termMap, setTermMap] = useState<Map<string, number>>(new Map());
+  const [results, setResults] = useState<SearchDoc[]>([]);
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -23,28 +113,84 @@ export default function Search() {
   useEffect(() => {
     fetch('/search-data.json')
       .then(r => r.json())
-      .then(setData)
+      .then((data: SearchIndex) => {
+        setIndex(data);
+        const map = new Map<string, number>();
+        data.vocab.forEach((t, i) => map.set(t, i));
+        setTermMap(map);
+      })
       .catch(() => {});
   }, []);
 
   useEffect(() => {
-    if (!query.trim()) {
+    if (!query.trim() || !index) {
       setResults([]);
       setOpen(false);
       return;
     }
-    const q = query.toLowerCase();
-    const filtered = data.filter(entry =>
-      entry.repos.some(r => r.toLowerCase().includes(q)) ||
-      entry.langs.some(l => l.toLowerCase().includes(q)) ||
-      entry.date.includes(q) ||
-      entry.slug.toLowerCase().includes(q) ||
-      entry.content.toLowerCase().includes(q)
-    ).slice(0, 10);
-    setResults(filtered);
-    setOpen(filtered.length > 0);
+
+    const queryTokens = tokenize(query.trim());
+    if (queryTokens.length === 0) {
+      setResults([]);
+      setOpen(false);
+      return;
+    }
+
+    // ── TF-IDF scoring (always runs, baseline) ──
+    const queryVec = new Map<number, number>();
+    for (const t of queryTokens) {
+      const ti = termMap.get(t);
+      if (ti === undefined) continue;
+      queryVec.set(ti, (queryVec.get(ti) || 0) + 1);
+    }
+    for (const [ti, tf] of queryVec) {
+      const term = index.vocab[ti];
+      queryVec.set(ti, tf * (index.idf[term] || 0));
+    }
+
+    const tfidfScores = new Map<string, number>();
+    for (const doc of index.docs) {
+      const s = tfidfSimilarity(queryVec, doc.tf, index.idf, index.vocab);
+      if (s > 0) tfidfScores.set(doc.slug, s);
+    }
+
+    // ── Semantic scoring (if embeddings available) ──
+    const semScores = new Map<string, number>();
+    if (index.embeddings) {
+      const queryEmb = composeQueryEmbedding(
+        queryTokens,
+        index.embeddings.tokenEmbeddings,
+        index.idf,
+      );
+      if (queryEmb) {
+        for (let i = 0; i < index.docs.length; i++) {
+          const docEmb = index.embeddings.docEmbeddings[i];
+          if (!docEmb || docEmb.length !== EMBEDDING_DIM) continue;
+          const sim = dotProduct(queryEmb, docEmb); // both already normalized
+          if (sim > 0) semScores.set(index.docs[i].slug, sim);
+        }
+      }
+    }
+
+    // ── Hybrid scoring ──
+    const scored = index.docs
+      .map(doc => {
+        const tfidf = tfidfScores.get(doc.slug) || 0;
+        const sem = semScores.get(doc.slug) || 0;
+        // ponytail: 0.6 semantic + 0.4 tfidf; pure tfidf if no semantic
+        const hasSem = semScores.size > 0;
+        const score = hasSem ? 0.6 * sem + 0.4 * tfidf : tfidf;
+        return { doc, score };
+      })
+      .filter(s => s.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 10)
+      .map(s => s.doc);
+
+    setResults(scored);
+    setOpen(scored.length > 0);
     setSelected(0);
-  }, [query, data]);
+  }, [query, index]);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
