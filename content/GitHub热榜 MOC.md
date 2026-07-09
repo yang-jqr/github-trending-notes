@@ -224,14 +224,15 @@
 | Diolinux/PhotoGIMP | 1 | 07-09 |
 | wonderwhy-er/DesktopCommanderMCP | 1 | 07-09 |
 | huxingyi/autoremesher | 1 | 07-09 |
+| MadsLorentzen/ai-job-search | 1 | 07-09 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
-- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）
-- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）
-- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）
+- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）
