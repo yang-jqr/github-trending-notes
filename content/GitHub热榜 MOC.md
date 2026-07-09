@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-09]]
 - [[trending-2026-07-07]]
 - [[trending-2026-07-06]]
 - [[trending-2026-07-04]]
@@ -40,10 +41,10 @@
 ## 🔁 反复上榜仓库
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
-| mvanhorn/last30days-skill | 7 | 07-07 |
-| obra/superpowers | 7 | 07-04 |
+| mvanhorn/last30days-skill | 8 | 07-09 |
+| obra/superpowers | 8 | 07-09 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 5 | 07-07 |
+| addyosmani/agent-skills | 6 | 07-09 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -85,7 +86,7 @@
 | NVIDIA/SkillSpector | 2 | 06-16 |
 | jwasham/coding-interview-university | 2 | 06-16 |
 | topoteretes/cognee | 3 | 06-28 |
-| asgeirtj/system_prompts_leaks | 4 | 07-07 |
+| asgeirtj/system_prompts_leaks | 5 | 07-09 |
 | koala73/worldmonitor | 3 | 06-24 |
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
@@ -194,7 +195,7 @@
 | ryanmcdermott/clean-code-javascript | 1 | 07-03 |
 | facebook/astryx | 3 | 07-06 |
 | ogulcancelik/herdr | 4 | 07-07 |
-| TencentCloud/CubeSandbox | 2 | 07-04 |
+| TencentCloud/CubeSandbox | 3 | 07-09 |
 | elastic/elasticsearch | 1 | 07-04 |
 | ansible/ansible | 1 | 07-04 |
 | rommapp/romm | 2 | 07-06 |
@@ -207,15 +208,22 @@
 | coreyhaines31/marketingskills | 1 | 07-06 |
 | CoplayDev/unity-mcp | 1 | 07-06 |
 | immich-app/immich | 1 | 07-06 |
-| ruvnet/RuView | 2 | 07-07 |
+| ruvnet/RuView | 3 | 07-09 |
 | gastownhall/gastown | 2 | 07-07 |
 | dotnet/skills | 1 | 07-06 |
 | OthmanAdi/planning-with-files | 1 | 07-06 |
 | steipete/CodexBar | 2 | 07-07 |
-| alibaba/zvec | 2 | 07-07 |
-| bradautomates/claude-video | 1 | 07-07 |
+| alibaba/zvec | 3 | 07-09 |
+| bradautomates/claude-video | 2 | 07-09 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
+| TencentCloud/TencentDB-Agent-Memory | 1 | 07-09 |
+| prisma/prisma | 1 | 07-09 |
+| argoproj/argo-cd | 1 | 07-09 |
+| iOfficeAI/OfficeCLI | 1 | 07-09 |
+| Diolinux/PhotoGIMP | 1 | 07-09 |
+| wonderwhy-er/DesktopCommanderMCP | 1 | 07-09 |
+| huxingyi/autoremesher | 1 | 07-09 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）
