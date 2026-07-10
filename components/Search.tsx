@@ -96,6 +96,29 @@ function composeQueryEmbedding(
   return vec.map(v => v / mag);
 }
 
+// ─── Snippet extraction ─────────────────────────────────────────
+function getSnippet(content: string, query: string, maxLen = 120): string {
+  const lower = content.toLowerCase();
+  // try each query word, find first match
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  let bestIdx = -1;
+  let bestWord = '';
+  for (const w of words) {
+    const i = lower.indexOf(w);
+    if (i !== -1 && (bestIdx === -1 || i < bestIdx)) {
+      bestIdx = i;
+      bestWord = w;
+    }
+  }
+  if (bestIdx === -1) return content.slice(0, maxLen);
+  const start = Math.max(0, bestIdx - 40);
+  const end = Math.min(content.length, bestIdx + bestWord.length + 80);
+  let snippet = content.slice(start, end);
+  if (start > 0) snippet = '…' + snippet;
+  if (end < content.length) snippet += '…';
+  return snippet;
+}
+
 // ─── Component ──────────────────────────────────────────────────
 // ponytail: embedding vector dim from build-time model (384 for all-MiniLM-L6-v2)
 const EMBEDDING_DIM = 384;
@@ -187,8 +210,19 @@ export default function Search() {
       .slice(0, 10)
       .map(s => s.doc);
 
-    setResults(scored);
-    setOpen(scored.length > 0);
+    // ── Dedup by repo: keep first-occurring doc per repo ──
+    const seenRepos = new Set<string>();
+    const deduped: SearchDoc[] = [];
+    for (const doc of scored) {
+      const fresh = doc.repos.filter(r => !seenRepos.has(r.toLowerCase()));
+      if (fresh.length > 0) {
+        deduped.push(doc);
+        fresh.forEach(r => seenRepos.add(r.toLowerCase()));
+      }
+    }
+    const final = deduped.slice(0, 10);
+    setResults(final);
+    setOpen(final.length > 0);
     setSelected(0);
   }, [query, index]);
 
@@ -215,7 +249,7 @@ export default function Search() {
   };
 
   return (
-    <div ref={containerRef} className="relative w-48 sm:w-56">
+    <div ref={containerRef} className="relative w-56 sm:w-72">
       <input
         type="text"
         placeholder="搜索仓库、内容、日期…"
@@ -239,19 +273,16 @@ export default function Search() {
                 i === selected ? 'bg-accent/10 text-[#f0f6fc]' : 'text-[#c9d1d9] hover:bg-[#1c2128]'
               }`}
             >
-              <div className="font-semibold text-accent text-xs mb-1">{entry.date}</div>
-              <div className="flex flex-wrap gap-1 items-center mb-1">
-                {entry.repos.slice(0, 3).map(r => (
-                  <span key={r} className="px-1.5 py-0.5 bg-[#0d1117] border border-border rounded text-xs text-muted">{r}</span>
-                ))}
-                {entry.repos.length > 3 && <span className="text-xs text-muted">+{entry.repos.length - 3}</span>}
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-semibold text-accent text-xs">{entry.date}</span>
+                <span className="text-xs text-muted">{entry.repos.length} repos</span>
                 {entry.langs.length > 0 && (
-                  <span className="text-xs text-muted ml-1">{entry.langs.slice(0, 2).join(' · ')}</span>
+                  <span className="text-xs text-muted">{entry.langs.slice(0, 2).join(' · ')}</span>
                 )}
               </div>
               {entry.content && (
-                <div className="text-xs text-muted leading-relaxed line-clamp-2">
-                  {entry.content.slice(0, 150)}
+                <div className="text-xs text-[#8b949e] leading-relaxed line-clamp-2">
+                  {getSnippet(entry.content, query)}
                 </div>
               )}
             </button>
