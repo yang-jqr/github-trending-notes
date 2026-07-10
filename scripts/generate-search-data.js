@@ -137,11 +137,22 @@ const outputDocs = docs.map(d => ({
     .map(([t, c]) => [termIdx[t], c]),
 }));
 
-// ─── Embeddings (ponytail: try-catch, falls back to TF-IDF only) ──
+// ─── Embeddings (ponytail: try-catch + timeout, falls back to TF-IDF only) ──
 async function generateEmbeddings() {
   try {
+    // ponytail: 120s timeout — Vercel free tier has limited build time
+    const withTimeout = (promise, ms) => {
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Embedding generation timed out')), ms)),
+      ]);
+    };
+
     const { pipeline } = await import('@xenova/transformers');
-    const extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+    const extractor = await withTimeout(
+      pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2'),
+      120000,
+    );
     console.log('Embedding model loaded, generating vectors...');
 
     // Embed documents
