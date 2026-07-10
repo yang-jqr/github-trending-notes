@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-10]]
 - [[trending-2026-07-09]]
 - [[trending-2026-07-07]]
 - [[trending-2026-07-06]]
@@ -44,7 +45,7 @@
 | mvanhorn/last30days-skill | 8 | 07-09 |
 | obra/superpowers | 8 | 07-09 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 6 | 07-09 |
+| addyosmani/agent-skills | 7 | 07-10 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -86,7 +87,7 @@
 | NVIDIA/SkillSpector | 2 | 06-16 |
 | jwasham/coding-interview-university | 2 | 06-16 |
 | topoteretes/cognee | 3 | 06-28 |
-| asgeirtj/system_prompts_leaks | 5 | 07-09 |
+| asgeirtj/system_prompts_leaks | 6 | 07-10 |
 | koala73/worldmonitor | 3 | 06-24 |
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
@@ -214,25 +215,32 @@
 | OthmanAdi/planning-with-files | 1 | 07-06 |
 | steipete/CodexBar | 2 | 07-07 |
 | alibaba/zvec | 3 | 07-09 |
-| bradautomates/claude-video | 2 | 07-09 |
+| bradautomates/claude-video | 3 | 07-10 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
 | TencentCloud/TencentDB-Agent-Memory | 1 | 07-09 |
-| prisma/prisma | 1 | 07-09 |
+| prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
-| iOfficeAI/OfficeCLI | 1 | 07-09 |
+| iOfficeAI/OfficeCLI | 2 | 07-10 |
 | Diolinux/PhotoGIMP | 1 | 07-09 |
-| wonderwhy-er/DesktopCommanderMCP | 1 | 07-09 |
-| huxingyi/autoremesher | 1 | 07-09 |
-| MadsLorentzen/ai-job-search | 1 | 07-09 |
+| wonderwhy-er/DesktopCommanderMCP | 2 | 07-10 |
+| huxingyi/autoremesher | 2 | 07-10 |
+| MadsLorentzen/ai-job-search | 2 | 07-10 |
+| VoltAgent/awesome-design-md | 1 | 07-10 |
+| vxcontrol/pentagi | 1 | 07-10 |
+| unclecode/crawl4ai | 1 | 07-10 |
+| SmartlyDressedGames/U3-SDK | 1 | 07-10 |
+| kyutai-labs/pocket-tts | 1 | 07-10 |
+| anthropics/claude-cookbooks | 1 | 07-10 |
+| imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
-- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）
@@ -246,7 +254,7 @@
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
 - #前端 — CopilotKit, svelte, ai-website-cloner-template
-- #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler
+- #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler, crawl4ai
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
 - #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）
