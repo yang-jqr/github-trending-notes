@@ -54,7 +54,7 @@ if (!fs.existsSync(contentDir)) {
   process.exit(0);
 }
 
-const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
+const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md') && !f.includes('MOC'));
 
 // Pass 1: collect all docs + global document frequency
 const docs = [];

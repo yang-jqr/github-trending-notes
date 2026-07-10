@@ -119,6 +119,14 @@ function getSnippet(content: string, query: string, maxLen = 120): string {
   return snippet;
 }
 
+function highlightSnippet(snippet: string, query: string): string {
+  const words = query.split(/\s+/).filter(Boolean);
+  if (words.length === 0) return snippet;
+  const escaped = words.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const re = new RegExp(`(${escaped.join('|')})`, 'gi');
+  return snippet.replace(re, '<mark class="bg-yellow-500/30 text-[#f0f6fc] rounded px-0.5">$1</mark>');
+}
+
 // ─── Component ──────────────────────────────────────────────────
 // ponytail: embedding vector dim from build-time model (384 for all-MiniLM-L6-v2)
 const EMBEDDING_DIM = 384;
@@ -230,9 +238,9 @@ export default function Search() {
     }
     const final = deduped.slice(0, 10);
     setResults(final);
-    setOpen(final.length > 0);
+    setOpen(query.trim().length > 0);
     setSelected(0);
-  }, [query, index]);
+  }, [query, index, termMap]);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -245,15 +253,21 @@ export default function Search() {
   }, []);
 
   const handleKey = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      if (open) { setOpen(false); return; }
+      setQuery('');
+      return;
+    }
     if (!open) return;
     if (e.key === 'ArrowDown') { e.preventDefault(); setSelected(s => Math.min(s + 1, results.length - 1)); }
     if (e.key === 'ArrowUp') { e.preventDefault(); setSelected(s => Math.max(s - 1, 0)); }
-    if (e.key === 'Enter' && results[selected]) {
-      router.push(`/posts/${encodeURIComponent(results[selected].slug)}?q=${encodeURIComponent(query)}`);
-      setOpen(false);
-      setQuery('');
+    if (e.key === 'Enter') {
+      if (results[selected]) {
+        router.push(`/posts/${encodeURIComponent(results[selected].slug)}?q=${encodeURIComponent(query)}`);
+        setOpen(false);
+        setQuery('');
+      }
     }
-    if (e.key === 'Escape') setOpen(false);
   };
 
   return (
@@ -264,12 +278,12 @@ export default function Search() {
         value={query}
         onChange={e => setQuery(e.target.value)}
         onKeyDown={handleKey}
-        onFocus={() => { if (results.length > 0) setOpen(true); }}
+        onFocus={() => { if (query.trim()) setOpen(true); }}
         className="w-full px-3 py-1.5 text-sm bg-[#0d1117] border border-border rounded-md text-[#c9d1d9] placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
       />
       {open && (
         <div className="absolute top-full mt-1 left-0 right-0 bg-surface border border-border rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-          {results.map((entry, i) => (
+          {results.length > 0 ? results.map((entry, i) => (
             <button
               key={entry.slug}
               onClick={() => {
@@ -289,12 +303,15 @@ export default function Search() {
                 )}
               </div>
               {entry.content && (
-                <div className="text-xs text-[#8b949e] leading-relaxed line-clamp-2">
-                  {getSnippet(entry.content, query)}
-                </div>
+                <div
+                  className="text-xs text-[#8b949e] leading-relaxed line-clamp-2"
+                  dangerouslySetInnerHTML={{ __html: highlightSnippet(getSnippet(entry.content, query), query) }}
+                />
               )}
             </button>
-          ))}
+          )) : (
+            <div className="px-3 py-4 text-sm text-muted text-center">未找到匹配结果</div>
+          )}
         </div>
       )}
     </div>
