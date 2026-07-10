@@ -210,14 +210,22 @@ export default function Search() {
       .slice(0, 10)
       .map(s => s.doc);
 
-    // ── Dedup by repo: keep first-occurring doc per repo ──
+    // ── Dedup by repo (slug fallback when repos empty) ──
     const seenRepos = new Set<string>();
     const deduped: SearchDoc[] = [];
     for (const doc of scored) {
-      const fresh = doc.repos.filter(r => !seenRepos.has(r.toLowerCase()));
-      if (fresh.length > 0) {
-        deduped.push(doc);
-        fresh.forEach(r => seenRepos.add(r.toLowerCase()));
+      if (doc.repos.length > 0) {
+        const fresh = doc.repos.filter(r => !seenRepos.has(r.toLowerCase()));
+        if (fresh.length > 0) {
+          deduped.push(doc);
+          fresh.forEach(r => seenRepos.add(r.toLowerCase()));
+        }
+      } else {
+        // ponytail: no repos extracted → fallback to slug dedup (always unique)
+        if (!seenRepos.has(doc.slug)) {
+          deduped.push(doc);
+          seenRepos.add(doc.slug);
+        }
       }
     }
     const final = deduped.slice(0, 10);

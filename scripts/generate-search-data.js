@@ -74,6 +74,8 @@ for (const file of files) {
   for (const line of raw.split('\n')) {
     let rm = line.match(/^## \d+\. (.+)/);
     if (!rm) rm = line.match(/^\*\*\d+\. (.+?)\*\*/);
+    if (!rm) rm = line.match(/^\*\*#\d+ (.+?)\*\*/);
+    if (!rm) rm = line.match(/^\*\*#\d+\s+(.+?)\*\*/);
     if (rm) {
       const name = rm[1].trim().replace(/\s*⭐.*$/, '').trim();
       if (name && name.length > 2) repos.push(name);
