@@ -32,6 +32,8 @@ function stripMarkdown(raw) {
     .replace(/`{1,3}[^`]*`{1,3}/g, '')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/!\[([^\]]*)\]\([^)]+\)/g, '')
+    .replace(/\[\[([^\]]+)\]\]/g, '$1')       // wiki links: [[slug]] → slug
+    .replace(/[<>]{2}/g, '')                  // navigation arrows: << >>
     .replace(/\n{2,}/g, '\n')
     .replace(/\n/g, ' ')
     .replace(/\s{2,}/g, ' ')
