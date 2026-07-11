@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-11]]
 - [[trending-2026-07-10]]
 - [[trending-2026-07-09]]
 - [[trending-2026-07-07]]
@@ -43,9 +44,9 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 8 | 07-09 |
-| obra/superpowers | 8 | 07-09 |
+| obra/superpowers | 9 | 07-11 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 7 | 07-10 |
+| addyosmani/agent-skills | 8 | 07-11 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -55,7 +56,7 @@
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 4 | 06-23 |
 | DeusData/codebase-memory-mcp | 6 | 07-01 |
-| mattpocock/skills | 5 | 06-30 |
+| mattpocock/skills | 6 | 07-11 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -218,12 +219,12 @@
 | bradautomates/claude-video | 3 | 07-10 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-| TencentCloud/TencentDB-Agent-Memory | 1 | 07-09 |
+| TencentCloud/TencentDB-Agent-Memory | 2 | 07-11 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
-| iOfficeAI/OfficeCLI | 2 | 07-10 |
+| iOfficeAI/OfficeCLI | 3 | 07-11 |
 | Diolinux/PhotoGIMP | 1 | 07-09 |
-| wonderwhy-er/DesktopCommanderMCP | 2 | 07-10 |
+| wonderwhy-er/DesktopCommanderMCP | 3 | 07-11 |
 | huxingyi/autoremesher | 2 | 07-10 |
 | MadsLorentzen/ai-job-search | 2 | 07-10 |
 | VoltAgent/awesome-design-md | 1 | 07-10 |
@@ -233,10 +234,23 @@
 | kyutai-labs/pocket-tts | 1 | 07-10 |
 | anthropics/claude-cookbooks | 1 | 07-10 |
 | imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
+| oven-sh/bun | 1 | 07-11 |
+| microsoft/TypeScript | 1 | 07-11 |
+| vercel/next.js | 1 | 07-11 |
+| hashicorp/terraform | 1 | 07-11 |
+| tailscale/tailscale | 1 | 07-11 |
+| grpc/grpc | 1 | 07-11 |
+| catchorg/Catch2 | 1 | 07-11 |
+| davila7/claude-code-templates | 1 | 07-11 |
+| google-labs-code/stitch-skills | 1 | 07-11 |
+| abseil/abseil-cpp | 1 | 07-11 |
+| jbeder/yaml-cpp | 1 | 07-11 |
+| zeux/meshoptimizer | 1 | 07-11 |
+| chriskohlhoff/asio | 1 | 07-11 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
@@ -249,7 +263,7 @@
 - #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
-- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库）
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
