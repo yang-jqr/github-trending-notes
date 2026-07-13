@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-13]]
 - [[trending-2026-07-11]]
 - [[trending-2026-07-10]]
 - [[trending-2026-07-09]]
@@ -61,10 +62,6 @@
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
 | apple/container | 5 | 06-26 |
-| [[仓库/microsoft_markitdown]] | 3 | 06-04 |
-| [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
-| [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
-| [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 3 | 06-18 |
@@ -132,7 +129,7 @@
 | luongnv89/claude-howto | 2 | 07-01 |
 | anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
-| HKUDS/Vibe-Trading | 4 | 07-03 |
+| HKUDS/Vibe-Trading | 5 | 07-13 |
 | vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
@@ -224,7 +221,7 @@
 | argoproj/argo-cd | 1 | 07-09 |
 | iOfficeAI/OfficeCLI | 3 | 07-11 |
 | Diolinux/PhotoGIMP | 1 | 07-09 |
-| wonderwhy-er/DesktopCommanderMCP | 3 | 07-11 |
+| wonderwhy-er/DesktopCommanderMCP | 4 | 07-13 |
 | huxingyi/autoremesher | 2 | 07-10 |
 | MadsLorentzen/ai-job-search | 2 | 07-10 |
 | VoltAgent/awesome-design-md | 1 | 07-10 |
@@ -232,7 +229,7 @@
 | unclecode/crawl4ai | 1 | 07-10 |
 | SmartlyDressedGames/U3-SDK | 1 | 07-10 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
-| anthropics/claude-cookbooks | 1 | 07-10 |
+| anthropics/claude-cookbooks | 2 | 07-13 |
 | imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
 | oven-sh/bun | 1 | 07-11 |
 | microsoft/TypeScript | 1 | 07-11 |
@@ -241,20 +238,33 @@
 | tailscale/tailscale | 1 | 07-11 |
 | grpc/grpc | 1 | 07-11 |
 | catchorg/Catch2 | 1 | 07-11 |
-| davila7/claude-code-templates | 1 | 07-11 |
+| davila7/claude-code-templates | 2 | 07-13 |
 | google-labs-code/stitch-skills | 1 | 07-11 |
 | abseil/abseil-cpp | 1 | 07-11 |
 | jbeder/yaml-cpp | 1 | 07-11 |
 | zeux/meshoptimizer | 1 | 07-11 |
 | chriskohlhoff/asio | 1 | 07-11 |
+| Dicklesworthstone/destructive_command_guard | 1 | 07-13 |
+| Shubhamsaboo/awesome-llm-apps | 1 | 07-13 |
+| home-assistant/core | 1 | 07-13 |
+| Crosstalk-Solutions/project-nomad | 2 | 07-13 |
+| ColeMurray/background-agents | 1 | 07-13 |
+| k1tbyte/Wand-Enhancer | 1 | 07-13 |
+| pingdotgg/t3code | 1 | 07-13 |
+| virattt/ai-hedge-fund | 1 | 07-13 |
+| chen08209/FlClash | 1 | 07-13 |
+| par274/sharpemu | 1 | 07-13 |
+| malisper/pgrust | 1 | 07-13 |
+| Nutlope/hallmark | 1 | 07-13 |
+| PrefectHQ/prefect | 1 | 07-13 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
-- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
-- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）
@@ -271,11 +281,13 @@
 - #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler, crawl4ai
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
-- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）
-- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）
+- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）, ai-hedge-fund（AI对冲基金）, Vibe-Trading（AI交易Agent）
+- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
 - #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）
 - #可观测性 — grafana（可视化监控平台）
 - #开发者资源 — free-for-dev（免费层资源清单）
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
+- #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）
+- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）
