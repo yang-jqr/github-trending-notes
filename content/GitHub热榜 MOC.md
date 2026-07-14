@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-14]]
 - [[trending-2026-07-13]]
 - [[trending-2026-07-11]]
 - [[trending-2026-07-10]]
@@ -62,6 +63,10 @@
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
 | apple/container | 5 | 06-26 |
+| [[仓库/microsoft_markitdown]] | 3 | 06-04 |
+| [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
+| [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
+| [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 3 | 06-18 |
@@ -129,7 +134,7 @@
 | luongnv89/claude-howto | 2 | 07-01 |
 | anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
-| HKUDS/Vibe-Trading | 5 | 07-13 |
+| HKUDS/Vibe-Trading | 6 | 07-14 |
 | vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
@@ -181,7 +186,7 @@
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 | usestrix/strix | 4 | 07-06 |
 | msitarzewski/agency-agents | 3 | 07-04 |
-| hasaneyldrm/exercises-dataset | 2 | 07-03 |
+| hasaneyldrm/exercises-dataset | 3 | 07-14 |
 | browser-use/video-use | 2 | 07-03 |
 | JuliusBrussee/caveman | 3 | 07-06 |
 | santifer/career-ops | 1 | 07-03 |
@@ -204,7 +209,7 @@
 | Zackriya-Solutions/meetily | 2 | 07-07 |
 | alirezarezvani/claude-skills | 2 | 07-07 |
 | hesreallyhim/awesome-claude-code | 1 | 07-06 |
-| coreyhaines31/marketingskills | 1 | 07-06 |
+| coreyhaines31/marketingskills | 2 | 07-14 |
 | CoplayDev/unity-mcp | 1 | 07-06 |
 | immich-app/immich | 1 | 07-06 |
 | ruvnet/RuView | 3 | 07-09 |
@@ -245,7 +250,7 @@
 | zeux/meshoptimizer | 1 | 07-11 |
 | chriskohlhoff/asio | 1 | 07-11 |
 | Dicklesworthstone/destructive_command_guard | 1 | 07-13 |
-| Shubhamsaboo/awesome-llm-apps | 1 | 07-13 |
+| Shubhamsaboo/awesome-llm-apps | 2 | 07-14 |
 | home-assistant/core | 1 | 07-13 |
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
@@ -255,8 +260,17 @@
 | chen08209/FlClash | 1 | 07-13 |
 | par274/sharpemu | 1 | 07-13 |
 | malisper/pgrust | 1 | 07-13 |
-| Nutlope/hallmark | 1 | 07-13 |
+| Nutlope/hallmark | 2 | 07-14 |
 | PrefectHQ/prefect | 1 | 07-13 |
+| Raphire/Win11Debloat | 2 | 07-14 |
+| github/spec-kit | 2 | 07-14 |
+| OpenCut-app/OpenCut | 1 | 07-14 |
+| moeru-ai/airi | 1 | 07-14 |
+| Graphify-Labs/graphify | 1 | 07-14 |
+| vlang/v | 8 | 07-14 |
+| milvus-io/milvus | 21 | 07-14 |
+| BabylonJS/Babylon.js | 21 | 07-14 |
+| vuejs/core | 21 | 07-14 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
