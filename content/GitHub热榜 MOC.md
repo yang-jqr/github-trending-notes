@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-15]]
 - [[trending-2026-07-14]]
 - [[trending-2026-07-13]]
 - [[trending-2026-07-11]]
@@ -46,9 +47,9 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 8 | 07-09 |
-| obra/superpowers | 9 | 07-11 |
+|| obra/superpowers | 9 | 07-11 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 8 | 07-11 |
+|| addyosmani/agent-skills | 8 | 07-11 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -56,9 +57,9 @@
 | OpenBMB/VoxCPM | 4 | 06-17 |
 | Panniantong/Agent-Reach | 6 | 07-01 |
 | calesthio/OpenMontage | 9 | 07-01 |
-| penpot/penpot | 4 | 06-23 |
+| penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 6 | 07-01 |
-| mattpocock/skills | 6 | 07-11 |
+|| mattpocock/skills | 7 | 07-15 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -134,7 +135,7 @@
 | luongnv89/claude-howto | 2 | 07-01 |
 | anomalyco/opencode | 2 | 06-30 |
 | Fission-AI/OpenSpec | 1 | 06-28 |
-| HKUDS/Vibe-Trading | 6 | 07-14 |
+| HKUDS/Vibe-Trading | 7 | 07-15 |
 | vinta/awesome-python | 2 | 06-30 |
 | veracrypt/VeraCrypt | 1 | 06-29 |
 | rustdesk/rustdesk | 1 | 06-29 |
@@ -186,7 +187,7 @@
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 | usestrix/strix | 4 | 07-06 |
 | msitarzewski/agency-agents | 3 | 07-04 |
-| hasaneyldrm/exercises-dataset | 3 | 07-14 |
+| hasaneyldrm/exercises-dataset | 4 | 07-15 |
 | browser-use/video-use | 2 | 07-03 |
 | JuliusBrussee/caveman | 3 | 07-06 |
 | santifer/career-ops | 1 | 07-03 |
@@ -221,12 +222,12 @@
 | bradautomates/claude-video | 3 | 07-10 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-| TencentCloud/TencentDB-Agent-Memory | 2 | 07-11 |
+|| TencentCloud/TencentDB-Agent-Memory | 2 | 07-11 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
-| iOfficeAI/OfficeCLI | 3 | 07-11 |
+|| iOfficeAI/OfficeCLI | 3 | 07-11 |
 | Diolinux/PhotoGIMP | 1 | 07-09 |
-| wonderwhy-er/DesktopCommanderMCP | 4 | 07-13 |
+|| wonderwhy-er/DesktopCommanderMCP | 4 | 07-13 |
 | huxingyi/autoremesher | 2 | 07-10 |
 | MadsLorentzen/ai-job-search | 2 | 07-10 |
 | VoltAgent/awesome-design-md | 1 | 07-10 |
@@ -235,42 +236,45 @@
 | SmartlyDressedGames/U3-SDK | 1 | 07-10 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
 | anthropics/claude-cookbooks | 2 | 07-13 |
-| imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
-| oven-sh/bun | 1 | 07-11 |
-| microsoft/TypeScript | 1 | 07-11 |
-| vercel/next.js | 1 | 07-11 |
-| hashicorp/terraform | 1 | 07-11 |
-| tailscale/tailscale | 1 | 07-11 |
-| grpc/grpc | 1 | 07-11 |
-| catchorg/Catch2 | 1 | 07-11 |
-| davila7/claude-code-templates | 2 | 07-13 |
-| google-labs-code/stitch-skills | 1 | 07-11 |
-| abseil/abseil-cpp | 1 | 07-11 |
-| jbeder/yaml-cpp | 1 | 07-11 |
-| zeux/meshoptimizer | 1 | 07-11 |
-| chriskohlhoff/asio | 1 | 07-11 |
-| Dicklesworthstone/destructive_command_guard | 1 | 07-13 |
-| Shubhamsaboo/awesome-llm-apps | 2 | 07-14 |
+|| imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
+|| oven-sh/bun | 1 | 07-11 |
+|| microsoft/TypeScript | 1 | 07-11 |
+|| vercel/next.js | 1 | 07-11 |
+|| hashicorp/terraform | 1 | 07-11 |
+|| tailscale/tailscale | 1 | 07-11 |
+|| grpc/grpc | 1 | 07-11 |
+|| catchorg/Catch2 | 1 | 07-11 |
+|| davila7/claude-code-templates | 2 | 07-13 |
+|| google-labs-code/stitch-skills | 1 | 07-11 |
+|| abseil/abseil-cpp | 1 | 07-11 |
+|| jbeder/yaml-cpp | 1 | 07-11 |
+|| zeux/meshoptimizer | 1 | 07-11 |
+|| chriskohlhoff/asio | 1 | 07-11 |
+| Dicklesworthstone/destructive_command_guard | 2 | 07-15 |
+| Shubhamsaboo/awesome-llm-apps | 3 | 07-15 |
 | home-assistant/core | 1 | 07-13 |
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
 | k1tbyte/Wand-Enhancer | 1 | 07-13 |
 | pingdotgg/t3code | 1 | 07-13 |
-| virattt/ai-hedge-fund | 1 | 07-13 |
+| virattt/ai-hedge-fund | 2 | 07-15 |
 | chen08209/FlClash | 1 | 07-13 |
-| par274/sharpemu | 1 | 07-13 |
+| par274/sharpemu | 2 | 07-15 |
 | malisper/pgrust | 1 | 07-13 |
-| Nutlope/hallmark | 2 | 07-14 |
+| Nutlope/hallmark | 3 | 07-15 |
 | PrefectHQ/prefect | 1 | 07-13 |
-| Raphire/Win11Debloat | 2 | 07-14 |
+| Raphire/Win11Debloat | 3 | 07-15 |
 | github/spec-kit | 2 | 07-14 |
-| OpenCut-app/OpenCut | 1 | 07-14 |
+| OpenCut-app/OpenCut | 2 | 07-15 |
 | moeru-ai/airi | 1 | 07-14 |
-| Graphify-Labs/graphify | 1 | 07-14 |
+| Graphify-Labs/graphify | 2 | 07-15 |
 | vlang/v | 8 | 07-14 |
 | milvus-io/milvus | 21 | 07-14 |
 | BabylonJS/Babylon.js | 21 | 07-14 |
 | vuejs/core | 21 | 07-14 |
+| AIEraDev/Clypra | 1 | 07-15 |
+| chenyme/grok2api | 1 | 07-15 |
+| HenryNdubuaku/maths-cs-ai-compendium | 1 | 07-15 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
