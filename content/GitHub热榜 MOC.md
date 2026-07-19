@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-19]]
 - [[trending-2026-07-17]]
 - [[trending-2026-07-16]]
 - [[trending-2026-07-15]]
@@ -106,7 +107,7 @@
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 2 | 07-07 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
-| lyogavin/airllm | 1 | 06-23 |
+| lyogavin/airllm | 2 | 07-19 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
@@ -183,7 +184,7 @@
 | rtk-ai/rtk | 1 | 07-01 |
 | EverMind-AI/EverOS | 1 | 07-01 |
 | tinyhumansai/openhuman | 1 | 07-01 |
-| Robbyant/lingbot-map | 1 | 07-01 |
+| Robbyant/lingbot-map | 2 | 07-19 |
 | altic-dev/FluidVoice | 2 | 07-02 |
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
@@ -281,12 +282,12 @@
 | HKUDS/DeepTutor | 2 | 07-17 |
 | injaneity/pi-computer-use | 1 | 07-16 |
 | YimMenu/YimMenuV2 | 2 | 07-17 |
-| apache/ossie | 1 | 07-17 |
-| PostHog/posthog | 1 | 07-17 |
+| apache/ossie | 2 | 07-19 |
+| PostHog/posthog | 2 | 07-19 |
 | PrismML-Eng/Bonsai-demo | 1 | 07-17 |
 | lobehub/lobehub | 1 | 07-17 |
-| ibelick/ui-skills | 1 | 07-17 |
-| codecrafters-io/build-your-own-x | 1 | 07-17 |
+| ibelick/ui-skills | 2 | 07-19 |
+| codecrafters-io/build-your-own-x | 2 | 07-19 |
 | ossu/computer-science | 1 | 07-17 |
 | github/copilot-sdk | 2 | 07-17 |
 
