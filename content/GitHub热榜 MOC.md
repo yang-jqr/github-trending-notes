@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-20]]
 - [[trending-2026-07-19]]
 - [[trending-2026-07-17]]
 - [[trending-2026-07-16]]
@@ -67,10 +68,6 @@
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
 | apple/container | 5 | 06-26 |
-| [[仓库/microsoft_markitdown]] | 3 | 06-04 |
-| [[仓库/D4Vinci_Scrapling]] | 3 | 06-04 |
-| [[仓库/supermemoryai_supermemory]] | 3 | 06-04 |
-| [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 3 | 06-18 |
@@ -101,13 +98,13 @@
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
 | andrewyng/aisuite | 1 | 06-14 |
-| jamiepine/voicebox | 3 | 07-01 |
+| jamiepine/voicebox | 4 | 07-20 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 2 | 07-07 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
-| lyogavin/airllm | 2 | 07-19 |
+| lyogavin/airllm | 3 | 07-20 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
@@ -115,7 +112,7 @@
 | andreknieriem/headunit-revived | 1 | 06-25 |
 | stablyai/orca | 1 | 06-25 |
 | google-labs-code/design.md | 4 | 06-28 |
-| Flowseal/zapret-discord-youtube | 1 | 06-25 |
+| Flowseal/zapret-discord-youtube | 2 | 07-20 |
 | kunchenguid/no-mistakes | 2 | 06-27 |
 | Free-TV/IPTV | 2 | 06-26 |
 | mauriceboe/TREK | 2 | 06-27 |
@@ -283,18 +280,27 @@
 | injaneity/pi-computer-use | 1 | 07-16 |
 | YimMenu/YimMenuV2 | 2 | 07-17 |
 | apache/ossie | 2 | 07-19 |
-| PostHog/posthog | 2 | 07-19 |
+| PostHog/posthog | 3 | 07-20 |
 | PrismML-Eng/Bonsai-demo | 1 | 07-17 |
 | lobehub/lobehub | 1 | 07-17 |
 | ibelick/ui-skills | 2 | 07-19 |
-| codecrafters-io/build-your-own-x | 2 | 07-19 |
+| codecrafters-io/build-your-own-x | 3 | 07-20 |
 | ossu/computer-science | 1 | 07-17 |
-| github/copilot-sdk | 2 | 07-17 |
-| rohitg00/ai-engineering-from-scratch | 2 | 07-19 |
-| tirth8205/code-review-graph | 1 | 07-19 |
+| github/copilot-sdk | 3 | 07-20 |
+| rohitg00/ai-engineering-from-scratch | 3 | 07-20 |
+| tirth8205/code-review-graph | 2 | 07-20 |
 | elder-plinius/G0DM0D3 | 1 | 07-19 |
-| KnockOutEZ/wigolo | 1 | 07-19 |
-| MoonshotAI/kimi-cli | 1 | 07-19 |
+| KnockOutEZ/wigolo | 2 | 07-20 |
+| MoonshotAI/kimi-cli | 2 | 07-20 |
+| trycua/cua | 2 | 07-20 |
+| bojieli/ai-agent-book | 1 | 07-20 |
+| kvcache-ai/ktransformers | 1 | 07-20 |
+| 1jehuang/jcode | 1 | 07-20 |
+| PKUFlyingPig/cs-self-learning | 1 | 07-20 |
+| Canner/WrenAI | 1 | 07-20 |
+| microsoft/terminal | 1 | 07-20 |
+| andrewrabert/jellium-desktop | 1 | 07-20 |
+| AstrBotDevs/AstrBot | 1 | 07-20 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
