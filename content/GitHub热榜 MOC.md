@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-23]]
 - [[trending-2026-07-22]]
 - [[trending-2026-07-21]]
 - [[trending-2026-07-20]]
@@ -98,13 +99,13 @@
 | jwasham/coding-interview-university | 2 | 06-16 |
 | topoteretes/cognee | 3 | 06-28 |
 | asgeirtj/system_prompts_leaks | 6 | 07-10 |
-| koala73/worldmonitor | 4 | 07-22 |
+| koala73/worldmonitor | 5 | 07-23 |
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
 | andrewyng/aisuite | 1 | 06-14 |
-| jamiepine/voicebox | 4 | 07-20 |
+| jamiepine/voicebox | 5 | 07-23 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
 | heygen-com/hyperframes | 1 | 06-23 |
@@ -151,7 +152,7 @@
 | Project-MONAI/MONAI | 1 | 06-29 |
 | pydantic/pydantic | 1 | 06-29 |
 | supabase/cli | 1 | 06-29 |
-| DioxusLabs/dioxus | 2 | 07-22 |
+| DioxusLabs/dioxus | 3 | 07-23 |
 | tokio-rs/tokio | 1 | 06-29 |
 | termux/termux-packages | 1 | 06-29 |
 | dlt-hub/dlt | 1 | 06-29 |
@@ -219,7 +220,7 @@
 | coreyhaines31/marketingskills | 4 | 07-21 |
 | CoplayDev/unity-mcp | 1 | 07-06 |
 | immich-app/immich | 1 | 07-06 |
-| ruvnet/RuView | 3 | 07-09 |
+| ruvnet/RuView | 4 | 07-23 |
 | gastownhall/gastown | 2 | 07-07 |
 | dotnet/skills | 1 | 07-06 |
 | OthmanAdi/planning-with-files | 1 | 07-06 |
@@ -293,8 +294,8 @@
 | codecrafters-io/build-your-own-x | 3 | 07-20 |
 | ossu/computer-science | 1 | 07-17 |
 | github/copilot-sdk | 3 | 07-20 |
-| rohitg00/ai-engineering-from-scratch | 4 | 07-21 |
-| tirth8205/code-review-graph | 3 | 07-22 |
+| rohitg00/ai-engineering-from-scratch | 5 | 07-23 |
+| tirth8205/code-review-graph | 4 | 07-23 |
 | elder-plinius/G0DM0D3 | 1 | 07-19 |
 | KnockOutEZ/wigolo | 3 | 07-22 |
 | MoonshotAI/kimi-cli | 2 | 07-20 |
@@ -307,19 +308,24 @@
 | microsoft/terminal | 1 | 07-20 |
 | andrewrabert/jellium-desktop | 1 | 07-20 |
 | AstrBotDevs/AstrBot | 2 | 07-22 |
-| agegr/pi-web | 1 | 07-22 |
+| agegr/pi-web | 2 | 07-23 |
 | AlexsJones/llmfit | 1 | 07-22 |
-| ayghri/i-have-adhd | 1 | 07-22 |
-| chrislgarry/Apollo-11 | 1 | 07-22 |
-| diegosouzapw/OmniRoute | 3 | 07-22 |
-| dottxt-ai/outlines | 1 | 07-22 |
+| ayghri/i-have-adhd | 2 | 07-23 |
+| chrislgarry/Apollo-11 | 2 | 07-23 |
+| diegosouzapw/OmniRoute | 4 | 07-23 |
+| dottxt-ai/outlines | 2 | 07-23 |
 | earthtojake/text-to-cad | 1 | 07-22 |
-| hyprwm/Hyprland | 1 | 07-22 |
+| hyprwm/Hyprland | 2 | 07-23 |
 | langchain-ai/open_deep_research | 1 | 07-22 |
 | microsoft/Ontology-Playground | 1 | 07-22 |
-| oblien/openship | 1 | 07-22 |
-| schollz/croc | 1 | 07-22 |
+| oblien/openship | 2 | 07-23 |
+| schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
+| shiyu-coder/Kronos | 2 | 07-23 |
+| likec4/likec4 | 1 | 07-23 |
+| ComposioHQ/awesome-claude-skills | 1 | 07-23 |
+| dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
+| Pumpkin-MC/Pumpkin | 1 | 07-23 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
