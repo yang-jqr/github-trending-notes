@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-25]]
 - [[trending-2026-07-24]]
 - [[trending-2026-07-23]]
 - [[trending-2026-07-22]]
@@ -67,7 +68,7 @@
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 6 | 07-01 |
-|| mattpocock/skills | 9 | 07-17 |
+|| mattpocock/skills | 10 | 07-25 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -100,7 +101,7 @@
 | jwasham/coding-interview-university | 2 | 06-16 |
 | topoteretes/cognee | 3 | 06-28 |
 | asgeirtj/system_prompts_leaks | 6 | 07-10 |
-| koala73/worldmonitor | 6 | 07-24 |
+| koala73/worldmonitor | 7 | 07-25 |
 | smicallef/spiderfoot | 2 | 06-22 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
@@ -221,8 +222,8 @@
 | coreyhaines31/marketingskills | 4 | 07-21 |
 | CoplayDev/unity-mcp | 1 | 07-06 |
 | immich-app/immich | 1 | 07-06 |
-| ruvnet/RuView | 5 | 07-24 |
-| diegosouzapw/OmniRoute | 5 | 07-24 |
+| ruvnet/RuView | 6 | 07-25 |
+| diegosouzapw/OmniRoute | 6 | 07-25 |
 | gastownhall/gastown | 2 | 07-07 |
 | dotnet/skills | 1 | 07-06 |
 | OthmanAdi/planning-with-files | 1 | 07-06 |
@@ -313,8 +314,7 @@
 | agegr/pi-web | 2 | 07-23 |
 | AlexsJones/llmfit | 1 | 07-22 |
 | ayghri/i-have-adhd | 2 | 07-23 |
-| chrislgarry/Apollo-11 | 2 | 07-23 |
-| diegosouzapw/OmniRoute | 4 | 07-23 |
+| chrislgarry/Apollo-11 | 3 | 07-25 |
 | dottxt-ai/outlines | 2 | 07-23 |
 | earthtojake/text-to-cad | 1 | 07-22 |
 | hyprwm/Hyprland | 2 | 07-23 |
@@ -323,11 +323,18 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 2 | 07-23 |
-| likec4/likec4 | 1 | 07-23 |
-| ComposioHQ/awesome-claude-skills | 1 | 07-23 |
+| shiyu-coder/Kronos | 3 | 07-25 |
+| likec4/likec4 | 2 | 07-25 |
+| ComposioHQ/awesome-claude-skills | 2 | 07-25 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
-| Pumpkin-MC/Pumpkin | 1 | 07-23 |
+| Pumpkin-MC/Pumpkin | 2 | 07-25 |
+| block/buzz | 1 | 07-25 |
+| Automattic/harper | 1 | 07-25 |
+| citrolabs/ego-lite | 1 | 07-25 |
+| yorukot/superfile | 1 | 07-25 |
+| CoreBunch/Instatic | 1 | 07-25 |
+| Lordog/dive-into-llms | 1 | 07-25 |
+| OtterMind/Chat2DB | 1 | 07-25 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
@@ -362,3 +369,7 @@
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
 - #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）
 - #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）
+- #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）
+- #LLM教程 — dive-into-llms（动手学大模型，中文实战教程）
+- #架构即代码 — likec4（C4模型+实时架构可视化）
+- #隐私AI — RuView（WiFi信号空间感知）, harper（离线语法检查）
