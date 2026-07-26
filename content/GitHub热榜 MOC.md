@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-26]]
 - [[trending-2026-07-25]]
 - [[trending-2026-07-24]]
 - [[trending-2026-07-23]]
@@ -56,7 +57,7 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 8 | 07-09 |
-|| obra/superpowers | 9 | 07-11 |
+|| obra/superpowers | 10 | 07-26 |
 | chopratejas/headroom | 5 | 06-22 |
 || addyosmani/agent-skills | 8 | 07-11 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
@@ -68,7 +69,7 @@
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 6 | 07-01 |
-|| mattpocock/skills | 10 | 07-25 |
+|| mattpocock/skills | 11 | 07-26 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -85,9 +86,9 @@
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 4 | 06-24 |
 | mukul975/Anthropic-Cybersecurity-Skills | 6 | 07-01 |
-| palmier-io/palmier-pro | 4 | 06-24 |
+| palmier-io/palmier-pro | 5 | 07-26 |
 | ZhuLinsen/daily_stock_analysis | 6 | 07-01 |
-| affaan-m/ECC | 6 | 07-03 |
+| affaan-m/ECC | 7 | 07-26 |
 | tursodatabase/turso | 3 | 06-23 |
 | soxoj/maigret | 2 | 06-12 |
 | teslamate-org/teslamate | 2 | 06-17 |
@@ -106,7 +107,7 @@
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
-| andrewyng/aisuite | 1 | 06-14 |
+| andrewyng/aisuite | 2 | 07-26 |
 | jamiepine/voicebox | 5 | 07-23 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
@@ -245,7 +246,7 @@
 | unclecode/crawl4ai | 1 | 07-10 |
 | SmartlyDressedGames/U3-SDK | 1 | 07-10 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
-| anthropics/claude-cookbooks | 2 | 07-13 |
+| anthropics/claude-cookbooks | 3 | 07-26 |
 || imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
 || oven-sh/bun | 1 | 07-11 |
 || microsoft/TypeScript | 1 | 07-11 |
@@ -323,18 +324,21 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 3 | 07-25 |
+| shiyu-coder/Kronos | 5 | 07-26 |
 | likec4/likec4 | 2 | 07-25 |
-| ComposioHQ/awesome-claude-skills | 2 | 07-25 |
+| ComposioHQ/awesome-claude-skills | 4 | 07-26 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
-| Pumpkin-MC/Pumpkin | 2 | 07-25 |
-| block/buzz | 1 | 07-25 |
-| Automattic/harper | 1 | 07-25 |
-| citrolabs/ego-lite | 1 | 07-25 |
+| Pumpkin-MC/Pumpkin | 4 | 07-26 |
+| block/buzz | 3 | 07-26 |
+| Automattic/harper | 3 | 07-26 |
+| citrolabs/ego-lite | 3 | 07-26 |
 | yorukot/superfile | 1 | 07-25 |
-| CoreBunch/Instatic | 1 | 07-25 |
-| Lordog/dive-into-llms | 1 | 07-25 |
-| OtterMind/Chat2DB | 1 | 07-25 |
+| CoreBunch/Instatic | 3 | 07-26 |
+| Lordog/dive-into-llms | 2 | 07-26 |
+| OtterMind/Chat2DB | 2 | 07-26 |
+| alibaba/open-code-review | 3 | 07-26 |
+| RyanCodrai/turbovec | 4 | 07-26 |
+| permissionlesstech/bitchat | 1 | 07-26 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
