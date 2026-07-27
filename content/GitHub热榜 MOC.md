@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-27]]
 - [[trending-2026-07-26]]
 - [[trending-2026-07-25]]
 - [[trending-2026-07-24]]
@@ -107,7 +108,7 @@
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
-| andrewyng/aisuite | 2 | 07-26 |
+| andrewyng/aisuite | 3 | 07-27 |
 | jamiepine/voicebox | 5 | 07-23 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
@@ -186,7 +187,7 @@
 | tashfeenahmed/freellmapi | 1 | 07-01 |
 | Yu9191/wloc | 1 | 07-01 |
 | vercel-labs/deepsec | 1 | 07-01 |
-| pbakaus/impeccable | 1 | 07-01 |
+| pbakaus/impeccable | 3 | 07-27 |
 | Unclecheng-li/VulnClaw | 2 | 07-02 |
 | rtk-ai/rtk | 1 | 07-01 |
 | EverMind-AI/EverOS | 1 | 07-01 |
@@ -246,7 +247,7 @@
 | unclecode/crawl4ai | 1 | 07-10 |
 | SmartlyDressedGames/U3-SDK | 1 | 07-10 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
-| anthropics/claude-cookbooks | 3 | 07-26 |
+| anthropics/claude-cookbooks | 4 | 07-27 |
 || imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
 || oven-sh/bun | 1 | 07-11 |
 || microsoft/TypeScript | 1 | 07-11 |
@@ -267,7 +268,7 @@
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
 | k1tbyte/Wand-Enhancer | 1 | 07-13 |
-| pingdotgg/t3code | 1 | 07-13 |
+| pingdotgg/t3code | 2 | 07-27 |
 | virattt/ai-hedge-fund | 2 | 07-15 |
 | chen08209/FlClash | 1 | 07-13 |
 | par274/sharpemu | 2 | 07-15 |
@@ -324,21 +325,25 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 5 | 07-26 |
+| shiyu-coder/Kronos | 6 | 07-27 |
 | likec4/likec4 | 2 | 07-25 |
 | ComposioHQ/awesome-claude-skills | 4 | 07-26 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
-| Pumpkin-MC/Pumpkin | 4 | 07-26 |
-| block/buzz | 3 | 07-26 |
+| Pumpkin-MC/Pumpkin | 5 | 07-27 |
+| block/buzz | 4 | 07-27 |
 | Automattic/harper | 3 | 07-26 |
-| citrolabs/ego-lite | 3 | 07-26 |
-| yorukot/superfile | 1 | 07-25 |
-| CoreBunch/Instatic | 3 | 07-26 |
+| citrolabs/ego-lite | 4 | 07-27 |
+| yorukot/superfile | 2 | 07-27 |
+| CoreBunch/Instatic | 4 | 07-27 |
 | Lordog/dive-into-llms | 2 | 07-26 |
-| OtterMind/Chat2DB | 2 | 07-26 |
-| alibaba/open-code-review | 3 | 07-26 |
+| OtterMind/Chat2DB | 3 | 07-27 |
+| alibaba/open-code-review | 4 | 07-27 |
 | RyanCodrai/turbovec | 4 | 07-26 |
-| permissionlesstech/bitchat | 1 | 07-26 |
+| permissionlesstech/bitchat | 2 | 07-27 |
+| permissionlesstech/bitchat-android | 1 | 07-27 |
+| nodejs/node | 1 | 07-27 |
+| amnezia-vpn/amnezia-client | 1 | 07-27 |
+| jenkinsci/jenkins | 1 | 07-27 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
