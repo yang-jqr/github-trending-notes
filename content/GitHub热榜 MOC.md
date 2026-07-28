@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-07-28]]
 - [[trending-2026-07-27]]
 - [[trending-2026-07-26]]
 - [[trending-2026-07-25]]
@@ -57,7 +58,7 @@
 ## 🔁 反复上榜仓库
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
-| mvanhorn/last30days-skill | 8 | 07-09 |
+| mvanhorn/last30days-skill | 9 | 07-28 |
 || obra/superpowers | 10 | 07-26 |
 | chopratejas/headroom | 5 | 06-22 |
 || addyosmani/agent-skills | 8 | 07-11 |
@@ -132,7 +133,7 @@
 | alibaba/page-agent | 2 | 07-06 |
 | IceWhaleTech/CasaOS | 4 | 06-29 |
 | opendatalab/MinerU | 2 | 06-27 |
-| NanmiCoder/MediaCrawler | 3 | 06-28 |
+| NanmiCoder/MediaCrawler | 4 | 07-28 |
 | xbtlin/ai-berkshire | 4 | 07-01 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | commaai/openpilot | 2 | 06-28 |
@@ -187,7 +188,7 @@
 | tashfeenahmed/freellmapi | 1 | 07-01 |
 | Yu9191/wloc | 1 | 07-01 |
 | vercel-labs/deepsec | 1 | 07-01 |
-| pbakaus/impeccable | 3 | 07-27 |
+| pbakaus/impeccable | 4 | 07-28 |
 | Unclecheng-li/VulnClaw | 2 | 07-02 |
 | rtk-ai/rtk | 1 | 07-01 |
 | EverMind-AI/EverOS | 1 | 07-01 |
@@ -231,7 +232,7 @@
 | OthmanAdi/planning-with-files | 1 | 07-06 |
 | steipete/CodexBar | 2 | 07-07 |
 | alibaba/zvec | 3 | 07-09 |
-| bradautomates/claude-video | 3 | 07-10 |
+| bradautomates/claude-video | 4 | 07-28 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
 || TencentCloud/TencentDB-Agent-Memory | 2 | 07-11 |
@@ -278,7 +279,7 @@
 | Raphire/Win11Debloat | 3 | 07-15 |
 | github/spec-kit | 2 | 07-14 |
 | OpenCut-app/OpenCut | 4 | 07-17 |
-| moeru-ai/airi | 2 | 07-16 |
+| moeru-ai/airi | 3 | 07-28 |
 | Graphify-Labs/graphify | 3 | 07-17 |
 | vlang/v | 8 | 07-14 |
 | milvus-io/milvus | 21 | 07-14 |
@@ -325,7 +326,7 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 6 | 07-27 |
+| shiyu-coder/Kronos | 7 | 07-28 |
 | likec4/likec4 | 2 | 07-25 |
 | ComposioHQ/awesome-claude-skills | 4 | 07-26 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
@@ -333,17 +334,22 @@
 | block/buzz | 4 | 07-27 |
 | Automattic/harper | 3 | 07-26 |
 | citrolabs/ego-lite | 4 | 07-27 |
-| yorukot/superfile | 2 | 07-27 |
+| yorukot/superfile | 3 | 07-28 |
 | CoreBunch/Instatic | 4 | 07-27 |
 | Lordog/dive-into-llms | 2 | 07-26 |
 | OtterMind/Chat2DB | 3 | 07-27 |
-| alibaba/open-code-review | 4 | 07-27 |
+| alibaba/open-code-review | 5 | 07-28 |
 | RyanCodrai/turbovec | 4 | 07-26 |
-| permissionlesstech/bitchat | 2 | 07-27 |
+| permissionlesstech/bitchat | 3 | 07-28 |
 | permissionlesstech/bitchat-android | 1 | 07-27 |
 | nodejs/node | 1 | 07-27 |
-| amnezia-vpn/amnezia-client | 1 | 07-27 |
-| jenkinsci/jenkins | 1 | 07-27 |
+| amnezia-vpn/amnezia-client | 2 | 07-28 |
+| jenkinsci/jenkins | 2 | 07-28 |
+
+| opengeos/GeoLibre | 1 | 07-28 |
+| vudovn/ag-kit | 1 | 07-28 |
+| apache/cassandra | 1 | 07-28 |
+| ocornut/imgui | 1 | 07-28 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
