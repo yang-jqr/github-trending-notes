@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-01]]
 - [[trending-2026-07-31]]
 - [[trending-2026-07-30]]
 - [[trending-2026-07-29]]
@@ -61,7 +62,7 @@
 ## 🔁 反复上榜仓库
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
-| mvanhorn/last30days-skill | 9 | 07-28 |
+| mvanhorn/last30days-skill | 10 | 08-01 |
 || obra/superpowers | 11 | 07-30 |
 | chopratejas/headroom | 5 | 06-22 |
 || addyosmani/agent-skills | 8 | 07-11 |
@@ -85,7 +86,7 @@
 | [[仓库/nesquena_hermes-webui]] | 3 | 06-04 |
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
-| chatwoot/chatwoot | 3 | 06-18 |
+| chatwoot/chatwoot | 4 | 08-01 |
 | NousResearch/hermes-agent | 5 | 06-30 |
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
@@ -302,7 +303,7 @@
 | ibelick/ui-skills | 3 | 07-21 |
 | codecrafters-io/build-your-own-x | 3 | 07-20 |
 | ossu/computer-science | 1 | 07-17 |
-| github/copilot-sdk | 3 | 07-20 |
+| github/copilot-sdk | 4 | 08-01 |
 | rohitg00/ai-engineering-from-scratch | 5 | 07-23 |
 | tirth8205/code-review-graph | 4 | 07-23 |
 | elder-plinius/G0DM0D3 | 1 | 07-19 |
@@ -311,7 +312,7 @@
 | trycua/cua | 2 | 07-20 |
 | bojieli/ai-agent-book | 2 | 07-22 |
 | kvcache-ai/ktransformers | 1 | 07-20 |
-| 1jehuang/jcode | 5 | 07-31 |
+| 1jehuang/jcode | 6 | 08-01 |
 | PKUFlyingPig/cs-self-learning | 1 | 07-20 |
 | Canner/WrenAI | 1 | 07-20 |
 | microsoft/terminal | 1 | 07-20 |
@@ -355,15 +356,15 @@
 || ocornut/imgui | 1 | 07-28 |
 || pascalorg/editor | 3 | 07-31 |
 || virgiliojr94/book-to-skill | 3 | 07-31 |
-|| paperswithbacktest/awesome-systematic-trading | 2 | 07-30 |
+|| paperswithbacktest/awesome-systematic-trading | 3 | 08-01 |
 || huggingface/speech-to-speech | 2 | 07-30 |
 || hello245m/free-stockdb | 1 | 07-29 |
 || microsoft/agent-governance-toolkit | 1 | 07-29 |
 || microsoft/VibeVoice | 1 | 07-30 |
-|| different-ai/openwork | 2 | 07-31 |
+|| different-ai/openwork | 3 | 08-01 |
 || MoonshotAI/FlashKDA | 1 | 07-30 |
 || grokability/snipe-it | 1 | 07-30 |
-|| deepfakes/faceswap | 1 | 07-30 |
+|| deepfakes/faceswap | 2 | 08-01 |
 || maderix/ANE | 1 | 07-30 |
 || bryanthaboi/gen1recomp | 1 | 07-31 |
 || unicity-aos/aos-ce | 1 | 07-31 |
@@ -373,11 +374,15 @@
 || langchain-ai/openwiki | 1 | 07-31 |
 || UditAkhourii/adhd | 2 | 07-31 |
 || Wei-Shaw/sub2api | 1 | 07-31 |
-|| zhaoxuya520/reverse-skill | 1 | 07-31 |
+|| zhaoxuya520/reverse-skill | 2 | 08-01 |
 || agentscope-ai/QwenPaw | 1 | 07-31 |
 || JustVugg/colibri | 2 | 07-31 |
 || StarTrail-org/PixelRAG | 1 | 07-31 |
 || emilkowalski/skills | 1 | 07-31 |
+|| microsoft/AI-For-Beginners | 2 | 08-01 |
+|| agavra/tuicr | 1 | 08-01 |
+|| usekaneo/kaneo | 1 | 08-01 |
+|| geo-tp/ESP32-Bit-Pirate | 1 | 08-01 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
