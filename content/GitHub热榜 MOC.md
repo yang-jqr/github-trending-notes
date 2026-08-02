@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-02]]
 - [[trending-2026-08-01]]
 - [[trending-2026-07-31]]
 - [[trending-2026-07-30]]
@@ -90,7 +91,7 @@
 | NousResearch/hermes-agent | 5 | 06-30 |
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
-| bytedance/deer-flow | 4 | 06-24 |
+| bytedance/deer-flow | 5 | 08-02 |
 | mukul975/Anthropic-Cybersecurity-Skills | 6 | 07-01 |
 | palmier-io/palmier-pro | 5 | 07-26 |
 | ZhuLinsen/daily_stock_analysis | 6 | 07-01 |
@@ -218,7 +219,7 @@
 | ogulcancelik/herdr | 4 | 07-07 |
 | TencentCloud/CubeSandbox | 3 | 07-09 |
 | elastic/elasticsearch | 1 | 07-04 |
-| ansible/ansible | 1 | 07-04 |
+| ansible/ansible | 2 | 08-02 |
 | rommapp/romm | 2 | 07-06 |
 | anthropics/claude-code | 2 | 07-06 |
 | supabase/supabase | 1 | 07-04 |
@@ -239,7 +240,7 @@
 || bradautomates/claude-video | 6 | 07-31 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-|| TencentCloud/TencentDB-Agent-Memory | 2 | 07-11 |
+|| TencentCloud/TencentDB-Agent-Memory | 3 | 08-02 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
 || iOfficeAI/OfficeCLI | 3 | 07-11 |
@@ -303,7 +304,7 @@
 | ibelick/ui-skills | 3 | 07-21 |
 | codecrafters-io/build-your-own-x | 3 | 07-20 |
 | ossu/computer-science | 1 | 07-17 |
-| github/copilot-sdk | 4 | 08-01 |
+| github/copilot-sdk | 5 | 08-02 |
 | rohitg00/ai-engineering-from-scratch | 5 | 07-23 |
 | tirth8205/code-review-graph | 4 | 07-23 |
 | elder-plinius/G0DM0D3 | 1 | 07-19 |
@@ -356,8 +357,8 @@
 || ocornut/imgui | 1 | 07-28 |
 || pascalorg/editor | 3 | 07-31 |
 || virgiliojr94/book-to-skill | 3 | 07-31 |
-|| paperswithbacktest/awesome-systematic-trading | 3 | 08-01 |
-|| huggingface/speech-to-speech | 2 | 07-30 |
+|| paperswithbacktest/awesome-systematic-trading | 4 | 08-02 |
+|| huggingface/speech-to-speech | 3 | 08-02 |
 || hello245m/free-stockdb | 1 | 07-29 |
 || microsoft/agent-governance-toolkit | 1 | 07-29 |
 || microsoft/VibeVoice | 1 | 07-30 |
@@ -374,15 +375,21 @@
 || langchain-ai/openwiki | 1 | 07-31 |
 || UditAkhourii/adhd | 2 | 07-31 |
 || Wei-Shaw/sub2api | 1 | 07-31 |
-|| zhaoxuya520/reverse-skill | 2 | 08-01 |
+|| zhaoxuya520/reverse-skill | 3 | 08-02 |
 || agentscope-ai/QwenPaw | 1 | 07-31 |
 || JustVugg/colibri | 2 | 07-31 |
 || StarTrail-org/PixelRAG | 1 | 07-31 |
 || emilkowalski/skills | 1 | 07-31 |
-|| microsoft/AI-For-Beginners | 2 | 08-01 |
+|| microsoft/AI-For-Beginners | 3 | 08-02 |
 || agavra/tuicr | 1 | 08-01 |
-|| usekaneo/kaneo | 1 | 08-01 |
+|| usekaneo/kaneo | 2 | 08-02 |
 || geo-tp/ESP32-Bit-Pirate | 1 | 08-01 |
+|| microsoft/generative-ai-for-beginners | 1 | 08-02 |
+|| github/gh-stack | 1 | 08-02 |
+|| abus-aikorea/voice-pro | 1 | 08-02 |
+|| iv-org/invidious | 1 | 08-02 |
+|| microsoft/TRELLIS.2 | 1 | 08-02 |
+|| NomaDamas/k-skill | 1 | 08-02 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
