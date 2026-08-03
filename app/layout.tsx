@@ -18,6 +18,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
             <div className="flex items-center gap-3">
               <span className="text-sm text-muted hidden sm:inline">每日自动 · AI 分析</span>
+              <nav className="flex items-center gap-2 text-sm">
+                <a href="/search" className="text-muted hover:text-accent transition-colors">搜索</a>
+                <a href="/archive" className="text-muted hover:text-accent transition-colors">归档</a>
+              </nav>
               <Search />
             </div>
           </div>

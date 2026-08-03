@@ -55,13 +55,17 @@ function normalizeRepoName(raw: string): string {
 
 export function extractRepoNames(content: string): string[] {
   const names: string[] = [];
+  const seen = new Set<string>();
   for (const line of content.split("\n")) {
     let m = line.match(/^## \d+\. (.+)/);              // ## 1. repo/name
     if (!m) m = line.match(/^\*\*\d+\. (.+?)\*\*/);    // **1. repo/name**
     if (!m) m = line.match(/^\*\*#\d+\s+(.+?)\*\*/);   // **#1 repo/name**
     if (m) {
       const name = normalizeRepoName(m[1]);
-      if (name && name.length > 2 && name.includes("/")) names.push(name);
+      if (name && name.length > 2 && name.includes("/") && !seen.has(name)) {
+        seen.add(name);
+        names.push(name);
+      }
     }
   }
   return names;

@@ -115,17 +115,14 @@ function PostCard({ post }: { post: Post }) {
       {names.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {names.map((name, i) => (
-            <a
+            <span
               key={name}
-              href={`https://github.com/${name}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-2 py-1 rounded text-xs hover:underline ${
-                i === 0 ? 'bg-accent/10 text-accent border border-accent/20' : 'bg-[#0d1117] text-muted border border-border hover:text-accent'
+              className={`px-2 py-1 rounded text-xs ${
+                i === 0 ? 'bg-accent/10 text-accent border border-accent/20' : 'bg-[#0d1117] text-muted border border-border'
               }`}
             >
               {name}
-            </a>
+            </span>
           ))}
         </div>
       )}

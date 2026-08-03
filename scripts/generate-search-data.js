@@ -12,7 +12,7 @@ function tokenize(text) {
   const words = text.toLowerCase().match(/[a-z]{2,}|[a-z][a-z0-9]+/g) || [];
   tokens.push(...words);
   // Chinese bigrams
-  const chinese = text.match(/[\u4e00-\u9fff]/g);
+  const chinese = text.match(/[一-鿿]/g);
   if (chinese) {
     for (let i = 0; i < chinese.length - 1; i++) {
       tokens.push(chinese[i] + chinese[i + 1]);
@@ -111,19 +111,14 @@ for (const file of files) {
   docs.push({ slug, date, repos, langs: Array.from(langs), content, tf });
 }
 
-// Pass 2: compute IDF, keep only terms appearing in ≥2 docs
-// ponytail: singleton terms add noise, drop them
-const MIN_DF = 2;
+// Pass 2: compute IDF, keep ALL terms (singletons too — cold repos/tech words
+// appear once and must stay searchable; the corpus is small, so noise is limited)
 const idf = {};
-const keepTerms = new Set();
 for (const [term, docCount] of Object.entries(df)) {
-  if (docCount >= MIN_DF) {
-    idf[term] = Math.log(1 + totalDocs / (1 + docCount));
-    keepTerms.add(term);
-  }
+  idf[term] = Math.log(1 + totalDocs / (1 + docCount));
 }
 
-// Build vocab only from kept terms
+// Build vocab from all terms
 const vocab = Object.keys(idf);
 const termIdx = {};
 vocab.forEach((t, i) => { termIdx[t] = i; });
@@ -132,79 +127,20 @@ const outputDocs = docs.map(d => ({
   slug: d.slug,
   date: d.date,
   repos: d.repos,
+  // repo short names (repo part of owner/repo) — client matches against these
+  // with substring/equality for precise name hits
+  repoNames: d.repos.map(r => r.split('/').pop()).filter(Boolean),
   langs: d.langs,
   content: d.content,
-  tf: Object.entries(d.tf)
-    .filter(([t]) => keepTerms.has(t))
-    .map(([t, c]) => [termIdx[t], c]),
+  tf: Object.entries(d.tf).map(([t, c]) => [termIdx[t], c]),
 }));
 
-// ─── Embeddings (ponytail: try-catch + timeout, falls back to TF-IDF only) ──
-async function generateEmbeddings() {
-  try {
-    // ponytail: 120s timeout — Vercel free tier has limited build time
-    const withTimeout = (promise, ms) => {
-      return Promise.race([
-        promise,
-        new Promise((_, reject) => setTimeout(() => reject(new Error('Embedding generation timed out')), ms)),
-      ]);
-    };
+const output = {
+  vocab,
+  idf,
+  docs: outputDocs,
+};
 
-    const { pipeline } = await import('@xenova/transformers');
-    const extractor = await withTimeout(
-      pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2'),
-      120000,
-    );
-    console.log('Embedding model loaded, generating vectors...');
-
-    // Embed documents
-    const docEmbeddings = [];
-    for (let i = 0; i < outputDocs.length; i++) {
-      const text = outputDocs[i].content.slice(0, 2000);
-      const result = await extractor(text, { pooling: 'mean', normalize: true });
-      docEmbeddings.push(Array.from(result.data));
-      if ((i + 1) % 10 === 0) console.log(`  embedded ${i + 1}/${outputDocs.length} docs`);
-    }
-    console.log(`  embedded ${outputDocs.length}/${outputDocs.length} docs`);
-
-    // Embed top vocab tokens (capped for build time)
-    const TOP_TOKENS = Math.min(vocab.length, 3000);
-    const rankedTokens = vocab
-      .map(t => [t, idf[t] || 0])
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, TOP_TOKENS)
-      .map(([t]) => t);
-    
-    const tokenEmbeddings = {};
-    const BATCH = 50;
-    for (let i = 0; i < rankedTokens.length; i += BATCH) {
-      const batch = rankedTokens.slice(i, i + BATCH);
-      for (const token of batch) {
-        const result = await extractor(token, { pooling: 'mean', normalize: true });
-        tokenEmbeddings[token] = Array.from(result.data);
-      }
-      if ((i + BATCH) % 200 === 0) console.log(`  embedded ${Math.min(i + BATCH, rankedTokens.length)}/${rankedTokens.length} tokens`);
-    }
-
-    return { docEmbeddings, tokenEmbeddings };
-  } catch (e) {
-    console.warn('Embedding generation skipped:', e.message);
-    return null;
-  }
-}
-
-// Wrap in async IIFE so embeddings are generated before write
-(async () => {
-  const embeddings = await generateEmbeddings();
-
-  const output = {
-    vocab,
-    idf,
-    docs: outputDocs,
-    ...(embeddings ? { embeddings } : {}),
-  };
-
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, JSON.stringify(output));
-  console.log(`Generated search index: ${outputDocs.length} posts, ${vocab.length} terms${embeddings ? ` + ${embeddings.docEmbeddings.length} doc vectors, ${Object.keys(embeddings.tokenEmbeddings).length} token vectors` : ''}`);
-})();
+fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+fs.writeFileSync(outputPath, JSON.stringify(output));
+console.log(`Generated search index: ${outputDocs.length} posts, ${vocab.length} terms`);
