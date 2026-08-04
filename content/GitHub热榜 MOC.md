@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-04]]
 - [[trending-2026-08-03]]
 - [[trending-2026-08-02]]
 - [[trending-2026-08-01]]
@@ -73,7 +74,7 @@
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
 | OpenBMB/VoxCPM | 4 | 06-17 |
-| Panniantong/Agent-Reach | 7 | 08-03 |
+| Panniantong/Agent-Reach | 8 | 08-04 |
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 7 | 07-31 |
@@ -116,13 +117,13 @@
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
 || andrewyng/aisuite | 4 | 07-29 |
-| jamiepine/voicebox | 5 | 07-23 |
+| jamiepine/voicebox | 6 | 08-04 |
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 2 | 07-07 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
-| lyogavin/airllm | 4 | 08-03 |
+| lyogavin/airllm | 5 | 08-04 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
@@ -241,7 +242,7 @@
 || bradautomates/claude-video | 6 | 07-31 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-|| TencentCloud/TencentDB-Agent-Memory | 4 | 08-03 |
+|| TencentCloud/TencentDB-Agent-Memory | 5 | 08-04 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
 || iOfficeAI/OfficeCLI | 3 | 07-11 |
@@ -332,7 +333,7 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 7 | 07-28 |
+| shiyu-coder/Kronos | 8 | 08-04 |
 | likec4/likec4 | 2 | 07-25 |
 | ComposioHQ/awesome-claude-skills | 4 | 07-26 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
@@ -376,24 +377,28 @@
 || langchain-ai/openwiki | 1 | 07-31 |
 || UditAkhourii/adhd | 2 | 07-31 |
 || Wei-Shaw/sub2api | 1 | 07-31 |
-|| zhaoxuya520/reverse-skill | 4 | 08-03 |
+|| zhaoxuya520/reverse-skill | 5 | 08-04 |
 || agentscope-ai/QwenPaw | 1 | 07-31 |
 || JustVugg/colibri | 2 | 07-31 |
 || StarTrail-org/PixelRAG | 1 | 07-31 |
 || emilkowalski/skills | 1 | 07-31 |
-|| microsoft/AI-For-Beginners | 4 | 08-03 |
+|| microsoft/AI-For-Beginners | 5 | 08-04 |
 || agavra/tuicr | 1 | 08-01 |
-|| usekaneo/kaneo | 3 | 08-03 |
+|| usekaneo/kaneo | 4 | 08-04 |
 || geo-tp/ESP32-Bit-Pirate | 1 | 08-01 |
-|| microsoft/generative-ai-for-beginners | 2 | 08-03 |
+|| microsoft/generative-ai-for-beginners | 3 | 08-04 |
 || github/gh-stack | 1 | 08-02 |
 || abus-aikorea/voice-pro | 1 | 08-02 |
-|| iv-org/invidious | 2 | 08-03 |
+|| iv-org/invidious | 3 | 08-04 |
 || microsoft/TRELLIS.2 | 1 | 08-02 |
 || NomaDamas/k-skill | 2 | 08-03 |
 | HarbourMasters/Lighthouse | 1 | 08-03 |
-| antirez/ds4 | 1 | 08-03 |
-| esengine/DeepSeek-Reasonix | 1 | 08-03 |
+| antirez/ds4 | 2 | 08-04 |
+| esengine/DeepSeek-Reasonix | 2 | 08-04 |
+| firecrawl/pdf-inspector | 1 | 08-04 |
+| donnemartin/system-design-primer | 1 | 08-04 |
+| Alishahryar1/free-claude-code | 1 | 08-04 |
+| livekit/agents | 1 | 08-04 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
