@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-05]]
 - [[trending-2026-08-04]]
 - [[trending-2026-08-03]]
 - [[trending-2026-08-02]]
@@ -66,7 +67,7 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 11 | 08-03 |
-|| obra/superpowers | 11 | 07-30 |
+|| obra/superpowers | 12 | 08-05 |
 | chopratejas/headroom | 5 | 06-22 |
 || addyosmani/agent-skills | 8 | 07-11 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
@@ -123,7 +124,7 @@
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 2 | 07-07 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
-| lyogavin/airllm | 5 | 08-04 |
+| lyogavin/airllm | 6 | 08-05 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
@@ -207,7 +208,7 @@
 | usestrix/strix | 5 | 07-31 |
 | msitarzewski/agency-agents | 3 | 07-04 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
-| browser-use/video-use | 2 | 07-03 |
+| browser-use/video-use | 3 | 08-05 |
 | JuliusBrussee/caveman | 3 | 07-06 |
 | santifer/career-ops | 1 | 07-03 |
 | ChromeDevTools/chrome-devtools-mcp | 2 | 07-04 |
@@ -242,7 +243,7 @@
 || bradautomates/claude-video | 6 | 07-31 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-|| TencentCloud/TencentDB-Agent-Memory | 5 | 08-04 |
+|| TencentCloud/TencentDB-Agent-Memory | 6 | 08-05 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
 || iOfficeAI/OfficeCLI | 3 | 07-11 |
@@ -377,16 +378,16 @@
 || langchain-ai/openwiki | 1 | 07-31 |
 || UditAkhourii/adhd | 2 | 07-31 |
 || Wei-Shaw/sub2api | 1 | 07-31 |
-|| zhaoxuya520/reverse-skill | 5 | 08-04 |
+|| zhaoxuya520/reverse-skill | 6 | 08-05 |
 || agentscope-ai/QwenPaw | 1 | 07-31 |
 || JustVugg/colibri | 2 | 07-31 |
 || StarTrail-org/PixelRAG | 1 | 07-31 |
 || emilkowalski/skills | 1 | 07-31 |
 || microsoft/AI-For-Beginners | 5 | 08-04 |
 || agavra/tuicr | 1 | 08-01 |
-|| usekaneo/kaneo | 4 | 08-04 |
+|| usekaneo/kaneo | 5 | 08-05 |
 || geo-tp/ESP32-Bit-Pirate | 1 | 08-01 |
-|| microsoft/generative-ai-for-beginners | 3 | 08-04 |
+|| microsoft/generative-ai-for-beginners | 4 | 08-05 |
 || github/gh-stack | 1 | 08-02 |
 || abus-aikorea/voice-pro | 1 | 08-02 |
 || iv-org/invidious | 3 | 08-04 |
@@ -394,11 +395,19 @@
 || NomaDamas/k-skill | 2 | 08-03 |
 | HarbourMasters/Lighthouse | 1 | 08-03 |
 | antirez/ds4 | 2 | 08-04 |
-| esengine/DeepSeek-Reasonix | 2 | 08-04 |
-| firecrawl/pdf-inspector | 1 | 08-04 |
+| esengine/DeepSeek-Reasonix | 3 | 08-05 |
+| firecrawl/pdf-inspector | 2 | 08-05 |
 | donnemartin/system-design-primer | 1 | 08-04 |
 | Alishahryar1/free-claude-code | 1 | 08-04 |
-| livekit/agents | 1 | 08-04 |
+| livekit/agents | 2 | 08-05 |
+| uber/ADR | 1 | 08-05 |
+| webpack/webpack | 1 | 08-05 |
+| gabime/spdlog | 1 | 08-05 |
+| denoland/deno | 1 | 08-05 |
+| angular/angular | 1 | 08-05 |
+| tailwindlabs/tailwindcss | 1 | 08-05 |
+| EveryInc/compound-engineering-plugin | 1 | 08-05 |
+| cypress-io/cypress | 2 | 08-05 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
@@ -406,7 +415,7 @@
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
-- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）
@@ -417,7 +426,7 @@
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
 - #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库）
-- #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）
+- #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
 - #前端 — CopilotKit, svelte, ai-website-cloner-template
 - #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler, crawl4ai
@@ -427,7 +436,7 @@
 - #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
-- #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）
+- #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）, firecrawl/pdf-inspector（PDF分类+文本提取路由）
 - #可观测性 — grafana（可视化监控平台）
 - #开发者资源 — free-for-dev（免费层资源清单）
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
