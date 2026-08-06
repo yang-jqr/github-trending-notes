@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-06]]
 - [[trending-2026-08-05]]
 - [[trending-2026-08-04]]
 - [[trending-2026-08-03]]
@@ -67,9 +68,9 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 11 | 08-03 |
-|| obra/superpowers | 12 | 08-05 |
+|| obra/superpowers | 13 | 08-06 |
 | chopratejas/headroom | 5 | 06-22 |
-|| addyosmani/agent-skills | 8 | 07-11 |
+|| addyosmani/agent-skills | 9 | 08-06 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -124,7 +125,7 @@
 | heygen-com/hyperframes | 1 | 06-23 |
 | firecrawl/firecrawl | 2 | 07-07 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
-| lyogavin/airllm | 6 | 08-05 |
+| lyogavin/airllm | 7 | 08-06 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
@@ -243,7 +244,7 @@
 || bradautomates/claude-video | 6 | 07-31 |
 | karakeep-app/karakeep | 1 | 07-07 |
 | sindresorhus/awesome | 1 | 07-07 |
-|| TencentCloud/TencentDB-Agent-Memory | 6 | 08-05 |
+|| TencentCloud/TencentDB-Agent-Memory | 7 | 08-06 |
 | prisma/prisma | 2 | 07-10 |
 | argoproj/argo-cd | 1 | 07-09 |
 || iOfficeAI/OfficeCLI | 3 | 07-11 |
@@ -260,7 +261,7 @@
 || imthenachoman/How-To-Secure-A-Linux-Server | 1 | 07-10 |
 || oven-sh/bun | 1 | 07-11 |
 || microsoft/TypeScript | 1 | 07-11 |
-|| vercel/next.js | 1 | 07-11 |
+|| vercel/next.js | 2 | 08-06 |
 || hashicorp/terraform | 1 | 07-11 |
 || tailscale/tailscale | 1 | 07-11 |
 || grpc/grpc | 1 | 07-11 |
@@ -395,19 +396,22 @@
 || NomaDamas/k-skill | 2 | 08-03 |
 | HarbourMasters/Lighthouse | 1 | 08-03 |
 | antirez/ds4 | 2 | 08-04 |
-| esengine/DeepSeek-Reasonix | 3 | 08-05 |
-| firecrawl/pdf-inspector | 2 | 08-05 |
-| donnemartin/system-design-primer | 1 | 08-04 |
+| esengine/DeepSeek-Reasonix | 4 | 08-06 |
+| firecrawl/pdf-inspector | 3 | 08-06 |
+| donnemartin/system-design-primer | 2 | 08-06 |
 | Alishahryar1/free-claude-code | 1 | 08-04 |
 | livekit/agents | 2 | 08-05 |
-| uber/ADR | 1 | 08-05 |
+| uber/ADR | 2 | 08-06 |
 | webpack/webpack | 1 | 08-05 |
 | gabime/spdlog | 1 | 08-05 |
 | denoland/deno | 1 | 08-05 |
 | angular/angular | 1 | 08-05 |
-| tailwindlabs/tailwindcss | 1 | 08-05 |
+| tailwindlabs/tailwindcss | 2 | 08-06 |
 | EveryInc/compound-engineering-plugin | 1 | 08-05 |
 | cypress-io/cypress | 2 | 08-05 |
+| cloudflare/computer | 1 | 08-06 |
+| huangruiteng/loopx | 1 | 08-06 |
+| roboflow/supervision | 2 | 08-06 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
