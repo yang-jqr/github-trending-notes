@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-08]]
 - [[trending-2026-08-07]]
 - [[trending-2026-08-06]]
 - [[trending-2026-08-05]]
@@ -69,9 +70,9 @@
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | mvanhorn/last30days-skill | 11 | 08-03 |
-| obra/superpowers | 14 | 08-07 |
+| obra/superpowers | 15 | 08-08 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 10 | 08-07 |
+| addyosmani/agent-skills | 11 | 08-08 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -81,7 +82,7 @@
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 7 | 07-31 |
-| mattpocock/skills | 12 | 08-07 |
+| mattpocock/skills | 13 | 08-08 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -183,7 +184,7 @@
 | tensorflow/tensorflow | 1 | 06-30 |
 | n8n-io/n8n | 1 | 06-30 |
 | microsoft/vscode | 1 | 06-30 |
-| Significant-Gravitas/AutoGPT | 2 | 08-07 |
+| Significant-Gravitas/AutoGPT | 3 | 08-08 |
 | ollama/ollama | 1 | 06-30 |
 | twbs/bootstrap | 1 | 06-30 |
 | yt-dlp/yt-dlp | 1 | 06-30 |
@@ -296,7 +297,7 @@
 | BabylonJS/Babylon.js | 21 | 07-14 |
 | vuejs/core | 21 | 07-14 |
 | AIEraDev/Clypra | 1 | 07-15 |
-| chenyme/grok2api | 1 | 07-15 |
+| chenyme/grok2api | 2 | 08-08 |
 | HenryNdubuaku/maths-cs-ai-compendium | 2 | 07-16 |
 | openinterpreter/openinterpreter | 2 | 07-17 |
 | HKUDS/DeepTutor | 2 | 07-17 |
@@ -410,16 +411,25 @@
 | tailwindlabs/tailwindcss | 2 | 08-06 |
 | EveryInc/compound-engineering-plugin | 1 | 08-05 |
 | cypress-io/cypress | 2 | 08-05 |
-| cloudflare/computer | 2 | 08-07 |
+| cloudflare/computer | 3 | 08-08 |
 | huangruiteng/loopx | 2 | 08-07 |
 | roboflow/supervision | 2 | 08-06 |
 | TapXWorld/ChinaTextbook | 2 | 08-07 |
-| goauthentik/authentik | 1 | 08-07 |
-| google/guava | 1 | 08-07 |
+| goauthentik/authentik | 2 | 08-08 |
+| google/guava | 2 | 08-08 |
+| PrimeIntellect-ai/prime-agent | 1 | 08-08 |
+| denoland/celld | 1 | 08-08 |
+| google/skills | 1 | 08-08 |
+| pranshuparmar/witr | 1 | 08-08 |
+| 666ghj/MiroFish | 1 | 08-08 |
+| jdx/mise | 1 | 08-08 |
+| semantica-agi/semantica | 1 | 08-08 |
+| K2SOsint/Legendary_OSINT | 1 | 08-08 |
+| unclebob/swarm-forge | 1 | 08-08 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
