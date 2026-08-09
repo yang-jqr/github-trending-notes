@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-09]]
 - [[trending-2026-08-08]]
 - [[trending-2026-08-07]]
 - [[trending-2026-08-06]]
@@ -72,7 +73,7 @@
 | mvanhorn/last30days-skill | 11 | 08-03 |
 | obra/superpowers | 15 | 08-08 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 11 | 08-08 |
+| addyosmani/agent-skills | 12 | 08-09 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -82,7 +83,7 @@
 | calesthio/OpenMontage | 9 | 07-01 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 7 | 07-31 |
-| mattpocock/skills | 13 | 08-08 |
+| mattpocock/skills | 14 | 08-09 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -414,18 +415,22 @@
 | cloudflare/computer | 3 | 08-08 |
 | huangruiteng/loopx | 2 | 08-07 |
 | roboflow/supervision | 2 | 08-06 |
-| TapXWorld/ChinaTextbook | 2 | 08-07 |
-| goauthentik/authentik | 2 | 08-08 |
-| google/guava | 2 | 08-08 |
-| PrimeIntellect-ai/prime-agent | 1 | 08-08 |
-| denoland/celld | 1 | 08-08 |
-| google/skills | 1 | 08-08 |
+| TapXWorld/ChinaTextbook | 3 | 08-09 |
+| goauthentik/authentik | 3 | 08-09 |
+| google/guava | 3 | 08-09 |
+| PrimeIntellect-ai/prime-agent | 2 | 08-09 |
+| denoland/celld | 2 | 08-09 |
+| google/skills | 2 | 08-09 |
 | pranshuparmar/witr | 1 | 08-08 |
 | 666ghj/MiroFish | 1 | 08-08 |
 | jdx/mise | 1 | 08-08 |
 | semantica-agi/semantica | 1 | 08-08 |
 | K2SOsint/Legendary_OSINT | 1 | 08-08 |
 | unclebob/swarm-forge | 1 | 08-08 |
+| TauricResearch/TradingAgents | 1 | 08-09 |
+| LadybirdBrowser/ladybird | 1 | 08-09 |
+| litu54/DevOps-Interview-Guide | 1 | 08-09 |
+| bannedbook/fanqiang | 1 | 08-09 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
@@ -450,7 +455,7 @@
 - #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler, crawl4ai
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
-- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）, ai-hedge-fund（AI对冲基金）, Vibe-Trading（AI交易Agent）
+- #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）, ai-hedge-fund（AI对冲基金）, Vibe-Trading（AI交易Agent）, TradingAgents（多Agent金融交易框架）
 - #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
