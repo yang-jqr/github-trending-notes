@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-10]]
 - [[trending-2026-08-09]]
 - [[trending-2026-08-08]]
 - [[trending-2026-08-07]]
@@ -73,7 +74,7 @@
 | mvanhorn/last30days-skill | 11 | 08-03 |
 | obra/superpowers | 15 | 08-08 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 12 | 08-09 |
+| addyosmani/agent-skills | 13 | 08-10 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -101,7 +102,7 @@
 | bytedance/deer-flow | 5 | 08-02 |
 | mukul975/Anthropic-Cybersecurity-Skills | 6 | 07-01 |
 | palmier-io/palmier-pro | 5 | 07-26 |
-| ZhuLinsen/daily_stock_analysis | 6 | 07-01 |
+| ZhuLinsen/daily_stock_analysis | 7 | 08-10 |
 | affaan-m/ECC | 9 | 07-30 |
 | tursodatabase/turso | 3 | 06-23 |
 | soxoj/maigret | 2 | 06-12 |
@@ -210,7 +211,7 @@
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 | usestrix/strix | 5 | 07-31 |
-| msitarzewski/agency-agents | 3 | 07-04 |
+| msitarzewski/agency-agents | 4 | 08-10 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
 | browser-use/video-use | 3 | 08-05 |
 | JuliusBrussee/caveman | 3 | 07-06 |
@@ -281,7 +282,7 @@
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
 | k1tbyte/Wand-Enhancer | 1 | 07-13 |
-| pingdotgg/t3code | 2 | 07-27 |
+| pingdotgg/t3code | 3 | 08-10 |
 | virattt/ai-hedge-fund | 2 | 07-15 |
 | chen08209/FlClash | 1 | 07-13 |
 | par274/sharpemu | 2 | 07-15 |
@@ -416,12 +417,12 @@
 | huangruiteng/loopx | 2 | 08-07 |
 | roboflow/supervision | 2 | 08-06 |
 | TapXWorld/ChinaTextbook | 3 | 08-09 |
-| goauthentik/authentik | 3 | 08-09 |
+| goauthentik/authentik | 4 | 08-10 |
 | google/guava | 3 | 08-09 |
-| PrimeIntellect-ai/prime-agent | 2 | 08-09 |
+| PrimeIntellect-ai/prime-agent | 3 | 08-10 |
 | denoland/celld | 2 | 08-09 |
-| google/skills | 2 | 08-09 |
-| pranshuparmar/witr | 1 | 08-08 |
+| google/skills | 3 | 08-10 |
+| pranshuparmar/witr | 2 | 08-10 |
 | 666ghj/MiroFish | 1 | 08-08 |
 | jdx/mise | 1 | 08-08 |
 | semantica-agi/semantica | 1 | 08-08 |
@@ -431,6 +432,10 @@
 | LadybirdBrowser/ladybird | 1 | 08-09 |
 | litu54/DevOps-Interview-Guide | 1 | 08-09 |
 | bannedbook/fanqiang | 1 | 08-09 |
+| vitali87/code-graph-rag | 1 | 08-10 |
+| google-deepmind/weathernext | 1 | 08-10 |
+| Comfy-Org/ComfyUI | 1 | 08-10 |
+| harveyai/harvey-labs | 1 | 08-10 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
