@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-11]]
 - [[trending-2026-08-10]]
 - [[trending-2026-08-09]]
 - [[trending-2026-08-08]]
@@ -74,7 +75,7 @@
 | mvanhorn/last30days-skill | 11 | 08-03 |
 | obra/superpowers | 15 | 08-08 |
 | chopratejas/headroom | 5 | 06-22 |
-| addyosmani/agent-skills | 13 | 08-10 |
+| addyosmani/agent-skills | 14 | 08-11 |
 | harry0703/MoneyPrinterTurbo | 4 | 06-10 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
@@ -127,7 +128,7 @@
 | Stirling-Tools/Stirling-PDF | 1 | 06-23 |
 | garrytan/gstack | 5 | 06-28 |
 | heygen-com/hyperframes | 1 | 06-23 |
-| firecrawl/firecrawl | 2 | 07-07 |
+| firecrawl/firecrawl | 3 | 08-11 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
 | lyogavin/airllm | 7 | 08-06 |
 | anthropics/claude-plugins-official | 1 | 06-24 |
@@ -146,7 +147,7 @@
 | alibaba/page-agent | 2 | 07-06 |
 | IceWhaleTech/CasaOS | 4 | 06-29 |
 | opendatalab/MinerU | 2 | 06-27 |
-| NanmiCoder/MediaCrawler | 5 | 07-30 |
+| NanmiCoder/MediaCrawler | 6 | 08-11 |
 | xbtlin/ai-berkshire | 4 | 07-01 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | commaai/openpilot | 2 | 06-28 |
@@ -211,7 +212,7 @@
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 | usestrix/strix | 5 | 07-31 |
-| msitarzewski/agency-agents | 4 | 08-10 |
+| msitarzewski/agency-agents | 5 | 08-11 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
 | browser-use/video-use | 3 | 08-05 |
 | JuliusBrussee/caveman | 3 | 07-06 |
@@ -238,7 +239,7 @@
 | coreyhaines31/marketingskills | 4 | 07-21 |
 | CoplayDev/unity-mcp | 1 | 07-06 |
 | immich-app/immich | 1 | 07-06 |
-| ruvnet/RuView | 6 | 07-25 |
+| ruvnet/RuView | 7 | 08-11 |
 | diegosouzapw/OmniRoute | 6 | 07-25 |
 | gastownhall/gastown | 2 | 07-07 |
 | dotnet/skills | 1 | 07-06 |
@@ -282,7 +283,7 @@
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
 | k1tbyte/Wand-Enhancer | 1 | 07-13 |
-| pingdotgg/t3code | 3 | 08-10 |
+| pingdotgg/t3code | 4 | 08-11 |
 | virattt/ai-hedge-fund | 2 | 07-15 |
 | chen08209/FlClash | 1 | 07-13 |
 | par274/sharpemu | 2 | 07-15 |
@@ -419,30 +420,33 @@
 | TapXWorld/ChinaTextbook | 3 | 08-09 |
 | goauthentik/authentik | 4 | 08-10 |
 | google/guava | 3 | 08-09 |
-| PrimeIntellect-ai/prime-agent | 3 | 08-10 |
+| PrimeIntellect-ai/prime-agent | 4 | 08-11 |
 | denoland/celld | 2 | 08-09 |
 | google/skills | 3 | 08-10 |
 | pranshuparmar/witr | 2 | 08-10 |
 | 666ghj/MiroFish | 1 | 08-08 |
 | jdx/mise | 1 | 08-08 |
-| semantica-agi/semantica | 1 | 08-08 |
+| semantica-agi/semantica | 2 | 08-11 |
 | K2SOsint/Legendary_OSINT | 1 | 08-08 |
 | unclebob/swarm-forge | 1 | 08-08 |
-| TauricResearch/TradingAgents | 1 | 08-09 |
-| LadybirdBrowser/ladybird | 1 | 08-09 |
+| TauricResearch/TradingAgents | 2 | 08-11 |
+| LadybirdBrowser/ladybird | 2 | 08-11 |
 | litu54/DevOps-Interview-Guide | 1 | 08-09 |
 | bannedbook/fanqiang | 1 | 08-09 |
-| vitali87/code-graph-rag | 1 | 08-10 |
-| google-deepmind/weathernext | 1 | 08-10 |
-| Comfy-Org/ComfyUI | 1 | 08-10 |
+| vitali87/code-graph-rag | 2 | 08-11 |
+| google-deepmind/weathernext | 2 | 08-11 |
+| Comfy-Org/ComfyUI | 2 | 08-11 |
 | harveyai/harvey-labs | 1 | 08-10 |
+| paperclipai/paperclip | 1 | 08-11 |
+| danielmiessler/LifeOS | 1 | 08-11 |
+| opa334/Dopamine | 1 | 08-11 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
-- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）
-- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）
+- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee
@@ -469,7 +473,7 @@
 - #开发者资源 — free-for-dev（免费层资源清单）
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
 - #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）
-- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）
+- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）
 - #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）
 - #LLM教程 — dive-into-llms（动手学大模型，中文实战教程）
 - #架构即代码 — likec4（C4模型+实时架构可视化）
