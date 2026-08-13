@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-13]]
 - [[trending-2026-08-12]]
 - [[trending-2026-08-11]]
 - [[trending-2026-08-10]]
@@ -120,7 +121,7 @@
 | topoteretes/cognee | 3 | 06-28 |
 | asgeirtj/system_prompts_leaks | 6 | 07-10 |
 | koala73/worldmonitor | 7 | 07-25 |
-| smicallef/spiderfoot | 2 | 06-22 |
+| smicallef/spiderfoot | 3 | 08-13 |
 | mikumifa/biliTickerBuy | 2 | 06-22 |
 | kenn-io/agentsview | 1 | 06-14 |
 | microsoft/PowerToys | 3 | 06-29 |
@@ -137,7 +138,7 @@
 | interviewstreet/hiring-agent | 1 | 06-25 |
 | flutter/flutter | 2 | 06-30 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
-| stablyai/orca | 3 | 08-12 |
+| stablyai/orca | 5 | 08-13 |
 | google-labs-code/design.md | 4 | 06-28 |
 | Flowseal/zapret-discord-youtube | 2 | 07-20 |
 | kunchenguid/no-mistakes | 2 | 06-27 |
@@ -148,14 +149,14 @@
 | alibaba/page-agent | 2 | 07-06 |
 | IceWhaleTech/CasaOS | 4 | 06-29 |
 | opendatalab/MinerU | 2 | 06-27 |
-| NanmiCoder/MediaCrawler | 6 | 08-11 |
+| NanmiCoder/MediaCrawler | 7 | 08-13 |
 | xbtlin/ai-berkshire | 4 | 07-01 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | commaai/openpilot | 2 | 06-28 |
 | grafana/grafana | 1 | 06-27 |
 | ripienaar/free-for-dev | 3 | 06-29 |
 | alchaincyf/zhangxuefeng-skill | 1 | 06-27 |
-| hugohe3/ppt-master | 3 | 07-01 |
+| hugohe3/ppt-master | 3 | 08-13 |
 | keycloak/keycloak | 2 | 06-28 |
 | Anil-matcha/Open-Generative-AI | 1 | 06-28 |
 | dbt-labs/dbt-core | 1 | 06-28 |
@@ -213,7 +214,7 @@
 | yikart/AiToEarn | 3 | 07-02 |
 | zarazhangrui/frontend-slides | 1 | 07-01 |
 | usestrix/strix | 5 | 07-31 |
-| msitarzewski/agency-agents | 6 | 08-12 |
+| msitarzewski/agency-agents | 7 | 08-13 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
 | browser-use/video-use | 3 | 08-05 |
 | JuliusBrussee/caveman | 3 | 07-06 |
@@ -341,7 +342,7 @@
 | oblien/openship | 2 | 07-23 |
 | schollz/croc | 2 | 07-23 |
 | tradesdontlie/tradingview-mcp | 1 | 07-22 |
-| shiyu-coder/Kronos | 8 | 08-04 |
+| shiyu-coder/Kronos | 9 | 08-13 |
 | likec4/likec4 | 2 | 07-25 |
 | ComposioHQ/awesome-claude-skills | 4 | 07-26 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
@@ -427,7 +428,7 @@
 | pranshuparmar/witr | 2 | 08-10 |
 | 666ghj/MiroFish | 1 | 08-08 |
 | jdx/mise | 1 | 08-08 |
-| semantica-agi/semantica | 3 | 08-12 |
+| semantica-agi/semantica | 4 | 08-13 |
 | K2SOsint/Legendary_OSINT | 1 | 08-08 |
 | unclebob/swarm-forge | 1 | 08-08 |
 | TauricResearch/TradingAgents | 2 | 08-11 |
@@ -438,7 +439,7 @@
 | google-deepmind/weathernext | 2 | 08-11 |
 | Comfy-Org/ComfyUI | 2 | 08-11 |
 | harveyai/harvey-labs | 2 | 08-12 |
-| paperclipai/paperclip | 2 | 08-12 |
+| paperclipai/paperclip | 3 | 08-13 |
 | danielmiessler/LifeOS | 1 | 08-11 |
 | opa334/Dopamine | 1 | 08-11 |
 | nvm-sh/nvm | 1 | 08-12 |
@@ -448,10 +449,10 @@
 | practical-tutorials/project-based-learning | 1 | 08-12 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）
-- #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）
-- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）
+- #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）, macro（Rust统一工作区+共享AI记忆）
+- #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）, NVIDIA-NeMo/Switchyard（并行Agent舰队ADE）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
@@ -459,7 +460,7 @@
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）
 - #Token优化 — headroom（60-95% token压缩，不减质量）, rtk-ai/rtk（60-90% token节省CLI代理）
 - #多模型统一接口 — aisuite（一行代码切模型，吴恩达出品）, freellmapi（16家LLM免费额度聚合代理）
-- #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）
+- #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
 - #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）
@@ -471,7 +472,7 @@
 - #算法学习 — hello-algo, coding-interview-university
 - #自主机器人 — Introduction-to-Autonomous-Robots
 - #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）, ai-hedge-fund（AI对冲基金）, Vibe-Trading（AI交易Agent）, TradingAgents（多Agent金融交易框架）
-- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）
+- #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）, cactus-compute/needle（14MB端侧基础模型）
 - #设计工具 — penpot（开源Figma替代）
 - #通用工具 — Stirling-PDF（PDF编辑）
 - #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）, firecrawl/pdf-inspector（PDF分类+文本提取路由）
@@ -479,7 +480,7 @@
 - #开发者资源 — free-for-dev（免费层资源清单）, awesome-mac（macOS软件精选）, project-based-learning（项目制学习路线）
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
 - #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）
-- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）
+- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）, ragflow（开源RAG引擎+Agent融合）
 - #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）
 - #LLM教程 — dive-into-llms（动手学大模型，中文实战教程）
 - #架构即代码 — likec4（C4模型+实时架构可视化）
