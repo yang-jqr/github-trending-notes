@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-17]]
 - [[trending-2026-08-16]]
 - [[trending-2026-08-15]]
 - [[trending-2026-08-14]]
@@ -297,7 +298,7 @@
 | PrefectHQ/prefect | 1 | 07-13 |
 | Raphire/Win11Debloat | 3 | 07-15 |
 | github/spec-kit | 4 | 08-16 |
-| OpenCut-app/OpenCut | 5 | 08-15 |
+| OpenCut-app/OpenCut | 6 | 08-17 |
 | moeru-ai/airi | 5 | 07-30 |
 | Graphify-Labs/graphify | 3 | 07-17 |
 | vlang/v | 8 | 07-14 |
@@ -452,23 +453,24 @@
 | practical-tutorials/project-based-learning | 1 | 08-12 |
 | cathrynlavery/diagram-design | 4 | 08-16 |
 | macro-inc/macro | 3 | 08-15 |
-| cactus-compute/needle | 4 | 08-16 |
+| cactus-compute/needle | 5 | 08-17 |
 | NVIDIA-NeMo/Switchyard | 2 | 08-14 |
 | Lightricks/LTX-2 | 2 | 08-14 |
 | infiniflow/ragflow | 3 | 08-15 |
-| unslothai/unsloth | 3 | 08-16 |
+| unslothai/unsloth | 4 | 08-17 |
 | megadose/holehe | 3 | 08-16 |
 | holaboss-ai/holaOS | 2 | 08-15 |
 | kepano/obsidian-skills | 1 | 08-14 |
 | lightningpixel/modly | 2 | 08-15 |
 | cursor/plugins | 3 | 08-16 |
 | deepseek-ai/awesome-deepseek-agent | 1 | 08-15 |
-| ToolJet/ToolJet | 2 | 08-16 |
+| ToolJet/ToolJet | 3 | 08-17 |
 | ZuodaoTech/everyone-can-use-english | 1 | 08-13 |
 | localsend/localsend | 1 | 08-13 |
 | embabel/embabel-agent | 1 | 08-13 |
-| cordiverse/cordis | 1 | 08-16 |
-| public-apis/public-apis | 1 | 08-16 |
+| cordiverse/cordis | 2 | 08-17 |
+| public-apis/public-apis | 2 | 08-17 |
+| basecamp/omarchy | 1 | 08-17 |
 | MakazhanAlpamys/Soup | 1 | 08-16 |
 | HKUDS/CLI-Anything | 1 | 08-16 |
 
@@ -487,7 +489,7 @@
 - #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
-- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库）
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）, FluidVoice（macOS端侧听写）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
