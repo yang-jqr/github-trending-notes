@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-19]]
 - [[trending-2026-08-18]]
 - [[trending-2026-08-17]]
 - [[trending-2026-08-16]]
@@ -83,7 +84,7 @@
 | obra/superpowers | 15 | 08-08 |
 | chopratejas/headroom | 5 | 06-22 |
 | addyosmani/agent-skills | 15 | 08-12 |
-| harry0703/MoneyPrinterTurbo | 5 | 08-18 |
+| harry0703/MoneyPrinterTurbo | 6 | 08-19 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | iptv-org/iptv | 4 | 06-17 |
 | music-assistant/server | 4 | 06-17 |
@@ -108,7 +109,7 @@
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 5 | 08-02 |
-| mukul975/Anthropic-Cybersecurity-Skills | 7 | 08-18 |
+| mukul975/Anthropic-Cybersecurity-Skills | 8 | 08-19 |
 | palmier-io/palmier-pro | 5 | 07-26 |
 | ZhuLinsen/daily_stock_analysis | 8 | 08-12 |
 | affaan-m/ECC | 9 | 07-30 |
@@ -299,13 +300,13 @@
 | PrefectHQ/prefect | 1 | 07-13 |
 | Raphire/Win11Debloat | 3 | 07-15 |
 | github/spec-kit | 4 | 08-16 |
-| OpenCut-app/OpenCut | 6 | 08-17 |
+| OpenCut-app/OpenCut | 7 | 08-19 |
 | moeru-ai/airi | 5 | 07-30 |
 | Graphify-Labs/graphify | 3 | 07-17 |
 | vlang/v | 8 | 07-14 |
-| milvus-io/milvus | 55 | 08-18 |
-| BabylonJS/Babylon.js | 55 | 08-18 |
-| vuejs/core | 46 | 08-18 |
+| milvus-io/milvus | 56 | 08-19 |
+| BabylonJS/Babylon.js | 56 | 08-19 |
+| vuejs/core | 47 | 08-19 |
 | AIEraDev/Clypra | 1 | 07-15 |
 | chenyme/grok2api | 2 | 08-08 |
 | HenryNdubuaku/maths-cs-ai-compendium | 2 | 07-16 |
@@ -470,30 +471,34 @@
 | localsend/localsend | 1 | 08-13 |
 | embabel/embabel-agent | 1 | 08-13 |
 | cordiverse/cordis | 3 | 08-18 |
-| public-apis/public-apis | 2 | 08-17 |
-| basecamp/omarchy | 1 | 08-17 |
+| public-apis/public-apis | 3 | 08-19 |
+| basecamp/omarchy | 2 | 08-19 |
 | MakazhanAlpamys/Soup | 1 | 08-16 |
 | HKUDS/CLI-Anything | 1 | 08-16 |
-| questdb/questdb | 37 | 08-18 |
-| Shopify/toxiproxy | 32 | 08-18 |
+| questdb/questdb | 38 | 08-19 |
+| Shopify/toxiproxy | 33 | 08-19 |
 | nautechsystems/nautilus_trader | 2 | 08-18 |
-| akitaonrails/ai-memory | 1 | 08-18 |
-| jundot/omlx | 1 | 08-18 |
-| agalwood/Motrix | 1 | 08-18 |
+| akitaonrails/ai-memory | 2 | 08-19 |
+| jundot/omlx | 2 | 08-19 |
+| agalwood/Motrix | 2 | 08-19 |
+| chaitanyagiri/munder-difflin | 1 | 08-19 |
+| volcengine/OpenViking | 1 | 08-19 |
+| NawfalMotii79/PLFM_RADAR | 1 | 08-19 |
+| genlayerlabs/genlayer-project-boilerplate | 1 | 08-19 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）, kepano/obsidian-skills（Obsidian CEO出品的笔记Agent技能）, cursor/plugins（Cursor插件规范）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）, macro（Rust统一工作区+共享AI记忆）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）, NVIDIA-NeMo/Switchyard（并行Agent舰队ADE）
-- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）
+- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）, volcengine/OpenViking（自进化上下文数据库）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, strix（AI渗透测试agent）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）, unsloth（2倍速微调+显存优化）, Soup（单YAML微调+分层流式，4GB显存跑8B训练）, omlx（连续批处理+SSD缓存的端侧推理服务器）
 - #Token优化 — headroom（60-95% token压缩，不减质量）, rtk-ai/rtk（60-90% token节省CLI代理）
 - #多模型统一接口 — aisuite（一行代码切模型，吴恩达出品）, freellmapi（16家LLM免费额度聚合代理）
-- #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）
+- #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）, OpenCut（开源CapCut替代品）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）
 - #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）
