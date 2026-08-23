@@ -1,82 +1,81 @@
-import { getAllPosts, getStats, extractRepoNames, extractLanguages } from "@/lib/posts";
-import ArchiveList, { type ArchivePost } from "@/components/ArchiveList";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { extractLanguages, extractRepoNames, getAllPosts, getStats } from '@/lib/posts';
+import ArchiveList, { type ArchivePost } from '@/components/ArchiveList';
+
+export const metadata: Metadata = {
+  title: '学习笔记归档',
+  description: '按月份和编程语言浏览全部 GitHub Trending 学习笔记。',
+};
 
 export default function ArchivePage() {
-  const posts = getAllPosts().filter(p => p.meta.date); // 只显示 trending 笔记
+  const posts = getAllPosts().filter(post => post.meta.date);
   const stats = getStats();
-
-  const list: ArchivePost[] = posts.map(p => ({
-    slug: p.meta.slug,
-    date: p.meta.date,
-    repos: extractRepoNames(p.content),
-    langs: extractLanguages(p.content),
+  const list: ArchivePost[] = posts.map(post => ({
+    slug: post.meta.slug,
+    date: post.meta.date,
+    repos: extractRepoNames(post.content),
+    langs: extractLanguages(post.content),
   }));
 
   return (
     <div>
-      <div className="mb-6">
-        <a href="/" className="text-sm text-muted hover:text-accent transition-colors">← 返回首页</a>
-        <h1 className="text-2xl font-bold text-[#f0f6fc] mt-3">📚 归档</h1>
-        <p className="text-muted text-sm mt-2">
-          共 <span className="text-accent">{stats.totalDays}</span> 天 ·{' '}
-          <span className="text-accent">{stats.totalRepos}</span> 个上榜仓库（去重{' '}
-          <span className="text-accent">{stats.uniqueRepos}</span>）
-        </p>
-      </div>
+      <Link href="/" className="back-link">← 返回首页</Link>
+      <section className="anime-card mt-4 p-5 sm:p-7">
+        <span className="kicker">THE COMPLETE COLLECTION</span>
+        <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h1 className="manga-title text-3xl font-black text-ink">学习笔记归档</h1>
+            <p className="mt-2 text-sm leading-6 text-muted">按语言和月份回看每一期 GitHub Trending。</p>
+          </div>
+          <div className="grid grid-cols-3 gap-2 text-center">
+            <ArchiveStat value={stats.totalDays} label="天" />
+            <ArchiveStat value={stats.totalRepos} label="次上榜" />
+            <ArchiveStat value={stats.uniqueRepos} label="个仓库" />
+          </div>
+        </div>
+      </section>
 
-      {/* 语言统计 */}
       {stats.topLanguages.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-lg font-semibold text-[#f0f6fc] mb-3">🗂 语言统计</h2>
-          <div className="flex flex-wrap gap-2">
+        <section className="mt-8" aria-labelledby="archive-languages">
+          <h2 id="archive-languages" className="text-lg font-black text-ink">语言图鉴</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
             {stats.topLanguages.map(({ lang, count }) => (
-              <a
-                key={lang}
-                href={`/search?lang=${encodeURIComponent(lang)}`}
-                className="px-3 py-1 bg-surface border border-border rounded-full text-sm text-muted hover:border-accent hover:text-accent transition-colors"
-              >
-                {lang} <span className="text-accent">{count}</span>
+              <span key={lang} className="language-chip">{lang} <span>{count}</span></span>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {stats.recurringRepos.length > 0 && (
+        <section className="anime-card mt-8 p-5 sm:p-6" aria-labelledby="archive-recurring">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 id="archive-recurring" className="text-lg font-black text-ink">人气返场仓库</h2>
+            <span aria-hidden="true">⭐</span>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {stats.recurringRepos.slice(0, 12).map(repo => (
+              <a key={repo.name} href={`https://github.com/${repo.name}`} target="_blank" rel="noopener noreferrer" className="mini-repo">
+                <span className="truncate">{repo.name}</span>
+                <span className="shrink-0 text-xs text-muted">{repo.count} 次</span>
               </a>
             ))}
           </div>
         </section>
       )}
 
-      {/* 反复上榜仓库 */}
-      {stats.recurringRepos.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-lg font-semibold text-[#f0f6fc] mb-3">🔁 反复上榜</h2>
-          <div className="bg-surface border border-border rounded-lg overflow-hidden">
-            {stats.recurringRepos.slice(0, 10).map((repo, i) => (
-              <div
-                key={repo.name}
-                className={`flex items-center justify-between gap-3 px-4 py-2.5 text-sm ${i > 0 ? 'border-t border-border' : ''}`}
-              >
-                <a
-                  href={`https://github.com/${repo.name}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent truncate hover:underline"
-                >
-                  {repo.name}
-                </a>
-                <div className="flex items-center gap-3 shrink-0">
-                  <span className="text-muted text-xs">{repo.dates.length} 次</span>
-                  <a
-                    href={`/search?q=${encodeURIComponent(repo.name.split('/').pop() || '')}`}
-                    className="text-muted text-xs hover:text-accent transition-colors"
-                  >
-                    查看笔记 →
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      <div className="mt-10">
+        <ArchiveList posts={list} />
+      </div>
+    </div>
+  );
+}
 
-      {/* 按月分组的笔记列表（client 组件处理语言过滤） */}
-      <ArchiveList posts={list} />
+function ArchiveStat({ value, label }: { value: number; label: string }) {
+  return (
+    <div className="min-w-16 rounded-xl bg-[#f4efff] px-3 py-2">
+      <div className="font-black text-accent">{value}</div>
+      <div className="text-[10px] font-bold text-muted">{label}</div>
     </div>
   );
 }

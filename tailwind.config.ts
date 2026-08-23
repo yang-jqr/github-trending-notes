@@ -5,13 +5,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0d1117",
-        surface: "#161b22",
-        border: "#30363d",
-        muted: "#8b949e",
-        accent: "#58a6ff",
-        "accent-green": "#3fb950",
-        "accent-orange": "#d2991d",
+        bg: "#fff8f6",
+        surface: "#ffffff",
+        border: "#c9bce7",
+        ink: "#342d46",
+        muted: "#6f6780",
+        accent: "#6c55d9",
+        "accent-green": "#3d9a78",
+        "accent-orange": "#d58b22",
       },
     },
   },

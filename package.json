@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node scripts/generate-search-data.js && next dev",
     "build": "node scripts/generate-search-data.js && next build",
+    "test": "node scripts/generate-search-data.js && node scripts/check-search-data.js",
     "start": "next start"
   },
   "dependencies": {

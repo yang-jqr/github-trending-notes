@@ -1,154 +1,118 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
-import { tokenize, getSnippet, highlightSnippet, scoreDoc, type SearchDoc, type SearchIndex } from '@/lib/search';
+import { useEffect, useRef, useState } from 'react';
+import { searchRepositories, type SearchIndex } from '@/lib/search';
 
-// ─── Component ──────────────────────────────────────────────────
+const MAX_RESULTS = 8;
+
 export default function Search() {
   const [query, setQuery] = useState('');
   const [index, setIndex] = useState<SearchIndex | null>(null);
-  const [termMap, setTermMap] = useState<Map<string, number>>(new Map());
-  const [results, setResults] = useState<SearchDoc[]>([]);
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
+
+  const results = index && query.trim() ? searchRepositories(index, query, MAX_RESULTS) : [];
 
   useEffect(() => {
     fetch('/search-data.json')
-      .then(r => r.json())
-      .then((data: SearchIndex) => {
-        setIndex(data);
-        const map = new Map<string, number>();
-        data.vocab.forEach((t, i) => map.set(t, i));
-        setTermMap(map);
+      .then(response => {
+        if (!response.ok) throw new Error('搜索数据加载失败');
+        return response.json();
       })
-      .catch(() => {});
+      .then(setIndex)
+      .catch(() => setIndex({ repositories: [] }));
   }, []);
 
   useEffect(() => {
-    if (!query.trim() || !index) {
-      setResults([]);
+    const handlePointer = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) setOpen(false);
+    };
+    const handleShortcut = (event: KeyboardEvent) => {
+      const tag = (event.target as HTMLElement)?.tagName;
+      const typing = tag === 'INPUT' || tag === 'TEXTAREA';
+      if ((event.key === '/' && !typing) || ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k')) {
+        event.preventDefault();
+        inputRef.current?.focus();
+        inputRef.current?.select();
+      }
+    };
+    document.addEventListener('mousedown', handlePointer);
+    document.addEventListener('keydown', handleShortcut);
+    return () => {
+      document.removeEventListener('mousedown', handlePointer);
+      document.removeEventListener('keydown', handleShortcut);
+    };
+  }, []);
+
+  const close = () => {
+    setOpen(false);
+    setQuery('');
+  };
+
+  const handleKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Escape') {
       setOpen(false);
       return;
     }
-
-    const scored = index.docs
-      .map(doc => ({ doc, score: scoreDoc(doc, query, termMap, index.idf, index.vocab) }))
-      .filter(s => s.score > 0)
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 20)
-      .map(s => s.doc);
-
-    setResults(scored);
-    setOpen(scored.length > 0);
-    setSelected(0);
-  }, [query, index, termMap]);
-
-  // 外部点击关闭 + 全局快捷键（/ 聚焦，Cmd/Ctrl+K 聚焦）
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    };
-    const keyHandler = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement)?.tagName;
-      const typing = tag === 'INPUT' || tag === 'TEXTAREA';
-      if (e.key === '/' && !typing) {
-        e.preventDefault();
-        inputRef.current?.focus();
-        inputRef.current?.select();
-      }
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        inputRef.current?.focus();
-        inputRef.current?.select();
-      }
-    };
-    document.addEventListener('mousedown', handler);
-    document.addEventListener('keydown', keyHandler);
-    return () => {
-      document.removeEventListener('mousedown', handler);
-      document.removeEventListener('keydown', keyHandler);
-    };
-  }, []);
-
-  const handleKey = (e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      if (open) { setOpen(false); return; }
-      setQuery('');
-      return;
-    }
     if (!open) return;
-    if (e.key === 'ArrowDown') { e.preventDefault(); setSelected(s => Math.min(s + 1, results.length - 1)); }
-    if (e.key === 'ArrowUp') { e.preventDefault(); setSelected(s => Math.max(s - 1, 0)); }
-    if (e.key === 'Enter') {
-      if (results[selected]) {
-        router.push(`/posts/${encodeURIComponent(results[selected].slug)}?q=${encodeURIComponent(query)}`);
-        setOpen(false);
-        setQuery('');
-      }
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      setSelected(value => Math.min(value + 1, results.length - 1));
     }
-  };
-
-  const matchedRepos = (doc: SearchDoc, q: string): string[] => {
-    const tokens = tokenize(q.toLowerCase()).filter(t => t.length > 0);
-    return doc.repos.filter(r => {
-      const rl = r.toLowerCase();
-      return tokens.some(t => rl === t || rl.includes(t));
-    });
+    if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setSelected(value => Math.max(value - 1, 0));
+    }
+    if (event.key === 'Enter' && results[selected]) {
+      window.open(`https://github.com/${results[selected]}`, '_blank', 'noopener,noreferrer');
+      close();
+    }
   };
 
   return (
-    <div ref={containerRef} className="relative w-56 sm:w-72">
+    <div ref={containerRef} className="relative w-full sm:w-72">
+      <label htmlFor="quick-repo-search" className="sr-only">搜索仓库</label>
       <input
         ref={inputRef}
-        type="text"
-        placeholder="搜索仓库、内容、日期… (/)"
+        id="quick-repo-search"
+        type="search"
+        role="combobox"
+        aria-expanded={open}
+        aria-controls="quick-repo-results"
+        autoComplete="off"
+        placeholder="搜索仓库…  /"
         value={query}
-        onChange={e => setQuery(e.target.value)}
+        onChange={event => {
+          setQuery(event.target.value);
+          setSelected(0);
+          setOpen(Boolean(event.target.value.trim()));
+        }}
         onKeyDown={handleKey}
-        onFocus={() => { if (query.trim() && results.length > 0) setOpen(true); }}
-        className="w-full px-3 py-1.5 text-sm bg-[#0d1117] border border-border rounded-md text-[#c9d1d9] placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+        onFocus={() => query.trim() && setOpen(true)}
+        className="site-search w-full rounded-full px-4 py-2 text-sm"
       />
       {open && (
-        <div className="absolute top-full mt-1 left-0 right-0 bg-surface border border-border rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-          {results.length > 0 ? results.map((entry, i) => {
-            const repos = matchedRepos(entry, query);
-            return (
-              <button
-                key={entry.slug}
-                onClick={() => {
-                  router.push(`/posts/${encodeURIComponent(entry.slug)}?q=${encodeURIComponent(query)}`);
-                  setOpen(false);
-                  setQuery('');
-                }}
-                className={`w-full text-left px-3 py-2.5 text-sm border-b border-border last:border-0 transition-colors ${
-                  i === selected ? 'bg-accent/10 text-[#f0f6fc]' : 'text-[#c9d1d9] hover:bg-[#1c2128]'
-                }`}
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="font-semibold text-accent text-xs shrink-0">{entry.date}</span>
-                  {repos.length > 0 && (
-                    <span className="text-xs text-accent truncate font-medium">{repos.slice(0, 2).join(' · ')}</span>
-                  )}
-                  {entry.langs.length > 0 && (
-                    <span className="text-xs text-muted ml-auto shrink-0">{entry.langs.slice(0, 2).join(' · ')}</span>
-                  )}
-                </div>
-                {entry.content && (
-                  <div
-                    className="text-xs text-[#8b949e] leading-relaxed line-clamp-2"
-                    dangerouslySetInnerHTML={{ __html: highlightSnippet(getSnippet(entry.content, query), query) }}
-                  />
-                )}
-              </button>
-            );
-          }) : (
-            <div className="px-3 py-4 text-sm text-muted text-center">未找到匹配结果</div>
+        <div id="quick-repo-results" role="listbox" className="search-popover absolute left-0 right-0 top-full z-50 mt-2 max-h-80 overflow-y-auto rounded-2xl p-2">
+          {results.length > 0 ? results.map((name, indexPosition) => (
+            <a
+              key={name.toLowerCase()}
+              role="option"
+              aria-selected={indexPosition === selected}
+              href={`https://github.com/${name}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={close}
+              onMouseEnter={() => setSelected(indexPosition)}
+              className={`block rounded-xl px-3 py-2.5 text-sm font-semibold no-underline transition-colors ${
+                indexPosition === selected ? 'bg-accent/10 text-accent' : 'text-ink hover:bg-accent/10'
+              }`}
+            >
+              {name}
+            </a>
+          )) : (
+            <div className="px-3 py-5 text-center text-sm text-muted">没有找到这个仓库</div>
           )}
         </div>
       )}
