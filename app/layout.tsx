@@ -3,13 +3,25 @@ import Link from 'next/link';
 import Search from '@/components/Search';
 import './globals.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://github-trending-notes.vercel.app';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'GitHub Trending 学习笔记',
     template: '%s｜GitHub Trending 学习笔记',
   },
   description: '每日整理 GitHub Trending 热门仓库，用 AI 生成中文学习笔记。',
   keywords: ['GitHub Trending', '开源项目', 'AI 学习笔记', '开发者'],
+  alternates: { canonical: '/' },
+  manifest: '/manifest.webmanifest',
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    title: 'GitHub Trending 学习笔记',
+    description: '每日整理 GitHub Trending 热门仓库，用 AI 生成中文学习笔记。',
+  },
+  twitter: { card: 'summary', title: 'GitHub Trending 学习笔记' },
 };
 
 const navItems = [

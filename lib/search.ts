@@ -11,7 +11,26 @@ export interface SearchRepository {
 }
 
 export interface SearchIndex {
+  version: number;
   repositories: SearchRepository[];
+}
+
+let searchIndexPromise: Promise<SearchIndex> | null = null;
+
+/** Load the static index only when search is used, and share one request per tab. */
+export function loadSearchIndex(): Promise<SearchIndex> {
+  if (!searchIndexPromise) {
+    searchIndexPromise = fetch('/search-data.json', { cache: 'no-cache' })
+      .then(response => {
+        if (!response.ok) throw new Error('搜索数据加载失败');
+        return response.json() as Promise<SearchIndex>;
+      })
+      .catch(error => {
+        searchIndexPromise = null;
+        throw error;
+      });
+  }
+  return searchIndexPromise;
 }
 
 interface ParsedQuery {
@@ -42,11 +61,22 @@ function parseQuery(rawQuery: string): ParsedQuery {
 function matches(repository: SearchRepository, query: ParsedQuery): boolean {
   const name = normalize(repository.name);
   const languages = repository.languages.map(normalize);
-  const haystack = normalize(repository.searchText);
+  const haystack = repository.searchText;
   if (query.language && !languages.some(language => language.includes(query.language))) return false;
   if (query.date && !repository.dates.some(date => date.startsWith(query.date))) return false;
   if (query.repository && !name.includes(query.repository)) return false;
   return query.terms.every(term => haystack.includes(term));
+}
+
+interface RankedRepository {
+  repository: SearchRepository;
+  score: number;
+}
+
+function compareRanked(a: RankedRepository, b: RankedRepository): number {
+  return b.score - a.score
+    || b.repository.date.localeCompare(a.repository.date)
+    || a.repository.name.localeCompare(b.repository.name);
 }
 
 function score(repository: SearchRepository, query: ParsedQuery): number {
@@ -71,16 +101,30 @@ function score(repository: SearchRepository, query: ParsedQuery): number {
 export function searchRepositories(index: SearchIndex, rawQuery: string, limit?: number): SearchRepository[] {
   const query = parseQuery(rawQuery);
   const hasQuery = Boolean(query.terms.length || query.language || query.date || query.repository);
-  const results = hasQuery
-    ? index.repositories
-        .filter(repository => matches(repository, query))
-        .map(repository => ({ repository, score: score(repository, query) }))
-        .sort((a, b) => b.score - a.score || b.repository.date.localeCompare(a.repository.date) || a.repository.name.localeCompare(b.repository.name))
-        .map(result => result.repository)
-    : index.repositories;
-  return limit === undefined ? results : results.slice(0, limit);
+  if (!hasQuery) return limit === undefined ? index.repositories : index.repositories.slice(0, limit);
+
+  const ranked: RankedRepository[] = [];
+  for (const repository of index.repositories) {
+    if (!matches(repository, query)) continue;
+    const candidate = { repository, score: score(repository, query) };
+    if (limit === undefined) {
+      ranked.push(candidate);
+      continue;
+    }
+
+    const position = ranked.findIndex(current => compareRanked(candidate, current) < 0);
+    if (position >= 0) ranked.splice(position, 0, candidate);
+    else if (ranked.length < limit) ranked.push(candidate);
+    if (ranked.length > limit) ranked.pop();
+  }
+
+  if (limit === undefined) ranked.sort(compareRanked);
+  return ranked.map(result => result.repository);
 }
 
-export function repositoryPostHref(repository: SearchRepository): string {
-  return `/posts/${encodeURIComponent(repository.slug)}?q=${encodeURIComponent(repository.name)}`;
+export function repositoryPostHref(repository: SearchRepository, rawQuery = ''): string {
+  const dateFilter = rawQuery ? parseQuery(rawQuery).date : '';
+  const matchedDate = dateFilter ? repository.dates.find(date => date.startsWith(dateFilter)) : undefined;
+  const slug = matchedDate ? `trending-${matchedDate}` : repository.slug;
+  return `/posts/${encodeURIComponent(slug)}?q=${encodeURIComponent(repository.name)}`;
 }

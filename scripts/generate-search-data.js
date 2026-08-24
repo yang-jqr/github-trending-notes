@@ -6,6 +6,7 @@ const outputPath = path.resolve(__dirname, '..', 'public', 'search-data.json');
 
 function normalizeRepoName(raw) {
   return raw
+    .replace(/[（(].*$/, '')
     .replace(/\s*[⭐|].*$/, '')
     .replace(/\s*\/\s*/g, '/')
     .trim();
@@ -30,6 +31,20 @@ function plainText(value) {
     .trim();
 }
 
+function extractLabeledText(block, labels) {
+  for (const label of labels) {
+    const patterns = [
+      new RegExp(`(?:^|\\n)\\s*-?\\s*\\*\\*${label}\\*\\*[：:]\\s*(.+)`),
+      new RegExp(`(?:^|\\n)\\s*-?\\s*\\*\\*${label}[：:]\\*\\*\\s*(.+)`),
+    ];
+    for (const pattern of patterns) {
+      const match = block.match(pattern);
+      if (match) return plainText(match[1]);
+    }
+  }
+  return '';
+}
+
 function extractLanguage(heading, block) {
   const current = heading.match(/\*\*\s*\|\s*([A-Za-z][\w+#.-]*(?:\s+[A-Za-z][\w+#.-]*)?)\s*·/);
   if (current) return current[1].trim();
@@ -50,8 +65,9 @@ function extractRepositories(content, slug, date) {
     let end = start + 1;
     while (end < lines.length && !repoNameFromHeading(lines[end])) end++;
     const block = lines.slice(start, end).join('\n');
-    const intro = block.match(/(?:^|\n)\s*-?\s*\*\*(?:是什么|一句话)\*\*[：:]\s*(.+)/);
-    const description = plainText(intro?.[1] || '') || `收录于 ${date} 的 GitHub Trending 学习笔记。`;
+    const description = extractLabeledText(block, ['是什么', '一句话', '简单介绍', '介绍']) || `收录于 ${date} 的 GitHub Trending 学习笔记。`;
+    const reason = extractLabeledText(block, ['为什么热']);
+    const value = extractLabeledText(block, ['对你有什么用', '对你的价值']);
     const language = extractLanguage(lines[start], block);
 
     repositories.push({
@@ -63,7 +79,7 @@ function extractRepositories(content, slug, date) {
       dates: [date],
       languages: language ? [language] : [],
       appearances: 1,
-      searchText: plainText(`${name} ${language} ${date} ${block}`).slice(0, 4000),
+      searchText: plainText(`${name} ${language} ${date} ${description} ${reason} ${value}`).toLocaleLowerCase().slice(0, 1600),
     });
   }
 
@@ -92,12 +108,13 @@ if (fs.existsSync(contentDir)) {
       existing.appearances += 1;
       if (!existing.dates.includes(repository.date)) existing.dates.push(repository.date);
       if (repository.language && !existing.languages.includes(repository.language)) existing.languages.push(repository.language);
-      existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, 4000);
+      existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, 1600);
     }
   }
 }
 
 const output = {
+  version: 1,
   repositories: [...repositoryMap.values()].sort((a, b) => b.date.localeCompare(a.date) || a.name.localeCompare(b.name)),
 };
 

@@ -1,33 +1,35 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
+import { loadSearchIndex, repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
 
 const MAX_RESULTS = 8;
 
 export default function Search() {
   const [query, setQuery] = useState('');
   const [index, setIndex] = useState<SearchIndex | null>(null);
-  const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const results = index && query.trim() ? searchRepositories(index, query, MAX_RESULTS) : [];
+  const deferredQuery = useDeferredValue(query);
+  const results = useMemo(
+    () => index && deferredQuery.trim() ? searchRepositories(index, deferredQuery, MAX_RESULTS) : [],
+    [deferredQuery, index],
+  );
 
-  useEffect(() => {
-    fetch('/search-data.json')
-      .then(response => {
-        if (!response.ok) throw new Error('搜索数据加载失败');
-        return response.json();
-      })
+  const ensureIndex = useCallback(() => {
+    if (index || status === 'loading') return;
+    setStatus('loading');
+    loadSearchIndex()
       .then(data => { setIndex(data); setStatus('ready'); })
       .catch(() => setStatus('error'));
-  }, []);
+  }, [index, status]);
 
   useEffect(() => {
     const handlePointer = (event: MouseEvent) => {
@@ -71,7 +73,7 @@ export default function Search() {
       setSelected(value => Math.max(value - 1, 0));
     }
     if (event.key === 'Enter') {
-      router.push(repositoryPostHref(results[selected]));
+      router.push(repositoryPostHref(results[selected], query));
       close();
     }
   };
@@ -93,14 +95,18 @@ export default function Search() {
           setQuery(event.target.value);
           setSelected(0);
           setOpen(Boolean(event.target.value.trim()));
+          if (event.target.value.trim()) ensureIndex();
         }}
         onKeyDown={handleKey}
-        onFocus={() => query.trim() && setOpen(true)}
+        onFocus={() => {
+          ensureIndex();
+          if (query.trim()) setOpen(true);
+        }}
         className="site-search w-full rounded-full px-4 py-2 text-sm"
       />
       {open && (
         <div id="quick-repo-results" role="listbox" className="search-popover absolute left-0 top-full z-50 mt-2 max-h-[26rem] w-full overflow-y-auto rounded-2xl p-2 sm:left-auto sm:right-0 sm:w-[30rem]">
-          {status === 'loading' ? (
+          {status === 'idle' || status === 'loading' ? (
             <div className="px-3 py-6 text-center text-sm text-muted">正在读取仓库索引…</div>
           ) : status === 'error' ? (
             <div className="px-3 py-6 text-center text-sm text-muted">搜索暂时不可用，请刷新重试。</div>
@@ -112,7 +118,7 @@ export default function Search() {
                   id={`quick-result-${position}`}
                   role="option"
                   aria-selected={position === selected}
-                  href={repositoryPostHref(repository)}
+                  href={repositoryPostHref(repository, query)}
                   onClick={close}
                   onMouseEnter={() => setSelected(position)}
                   className={`block rounded-xl px-3 py-3 no-underline transition-colors ${position === selected ? 'bg-accent/10' : 'hover:bg-accent/10'}`}

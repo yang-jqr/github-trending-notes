@@ -48,6 +48,7 @@ export function getPost(slug: string): Post | null {
 /** Normalize repo name: strip trailing decorators, normalize spaces around / */
 function normalizeRepoName(raw: string): string {
   return raw
+    .replace(/[（(].*$/, "")             // strip old heading metadata
     .replace(/\s*[⭐\|].*$/, "")      // strip trailing ⭐ or | content
     .replace(/\s*\/\s*/g, "/")        // normalize "a / b" → "a/b"
     .trim();

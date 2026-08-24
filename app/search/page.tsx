@@ -1,9 +1,9 @@
 'use client';
 
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
+import { loadSearchIndex, repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
 
 const PAGE_SIZE = 24;
 const EXAMPLES = ['Python RAG', 'agent 安全', '语言:Rust', '日期:2026-08', '仓库:codex'];
@@ -16,14 +16,11 @@ function SearchPageInner() {
   const [index, setIndex] = useState<SearchIndex | null>(null);
   const [failed, setFailed] = useState(false);
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const deferredQuery = useDeferredValue(query);
 
   useEffect(() => setInput(query), [query]);
   useEffect(() => {
-    fetch('/search-data.json')
-      .then(response => {
-        if (!response.ok) throw new Error('搜索数据加载失败');
-        return response.json();
-      })
+    loadSearchIndex()
       .then(setIndex)
       .catch(() => setFailed(true));
   }, []);
@@ -37,7 +34,7 @@ function SearchPageInner() {
     return () => window.clearTimeout(id);
   }, [input, query, router]);
 
-  const results = useMemo(() => index ? searchRepositories(index, query) : [], [index, query]);
+  const results = useMemo(() => index ? searchRepositories(index, deferredQuery) : [], [deferredQuery, index]);
   const shown = results.slice(0, visible);
 
   return (
@@ -88,7 +85,7 @@ function SearchPageInner() {
           <>
             <div className="grid gap-3 lg:grid-cols-2">
               {shown.map(repository => (
-                <Link key={repository.name.toLowerCase()} href={repositoryPostHref(repository)} className="repo-result group">
+                <Link key={repository.name.toLowerCase()} href={repositoryPostHref(repository, query)} className="repo-result group">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="truncate font-black text-ink transition-colors group-hover:text-accent">{repository.name}</h3>
                     <span className="shrink-0 text-accent" aria-hidden="true">→</span>
