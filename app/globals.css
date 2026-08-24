@@ -105,7 +105,7 @@ button, input, select { font: inherit; }
   font-size: .9rem; font-weight: 900; text-decoration: none;
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.primary-button { background: #8068e5; box-shadow: 4px 4px 0 #4d3e76; color: white; }
+.primary-button { background: #7451eb; box-shadow: 4px 4px 0 #4d3e76; color: white; }
 .secondary-button { background: white; box-shadow: 4px 4px 0 #ffcf6f; color: #4d3e76; }
 .primary-button:hover, .secondary-button:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 #4d3e76; }
 

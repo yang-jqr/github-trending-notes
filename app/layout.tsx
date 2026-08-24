@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   },
   description: '每日整理 GitHub Trending 热门仓库，用 AI 生成中文学习笔记。',
   keywords: ['GitHub Trending', '开源项目', 'AI 学习笔记', '开发者'],
-  alternates: { canonical: '/' },
   manifest: '/manifest.webmanifest',
   openGraph: {
     type: 'website',

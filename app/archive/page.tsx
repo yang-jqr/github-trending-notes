@@ -6,6 +6,7 @@ import ArchiveList, { type ArchivePost } from '@/components/ArchiveList';
 export const metadata: Metadata = {
   title: '学习笔记归档',
   description: '按月份和编程语言浏览全部 GitHub Trending 学习笔记。',
+  alternates: { canonical: '/archive' },
 };
 
 export default function ArchivePage() {

@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { extractLanguages, extractRepoNames, getAllPosts, getStats, type Post } from '@/lib/posts';
 
 const HOME_POST_COUNT = 12;
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 export default function HomePage() {
   const posts = getAllPosts().filter(post => post.meta.date);
@@ -39,7 +44,7 @@ export default function HomePage() {
           <div className="hero-art-wrap">
             <Image
               src="/anime-coder.png"
-              alt="动漫风格的开发者与机器猫一起探索开源仓库"
+              alt="戴眼镜的动漫开发者与机器人猫一起探索开源仓库"
               width={1536}
               height={1024}
               priority

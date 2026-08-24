@@ -92,7 +92,7 @@ function SearchPageInner() {
                   </div>
                   <p className="repo-description mt-2 text-sm leading-6 text-muted">{repository.description}</p>
                   <div className="mt-3 flex flex-wrap gap-2 text-[11px] font-bold text-muted">
-                    {repository.language && <span className="rounded-full bg-[#e8f8ff] px-2.5 py-1">{repository.language}</span>}
+                    {(repository.language || repository.languages[0]) && <span className="rounded-full bg-[#e8f8ff] px-2.5 py-1">{repository.language || repository.languages[0]}</span>}
                     <span className="rounded-full bg-[#f3edff] px-2.5 py-1">{repository.date}</span>
                     {repository.appearances > 1 && <span className="rounded-full bg-[#fff0d4] px-2.5 py-1">上榜 {repository.appearances} 次</span>}
                   </div>

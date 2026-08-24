@@ -1,20 +1,15 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function PostSearchHighlight({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
+export default function PostSearchHighlight() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q');
 
   useEffect(() => {
-    if (!query || !ref.current) return;
-    const root = ref.current;
+    const root = document.getElementById('post-content');
+    if (!root) return;
 
     // Clear previous highlights
     root.querySelectorAll('mark[data-search-highlight]').forEach(el => {
@@ -24,7 +19,7 @@ export default function PostSearchHighlight({
     });
 
     // Traverse text nodes, wrap matches in <mark>
-    const words = query.trim().split(/\s+/).filter(Boolean);
+    const words = query?.trim().split(/\s+/).filter(Boolean) || [];
     if (words.length === 0) return;
     const regex = new RegExp(`(${words.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
 
@@ -33,6 +28,7 @@ export default function PostSearchHighlight({
         if (node.parentElement?.closest('script,style,mark[data-search-highlight],pre,code')) {
           return NodeFilter.FILTER_REJECT;
         }
+        regex.lastIndex = 0;
         return regex.test(node.textContent || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
       },
     });
@@ -71,5 +67,5 @@ export default function PostSearchHighlight({
     }
   }, [query]);
 
-  return <div ref={ref}>{children}</div>;
+  return null;
 }

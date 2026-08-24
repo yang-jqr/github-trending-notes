@@ -97,7 +97,7 @@
 | calesthio/OpenMontage | 10 | 08-12 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 7 | 07-31 |
-| mattpocock/skills | 18 | 08-24 |
+| mattpocock/skills | 19 | 08-24 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -109,7 +109,7 @@
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 4 | 08-01 |
-| NousResearch/hermes-agent | 6 | 08-24 |
+| NousResearch/hermes-agent | 7 | 08-24 |
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 5 | 08-02 |
@@ -497,7 +497,7 @@
 | mahlernim/google-timeline-visualizer | 2 | 08-23 |
 | Tencent/AI-Infra-Guard | 2 | 08-23 |
 | makeplane/plane | 3 | 08-23 |
-| openai/codex | 6 | 08-24 |
+| openai/codex | 2 | 08-24 |
 | multica-ai/andrej-karpathy-skills | 1 | 08-23 |
 | freestylefly/awesome-gpt-image-2 | 1 | 08-24 |
 | apache/maka | 1 | 08-24 |

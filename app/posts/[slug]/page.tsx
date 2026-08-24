@@ -9,6 +9,8 @@ import { extractLanguages, extractRepoNames, getAllPosts, getPost, linkifyRepoNa
 
 type PostPageProps = { params: Promise<{ slug: string }> };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllPosts().map(post => ({ slug: post.meta.slug }));
 }
@@ -16,9 +18,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(decodeURIComponent(slug));
-  return post
-    ? { title: post.meta.date ? `Trending ${post.meta.date}` : post.meta.title, description: `${post.meta.date} GitHub Trending 热门仓库学习笔记。` }
-    : { title: '笔记不存在' };
+  if (!post) return { title: '笔记不存在', robots: { index: false, follow: false } };
+
+  const title = post.meta.date ? `Trending ${post.meta.date}` : post.meta.title;
+  const description = `${post.meta.date} GitHub Trending 热门仓库学习笔记。`;
+  const canonical = `/posts/${encodeURIComponent(post.meta.slug)}`;
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: { title, description, type: 'article', url: canonical },
+  };
 }
 
 export default async function PostPage({ params }: PostPageProps) {
@@ -59,24 +69,23 @@ export default async function PostPage({ params }: PostPageProps) {
       </header>
 
       <section className="anime-card mt-6 p-5 sm:p-8">
+        <div id="post-content" className="prose max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
+            a: ({ href, children, ...props }) => (
+              <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined} className="font-semibold text-accent hover:underline" {...props}>{children}</a>
+            ),
+            del: ({ children }) => <span className="text-muted line-through">{children}</span>,
+            pre: ({ children }) => <pre className="overflow-x-auto bg-[#2b2740] p-4 text-sm leading-relaxed text-[#f8f5ff]">{children}</pre>,
+            code: ({ className, children, ...props }) => !className
+              ? <code className="rounded border border-border bg-[#f3edff] px-1.5 py-0.5 text-sm text-[#4d3e76]" {...props}>{children}</code>
+              : <code className={className} {...props}>{children}</code>,
+            hr: () => <hr className="my-8 border-border" />,
+            h2: ({ children }) => <h2 className="mt-9 border-b-2 border-[#e5dcf5] pb-2 text-xl font-black text-ink">{children}</h2>,
+            strong: ({ children }) => <strong className="text-ink">{children}</strong>,
+          }}>{text}</ReactMarkdown>
+        </div>
         <Suspense fallback={null}>
-          <PostSearchHighlight>
-            <div className="prose max-w-none">
-              <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
-                a: ({ href, children, ...props }) => (
-                  <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined} className="font-semibold text-accent hover:underline" {...props}>{children}</a>
-                ),
-                del: ({ children }) => <span className="text-muted line-through">{children}</span>,
-                pre: ({ children }) => <pre className="overflow-x-auto bg-[#2b2740] p-4 text-sm leading-relaxed text-[#f8f5ff]">{children}</pre>,
-                code: ({ className, children, ...props }) => !className
-                  ? <code className="rounded border border-border bg-[#f3edff] px-1.5 py-0.5 text-sm text-[#4d3e76]" {...props}>{children}</code>
-                  : <code className={className} {...props}>{children}</code>,
-                hr: () => <hr className="my-8 border-border" />,
-                h2: ({ children }) => <h2 className="mt-9 border-b-2 border-[#e5dcf5] pb-2 text-xl font-black text-ink">{children}</h2>,
-                strong: ({ children }) => <strong className="text-ink">{children}</strong>,
-              }}>{text}</ReactMarkdown>
-            </div>
-          </PostSearchHighlight>
+          <PostSearchHighlight />
         </Suspense>
       </section>
 

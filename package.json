@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "node scripts/generate-search-data.js && next dev",
     "build": "node scripts/generate-search-data.js && next build",
-    "test": "node scripts/generate-search-data.js && node scripts/check-search-data.js",
+    "test": "node scripts/generate-search-data.js && node scripts/check-search-data.js && node scripts/check-posts.js",
     "start": "next start"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "^15.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "^15.5.23",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "react-markdown": "^9.0.0",
     "remark-gfm": "^4.0.0"
   },

@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const contentDir = path.resolve(__dirname, '..', 'content');
+const contentDir = process.env.TRENDING_CONTENT_DIR
+  ? path.resolve(process.env.TRENDING_CONTENT_DIR)
+  : path.resolve(__dirname, '..', 'content');
 const outputPath = path.resolve(__dirname, '..', 'public', 'search-data.json');
 
 function normalizeRepoName(raw) {
@@ -107,6 +109,7 @@ if (fs.existsSync(contentDir)) {
       }
       existing.appearances += 1;
       if (!existing.dates.includes(repository.date)) existing.dates.push(repository.date);
+      if (!existing.language && repository.language) existing.language = repository.language;
       if (repository.language && !existing.languages.includes(repository.language)) existing.languages.push(repository.language);
       existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, 1600);
     }

@@ -87,7 +87,9 @@ export default function Search() {
         type="search"
         role="combobox"
         aria-expanded={open}
+        aria-autocomplete="list"
         aria-controls="quick-repo-results"
+        aria-activedescendant={open && results.length > 0 ? `quick-result-${selected}` : undefined}
         autoComplete="off"
         placeholder="搜仓库、技术或需求…  /"
         value={query}

@@ -4,6 +4,10 @@
 
 [👉 访问博客](https://github-trending-notes.vercel.app/)
 
+## 内容生成
+
+每日内容由仓库外部的 Hermes Cron 生成并提交，本仓库负责展示与搜索索引，不包含上游抓取实现。主数据源为 GitHub Trending；不可用时可能使用其他数据源作为 fallback，并在对应报告中单独标注，不能与主榜排名口径直接等同。
+
 ## 技术栈
 
 - **Next.js 15 + React 19 + TypeScript** — App Router 与 SSG 静态生成
@@ -51,6 +55,7 @@ npm run build  # 生产构建
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://your-domain.example
+TRENDING_CONTENT_DIR=/absolute/path/to/hermes/output
 ```
 
-该地址会用于 canonical、robots.txt 和 sitemap.xml；未设置时使用线上博客地址。
+`NEXT_PUBLIC_SITE_URL` 用于 canonical、robots.txt 和 sitemap.xml；`TRENDING_CONTENT_DIR` 可让构建直接读取 Hermes 的输出目录，未设置时读取仓库内的 `content/`。

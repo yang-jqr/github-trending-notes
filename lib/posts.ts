@@ -2,12 +2,11 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const CONTENT_PATHS = [path.join(process.cwd(), "content"), "/mnt/e/HermesWorkspace/github"];
-function getContentDir(): string {
-  for (const p of CONTENT_PATHS) { if (fs.existsSync(p)) return p; }
-  return CONTENT_PATHS[0];
-}
-const VAULT_PATH = getContentDir();
+const VAULT_PATH = process.env.TRENDING_CONTENT_DIR
+  ? path.resolve(process.env.TRENDING_CONTENT_DIR)
+  : path.join(process.cwd(), "content");
+const PUBLIC_SLUG = /^trending-\d{4}-\d{2}-\d{2}$/;
+let allPostsCache: Post[] | null = null;
 
 export interface PostMeta { slug: string; title: string; date: string; }
 export interface Post { meta: PostMeta; content: string; }
@@ -22,10 +21,14 @@ export interface BlogStats {
 
 function getAllSlugs(): string[] {
   if (!fs.existsSync(VAULT_PATH)) return [];
-  return fs.readdirSync(VAULT_PATH).filter(f => f.endsWith(".md")).map(f => f.replace(/\.md$/, ""));
+  return fs.readdirSync(VAULT_PATH)
+    .filter(f => f.endsWith(".md"))
+    .map(f => f.replace(/\.md$/, ""))
+    .filter(slug => PUBLIC_SLUG.test(slug));
 }
 
 export function getAllPosts(): Post[] {
+  if (process.env.NODE_ENV === "production" && allPostsCache) return allPostsCache;
   const posts: Post[] = [];
   for (const slug of getAllSlugs()) {
     const fp = path.join(VAULT_PATH, `${slug}.md`);
@@ -34,10 +37,13 @@ export function getAllPosts(): Post[] {
     const m = slug.match(/trending-(\d{4}-\d{2}-\d{2})/);
     posts.push({ meta: { slug, title: data.title || slug, date: m ? m[1] : data.date || "" }, content });
   }
-  return posts.sort((a, b) => b.meta.date.localeCompare(a.meta.date));
+  const result = posts.sort((a, b) => b.meta.date.localeCompare(a.meta.date));
+  if (process.env.NODE_ENV === "production") allPostsCache = result;
+  return result;
 }
 
 export function getPost(slug: string): Post | null {
+  if (!PUBLIC_SLUG.test(slug)) return null;
   const fp = path.join(VAULT_PATH, `${slug}.md`);
   if (!fs.existsSync(fp)) return null;
   const { data, content } = matter(fs.readFileSync(fp, "utf-8"));
@@ -125,8 +131,6 @@ export function getStats(): BlogStats {
     .map(([lang, count]) => ({ lang, count })).sort((a, b) => b.count - a.count).slice(0, 6);
   return { totalDays: posts.length, totalRepos, uniqueRepos: repoMap.size, topLanguages, recurringRepos: recurring };
 }
-
-export function getRecurringRepos(): RepoStats[] { return getStats().recurringRepos; }
 
 /**
  * 把内容中的 owner/repo 转为可点击的 GitHub 链接。
