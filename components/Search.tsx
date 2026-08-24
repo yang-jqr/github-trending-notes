@@ -1,17 +1,21 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { searchRepositories, type SearchIndex } from '@/lib/search';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
 
 const MAX_RESULTS = 8;
 
 export default function Search() {
   const [query, setQuery] = useState('');
   const [index, setIndex] = useState<SearchIndex | null>(null);
+  const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const results = index && query.trim() ? searchRepositories(index, query, MAX_RESULTS) : [];
 
@@ -21,8 +25,8 @@ export default function Search() {
         if (!response.ok) throw new Error('搜索数据加载失败');
         return response.json();
       })
-      .then(setIndex)
-      .catch(() => setIndex({ repositories: [] }));
+      .then(data => { setIndex(data); setStatus('ready'); })
+      .catch(() => setStatus('error'));
   }, []);
 
   useEffect(() => {
@@ -53,10 +57,11 @@ export default function Search() {
 
   const handleKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Escape') {
-      setOpen(false);
+      if (open) setOpen(false);
+      else setQuery('');
       return;
     }
-    if (!open) return;
+    if (!open || results.length === 0) return;
     if (event.key === 'ArrowDown') {
       event.preventDefault();
       setSelected(value => Math.min(value + 1, results.length - 1));
@@ -65,15 +70,15 @@ export default function Search() {
       event.preventDefault();
       setSelected(value => Math.max(value - 1, 0));
     }
-    if (event.key === 'Enter' && results[selected]) {
-      window.open(`https://github.com/${results[selected]}`, '_blank', 'noopener,noreferrer');
+    if (event.key === 'Enter') {
+      router.push(repositoryPostHref(results[selected]));
       close();
     }
   };
 
   return (
-    <div ref={containerRef} className="relative w-full sm:w-72">
-      <label htmlFor="quick-repo-search" className="sr-only">搜索仓库</label>
+    <div ref={containerRef} className="relative w-full sm:w-80">
+      <label htmlFor="quick-repo-search" className="sr-only">搜索仓库、技术或学习需求</label>
       <input
         ref={inputRef}
         id="quick-repo-search"
@@ -82,7 +87,7 @@ export default function Search() {
         aria-expanded={open}
         aria-controls="quick-repo-results"
         autoComplete="off"
-        placeholder="搜索仓库…  /"
+        placeholder="搜仓库、技术或需求…  /"
         value={query}
         onChange={event => {
           setQuery(event.target.value);
@@ -94,25 +99,37 @@ export default function Search() {
         className="site-search w-full rounded-full px-4 py-2 text-sm"
       />
       {open && (
-        <div id="quick-repo-results" role="listbox" className="search-popover absolute left-0 right-0 top-full z-50 mt-2 max-h-80 overflow-y-auto rounded-2xl p-2">
-          {results.length > 0 ? results.map((name, indexPosition) => (
-            <a
-              key={name.toLowerCase()}
-              role="option"
-              aria-selected={indexPosition === selected}
-              href={`https://github.com/${name}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={close}
-              onMouseEnter={() => setSelected(indexPosition)}
-              className={`block rounded-xl px-3 py-2.5 text-sm font-semibold no-underline transition-colors ${
-                indexPosition === selected ? 'bg-accent/10 text-accent' : 'text-ink hover:bg-accent/10'
-              }`}
-            >
-              {name}
-            </a>
-          )) : (
-            <div className="px-3 py-5 text-center text-sm text-muted">没有找到这个仓库</div>
+        <div id="quick-repo-results" role="listbox" className="search-popover absolute left-0 top-full z-50 mt-2 max-h-[26rem] w-full overflow-y-auto rounded-2xl p-2 sm:left-auto sm:right-0 sm:w-[30rem]">
+          {status === 'loading' ? (
+            <div className="px-3 py-6 text-center text-sm text-muted">正在读取仓库索引…</div>
+          ) : status === 'error' ? (
+            <div className="px-3 py-6 text-center text-sm text-muted">搜索暂时不可用，请刷新重试。</div>
+          ) : results.length > 0 ? (
+            <>
+              {results.map((repository, position) => (
+                <Link
+                  key={repository.name.toLowerCase()}
+                  id={`quick-result-${position}`}
+                  role="option"
+                  aria-selected={position === selected}
+                  href={repositoryPostHref(repository)}
+                  onClick={close}
+                  onMouseEnter={() => setSelected(position)}
+                  className={`block rounded-xl px-3 py-3 no-underline transition-colors ${position === selected ? 'bg-accent/10' : 'hover:bg-accent/10'}`}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="truncate text-sm font-black text-ink">{repository.name}</span>
+                    <span className="shrink-0 text-[10px] font-bold text-muted">{repository.language || repository.date}</span>
+                  </div>
+                  <p className="repo-description mt-1 text-xs leading-5 text-muted">{repository.description}</p>
+                </Link>
+              ))}
+              <Link href={`/search?q=${encodeURIComponent(query)}`} onClick={() => setOpen(false)} className="mt-1 block rounded-xl px-3 py-2 text-center text-xs font-black text-accent hover:bg-accent/10">
+                查看全部搜索结果 →
+              </Link>
+            </>
+          ) : (
+            <div className="px-3 py-6 text-center text-sm text-muted">没有匹配结果，试试技术名或需求描述。</div>
           )}
         </div>
       )}

@@ -63,9 +63,9 @@ export default function HomePage() {
           </div>
           <div className="flex flex-wrap gap-2">
             {stats.topLanguages.map(({ lang, count }) => (
-              <span key={lang} className="language-chip">
+              <Link key={lang} href={`/search?q=${encodeURIComponent(`语言:${lang}`)}`} className="language-chip">
                 {lang} <span>{count}</span>
-              </span>
+              </Link>
             ))}
           </div>
         </section>
@@ -99,16 +99,14 @@ export default function HomePage() {
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             {stats.recurringRepos.slice(0, 8).map(repo => (
-              <a
+              <Link
                 key={repo.name}
-                href={`https://github.com/${repo.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`}
                 className="mini-repo"
               >
                 <span className="truncate">{repo.name}</span>
                 <span className="shrink-0 text-xs text-muted">{repo.count} 次</span>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

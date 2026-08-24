@@ -149,12 +149,18 @@ button, input, select { font: inherit; }
 .mini-repo:hover { background: #eee5ff; }
 
 .repo-result {
-  display: block; overflow: hidden; border: 2px solid #c9bce7; border-radius: 1rem;
+  display: block; border: 2px solid #c9bce7; border-radius: 1rem;
   background: rgba(255, 255, 255, .88); padding: .9rem 1rem; color: #4d3e76;
-  font-size: .9rem; font-weight: 900; text-decoration: none; text-overflow: ellipsis; white-space: nowrap;
+  font-size: .9rem; text-decoration: none;
   transition: border-color .2s ease, transform .2s ease, background .2s ease;
 }
 .repo-result:hover { border-color: #8068e5; background: #f5efff; transform: translateY(-2px); }
+.repo-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
 .empty-state {
   border: 2px dashed #bbaade; border-radius: 1.25rem; background: rgba(255, 255, 255, .7);
   padding: 3rem 1rem; color: #746b84; text-align: center;

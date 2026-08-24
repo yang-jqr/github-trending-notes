@@ -41,7 +41,7 @@ export default function ArchivePage() {
           <h2 id="archive-languages" className="text-lg font-black text-ink">语言图鉴</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {stats.topLanguages.map(({ lang, count }) => (
-              <span key={lang} className="language-chip">{lang} <span>{count}</span></span>
+              <Link key={lang} href={`/search?q=${encodeURIComponent(`语言:${lang}`)}`} className="language-chip">{lang} <span>{count}</span></Link>
             ))}
           </div>
         </section>
@@ -55,10 +55,10 @@ export default function ArchivePage() {
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {stats.recurringRepos.slice(0, 12).map(repo => (
-              <a key={repo.name} href={`https://github.com/${repo.name}`} target="_blank" rel="noopener noreferrer" className="mini-repo">
+              <Link key={repo.name} href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`} className="mini-repo">
                 <span className="truncate">{repo.name}</span>
                 <span className="shrink-0 text-xs text-muted">{repo.count} 次</span>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
