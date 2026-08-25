@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-08-25]]
 - [[trending-2026-08-24]]
 - [[trending-2026-08-23]]
 - [[trending-2026-08-21]]
@@ -97,7 +98,7 @@
 | calesthio/OpenMontage | 10 | 08-12 |
 | penpot/penpot | 5 | 07-15 |
 | DeusData/codebase-memory-mcp | 7 | 07-31 |
-| mattpocock/skills | 19 | 08-24 |
+| mattpocock/skills | 18 | 08-24 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -109,7 +110,7 @@
 | freeCodeCamp/freeCodeCamp | 4 | 06-30 |
 | meshery/meshery | 3 | 06-18 |
 | chatwoot/chatwoot | 4 | 08-01 |
-| NousResearch/hermes-agent | 7 | 08-24 |
+| NousResearch/hermes-agent | 7 | 08-25 |
 | revfactory/harness | 4 | 06-25 |
 | byoungd/English-level-up-tips | 4 | 06-24 |
 | bytedance/deer-flow | 5 | 08-02 |
@@ -143,12 +144,12 @@
 | firecrawl/firecrawl | 3 | 08-11 |
 | JCodesMore/ai-website-cloner-template | 7 | 07-01 |
 | lyogavin/airllm | 7 | 08-06 |
-| anthropics/claude-plugins-official | 1 | 06-24 |
+| anthropics/claude-plugins-official | 2 | 08-25 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | interviewstreet/hiring-agent | 1 | 06-25 |
 | flutter/flutter | 2 | 06-30 |
 | andreknieriem/headunit-revived | 1 | 06-25 |
-| stablyai/orca | 5 | 08-13 |
+| stablyai/orca | 6 | 08-25 |
 | google-labs-code/design.md | 4 | 06-28 |
 | Flowseal/zapret-discord-youtube | 2 | 07-20 |
 | kunchenguid/no-mistakes | 2 | 06-27 |
@@ -218,7 +219,7 @@
 | Unclecheng-li/VulnClaw | 2 | 07-02 |
 | rtk-ai/rtk | 1 | 07-01 |
 | EverMind-AI/EverOS | 1 | 07-01 |
-| tinyhumansai/openhuman | 2 | 08-24 |
+| tinyhumansai/openhuman | 3 | 08-25 |
 | Robbyant/lingbot-map | 2 | 07-19 |
 | altic-dev/FluidVoice | 4 | 08-16 |
 | yikart/AiToEarn | 3 | 07-02 |
@@ -268,7 +269,7 @@
 | Diolinux/PhotoGIMP | 1 | 07-09 |
 | wonderwhy-er/DesktopCommanderMCP | 4 | 07-13 |
 | huxingyi/autoremesher | 2 | 07-10 |
-| MadsLorentzen/ai-job-search | 2 | 07-10 |
+| MadsLorentzen/ai-job-search | 3 | 08-25 |
 | VoltAgent/awesome-design-md | 1 | 07-10 |
 | vxcontrol/pentagi | 1 | 07-10 |
 | unclecode/crawl4ai | 1 | 07-10 |
@@ -290,7 +291,7 @@
 | zeux/meshoptimizer | 1 | 07-11 |
 | chriskohlhoff/asio | 1 | 07-11 |
 | Dicklesworthstone/destructive_command_guard | 3 | 07-16 |
-| Shubhamsaboo/awesome-llm-apps | 5 | 07-17 |
+| Shubhamsaboo/awesome-llm-apps | 6 | 08-25 |
 | home-assistant/core | 1 | 07-13 |
 | Crosstalk-Solutions/project-nomad | 2 | 07-13 |
 | ColeMurray/background-agents | 1 | 07-13 |
@@ -326,7 +327,7 @@
 | codecrafters-io/build-your-own-x | 4 | 08-03 |
 | ossu/computer-science | 1 | 07-17 |
 | github/copilot-sdk | 5 | 08-02 |
-| rohitg00/ai-engineering-from-scratch | 5 | 07-23 |
+| rohitg00/ai-engineering-from-scratch | 6 | 08-25 |
 | tirth8205/code-review-graph | 5 | 08-07 |
 | elder-plinius/G0DM0D3 | 1 | 07-19 |
 | KnockOutEZ/wigolo | 3 | 07-22 |
@@ -416,7 +417,7 @@
 | esengine/DeepSeek-Reasonix | 5 | 08-07 |
 | firecrawl/pdf-inspector | 4 | 08-07 |
 | donnemartin/system-design-primer | 2 | 08-06 |
-| Alishahryar1/free-claude-code | 2 | 08-24 |
+| Alishahryar1/free-claude-code | 3 | 08-25 |
 | livekit/agents | 2 | 08-05 |
 | uber/ADR | 2 | 08-06 |
 | webpack/webpack | 1 | 08-05 |
@@ -441,7 +442,7 @@
 | semantica-agi/semantica | 6 | 08-15 |
 | K2SOsint/Legendary_OSINT | 1 | 08-08 |
 | unclebob/swarm-forge | 1 | 08-08 |
-| TauricResearch/TradingAgents | 2 | 08-11 |
+| TauricResearch/TradingAgents | 3 | 08-25 |
 | LadybirdBrowser/ladybird | 2 | 08-11 |
 | litu54/DevOps-Interview-Guide | 1 | 08-09 |
 | bannedbook/fanqiang | 1 | 08-09 |
@@ -476,7 +477,7 @@
 | embabel/embabel-agent | 1 | 08-13 |
 | cordiverse/cordis | 3 | 08-18 |
 | public-apis/public-apis | 3 | 08-19 |
-| basecamp/omarchy | 3 | 08-24 |
+| basecamp/omarchy | 4 | 08-25 |
 | MakazhanAlpamys/Soup | 1 | 08-16 |
 | HKUDS/CLI-Anything | 1 | 08-16 |
 | questdb/questdb | 38 | 08-19 |
@@ -497,34 +498,42 @@
 | mahlernim/google-timeline-visualizer | 2 | 08-23 |
 | Tencent/AI-Infra-Guard | 2 | 08-23 |
 | makeplane/plane | 3 | 08-23 |
-| openai/codex | 2 | 08-24 |
-| multica-ai/andrej-karpathy-skills | 1 | 08-23 |
-| freestylefly/awesome-gpt-image-2 | 1 | 08-24 |
-| apache/maka | 1 | 08-24 |
+| openai/codex | 7 | 08-25 |
+| multica-ai/andrej-karpathy-skills | 2 | 08-25 |
+| freestylefly/awesome-gpt-image-2 | 2 | 08-25 |
+| apache/maka | 2 | 08-25 |
 | ruvnet/ruflo | 1 | 08-24 |
 | VoltAgent/awesome-agent-skills | 1 | 08-24 |
 | dani-garcia/vaultwarden | 1 | 08-24 |
-| anthropics/claude-plugins-community | 1 | 08-24 |
+| anthropics/claude-plugins-community | 2 | 08-25 |
+
+| AgriciDaniel/claude-obsidian | 1 | 08-25 |
+| marin-community/marin | 1 | 08-25 |
+| DietrichGebert/ponytail | 1 | 08-25 |
+| asciimoo/hister | 1 | 08-25 |
+| can1357/oh-my-pi | 2 | 08-25 |
+| langchain-ai/deepagents | 1 | 08-25 |
+| pipecat-ai/pipecat | 1 | 08-25 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）, kepano/obsidian-skills（Obsidian CEO出品的笔记Agent技能）, cursor/plugins（Cursor插件规范）, multica-ai/andrej-karpathy-skills（Karpathy编码方法论CLAUDE.md）, VoltAgent/awesome-agent-skills（1000+技能合集）, anthropics/claude-plugins-community（Claude插件社区市场）, virgiliojr94/book-to-skill（书PDF→技能）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）, macro（Rust统一工作区+共享AI记忆），agent-substrate/substrate（agent运行时核心系统）, apache/maka（Apache本地优先Agent工作区+append-only事件日志）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）, NVIDIA-NeMo/Switchyard（并行Agent舰队ADE）, n8n-io/n8n（可视化AI工作流编排）, ruvnet/ruflo（多Agent swarm元harness）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）, volcengine/OpenViking（自进化上下文数据库）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, strix（AI渗透测试agent）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测），Tencent/AI-Infra-Guard（全栈AI红队扫描）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
-- #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）, modular/modular（Mojo/MAX AI平台）
+- #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）, modular/modular（Mojo/MAX AI平台）, marin-community/marin（基础模型研发框架）
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）, unsloth（2倍速微调+显存优化）, Soup（单YAML微调+分层流式，4GB显存跑8B训练）, omlx（连续批处理+SSD缓存的端侧推理服务器）
 - #Token优化 — headroom（60-95% token压缩，不减质量）, rtk-ai/rtk（60-90% token节省CLI代理）
 - #多模型统一接口 — aisuite（一行代码切模型，吴恩达出品）, freellmapi（16家LLM免费额度聚合代理）, Wei-Shaw/sub2api（订阅统一接入中转）
 - #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）, OpenCut（开源CapCut替代品）
 - #AIGC生图 — freestylefly/awesome-gpt-image-2（GPT-Image2工业级提示词模板库）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
-- #知识库工具 — tolaria（本地优先 Markdown 管理）
+- #知识库工具 — tolaria（本地优先 Markdown 管理）, AgriciDaniel/claude-obsidian（自组织AI第二大脑+知识图谱）
 - #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）, microsoft/TypeScript（Go原生编译器）, vlang/v（V语言）, dani-garcia/vaultwarden（自托管Bitwarden兼容服务端）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库），turbovec（TurboQuant量化向量索引）
-- #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）, FluidVoice（macOS端侧听写）
+- #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）, FluidVoice（macOS端侧听写）, pipecat-ai/pipecat（语音Agent框架）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
 - #前端 — CopilotKit, svelte, ai-website-cloner-template
 - #数据采集 — Agent-Reach, last30days-skill, Scrapling, maigret, spiderfoot, firecrawl, MediaCrawler, crawl4ai, holehe（邮箱注册探测OSINT）
