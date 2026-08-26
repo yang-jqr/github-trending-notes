@@ -4,6 +4,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } f
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { loadSearchIndex, repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
+import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 
 const MAX_RESULTS = 8;
 
@@ -91,6 +92,9 @@ export default function Search() {
         aria-controls="quick-repo-results"
         aria-activedescendant={open && results.length > 0 ? `quick-result-${selected}` : undefined}
         autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="none"
+        spellCheck={false}
         placeholder="搜仓库、技术或需求…  /"
         value={query}
         onChange={event => {
@@ -115,22 +119,28 @@ export default function Search() {
           ) : results.length > 0 ? (
             <>
               {results.map((repository, position) => (
-                <Link
+                <div
                   key={repository.name.toLowerCase()}
-                  id={`quick-result-${position}`}
-                  role="option"
-                  aria-selected={position === selected}
-                  href={repositoryPostHref(repository, query)}
-                  onClick={close}
                   onMouseEnter={() => setSelected(position)}
-                  className={`block rounded-xl px-3 py-3 no-underline transition-colors ${position === selected ? 'bg-accent/10' : 'hover:bg-accent/10'}`}
+                  className={`rounded-xl px-3 py-3 transition-colors ${position === selected ? 'bg-accent/10' : 'hover:bg-accent/10'}`}
                 >
                   <div className="flex items-center justify-between gap-3">
-                    <span className="truncate text-sm font-black text-ink">{repository.name}</span>
-                    <span className="shrink-0 text-[10px] font-bold text-muted">{repository.language || repository.date}</span>
+                    <RepositoryGithubLink name={repository.name} className="truncate text-sm font-black text-accent hover:underline" />
+                    <Link
+                      id={`quick-result-${position}`}
+                      role="option"
+                      aria-selected={position === selected}
+                      href={repositoryPostHref(repository, query)}
+                      onClick={close}
+                      className="shrink-0 text-[10px] font-bold text-muted hover:text-accent"
+                    >
+                      本站笔记 →
+                    </Link>
                   </div>
-                  <p className="repo-description mt-1 text-xs leading-5 text-muted">{repository.description}</p>
-                </Link>
+                  <Link href={repositoryPostHref(repository, query)} onClick={close} className="block no-underline">
+                    <p className="repo-description mt-1 text-xs leading-5 text-muted">{repository.description}</p>
+                  </Link>
+                </div>
               ))}
               <Link href={`/search?q=${encodeURIComponent(query)}`} onClick={() => setOpen(false)} className="mt-1 block rounded-xl px-3 py-2 text-center text-xs font-black text-accent hover:bg-accent/10">
                 查看全部搜索结果 →

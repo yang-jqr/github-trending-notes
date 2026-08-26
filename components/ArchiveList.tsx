@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 
 export interface ArchivePost {
   slug: string;
@@ -78,18 +79,18 @@ export default function ArchiveList({ posts }: { posts: ArchivePost[] }) {
               <h3 id={`month-${groupMonth}`} className="mb-3 inline-flex rounded-full bg-[#eadeff] px-3 py-1 text-sm font-black text-accent">{groupMonth}</h3>
               <div className="grid gap-3 lg:grid-cols-2">
                 {list.map(post => (
-                  <Link key={post.slug} href={`/posts/${encodeURIComponent(post.slug)}`} className="episode-card group">
-                    <div className="flex items-center justify-between gap-3">
+                  <article key={post.slug} className="episode-card group">
+                    <Link href={`/posts/${encodeURIComponent(post.slug)}`} className="flex items-center justify-between gap-3 no-underline">
                       <span className="font-black text-ink transition-colors group-hover:text-accent">{post.date}</span>
-                      <span className="text-xs font-bold text-muted">{post.repos.length} 个仓库</span>
-                    </div>
+                      <span className="text-xs font-bold text-muted">{post.repos.length} 个仓库 · 查看笔记 →</span>
+                    </Link>
                     {post.repos.length > 0 && (
                       <div className="mt-3 flex flex-wrap gap-1.5">
-                        {post.repos.slice(0, 4).map(repo => <span key={repo} className="repo-chip">{repo}</span>)}
+                        {post.repos.slice(0, 4).map(repo => <RepositoryGithubLink key={repo} name={repo} className="repo-chip hover:border-accent hover:text-accent" />)}
                         {post.repos.length > 4 && <span className="repo-chip">+{post.repos.length - 4}</span>}
                       </div>
                     )}
-                  </Link>
+                  </article>
                 ))}
               </div>
             </section>

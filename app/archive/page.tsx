@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { extractLanguages, extractRepoNames, getAllPosts, getStats } from '@/lib/posts';
 import ArchiveList, { type ArchivePost } from '@/components/ArchiveList';
+import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 
 export const metadata: Metadata = {
   title: '学习笔记归档',
@@ -56,10 +57,12 @@ export default function ArchivePage() {
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {stats.recurringRepos.slice(0, 12).map(repo => (
-              <Link key={repo.name} href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`} className="mini-repo">
-                <span className="truncate">{repo.name}</span>
-                <span className="shrink-0 text-xs text-muted">{repo.count} 次</span>
-              </Link>
+              <div key={repo.name} className="mini-repo">
+                <RepositoryGithubLink name={repo.name} className="truncate text-accent hover:underline" />
+                <Link href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`} className="shrink-0 text-xs text-muted hover:text-accent">
+                  笔记 {repo.count} 次 →
+                </Link>
+              </div>
             ))}
           </div>
         </section>

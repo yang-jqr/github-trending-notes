@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 import { extractLanguages, extractRepoNames, getAllPosts, getStats, type Post } from '@/lib/posts';
 
 const HOME_POST_COUNT = 12;
@@ -104,14 +105,12 @@ export default function HomePage() {
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             {stats.recurringRepos.slice(0, 8).map(repo => (
-              <Link
-                key={repo.name}
-                href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`}
-                className="mini-repo"
-              >
-                <span className="truncate">{repo.name}</span>
-                <span className="shrink-0 text-xs text-muted">{repo.count} 次</span>
-              </Link>
+              <div key={repo.name} className="mini-repo">
+                <RepositoryGithubLink name={repo.name} className="truncate text-accent hover:underline" />
+                <Link href={`/posts/${encodeURIComponent(`trending-${repo.dates[0]}`)}?q=${encodeURIComponent(repo.name)}`} className="shrink-0 text-xs text-muted hover:text-accent">
+                  笔记 {repo.count} 次 →
+                </Link>
+              </div>
             ))}
           </div>
         </section>
@@ -134,23 +133,25 @@ function PostCard({ post }: { post: Post }) {
   const languages = extractLanguages(post.content);
 
   return (
-    <Link href={`/posts/${encodeURIComponent(post.meta.slug)}`} className="episode-card group">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <span className="text-xs font-black tracking-[.16em] text-accent">EP. {post.meta.date}</span>
-          <h3 className="mt-1 text-lg font-black text-ink transition-colors group-hover:text-accent">
-            GitHub Trending 学习笔记
-          </h3>
+    <article className="episode-card group">
+      <Link href={`/posts/${encodeURIComponent(post.meta.slug)}`} className="block no-underline">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <span className="text-xs font-black tracking-[.16em] text-accent">EP. {post.meta.date}</span>
+            <h3 className="mt-1 text-lg font-black text-ink transition-colors group-hover:text-accent">
+              GitHub Trending 学习笔记
+            </h3>
+          </div>
+          <span className="episode-arrow" aria-hidden="true">↗</span>
         </div>
-        <span className="episode-arrow" aria-hidden="true">↗</span>
-      </div>
-      <p className="mt-2 text-sm text-muted">{names.length} 个仓库 · {languages.length || 0} 种语言</p>
+        <p className="mt-2 text-sm text-muted">{names.length} 个仓库 · {languages.length || 0} 种语言</p>
+      </Link>
       {names.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
-          {names.slice(0, 4).map(name => <span key={name} className="repo-chip">{name}</span>)}
+          {names.slice(0, 4).map(name => <RepositoryGithubLink key={name} name={name} className="repo-chip hover:border-accent hover:text-accent" />)}
           {names.length > 4 && <span className="repo-chip">+{names.length - 4}</span>}
         </div>
       )}
-    </Link>
+    </article>
   );
 }

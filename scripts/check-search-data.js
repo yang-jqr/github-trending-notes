@@ -9,6 +9,7 @@ assert.ok(index.repositories.every(repository => (
   && typeof repository.description === 'string' && repository.description.length > 0
   && /^trending-\d{4}-\d{2}-\d{2}$/.test(repository.slug)
   && /^\d{4}-\d{2}-\d{2}$/.test(repository.date)
+  && Number.isInteger(repository.stars) && repository.stars >= 0
   && Array.isArray(repository.dates) && repository.dates.includes(repository.date)
   && Array.isArray(repository.languages)
   && typeof repository.searchText === 'string' && repository.searchText.length > 0
@@ -23,7 +24,9 @@ assert.equal(
   'repository names must be unique (case-insensitive)',
 );
 const recurring = index.repositories.find(repository => repository.name.toLowerCase() === 'mattpocock/skills');
-assert.ok(recurring?.description && recurring.appearances > 1, 'recurring repositories must keep an intro and appearance count');
+assert.ok(recurring?.description && recurring.appearances > 1 && recurring.stars > 0, 'recurring repositories must keep an intro, star count and appearance count');
+assert.ok(index.repositories.some(repository => repository.name === 'hugohe3/ppt-master' && repository.searchText.includes('ppt')), 'ppt must find ppt-master');
+assert.ok(index.repositories.some(repository => repository.name === 'mattpocock/skills' && repository.searchText.includes('skills')), 'skills must find mattpocock/skills');
 
 const bytes = Buffer.byteLength(JSON.stringify(index));
 const brotliBytes = brotliCompressSync(JSON.stringify(index)).length;

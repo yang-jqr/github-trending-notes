@@ -56,6 +56,17 @@ function extractLanguage(heading, block) {
   return statsLine ? statsLine[1].trim() : '';
 }
 
+function extractStars(heading, block) {
+  const match = heading.match(/⭐\s*([\d,.]+(?:[kKmM])?)/)
+    || heading.match(/·\s*([\d,.]+(?:[kKmM])?)\s*⭐/)
+    || block.match(/^⭐\s*([\d,.]+(?:[kKmM])?)/m);
+  if (!match) return 0;
+  const value = match[1].replace(/,/g, '');
+  const suffix = value.slice(-1).toLowerCase();
+  const multiplier = suffix === 'k' ? 1_000 : suffix === 'm' ? 1_000_000 : 1;
+  return Math.round(Number.parseFloat(multiplier === 1 ? value : value.slice(0, -1)) * multiplier);
+}
+
 function extractRepositories(content, slug, date) {
   const lines = content.split('\n');
   const repositories = [];
@@ -71,6 +82,7 @@ function extractRepositories(content, slug, date) {
     const reason = extractLabeledText(block, ['为什么热']);
     const value = extractLabeledText(block, ['对你有什么用', '对你的价值']);
     const language = extractLanguage(lines[start], block);
+    const stars = extractStars(lines[start], block);
 
     repositories.push({
       name,
@@ -78,6 +90,7 @@ function extractRepositories(content, slug, date) {
       slug,
       date,
       language,
+      stars,
       dates: [date],
       languages: language ? [language] : [],
       appearances: 1,
@@ -110,6 +123,7 @@ if (fs.existsSync(contentDir)) {
       existing.appearances += 1;
       if (!existing.dates.includes(repository.date)) existing.dates.push(repository.date);
       if (!existing.language && repository.language) existing.language = repository.language;
+      if (!existing.stars && repository.stars) existing.stars = repository.stars;
       if (repository.language && !existing.languages.includes(repository.language)) existing.languages.push(repository.language);
       existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, 1600);
     }

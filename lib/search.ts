@@ -4,6 +4,7 @@ export interface SearchRepository {
   slug: string;
   date: string;
   language: string;
+  stars: number;
   dates: string[];
   languages: string[];
   appearances: number;
