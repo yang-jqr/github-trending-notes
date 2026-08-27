@@ -23,10 +23,16 @@ assert.equal(
   index.repositories.length,
   'repository names must be unique (case-insensitive)',
 );
-const recurring = index.repositories.find(repository => repository.name.toLowerCase() === 'mattpocock/skills');
-assert.ok(recurring?.description && recurring.appearances > 1 && recurring.stars > 0, 'recurring repositories must keep an intro, star count and appearance count');
-assert.ok(index.repositories.some(repository => repository.name === 'hugohe3/ppt-master' && repository.searchText.includes('ppt')), 'ppt must find ppt-master');
-assert.ok(index.repositories.some(repository => repository.name === 'mattpocock/skills' && repository.searchText.includes('skills')), 'skills must find mattpocock/skills');
+// 内容派生锚点：取当前复现次数最多的仓库做冒烟，不硬编码仓库名，内容变动不致构建失败
+const recurring = index.repositories.filter(repository => repository.appearances > 1);
+assert.ok(recurring.length > 0, 'index should contain repositories that appear more than once');
+const topRecurring = recurring.reduce((a, b) => (b.appearances > a.appearances ? b : a));
+assert.ok(topRecurring.description && topRecurring.stars > 0, 'recurring repositories must keep an intro, star count and appearance count');
+// 不变量：每个仓库必须能被自己的名字检索到
+assert.ok(
+  index.repositories.every(repository => repository.searchText.includes(repository.name.toLocaleLowerCase())),
+  'every repository must be findable by its own name',
+);
 
 const bytes = Buffer.byteLength(JSON.stringify(index));
 const brotliBytes = brotliCompressSync(JSON.stringify(index)).length;

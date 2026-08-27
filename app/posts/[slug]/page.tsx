@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import PostSearchHighlight from '@/components/PostSearchHighlight';
-import { extractLanguages, extractRepoNames, getAllPosts, getPost, linkifyRepoNames, resolveWikiLinks } from '@/lib/posts';
+import { extractLanguages, extractRepoNames, getAllPosts, getPost, linkifyRepoNames, resolveWikiLinks, stripObsidianBreadcrumbs } from '@/lib/posts';
 
 type PostPageProps = { params: Promise<{ slug: string }> };
 
@@ -39,7 +39,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
   const allPosts = getAllPosts();
   const allSlugs = new Set(allPosts.map(item => item.meta.slug));
-  const text = linkifyRepoNames(resolveWikiLinks(post.content, allSlugs));
+  const text = linkifyRepoNames(resolveWikiLinks(stripObsidianBreadcrumbs(post.content), allSlugs));
   const datedPosts = allPosts.filter(item => item.meta.date);
   const index = datedPosts.findIndex(item => item.meta.slug === decodedSlug);
   const previous = index >= 0 && index < datedPosts.length - 1 ? datedPosts[index + 1] : null;

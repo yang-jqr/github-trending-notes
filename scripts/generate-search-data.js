@@ -1,27 +1,27 @@
 const fs = require('fs');
 const path = require('path');
+const ts = require('typescript');
+
+// 允许直接 require TypeScript 共享解析模块，避免与 lib/posts.ts 重复实现内容格式解析
+require.extensions['.ts'] = (module, filename) => {
+  const source = fs.readFileSync(filename, 'utf8');
+  const output = ts.transpileModule(source, {
+    compilerOptions: {
+      esModuleInterop: true,
+      module: ts.ModuleKind.CommonJS,
+      target: ts.ScriptTarget.ES2020,
+    },
+    fileName: filename,
+  }).outputText;
+  module._compile(output, filename);
+};
+
+const { repoNameFromHeading, extractLanguageFromHeading } = require('../lib/parsing.ts');
 
 const contentDir = process.env.TRENDING_CONTENT_DIR
   ? path.resolve(process.env.TRENDING_CONTENT_DIR)
   : path.resolve(__dirname, '..', 'content');
 const outputPath = path.resolve(__dirname, '..', 'public', 'search-data.json');
-
-function normalizeRepoName(raw) {
-  return raw
-    .replace(/[（(].*$/, '')
-    .replace(/\s*[⭐|].*$/, '')
-    .replace(/\s*\/\s*/g, '/')
-    .trim();
-}
-
-function repoNameFromHeading(line) {
-  let match = line.match(/^## \d+\. (.+)/);
-  if (!match) match = line.match(/^\*\*\d+\. (.+?)\*\*/);
-  if (!match) match = line.match(/^\*\*#\d+\s+(.+?)\*\*/);
-  if (!match) return '';
-  const name = normalizeRepoName(match[1]);
-  return name.length > 2 && name.includes('/') ? name : '';
-}
 
 function plainText(value) {
   return value
@@ -48,10 +48,8 @@ function extractLabeledText(block, labels) {
 }
 
 function extractLanguage(heading, block) {
-  const current = heading.match(/\*\*\s*\|\s*([A-Za-z][\w+#.-]*(?:\s+[A-Za-z][\w+#.-]*)?)\s*·/);
-  if (current) return current[1].trim();
-  const old = heading.match(/·\s*([A-Za-z][\w+#.-]*(?:\s+[A-Za-z][\w+#.-]*)?)\s*$/);
-  if (old) return old[1].trim();
+  const primary = extractLanguageFromHeading(heading);
+  if (primary) return primary;
   const statsLine = block.match(/⭐[^\n]*\|\s*([A-Za-z][\w+#.-]*(?:\s+[A-Za-z][\w+#.-]*)?)\s*(?:\n|$)/);
   return statsLine ? statsLine[1].trim() : '';
 }

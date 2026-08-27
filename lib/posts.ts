@@ -1,6 +1,9 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { extractLanguageFromHeading, extractRepoNames, normalizeRepoName } from "./parsing";
+
+export { extractRepoNames, normalizeRepoName };
 
 const VAULT_PATH = process.env.TRENDING_CONTENT_DIR
   ? path.resolve(process.env.TRENDING_CONTENT_DIR)
@@ -51,51 +54,24 @@ export function getPost(slug: string): Post | null {
   return { meta: { slug, title: data.title || slug, date: m ? m[1] : data.date || "" }, content };
 }
 
-/** Normalize repo name: strip trailing decorators, normalize spaces around / */
-function normalizeRepoName(raw: string): string {
-  return raw
-    .replace(/[（(].*$/, "")             // strip old heading metadata
-    .replace(/\s*[⭐\|].*$/, "")      // strip trailing ⭐ or | content
-    .replace(/\s*\/\s*/g, "/")        // normalize "a / b" → "a/b"
-    .trim();
-}
-
-export function extractRepoNames(content: string): string[] {
-  const names: string[] = [];
-  const seen = new Set<string>();
-  for (const line of content.split("\n")) {
-    let m = line.match(/^## \d+\. (.+)/);              // ## 1. repo/name
-    if (!m) m = line.match(/^\*\*\d+\. (.+?)\*\*/);    // **1. repo/name**
-    if (!m) m = line.match(/^\*\*#\d+\s+(.+?)\*\*/);   // **#1 repo/name**
-    if (m) {
-      const name = normalizeRepoName(m[1]);
-      if (name && name.length > 2 && name.includes("/") && !seen.has(name)) {
-        seen.add(name);
-        names.push(name);
-      }
-    }
-  }
-  return names;
+/** 去掉 Obsidian 上一篇/下一篇面包屑（<< [[a]] | [[b]] >>），博客自带底部导航。 */
+export function stripObsidianBreadcrumbs(content: string): string {
+  return content.replace(/^<<[^\n]*?>>[ \t]*\n?/gm, "");
 }
 
 export function extractLanguages(content: string): string[] {
   const langs = new Set<string>();
-  const lines = content.split("\n");
-  for (const line of lines) {
-    let m: RegExpMatchArray | null = null;
-
-    // Format A: **#1 repo/name** | Language · ...  (current)
-    m = line.match(/^\*\*#\d+\s+.+?\*\*\s*\|\s*([A-Za-z][\w\s+#.-]*?)\s*·/);
-    // Format B: **1. repo/name**（Language · ...） (old)
-    if (!m) m = line.match(/^\*\*\d+\. .+?\*\*[（(]\s*([A-Za-z][\w\s+#.-]*?)\s*·/);
-    // Format C: two-pipe after ⭐ pattern (legacy)
-    if (!m) m = line.match(/⭐[^|]+\|[^|]*\|\s*(\w[\w\s+#.-]*)/);
-    // Format D: "today | Language" (legacy)
-    if (!m) m = line.match(/today\s*\|\s*(\w[\w+#.-]+)/);
-
-    if (m) {
-      const lang = m[1].trim();
-      if (lang && /^[A-Z]/.test(lang) && lang.length < 20) langs.add(lang);
+  for (const line of content.split("\n")) {
+    // 共享主解析覆盖当前格式与旧格式；其余为历史遗留格式与自由文本兜底
+    let lang = extractLanguageFromHeading(line);
+    if (!lang) {
+      let m: RegExpMatchArray | null = line.match(/^\*\*\d+\. .+?\*\*[（(]\s*([A-Za-z][\w\s+#.-]*?)\s*·/);
+      if (!m) m = line.match(/⭐[^|]+\|[^|]*\|\s*(\w[\w\s+#.-]*)/);
+      if (!m) m = line.match(/today\s*\|\s*(\w[\w+#.-]+)/);
+      if (m) lang = m[1].trim();
+    }
+    if (lang && /^[A-Z]/.test(lang) && lang.length < 20) {
+      langs.add(lang);
     } else {
       // Fallback: split by · and check last segment
       const parts = line.split("·");

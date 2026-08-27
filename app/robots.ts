@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
+import { getSiteUrl } from '@/lib/site';
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://github-trending-notes.vercel.app').replace(/\/$/, '');
+const siteUrl = getSiteUrl();
 
 export default function robots(): MetadataRoute.Robots {
   return {
