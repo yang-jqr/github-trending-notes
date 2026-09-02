@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-09-02]]
 - [[trending-2026-09-01]]
 - [[trending-2026-08-31]]
 - [[trending-2026-08-30]]
@@ -96,16 +97,17 @@
 | addyosmani/agent-skills | 16 | 08-30 |
 | calesthio/openmontage | 12 | 08-30 |
 | rohitg00/ai-engineering-from-scratch | 10 | 08-31 |
+| affaan-m/ecc | 10 | 09-02 |
 | mvanhorn/last30days-skill | 9 | 08-03 |
 | shiyu-coder/kronos | 9 | 08-13 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
-| affaan-m/ecc | 9 | 09-01 |
 | hkuds/vibe-trading | 8 | 07-16 |
 | tencentcloud/tencentdb-agent-memory | 8 | 08-07 |
 | zhulinsen/daily_stock_analysis | 8 | 08-12 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | diegosouzapw/omniroute | 8 | 08-28 |
 | opencut-app/opencut | 8 | 08-28 |
+| stablyai/orca | 8 | 09-02 |
 | jcodesmore/ai-website-cloner-template | 7 | 07-01 |
 | koala73/worldmonitor | 7 | 07-25 |
 | alibaba/open-code-review | 7 | 07-31 |
@@ -116,7 +118,7 @@
 | nousresearch/hermes-agent | 7 | 08-26 |
 | shubhamsaboo/awesome-llm-apps | 7 | 08-26 |
 | madslorentzen/ai-job-search | 7 | 08-28 |
-| stablyai/orca | 7 | 09-01 |
+| every-app/open-seo | 7 | 09-02 |
 | asgeirtj/system_prompts_leaks | 6 | 07-10 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
 | bradautomates/claude-video | 6 | 07-31 |
@@ -136,7 +138,8 @@
 | wonderwhy-er/desktopcommandermcp | 6 | 08-31 |
 | cursor/plugins | 6 | 08-31 |
 | freestylefly/awesome-gpt-image-2 | 6 | 08-31 |
-| every-app/open-seo | 6 | 09-01 |
+| iptv-org/iptv | 6 | 09-02 |
+| firecrawl/pdf-inspector | 6 | 09-02 |
 | apple/container | 5 | 06-26 |
 | garrytan/gstack | 5 | 06-28 |
 | refactoringhq/tolaria | 5 | 07-02 |
@@ -161,11 +164,16 @@
 | tinyhumansai/openhuman | 5 | 08-27 |
 | alishahryar1/free-claude-code | 5 | 08-27 |
 | andrewyng/aisuite | 5 | 08-28 |
+| unslothai/unsloth | 5 | 08-31 |
 | marin-community/marin | 5 | 08-31 |
 | dietrichgebert/ponytail | 5 | 08-31 |
-| unslothai/unsloth | 5 | 08-31 |
-| iptv-org/iptv | 5 | 09-01 |
-| firecrawl/pdf-inspector | 5 | 09-01 |
+| browser-use/video-use | 5 | 09-02 |
+| anthropics/claude-code | 5 | 09-02 |
+| hkuds/deeptutor | 5 | 09-02 |
+| knockoutez/wigolo | 5 | 09-02 |
+| iv-org/invidious | 5 | 09-02 |
+| vitali87/code-graph-rag | 5 | 09-02 |
+| k-dense-ai/scientific-agent-skills | 5 | 09-02 |
 | music-assistant/server | 4 | 06-17 |
 | google-labs-code/design.md | 4 | 06-28 |
 | icewhaletech/casaos | 4 | 06-29 |
@@ -203,13 +211,11 @@
 | tashfeenahmed/freellmapi | 4 | 08-31 |
 | chromedevtools/chrome-devtools-mcp | 4 | 08-31 |
 | livekit/agents | 4 | 08-31 |
-| knockoutez/wigolo | 4 | 09-01 |
-| iv-org/invidious | 4 | 09-01 |
-| browser-use/video-use | 4 | 09-01 |
-| hkuds/deeptutor | 4 | 09-01 |
-| vitali87/code-graph-rag | 4 | 09-01 |
-| anthropics/claude-code | 4 | 09-01 |
-| k-dense-ai/scientific-agent-skills | 4 | 09-01 |
+| nvidia/skillspector | 4 | 09-02 |
+| openclaw/openclaw | 4 | 09-02 |
+| oblien/openship | 4 | 09-02 |
+| 3b1b/manim | 4 | 09-02 |
+| osmantic/ods | 4 | 09-02 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
 | maziyarpanahi/openmed | 3 | 06-13 |
@@ -266,14 +272,16 @@
 | langchain-ai/deepagents | 3 | 08-28 |
 | ayghri/i-have-adhd | 3 | 08-30 |
 | tt-a1i/archify | 3 | 08-30 |
+| rommapp/romm | 3 | 08-31 |
 | everyinc/compound-engineering-plugin | 3 | 08-31 |
 | google/googletest | 3 | 08-31 |
-| rommapp/romm | 3 | 08-31 |
-| nvidia/skillspector | 3 | 09-01 |
-| oblien/openship | 3 | 09-01 |
-| 3b1b/manim | 3 | 09-01 |
-| openclaw/openclaw | 3 | 09-01 |
-| osmantic/ods | 3 | 09-01 |
+| rmyndharis/openwa | 3 | 09-02 |
+| langgenius/dify | 3 | 09-02 |
+| voltagent/awesome-design-md | 3 | 09-02 |
+| unclecode/crawl4ai | 3 | 09-02 |
+| makazhanalpamys/soup | 3 | 09-02 |
+| thu-maic/openmaic | 3 | 09-02 |
+| d4vinci/scrapling | 3 | 09-02 |
 | opencv/opencv | 2 | 06-09 |
 | aaif-goose/goose | 2 | 06-09 |
 | soxoj/maigret | 2 | 06-12 |
@@ -370,6 +378,8 @@
 | conardli/garden-skills | 2 | 08-28 |
 | bilawalsidhu/gods-eye-view | 2 | 08-30 |
 | jetbrains/go-modern-guidelines | 2 | 08-30 |
+| yt-dlp/yt-dlp | 2 | 08-31 |
+| 666ghj/mirofish | 2 | 08-31 |
 | tailscale/tailcat | 2 | 08-31 |
 | abi/screenshot-to-code | 2 | 08-31 |
 | kaifcodec/user-scanner | 2 | 08-31 |
@@ -382,15 +392,20 @@
 | backnotprop/plannotator | 2 | 08-31 |
 | cloudflare/kumo | 2 | 08-31 |
 | vercel-labs/vgpu | 2 | 08-31 |
-| 666ghj/mirofish | 2 | 08-31 |
-| yt-dlp/yt-dlp | 2 | 08-31 |
-| rmyndharis/openwa | 2 | 09-01 |
-| langgenius/dify | 2 | 09-01 |
-| voltagent/awesome-design-md | 2 | 09-01 |
-| unclecode/crawl4ai | 2 | 09-01 |
-| makazhanalpamys/soup | 2 | 09-01 |
-| thu-maic/openmaic | 2 | 09-01 |
-| d4vinci/scrapling | 2 | 09-01 |
+| gitlawb/openclaude | 2 | 09-02 |
+| imbad0202/academic-research-skills | 2 | 09-02 |
+| jingyaogong/minimind | 2 | 09-02 |
+| handsomestwei/patent-disclosure-skill | 2 | 09-02 |
+| averygan/reclip | 2 | 09-02 |
+| apurvsinghgautam/robin | 2 | 09-02 |
+| mujocolab/mjlab | 2 | 09-02 |
+| vectifyai/pageindex | 2 | 09-02 |
+| noonghunna/club-3090 | 2 | 09-02 |
+| inkeep/open-knowledge | 2 | 09-02 |
+| colinhacks/zod | 2 | 09-02 |
+| dongdongbh/mindwtr | 2 | 09-02 |
+| yishentu/claudian | 2 | 09-02 |
+| dokploy/dokploy | 2 | 09-02 |
 | pewdiepie-archdaemon/odysseus | 1 | 06-07 |
 | colbymchenry/codegraph | 1 | 06-07 |
 | unicity-astrid/astrid | 1 | 06-07 |
@@ -587,28 +602,14 @@
 | apirrone/open_duck_mini | 1 | 08-30 |
 | lingfengqaq/webnovel-writer | 1 | 08-30 |
 | alchaincyf/nuwa-skill | 1 | 08-30 |
-| happycola233/tchmaterial-parser | 1 | 08-31 |
-| shootthesound/fizgig | 1 | 08-31 |
-| agent0ai/agent-zero | 1 | 08-31 |
-| libretranslate/libretranslate | 1 | 08-31 |
 | nationalsecurityagency/ghidra | 1 | 08-31 |
 | swoole/typephp | 1 | 08-31 |
 | taoufik123-collab/claude-watch | 1 | 08-31 |
-| yishentu/claudian | 1 | 09-01 |
-| colinhacks/zod | 1 | 09-01 |
-| inkeep/open-knowledge | 1 | 09-01 |
-| averygan/reclip | 1 | 09-01 |
-| dongdongbh/mindwtr | 1 | 09-01 |
-| jingyaogong/minimind | 1 | 09-01 |
-| vectifyai/pageindex | 1 | 09-01 |
+| happycola233/tchmaterial-parser | 1 | 08-31 |
+| libretranslate/libretranslate | 1 | 08-31 |
+| shootthesound/fizgig | 1 | 08-31 |
+| agent0ai/agent-zero | 1 | 08-31 |
 | debpalash/voicestudio | 1 | 09-01 |
-| gitlawb/openclaude | 1 | 09-01 |
-| imbad0202/academic-research-skills | 1 | 09-01 |
-| noonghunna/club-3090 | 1 | 09-01 |
-| apurvsinghgautam/robin | 1 | 09-01 |
-| dokploy/dokploy | 1 | 09-01 |
-| handsomestwei/patent-disclosure-skill | 1 | 09-01 |
-| mujocolab/mjlab | 1 | 09-01 |
 
 ## 🏷️ 主题标签
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）
