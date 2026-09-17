@@ -6,7 +6,11 @@
 
 ## 内容生成
 
-每日内容由仓库外部的 Hermes Cron 生成并提交，本仓库负责展示与搜索索引，不包含上游抓取实现。主数据源为 GitHub Trending；不可用时可能使用其他数据源作为 fallback，并在对应报告中单独标注，不能与主榜排名口径直接等同。
+每日内容由仓库外部的流水线生成并提交，本仓库负责展示与搜索索引，不包含上游抓取实现。
+
+- **调度**：Windows 任务计划程序 `GitHubTrending-omp`，每天 18:00 自动运行（错过可补跑），由 omp（AI coding agent）按项目内技能规范执行；也支持手动补跑。
+- **数据源（固定三源，分源保留排名口径）**：GitHub Trending（总榜 + Python / TypeScript 子榜）、ossinsight 飙升榜、GitHub Search 新锐（90 天内创建的新项目，按 starVelocity 排序）。单源不可用时在笔记中单独标注状态，不与其他来源混用排名口径。
+- **发布链路**：写入 Obsidian vault（笔记 + MOC）→ 格式校验通过后才推送本仓库 → Vercel 自动部署 → 自动校验线上页面。笔记每日更新。
 
 ## 技术栈
 
