@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-09-19]]
 - [[trending-2026-09-18]]
 - [[trending-2026-09-17]]
 - [[trending-2026-09-16]]
@@ -105,25 +106,25 @@
 |------|---------|---------|
 | mattpocock/skills | 22 | 09-07 |
 | obra/superpowers | 22 | 09-11 |
-| addyosmani/agent-skills | 20 | 09-18 |
+| addyosmani/agent-skills | 21 | 09-19 |
 | affaan-m/ecc | 16 | 09-09 |
 | calesthio/openmontage | 13 | 09-14 |
 | rohitg00/ai-engineering-from-scratch | 13 | 09-11 |
-| alibaba/open-code-review | 11 | 09-18 |
+| alibaba/open-code-review | 12 | 09-19 |
 | nousresearch/hermes-agent | 11 | 09-07 |
+| stablyai/orca | 11 | 09-19 |
 | hkuds/vibe-trading | 10 | 09-09 |
-| stablyai/orca | 10 | 09-04 |
+| anthropics/claude-code | 9 | 09-19 |
 | cursor/plugins | 9 | 09-17 |
 | diegosouzapw/omniroute | 9 | 09-11 |
 | dietrichgebert/ponytail | 9 | 09-07 |
+| jamiepine/voicebox | 9 | 09-19 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
 | mvanhorn/last30days-skill | 9 | 08-03 |
 | shiyu-coder/kronos | 9 | 08-13 |
 | tauricresearch/tradingagents | 9 | 09-16 |
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
-| anthropics/claude-code | 8 | 09-18 |
 | cathrynlavery/diagram-design | 8 | 09-09 |
-| jamiepine/voicebox | 8 | 09-18 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | opencut-app/opencut | 8 | 08-28 |
 | panniantong/agent-reach | 8 | 09-17 |
@@ -163,10 +164,14 @@
 | github/spec-kit | 6 | 09-11 |
 | harry0703/moneyprinterturbo | 6 | 08-30 |
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
+| heygen-com/hyperframes | 6 | 09-19 |
 | juliusbrussee/caveman | 6 | 09-04 |
 | justvugg/colibri | 6 | 09-18 |
 | knockoutez/wigolo | 6 | 09-07 |
+| n8n-io/n8n | 6 | 09-19 |
+| nvidia/skillspector | 6 | 09-19 |
 | pascalorg/editor | 6 | 09-11 |
+| roboflow/supervision | 6 | 09-19 |
 | ruvnet/ruflo | 6 | 09-09 |
 | semantica-agi/semantica | 6 | 08-15 |
 | usestrix/strix | 6 | 08-18 |
@@ -182,7 +187,7 @@
 | corebunch/instatic | 5 | 07-31 |
 | esengine/deepseek-reasonix | 5 | 08-07 |
 | google/skills | 5 | 09-17 |
-| heygen-com/hyperframes | 5 | 09-09 |
+| graphify-labs/graphify | 5 | 09-19 |
 | hkuds/deeptutor | 5 | 09-02 |
 | imbad0202/academic-research-skills | 5 | 09-06 |
 | iv-org/invidious | 5 | 09-02 |
@@ -193,16 +198,13 @@
 | microsoft/ai-for-beginners | 5 | 08-04 |
 | moeru-ai/airi | 5 | 07-30 |
 | multica-ai/andrej-karpathy-skills | 5 | 09-09 |
-| n8n-io/n8n | 5 | 09-18 |
 | nutlope/hallmark | 5 | 07-17 |
-| nvidia/skillspector | 5 | 09-06 |
 | palmier-io/palmier-pro | 5 | 07-26 |
 | penpot/penpot | 5 | 07-15 |
 | primeintellect-ai/prime-agent | 5 | 08-12 |
 | pumpkin-mc/pumpkin | 5 | 07-27 |
 | refactoringhq/tolaria | 5 | 07-02 |
 | ripienaar/free-for-dev | 5 | 08-24 |
-| roboflow/supervision | 5 | 09-18 |
 | ryancodrai/turbovec | 5 | 08-21 |
 | smicallef/spiderfoot | 5 | 08-15 |
 | tashfeenahmed/freellmapi | 5 | 09-14 |
@@ -239,7 +241,6 @@
 | goauthentik/authentik | 4 | 08-10 |
 | google-labs-code/design.md | 4 | 06-28 |
 | google-research/timesfm | 4 | 09-18 |
-| graphify-labs/graphify | 4 | 09-04 |
 | ibelick/ui-skills | 4 | 09-04 |
 | icewhaletech/casaos | 4 | 06-29 |
 | immich-app/immich | 4 | 09-16 |
@@ -276,14 +277,18 @@
 | aipoch/open-science | 3 | 09-09 |
 | akitaonrails/ai-memory | 3 | 08-21 |
 | alibaba/zvec | 3 | 07-09 |
+| anthropics/knowledge-work-plugins | 3 | 09-19 |
 | aprilnea/openlogi | 3 | 08-24 |
 | automattic/harper | 3 | 07-26 |
 | averygan/reclip | 3 | 09-04 |
+| backnotprop/plannotator | 3 | 09-19 |
 | bikini/exploitarium | 3 | 09-07 |
 | byoungd/english-level-up-tips | 3 | 06-24 |
 | chaitanyagiri/munder-difflin | 3 | 08-21 |
 | chopratejas/headroom | 3 | 06-22 |
+| cline/cline | 3 | 09-19 |
 | cloudflare/computer | 3 | 08-08 |
+| cloudflare/security-audit-skill | 3 | 09-19 |
 | cordiverse/cordis | 3 | 08-18 |
 | crosstalk-solutions/project-nomad | 3 | 09-16 |
 | davila7/claude-code-templates | 3 | 09-14 |
@@ -328,8 +333,10 @@
 | sngyai/sequoia-x | 3 | 09-06 |
 | tailwindlabs/tailwindcss | 3 | 09-11 |
 | tapxworld/chinatextbook | 3 | 08-09 |
+| tencent/browserskill | 3 | 09-19 |
 | tencent/teamai-cli | 3 | 09-11 |
 | tencentcloud/cubesandbox | 3 | 07-09 |
+| tencentcloud/octop | 3 | 09-19 |
 | the-swarm-corporation/autohedge | 3 | 09-09 |
 | tooljet/tooljet | 3 | 08-17 |
 | tt-a1i/archify | 3 | 08-30 |
@@ -352,9 +359,9 @@
 | alirezarezvani/claude-skills | 2 | 07-07 |
 | alsk1992/cloddsbot | 2 | 09-14 |
 | amnezia-vpn/amnezia-client | 2 | 07-28 |
+| ankitects/anki | 2 | 09-19 |
 | ansible/ansible | 2 | 08-02 |
 | anthropics/claude-code-action | 2 | 08-31 |
-| anthropics/knowledge-work-plugins | 2 | 09-18 |
 | antirez/ds4 | 2 | 08-04 |
 | apache/ossie | 2 | 07-19 |
 | apurvsinghgautam/robin | 2 | 09-02 |
@@ -363,13 +370,11 @@
 | astrbotdevs/astrbot | 2 | 07-22 |
 | aws/agent-toolkit-for-aws | 2 | 06-27 |
 | awslabs/aidlc-workflows | 2 | 09-11 |
-| backnotprop/plannotator | 2 | 08-31 |
 | bannedbook/fanqiang | 2 | 09-04 |
 | c4illin/convertx | 2 | 09-07 |
 | chenyme/grok2api | 2 | 08-08 |
-| cline/cline | 2 | 09-18 |
 | cloudflare/kumo | 2 | 08-31 |
-| cloudflare/security-audit-skill | 2 | 09-18 |
+| coder/coder | 2 | 09-19 |
 | colemurray/background-agents | 2 | 09-14 |
 | colinhacks/zod | 2 | 09-02 |
 | commaai/openpilot | 2 | 06-28 |
@@ -382,6 +387,7 @@
 | dottxt-ai/outlines | 2 | 07-23 |
 | eriklindernoren/ml-from-scratch | 2 | 09-07 |
 | f/prompts.chat | 2 | 09-04 |
+| fission-ai/openspec | 2 | 09-19 |
 | flowseal/zapret-discord-youtube | 2 | 07-20 |
 | flutter/flutter | 2 | 06-30 |
 | gastownhall/gastown | 2 | 07-07 |
@@ -410,6 +416,7 @@
 | ladybirdbrowser/ladybird | 2 | 08-11 |
 | langflow-ai/langflow | 2 | 07-03 |
 | levy-street/world-of-claudecraft | 2 | 08-31 |
+| lfnovo/open-notebook | 2 | 09-19 |
 | lightricks/ltx-2 | 2 | 08-14 |
 | lmcache/lmcache | 2 | 06-14 |
 | lordog/dive-into-llms | 2 | 07-26 |
@@ -460,12 +467,11 @@
 | tailscale/tailcat | 2 | 08-31 |
 | tech-leads-club/agent-skills | 2 | 09-16 |
 | tencent/ai-infra-guard | 2 | 08-23 |
-| tencent/browserskill | 2 | 09-18 |
 | tencent/weknora | 2 | 09-18 |
-| tencentcloud/octop | 2 | 09-18 |
 | teslamate-org/teslamate | 2 | 06-17 |
 | thesysdev/openui | 2 | 09-16 |
 | thewh1teagle/vibe | 2 | 09-07 |
+| tradesdontlie/tradingview-mcp | 2 | 09-19 |
 | trycua/cua | 2 | 07-20 |
 | uber/adr | 2 | 08-06 |
 | uditakhourii/adhd | 2 | 07-31 |
@@ -500,6 +506,7 @@
 | agent-substrate/substrate | 1 | 08-21 |
 | agent0ai/agent-zero | 1 | 08-31 |
 | agentscope-ai/qwenpaw | 1 | 07-31 |
+| ahmedkhaleel2004/gitdiagram | 1 | 09-19 |
 | ahujasid/blender-mcp | 1 | 09-07 |
 | aieradev/clypra | 1 | 07-15 |
 | alchaincyf/nuwa-skill | 1 | 08-30 |
@@ -513,7 +520,6 @@
 | andyyyy64/whichllm | 1 | 06-09 |
 | angular/angular | 1 | 08-05 |
 | anil-matcha/open-generative-ai | 1 | 06-28 |
-| ankitects/anki | 1 | 09-17 |
 | apache/cassandra | 1 | 07-28 |
 | apache/maven | 1 | 07-04 |
 | apirrone/open_duck_mini | 1 | 08-30 |
@@ -540,7 +546,6 @@
 | cobusgreyling/loop-engineering | 1 | 09-06 |
 | code-yeongyu/lazycodex | 1 | 09-06 |
 | codebuffai/freebuff | 1 | 09-18 |
-| coder/coder | 1 | 09-18 |
 | colbymchenry/codegraph | 1 | 06-07 |
 | composiohq/awesome-claude-plugins | 1 | 07-21 |
 | continuedev/continue | 1 | 06-18 |
@@ -572,7 +577,6 @@
 | expo/expo | 1 | 09-11 |
 | fastapi/full-stack-fastapi-template | 1 | 09-03 |
 | fei-away/codex-dream-skin | 1 | 07-21 |
-| fission-ai/openspec | 1 | 06-28 |
 | gabime/spdlog | 1 | 08-05 |
 | geo-tp/esp32-bit-pirate | 1 | 08-01 |
 | geysermc/geyser | 1 | 06-29 |
@@ -618,7 +622,6 @@
 | lancezpf/agent-as-a-router | 1 | 07-21 |
 | langchain-ai/open_deep_research | 1 | 07-22 |
 | langchain-ai/openwiki | 1 | 07-31 |
-| lfnovo/open-notebook | 1 | 06-08 |
 | libretranslate/libretranslate | 1 | 08-31 |
 | lidge-jun/opencodex | 1 | 07-21 |
 | lingfengqaq/webnovel-writer | 1 | 08-30 |
@@ -644,6 +647,7 @@
 | memtensor/memos | 1 | 09-17 |
 | mg1937/asc | 1 | 09-16 |
 | microsoft/agent-governance-toolkit | 1 | 07-29 |
+| microsoft/agent-lightning | 1 | 09-19 |
 | microsoft/terminal | 1 | 07-20 |
 | microsoft/trellis.2 | 1 | 08-02 |
 | microsoft/vibevoice | 1 | 07-30 |
@@ -673,6 +677,7 @@
 | othmanadi/planning-with-files | 1 | 07-06 |
 | oven-sh/bun | 1 | 07-11 |
 | p1neapplexpress/openflux | 1 | 09-11 |
+| paddlepaddle/paddleocr | 1 | 09-19 |
 | pdfmathtranslate/pdfmathtranslate | 1 | 09-03 |
 | permissionlesstech/bitchat-android | 1 | 07-27 |
 | pewdiepie-archdaemon/odysseus | 1 | 06-07 |
@@ -693,6 +698,7 @@
 | rocketchat/rocket.chat | 1 | 06-18 |
 | rohitg00/agentmemory | 1 | 08-28 |
 | rtk-ai/rtk | 1 | 07-01 |
+| rustfs/rustfs | 1 | 09-19 |
 | ryanmcdermott/clean-code-javascript | 1 | 07-03 |
 | scrapegraphai/scrapegraph-ai | 1 | 09-03 |
 | sgl-project/sglang | 1 | 09-06 |
@@ -717,6 +723,7 @@
 | supabase/cli | 1 | 06-29 |
 | supabase/supabase | 1 | 07-04 |
 | superlinked/sie | 1 | 09-03 |
+| supermemoryai/supermemory | 1 | 09-19 |
 | superset-sh/superset | 1 | 09-03 |
 | swc-project/swc | 1 | 06-17 |
 | swisskyrepo/payloadsallthethings | 1 | 09-07 |
@@ -732,7 +739,6 @@
 | tokio-rs/tokio | 1 | 06-29 |
 | tonhowtf/omniget | 1 | 09-14 |
 | tracer-cloud/opensre | 1 | 09-18 |
-| tradesdontlie/tradingview-mcp | 1 | 07-22 |
 | tradingview/lightweight-charts | 1 | 09-06 |
 | trailofbits/skills | 1 | 09-18 |
 | twbs/bootstrap | 1 | 06-30 |
@@ -761,14 +767,14 @@
 | zyronon/typewords | 1 | 09-03 |
 
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）, THU-MAIC/OpenMAIC（清华多Agent互动课堂）, datawhalechina/hello-agents（《从零开始构建智能体》中文教程）, 777genius/agent-teams-ai（多agent团队看板协作）, cobusgreyling/loop-engineering（agent循环工程工具）, vercel/eve（Vercel官方Agent构建框架）, cline/cline（agent SDK/IDE/CLI 三形态）, TencentCloud/Octop（自托管多用户多agent助手）, strands-agents/harness-sdk（agent harness SDK：Python+TS，任意模型/云）, vercel/eve（Vercel agent框架）, CodebuffAI/freebuff（免费coding agent）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）, THU-MAIC/OpenMAIC（清华多Agent互动课堂）, datawhalechina/hello-agents（《从零开始构建智能体》中文教程）, 777genius/agent-teams-ai（多agent团队看板协作）, cobusgreyling/loop-engineering（agent循环工程工具）, vercel/eve（Vercel官方Agent构建框架）, cline/cline（agent SDK/IDE/CLI 三形态）, TencentCloud/Octop（自托管多用户多agent助手）, strands-agents/harness-sdk（agent harness SDK：Python+TS，任意模型/云）, vercel/eve（Vercel agent框架）, CodebuffAI/freebuff（免费coding agent）, Fission-AI/OpenSpec（SDD规范驱动开发：规格先行再让agent实现）, backnotprop/plannotator（agent计划/diff可视化审阅，反馈一键回传）
 - #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, openai/skills（OpenAI官方Codex Skill目录）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）, kepano/obsidian-skills（Obsidian CEO出品的笔记Agent技能）, cursor/plugins（Cursor插件规范）, multica-ai/andrej-karpathy-skills（Karpathy编码方法论CLAUDE.md）, VoltAgent/awesome-agent-skills（1000+技能合集）, anthropics/claude-plugins-community（Claude插件社区市场）, virgiliojr94/book-to-skill（书PDF→技能）, tt-a1i/archify（架构图/流程图skill）, ConardLi/garden-skills（Web设计+知识检索skills合集）, K-Dense-AI/scientific-agent-skills（科学计算技能库）, blader/humanizer（去AI写作痕迹skill）, humanlayer/skills（人在环审批skill）, nowork-studio/notfair-plugin（SEO/GEO营销skills）, cloudflare/security-audit-skill（Cloudflare官方多阶段安全审计Skill）, anthropics/knowledge-work-plugins（Anthropic官方知识工作插件目录）, trailofbits/skills（安全研究/漏洞检测/审计技能集）, EveryInc/compound-engineering-plugin（一份插件跨Claude Code/Codex/Cursor）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）, macro（Rust统一工作区+共享AI记忆），agent-substrate/substrate（agent运行时核心系统）, apache/maka（Apache本地优先Agent工作区+append-only事件日志）, pacifio/atlas（agent源码管理：并行agent变更追踪/查询）, coder/coder（开发者与agent的安全远程环境，Terraform定义workspace）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）, NVIDIA-NeMo/Switchyard（并行Agent舰队ADE）, n8n-io/n8n（可视化AI工作流编排）, ruvnet/ruflo（多Agent swarm元harness）, Tencent/teamai-cli（腾讯团队AI原生CLI）, bmad-code-org/BMAD-METHOD（角色化AI敏捷开发方法，5.3万星）, Tracer-Cloud/opensre（AI SRE agent工具包）
-- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）, volcengine/OpenViking（自进化上下文数据库），MemPalace/mempalace（开源AI记忆系统，benchmark最强宣称）, thedotmack/claude-mem（跨会话记忆压缩注入，兼容Hermes）, rohitg00/agentmemory（coding agent持久记忆，benchmark第一宣称）, MemTensor/MemOS（自进化记忆OS：混合检索+跨任务技能复用）
+- #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）, volcengine/OpenViking（自进化上下文数据库），MemPalace/mempalace（开源AI记忆系统，benchmark最强宣称）, thedotmack/claude-mem（跨会话记忆压缩注入，兼容Hermes）, rohitg00/agentmemory（coding agent持久记忆，benchmark第一宣称）, MemTensor/MemOS（自进化记忆OS：混合检索+跨任务技能复用）, supermemoryai/supermemory（记忆与上下文引擎：可完全本地的 Memory API）
 - #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, strix（AI渗透测试agent）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测），Tencent/AI-Infra-Guard（全栈AI红队扫描）, SnailSploit/Claude-Red（Claude技能系统进攻性安全技能库）, NationalSecurityAgency/ghidra（NSA逆向工程框架，与ASC同波）, cloudflare/security-audit-skill（安全审计Skill：独立验证+机器可读输出）, trailofbits/skills（Trail of Bits：安全审计工作流技能）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
-- #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）, modular/modular（Mojo/MAX AI平台）, marin-community/marin（基础模型研发框架）, NVIDIA/Megatron-LM（大规模Transformer训练框架）, radixark/miles（企业级LLM后训练RL框架，fork自slime）
+- #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）, modular/modular（Mojo/MAX AI平台）, marin-community/marin（基础模型研发框架）, NVIDIA/Megatron-LM（大规模Transformer训练框架）, radixark/miles（企业级LLM后训练RL框架，fork自slime）, microsoft/agent-lightning（Agent RL训练器：强化学习点亮agent能力）
 - #时序预测 — google-research/timesfm（Google时序基础模型：免训练预测，监控/容量/金融场景）
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）, unsloth（2倍速微调+显存优化）, Soup（单YAML微调+分层流式，4GB显存跑8B训练）, omlx（连续批处理+SSD缓存的端侧推理服务器）, sgl-project/sglang（生产级LLM serving框架）, magnitudedev/magnitude（本地模型推理服务器，兼容Hermes等agent）, JustVugg/colibri（纯C MoE推理：专家权重磁盘流式加载）
 - #Token优化 — headroom（60-95% token压缩，不减质量）, rtk-ai/rtk（60-90% token节省CLI代理）, JuliusBrussee/caveman（caveman式极端压缩，砍65% token）
@@ -776,8 +782,8 @@
 - #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）, OpenCut（开源CapCut替代品）, hpcaitech/Open-Sora（开源视频生成，潞晨）
 - #AIGC生图 — freestylefly/awesome-gpt-image-2（GPT-Image2工业级提示词模板库）, Comfy-Org/ComfyUI（节点式生图工作流，实验室 8188 在跑）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
-- #知识库工具 — tolaria（本地优先 Markdown 管理）, AgriciDaniel/claude-obsidian（自组织AI第二大脑+知识图谱）
-- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）, microsoft/TypeScript（Go原生编译器）, vlang/v（V语言）, dani-garcia/vaultwarden（自托管Bitwarden兼容服务端）, actions/checkout（GitHub Actions检出）, google/googletest（C++测试框架）, open-webui/open-webui（自托管LLM UI）, cilium/cilium（eBPF网络/安全/可观测性，K8s CNI 事实标准）
+- #知识库工具 — tolaria（本地优先 Markdown 管理）, AgriciDaniel/claude-obsidian（自组织AI第二大脑+知识图谱）, lfnovo/open-notebook（开源NotebookLM：多源检索问答+笔记）
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）, microsoft/TypeScript（Go原生编译器）, vlang/v（V语言）, dani-garcia/vaultwarden（自托管Bitwarden兼容服务端）, actions/checkout（GitHub Actions检出）, google/googletest（C++测试框架）, open-webui/open-webui（自托管LLM UI）, cilium/cilium（eBPF网络/安全/可观测性，K8s CNI 事实标准）, rustfs/rustfs（Rust实现S3兼容高性能对象存储，MinIO/Ceph迁移共存）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库），turbovec（TurboQuant量化向量索引）
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）, FluidVoice（macOS端侧听写）, pipecat-ai/pipecat（语音Agent框架）, debpalash/VoiceStudio（本地ElevenLabs替代：克隆/配音/转录646语言）, k2-fsa/OmniVoice（600+语言语音克隆TTS）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
@@ -788,14 +794,14 @@
 - #金融AI — Kronos, daily_stock_analysis（LLM多市场分析）, ai-berkshire（多Agent价值投资）, ai-hedge-fund（AI对冲基金）, Vibe-Trading（AI交易Agent）, TradingAgents（多Agent金融交易框架）, nautilus_trader（Rust生产级交易引擎）
 - #边缘部署 — Self-Hosting-Guide, turso（进程内SQL数据库）, CasaOS（个人云系统）, project-nomad（离线AI生存计算机）, cactus-compute/needle（14MB端侧基础模型）, lightningpixel/modly（本地GPU图生3D）, llmfit（本地硬件模型适配测试）, JustVugg/colibri（纯C MoE引擎：专家权重磁盘流式，边缘硬件跑前沿MoE）
 - #设计工具 — penpot（开源Figma替代）
-- #通用工具 — Stirling-PDF（PDF编辑）, ToolJet（开源低代码内部工具平台）, Motrix（全功能下载管理器），makeplane/plane（开源项目管理平台）, AprilNEA/OpenLogi（本地Logitech替代）, mahlernim/google-timeline-visualizer（位置历史可视化）
+- #通用工具 — Stirling-PDF（PDF编辑）, ToolJet（开源低代码内部工具平台）, Motrix（全功能下载管理器），makeplane/plane（开源项目管理平台）, AprilNEA/OpenLogi（本地Logitech替代）, mahlernim/google-timeline-visualizer（位置历史可视化）, ankitects/anki（间隔重复记忆卡片，Rust 核心）
 - #游戏引擎 — Babylon.js（Web端3D游戏引擎，微软出品）
-- #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）, firecrawl/pdf-inspector（PDF分类+文本提取路由）, microsoft/markitdown（微软官方文档→Markdown，RAG前处理标配）
+- #文档解析 — MinerU（PDF/Office→Markdown，RAG基础设施）, firecrawl/pdf-inspector（PDF分类+文本提取路由）, microsoft/markitdown（微软官方文档→Markdown，RAG前处理标配）, PaddlePaddle/PaddleOCR（轻量OCR：PDF/图片→结构化数据，100+语言）
 - #可观测性 — grafana（可视化监控平台）, PostHog/posthog（AI可观测性+会话回放）
 - #开发者资源 — free-for-dev（免费层资源清单）, awesome-mac（macOS软件精选）, project-based-learning（项目制学习路线）, public-apis（免费API合集）
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
 - #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）, questdb（Rust时序数据库）
-- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）, ragflow（开源RAG引擎+Agent融合）, ItzCrazyKns/Vane（AI回答引擎：检索增强自托管问答）, Tencent/WeKnora（腾讯LLM知识平台：文档→RAG→自维护Wiki）, onyx-dot-app/onyx（自托管企业AI平台：连接器+权限+引用溯源）
+- #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）, ragflow（开源RAG引擎+Agent融合）, ItzCrazyKns/Vane（AI回答引擎：检索增强自托管问答）, Tencent/WeKnora（腾讯LLM知识平台：文档→RAG→自维护Wiki）, onyx-dot-app/onyx（自托管企业AI平台：连接器+权限+引用溯源）, Graphify-Labs/graphify（代码库+文档+schema→可查询知识图谱）
 - #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）, browser-use/browser-use（agent操作浏览器的开源库）, Tencent/BrowserSkill（腾讯：让agent用真实已登录浏览器且不打断工作）, jo-inc/camofox-browser（隐形headless浏览器，过反爬检测）
 - #LLM教程 — dive-into-llms（动手学大模型，中文实战教程）, awesome-deepseek-agent（DeepSeek官方agent集成指南）
 - #架构即代码 — likec4（C4模型+实时架构可视化）
@@ -803,3 +809,4 @@
 - #Web全栈 — fastapi/full-stack-fastapi-template（FastAPI官方全栈模板：FastAPI+React+SQLModel+Postgres，求职项目入口）
 - #计算机视觉 — roboflow/supervision（可复用CV工具库：检测/跟踪/标注/区域统计，边缘视觉监控管线积木）
 - #音乐生成 — multimodal-art-projection/YuE（符号化规划+零样本翻唱+agentic音乐编辑）
+- #代码理解 — ahmedkhaleel2004/gitdiagram（任意仓库→免费交互式架构图）, Graphify-Labs/graphify（代码库+文档+SQL schema→可查询知识图谱）, alibaba/open-code-review（确定性规则+LLM Agent的行级代码审查）
