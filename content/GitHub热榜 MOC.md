@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-10-09]]
 - [[trending-2026-10-01]]
 - [[trending-2026-09-30]]
 - [[trending-2026-09-29]]
@@ -111,6 +112,7 @@
 - [[trending-2026-05-30]]
 
 ## 🔁 反复上榜仓库
+## 🔁 反复上榜仓库
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
 | addyosmani/agent-skills | 23 | 09-21 |
@@ -130,6 +132,7 @@
 | dietrichgebert/ponytail | 9 | 09-07 |
 | harry0703/MoneyPrinterTurbo | 9 | 10-01 |
 | jamiepine/voicebox | 9 | 09-19 |
+| koala73/worldmonitor | 9 | 10-09 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
 | mvanhorn/last30days-skill | 9 | 08-03 |
 | shiyu-coder/kronos | 9 | 08-13 |
@@ -145,7 +148,6 @@
 | deusdata/codebase-memory-mcp | 8 | 09-24 |
 | every-app/open-seo | 8 | 09-25 |
 | heygen-com/hyperframes | 8 | 10-01 |
-| koala73/worldmonitor | 8 | 09-20 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | opencut-app/opencut | 8 | 08-28 |
 | panniantong/agent-reach | 8 | 09-17 |
@@ -192,6 +194,8 @@
 | roboflow/supervision | 6 | 09-19 |
 | ruvnet/ruflo | 6 | 09-09 |
 | semantica-agi/semantica | 6 | 08-15 |
+| smicallef/spiderfoot | 6 | 10-09 |
+| tashfeenahmed/freellmapi | 6 | 10-09 |
 | wonderwhy-er/desktopcommandermcp | 6 | 08-31 |
 | zhaoxuya520/reverse-skill | 6 | 08-05 |
 | aipoch/open-science | 5 | 10-01 |
@@ -199,6 +203,7 @@
 | alishahryar1/free-claude-code | 5 | 08-27 |
 | alphaxiv/openresearch | 5 | 09-18 |
 | andrewyng/aisuite | 5 | 08-28 |
+| anthropics/knowledge-work-plugins | 5 | 10-09 |
 | apple/container | 5 | 06-26 |
 | cloudflare/security-audit-skill | 5 | 09-21 |
 | coder/coder | 5 | 09-22 |
@@ -227,8 +232,6 @@
 | refactoringhq/tolaria | 5 | 07-02 |
 | ripienaar/free-for-dev | 5 | 08-24 |
 | ryancodrai/turbovec | 5 | 08-21 |
-| smicallef/spiderfoot | 5 | 08-15 |
-| tashfeenahmed/freellmapi | 5 | 09-14 |
 | tencent/browserskill | 5 | 09-21 |
 | tencentcloud/octop | 5 | 10-01 |
 | tinyhumansai/openhuman | 5 | 08-27 |
@@ -245,11 +248,12 @@
 | anthropics/claude-cookbooks | 4 | 07-27 |
 | anthropics/claude-plugins-community | 4 | 08-27 |
 | anthropics/financial-services | 4 | 09-25 |
-| anthropics/knowledge-work-plugins | 4 | 09-20 |
 | apache/maka | 4 | 08-27 |
 | averygan/reclip | 4 | 09-30 |
+| backnotprop/plannotator | 4 | 10-09 |
 | bilawalsidhu/gods-eye-view | 4 | 09-14 |
 | blader/humanizer | 4 | 09-07 |
+| bmad-code-org/bmad-method | 4 | 10-09 |
 | bojieli/ai-agent-book | 4 | 09-16 |
 | braveopotato/fcksignups | 4 | 09-09 |
 | chatwoot/chatwoot | 4 | 08-01 |
@@ -259,6 +263,7 @@
 | d4vinci/scrapling | 4 | 09-11 |
 | different-ai/openwork | 4 | 08-03 |
 | donnemartin/system-design-primer | 4 | 09-11 |
+| earthtojake/text-to-cad | 4 | 10-09 |
 | everyinc/compound-engineering-plugin | 4 | 09-18 |
 | experientiallabs/experiential | 4 | 09-25 |
 | firecrawl/firecrawl | 4 | 10-01 |
@@ -314,9 +319,7 @@
 | aprilnea/openlogi | 3 | 08-24 |
 | automattic/harper | 3 | 07-26 |
 | aws/agent-toolkit-for-aws | 3 | 10-01 |
-| backnotprop/plannotator | 3 | 09-19 |
 | bikini/exploitarium | 3 | 09-07 |
-| bmad-code-org/bmad-method | 3 | 10-01 |
 | builderio/agent-native | 3 | 09-24 |
 | byoungd/english-level-up-tips | 3 | 06-24 |
 | chaitanyagiri/munder-difflin | 3 | 08-21 |
@@ -328,7 +331,6 @@
 | dicklesworthstone/destructive_command_guard | 3 | 07-16 |
 | dioxuslabs/dioxus | 3 | 07-23 |
 | docling-project/docling | 3 | 09-22 |
-| earthtojake/text-to-cad | 3 | 09-07 |
 | facebook/astryx | 3 | 07-06 |
 | fission-ai/openspec | 3 | 09-20 |
 | fmtlib/fmt | 3 | 09-06 |
@@ -366,6 +368,7 @@
 | raphire/win11debloat | 3 | 07-15 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | sngyai/sequoia-x | 3 | 09-06 |
+| superdesigndev/treg | 3 | 10-09 |
 | supermemoryai/supermemory | 3 | 09-21 |
 | tailwindlabs/tailwindcss | 3 | 09-11 |
 | tapxworld/chinatextbook | 3 | 08-09 |
@@ -449,6 +452,7 @@
 | hydralauncher/hydra | 2 | 09-14 |
 | hyprwm/hyprland | 2 | 07-23 |
 | inkeep/open-knowledge | 2 | 09-02 |
+| itzcrazykns/vane | 2 | 10-09 |
 | jakubantalik/libraries.dev | 2 | 09-27 |
 | jetbrains/go-modern-guidelines | 2 | 08-30 |
 | jihe520/mathmodelagent | 2 | 09-14 |
@@ -462,6 +466,7 @@
 | levy-street/world-of-claudecraft | 2 | 08-31 |
 | lfnovo/open-notebook | 2 | 09-19 |
 | lightricks/ltx-2 | 2 | 08-14 |
+| liquidslr/system-design-notes | 2 | 10-09 |
 | lmcache/lmcache | 2 | 06-14 |
 | lordog/dive-into-llms | 2 | 07-26 |
 | luongnv89/claude-howto | 2 | 07-01 |
@@ -507,6 +512,7 @@
 | pranshuparmar/witr | 2 | 08-10 |
 | prisma/prisma | 2 | 07-10 |
 | pytorch/pytorch | 2 | 07-04 |
+| reconurge/flowsint | 2 | 10-09 |
 | revfactory/harness | 2 | 06-25 |
 | robbyant/lingbot-map | 2 | 07-19 |
 | ruanyf/weekly | 2 | 09-22 |
@@ -517,7 +523,6 @@
 | SimplifyJobs/Summer2027-Internships | 2 | 09-25 |
 | soxoj/maigret | 2 | 06-12 |
 | steipete/codexbar | 2 | 07-07 |
-| superdesigndev/treg | 2 | 09-25 |
 | t8y2/dbx | 2 | 10-01 |
 | tailscale/tailcat | 2 | 08-31 |
 | tech-leads-club/agent-skills | 2 | 09-16 |
@@ -527,6 +532,7 @@
 | teslamate-org/teslamate | 2 | 06-17 |
 | thesysdev/openui | 2 | 09-16 |
 | thewh1teagle/vibe | 2 | 09-07 |
+| tracer-cloud/opensre | 2 | 10-09 |
 | tradesdontlie/tradingview-mcp | 2 | 09-19 |
 | trycua/cua | 2 | 07-20 |
 | uber/adr | 2 | 08-06 |
@@ -557,6 +563,7 @@
 | 521xueweihan/hellogithub | 1 | 06-30 |
 | 777genius/agent-teams-ai | 1 | 09-06 |
 | a2ui-project/a2ui | 1 | 09-03 |
+| abrignoni/ALEAPP | 1 | 10-09 |
 | abseil/abseil-cpp | 1 | 07-11 |
 | abus-aikorea/voice-pro | 1 | 08-02 |
 | actions/runner-images | 1 | 09-27 |
@@ -591,6 +598,7 @@
 | bergside/awesome-design-skills | 1 | 07-21 |
 | bigskysoftware/htmx | 1 | 08-30 |
 | bobeff/open-source-games | 1 | 09-11 |
+| boykopovar/AnyPS5 | 1 | 10-09 |
 | browser-use/browser-harness | 1 | 09-21 |
 | browseros-ai/browseros | 1 | 09-03 |
 | bryanthaboi/gen1recomp | 1 | 07-31 |
@@ -630,12 +638,14 @@
 | dotnet/skills | 1 | 07-06 |
 | dramaclaw/dramaclaw | 1 | 07-31 |
 | dreamhunter2333/cloudflare_temp_email | 1 | 07-23 |
+| dyad-sh/dyad | 1 | 10-09 |
 | ebookfoundation/free-programming-books | 1 | 06-30 |
 | elastic/elasticsearch | 1 | 07-04 |
 | elder-plinius/g0dm0d3 | 1 | 07-19 |
 | embabel/embabel-agent | 1 | 08-13 |
 | emilkowalski/skills | 1 | 07-31 |
 | eneskirca/nodeterm | 1 | 09-04 |
+| EpicGames/raddebugger | 1 | 10-09 |
 | ever-co/ever-gauzy | 1 | 09-14 |
 | evermind-ai/everos | 1 | 07-01 |
 | expo/expo | 1 | 09-11 |
@@ -660,6 +670,7 @@
 | hesreallyhim/awesome-claude-code | 1 | 07-06 |
 | hexiecs/talk-normal | 1 | 07-21 |
 | huggingface/datasets | 1 | 09-06 |
+| IAmTomShaw/f1-race-replay | 1 | 10-09 |
 | ifixai-ai/iFixAi | 1 | 10-01 |
 | imbad0202/academic-research-skills-codex | 1 | 07-21 |
 | imthenachoman/how-to-secure-a-linux-server | 1 | 07-10 |
@@ -667,7 +678,6 @@
 | interviewstreet/hiring-agent | 1 | 06-25 |
 | introduction-to-autonomous-robots/introduction-to-autonomous-robots | 1 | 06-16 |
 | itsfatduck/optimizerduck | 1 | 06-16 |
-| itzcrazykns/vane | 1 | 09-16 |
 | jakubantalik/thinking-orbs | 1 | 09-22 |
 | jaywcjlove/awesome-mac | 1 | 08-12 |
 | jbeder/yaml-cpp | 1 | 07-11 |
@@ -695,7 +705,6 @@
 | lidge-jun/opencodex | 1 | 07-21 |
 | lingfengqaq/webnovel-writer | 1 | 08-30 |
 | lipku/livetalking | 1 | 09-03 |
-| liquidslr/system-design-notes | 1 | 09-09 |
 | litu54/devops-interview-guide | 1 | 08-09 |
 | llvm/llvm-project | 1 | 09-07 |
 | lobehub/lobehub | 1 | 07-17 |
@@ -716,6 +725,7 @@
 | mempalace/mempalace | 1 | 08-26 |
 | memtensor/memos | 1 | 09-17 |
 | mg1937/asc | 1 | 09-16 |
+| microsoft/agent-framework | 1 | 10-09 |
 | microsoft/agent-governance-toolkit | 1 | 07-29 |
 | microsoft/agent-lightning | 1 | 09-19 |
 | microsoft/terminal | 1 | 07-20 |
@@ -727,6 +737,7 @@
 | modelcontextprotocol/servers | 1 | 10-01 |
 | moonshotai/flashkda | 1 | 07-30 |
 | moonshotai/kimi-code | 1 | 07-21 |
+| morluto/rea | 1 | 10-09 |
 | mullvad/mullvadvpn-app | 1 | 06-29 |
 | nestjs/nest | 1 | 09-16 |
 | netalertx/netalertx | 1 | 09-04 |
@@ -741,6 +752,7 @@
 | op7418/Humanizer-zh | 1 | 09-25 |
 | opa334/dopamine | 1 | 08-11 |
 | open-metadata/openmetadata | 1 | 09-03 |
+| openai/codex-security | 1 | 10-09 |
 | openai/whisper | 1 | 09-07 |
 | openbao/openbao | 1 | 09-27 |
 | openreplay/openreplay | 1 | 09-04 |
@@ -763,7 +775,6 @@
 | radixark/miles | 1 | 09-06 |
 | rakyll/hey | 1 | 09-30 |
 | react/react | 1 | 06-30 |
-| reconurge/flowsint | 1 | 09-16 |
 | reconworldlab/godot-gaussian-splatting | 1 | 07-21 |
 | remotion-dev/remotion | 1 | 09-25 |
 | restic/restic | 1 | 06-12 |
@@ -794,6 +805,7 @@
 | spotify/portal-ai-plugins | 1 | 09-24 |
 | startrail-org/pixelrag | 1 | 07-31 |
 | stirling-tools/stirling-pdf | 1 | 06-23 |
+| storytold/artcraft | 1 | 10-09 |
 | stremio/stremio-web | 1 | 09-07 |
 | sumanth077/hands-on-ai-engineering | 1 | 09-07 |
 | supabase/cli | 1 | 06-29 |
@@ -808,11 +820,11 @@
 | taoufik123-collab/claude-watch | 1 | 08-31 |
 | teng-lin/notebooklm-py | 1 | 09-03 |
 | termux/termux-packages | 1 | 06-29 |
+| tester-army/e2e | 1 | 10-09 |
 | thedotmack/claude-mem | 1 | 08-28 |
 | togatoga/karukan | 1 | 07-02 |
 | tokio-rs/tokio | 1 | 06-29 |
 | tonhowtf/omniget | 1 | 09-14 |
-| tracer-cloud/opensre | 1 | 09-18 |
 | tradingview/lightweight-charts | 1 | 09-06 |
 | trailofbits/skills | 1 | 09-18 |
 | twbs/bootstrap | 1 | 06-30 |
@@ -823,6 +835,7 @@
 | veracrypt/veracrypt | 1 | 06-29 |
 | vercel-labs/deepsec | 1 | 07-01 |
 | vercel-labs/skills | 1 | 09-11 |
+| Vincentwei1021/video-shotcraft | 1 | 10-09 |
 | volcano-sh/volcano | 1 | 06-29 |
 | vudovn/ag-kit | 1 | 07-28 |
 | webpack/webpack | 1 | 08-05 |
