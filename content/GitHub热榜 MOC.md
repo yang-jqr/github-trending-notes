@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-10-13]]
 - [[trending-2026-10-11]]
 - [[trending-2026-10-10]]
 - [[trending-2026-10-09]]
@@ -128,7 +129,7 @@
 | stablyai/orca | 12 | 09-25 |
 | nousresearch/hermes-agent | 11 | 09-07 |
 | cursor/plugins | 10 | 09-25 |
-| debpalash/voicestudio | 10 | 10-11 |
+| debpalash/voicestudio | 11 | 10-13 |
 | hkuds/vibe-trading | 10 | 09-09 |
 | composiohq/awesome-claude-skills | 9 | 10-11 |
 | diegosouzapw/omniroute | 9 | 09-11 |
@@ -175,7 +176,7 @@
 | usestrix/strix | 7 | 09-27 |
 | 1jehuang/jcode | 6 | 08-01 |
 | 3b1b/manim | 6 | 09-04 |
-| alishahryar1/free-claude-code | 6 | 10-11 |
+| alishahryar1/free-claude-code | 7 | 10-13 |
 | anomalyco/opencode | 6 | 09-09 |
 | anthropics/skills | 6 | 09-25 |
 | ayghri/i-have-adhd | 6 | 09-11 |
@@ -194,13 +195,13 @@
 | n8n-io/n8n | 6 | 09-19 |
 | nvidia/skillspector | 6 | 09-19 |
 | oblien/openship | 6 | 10-01 |
-| paperclipai/paperclip | 6 | 09-30 |
+| paperclipai/paperclip | 7 | 10-13 |
 | pascalorg/editor | 6 | 09-11 |
 | roboflow/supervision | 6 | 09-19 |
 | ruvnet/ruflo | 6 | 09-09 |
 | semantica-agi/semantica | 6 | 08-15 |
 | smicallef/spiderfoot | 6 | 10-09 |
-| tashfeenahmed/freellmapi | 6 | 10-09 |
+| tashfeenahmed/freellmapi | 7 | 10-13 |
 | wonderwhy-er/desktopcommandermcp | 6 | 08-31 |
 | zhaoxuya520/reverse-skill | 6 | 08-05 |
 | aipoch/open-science | 5 | 10-01 |
@@ -208,7 +209,7 @@
 | alphaxiv/openresearch | 5 | 09-18 |
 | andrewyng/aisuite | 5 | 08-28 |
 | apple/container | 5 | 06-26 |
-| bilawalsidhu/gods-eye-view | 5 | 10-11 |
+| bilawalsidhu/gods-eye-view | 6 | 10-13 |
 | bojieli/ai-agent-book | 5 | 10-10 |
 | cloudflare/security-audit-skill | 5 | 09-21 |
 | coder/coder | 5 | 09-22 |
@@ -217,12 +218,12 @@
 | dream-num/univer | 5 | 09-30 |
 | earendil-works/pi | 5 | 09-22 |
 | esengine/deepseek-reasonix | 5 | 08-07 |
-| google/skills | 5 | 09-17 |
+| google/skills | 6 | 10-13 |
 | graphify-labs/graphify | 5 | 09-19 |
 | harvard-edge/cs249r_book | 5 | 09-30 |
 | HKUDS/CLI-Anything | 5 | 09-27 |
 | hkuds/deeptutor | 5 | 09-02 |
-| hugohe3/ppt-master | 5 | 10-11 |
+| hugohe3/ppt-master | 6 | 10-13 |
 | imbad0202/academic-research-skills | 5 | 09-06 |
 | iv-org/invidious | 5 | 09-02 |
 | leonxlnx/taste-skill | 5 | 07-07 |
@@ -263,7 +264,7 @@
 | chatwoot/chatwoot | 4 | 08-01 |
 | chrislgarry/apollo-11 | 4 | 07-25 |
 | codecrafters-io/build-your-own-x | 4 | 08-03 |
-| crosstalk-solutions/project-nomad | 4 | 09-22 |
+| crosstalk-solutions/project-nomad | 5 | 10-13 |
 | d4vinci/scrapling | 4 | 09-11 |
 | different-ai/openwork | 4 | 08-03 |
 | donnemartin/system-design-primer | 4 | 09-11 |
@@ -278,7 +279,7 @@
 | goauthentik/authentik | 4 | 08-10 |
 | google-labs-code/design.md | 4 | 06-28 |
 | google-research/timesfm | 4 | 09-18 |
-| huggingface/transformers | 4 | 10-11 |
+| huggingface/transformers | 5 | 10-13 |
 | ibelick/ui-skills | 4 | 09-04 |
 | icewhaletech/casaos | 4 | 06-29 |
 | immich-app/immich | 4 | 09-16 |
@@ -299,8 +300,8 @@
 | paperswithbacktest/awesome-systematic-trading | 4 | 08-02 |
 | pbakaus/impeccable | 4 | 09-24 |
 | pingdotgg/t3code | 4 | 08-11 |
-| public-apis/public-apis | 4 | 09-07 |
-| rmyndharis/openwa | 4 | 09-04 |
+| public-apis/public-apis | 5 | 10-13 |
+| rmyndharis/openwa | 5 | 10-13 |
 | rommapp/romm | 4 | 09-16 |
 | santifer/career-ops | 4 | 08-21 |
 | significant-gravitas/autogpt | 4 | 09-06 |
@@ -317,7 +318,7 @@
 | zuodaotech/everyone-can-use-english | 4 | 09-22 |
 | 0x4m4/hexstrike-ai | 3 | 09-29 |
 | adventdevinc/kudu | 3 | 09-09 |
-| agalwood/motrix | 3 | 10-11 |
+| agalwood/motrix | 4 | 10-13 |
 | agegr/pi-web | 3 | 07-24 |
 | ahmedkhaleel2004/gitdiagram | 3 | 09-21 |
 | alibaba/zvec | 3 | 07-09 |
@@ -360,8 +361,8 @@
 | meshery/meshery | 3 | 06-18 |
 | microsoft/powertoys | 3 | 06-29 |
 | mobile-next/mobile-mcp | 3 | 09-30 |
-| morluto/rea | 3 | 10-11 |
-| multimodal-art-projection/yue | 3 | 09-17 |
+| morluto/rea | 4 | 10-13 |
+| multimodal-art-projection/yue | 4 | 10-13 |
 | mvschwarz/openrig | 3 | 10-01 |
 | mvt-project/mvt | 3 | 09-25 |
 | nautechsystems/nautilus_trader | 3 | 08-20 |
@@ -371,12 +372,12 @@
 | ottermind/chat2db | 3 | 07-27 |
 | permissionlesstech/bitchat | 3 | 07-28 |
 | phuryn/pm-skills | 3 | 06-13 |
-| pytorch/pytorch | 3 | 10-11 |
+| pytorch/pytorch | 4 | 10-13 |
 | raphire/win11debloat | 3 | 07-15 |
 | robbyant/lingbot-map | 3 | 10-10 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | sngyai/sequoia-x | 3 | 09-06 |
-| storytold/artcraft | 3 | 10-11 |
+| storytold/artcraft | 4 | 10-13 |
 | superdesigndev/treg | 3 | 10-09 |
 | supermemoryai/supermemory | 3 | 09-21 |
 | tailwindlabs/tailwindcss | 3 | 09-11 |
@@ -420,7 +421,7 @@
 | byoungd/up | 2 | 10-01 |
 | c4illin/convertx | 2 | 09-07 |
 | chenyme/grok2api | 2 | 08-08 |
-| chthollyphile/folia-major | 2 | 10-11 |
+| chthollyphile/folia-major | 3 | 10-13 |
 | cloudflare/kumo | 2 | 08-31 |
 | cloudflare/mcp-server-cloudflare | 2 | 09-22 |
 | cloudflare/quiche | 2 | 09-22 |
@@ -454,7 +455,7 @@
 | henryndubuaku/maths-cs-ai-compendium | 2 | 07-16 |
 | higgsfield-ai/higgsfield | 2 | 09-21 |
 | holaboss-ai/holaos | 2 | 08-15 |
-| home-assistant/core | 2 | 09-07 |
+| home-assistant/core | 3 | 10-13 |
 | hpcaitech/open-sora | 2 | 09-09 |
 | huangruiteng/loopx | 2 | 08-07 |
 | humanlayer/skills | 2 | 09-07 |
@@ -510,7 +511,7 @@
 | nvm-sh/nvm | 2 | 09-06 |
 | open-webui/open-webui | 2 | 08-28 |
 | openai/plugins | 2 | 09-09 |
-| openbmb/voxcpm | 2 | 06-17 |
+| openbmb/voxcpm | 3 | 10-13 |
 | opencv/opencv | 2 | 06-09 |
 | openinterpreter/openinterpreter | 2 | 07-17 |
 | p-e-w/heretic | 2 | 09-03 |
@@ -629,7 +630,7 @@
 | composiohq/awesome-claude-plugins | 1 | 07-21 |
 | continuedev/continue | 1 | 06-18 |
 | copilotkit/copilotkit | 1 | 09-24 |
-| CopilotKit/OpenIntelligentUI | 1 | 10-11 |
+| CopilotKit/OpenIntelligentUI | 2 | 10-13 |
 | coplaydev/unity-mcp | 1 | 07-06 |
 | cv-cat/douyin_spider | 1 | 09-22 |
 | cybertimon/rapidraw | 1 | 09-07 |
@@ -743,6 +744,7 @@
 | microsoft/agent-framework | 1 | 10-09 |
 | microsoft/agent-governance-toolkit | 1 | 07-29 |
 | microsoft/agent-lightning | 1 | 09-19 |
+| microsoft/bitnet | 1 | 10-13 |
 | microsoft/terminal | 1 | 07-20 |
 | microsoft/vibevoice | 1 | 07-30 |
 | mihail911/modern-software-dev-assignments | 1 | 09-21 |
@@ -787,6 +789,7 @@
 | pydantic/pydantic | 1 | 06-29 |
 | radixark/miles | 1 | 09-06 |
 | rakyll/hey | 1 | 09-30 |
+| ranxianglei/billion-context | 1 | 10-13 |
 | react/react | 1 | 06-30 |
 | reconworldlab/godot-gaussian-splatting | 1 | 07-21 |
 | remotion-dev/remotion | 1 | 09-25 |
@@ -928,7 +931,7 @@
 - #设计语言 — pbakaus/impeccable（让 AI harness 更懂设计的「设计语言」：agent 产出物的审美下限）
 - #3D重建 — harry7557558/spirula-studio（跨厂商 3D Gaussian Splatting 训练器：视频→splat→网格，Vulkan/CUDA 双后端）, Robbyant/lingbot-map（流式 3D 重建的几何上下文 Transformer，仓库自述 ECCV 2026 最佳论文候选）
 - #本地推理 — AtomicBot-ai/Atomic-Chat（面向 agent 的本地 AI 应用与推理引擎：开源权重、100% 离线）
-- #模型压缩与推理优化 — NVIDIA/Model-Optimizer（量化/剪枝/蒸馏/NAS/投机解码统一库，输入 HF/PyTorch/ONNX，对接 Megatron 与 HF Accelerate）, leejet/stable-diffusion.cpp（纯 C/C++ 扩散模型推理：SD/Flux/Wan/Qwen Image/Z-Image，零 Python 依赖）, SemiAnalysisAI/InferenceX（SemiAnalysis 开源推理基准标准：先看指标定义与可复现方法论，1,790⭐ 早期项目）
+- #模型压缩与推理优化 — NVIDIA/Model-Optimizer（量化/剪枝/蒸馏/NAS/投机解码统一库，输入 HF/PyTorch/ONNX，对接 Megatron 与 HF Accelerate）, leejet/stable-diffusion.cpp（纯 C/C++ 扩散模型推理：SD/Flux/Wan/Qwen Image/Z-Image，零 Python 依赖）, SemiAnalysisAI/InferenceX（SemiAnalysis 开源推理基准标准：先看指标定义与可复现方法论，1,790⭐ 早期项目）, microsoft/BitNet（微软官方 1-bit LLM 推理框架：BitNet b1.58 三值权重把矩阵乘换成加减法，低比特推理的官方参考实现）
 - #本地优先应用 — julyx10/lap（本地优先照片管理：本地 AI 搜索 + 文件夹优先 + 不强制上传，8 语言桌面应用）
 - #文本润色 — op7418/Humanizer-zh（中文去 AI 味编辑 Skill：保留事实/确定性/作者声音，明示不是检测器、不做无据补写；与 impeccable 同属「产出物下限」命题）
 - #知识编译 — atomicstrata/llm-wiki-compiler（原始材料→互链 wiki 页：段落级引用可 lint、页面健康度/新鲜度修复、评审门、语义+BM25+wikilink 混合检索）
@@ -955,3 +958,4 @@
 - #移动端自动化 — mobile-next/mobile-mcp（把 iOS/Android 模拟器与真机接给 agent 的 MCP server：结构化 accessibility 快照 vs 基于截图的坐标点按两条路）
 - #空间情报 — bilawalsidhu/gods-eye-view（浏览器里的写实 3D 地球 + 实时公开空间数据：情报源的另一种形态，Cesium+WebGL 把重渲染丢给浏览器）
 - #数据Agent — getnao/nao（开源 analytics agent：先用 CLI 显式建上下文产物，再暴露 chat——「上下文是建出来的，不是 prompt 里塞的」）
+- #上下文管理 — ranxianglei/billion-context（上下文压缩插件：自述 100K 窗口省 ~5× token、支撑数月级/数十亿 token 单会话——与「按需检索」相对的「压缩」思路）
