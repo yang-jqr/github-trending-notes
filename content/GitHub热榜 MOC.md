@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-10-14]]
 - [[trending-2026-10-13]]
 - [[trending-2026-10-11]]
 - [[trending-2026-10-10]]
@@ -129,16 +130,16 @@
 | stablyai/orca | 12 | 09-25 |
 | nousresearch/hermes-agent | 11 | 09-07 |
 | cursor/plugins | 10 | 09-25 |
-| debpalash/voicestudio | 11 | 10-13 |
+| debpalash/voicestudio | 12 | 10-14 |
 | hkuds/vibe-trading | 10 | 09-09 |
-| composiohq/awesome-claude-skills | 9 | 10-11 |
+| composiohq/awesome-claude-skills | 10 | 10-14 |
 | diegosouzapw/omniroute | 9 | 09-11 |
 | dietrichgebert/ponytail | 9 | 09-07 |
-| harry0703/MoneyPrinterTurbo | 9 | 10-01 |
+| harry0703/MoneyPrinterTurbo | 10 | 10-14 |
 | jamiepine/voicebox | 9 | 09-19 |
 | koala73/worldmonitor | 9 | 10-09 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
-| mvanhorn/last30days-skill | 9 | 08-03 |
+| mvanhorn/last30days-skill | 10 | 10-14 |
 | shiyu-coder/kronos | 9 | 08-13 |
 | shubhamsaboo/awesome-llm-apps | 9 | 10-11 |
 | tauricresearch/tradingagents | 9 | 09-16 |
@@ -151,7 +152,7 @@
 | chromedevtools/chrome-devtools-mcp | 8 | 10-01 |
 | deusdata/codebase-memory-mcp | 8 | 09-24 |
 | every-app/open-seo | 8 | 09-25 |
-| heygen-com/hyperframes | 8 | 10-01 |
+| heygen-com/hyperframes | 9 | 10-14 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | opencut-app/opencut | 8 | 08-28 |
 | panniantong/agent-reach | 8 | 09-17 |
@@ -159,7 +160,7 @@
 | anthropics/knowledge-work-plugins | 7 | 10-11 |
 | asgeirtj/system_prompts_leaks | 7 | 09-14 |
 | block/buzz | 7 | 09-27 |
-| browser-use/video-use | 7 | 09-24 |
+| browser-use/video-use | 8 | 10-14 |
 | coreyhaines31/marketingskills | 7 | 09-09 |
 | firecrawl/pdf-inspector | 7 | 09-03 |
 | github/spec-kit | 7 | 10-01 |
@@ -176,7 +177,7 @@
 | usestrix/strix | 7 | 09-27 |
 | 1jehuang/jcode | 6 | 08-01 |
 | 3b1b/manim | 6 | 09-04 |
-| alishahryar1/free-claude-code | 7 | 10-13 |
+| alishahryar1/free-claude-code | 8 | 10-14 |
 | anomalyco/opencode | 6 | 09-09 |
 | anthropics/skills | 6 | 09-25 |
 | ayghri/i-have-adhd | 6 | 09-11 |
@@ -201,7 +202,7 @@
 | ruvnet/ruflo | 6 | 09-09 |
 | semantica-agi/semantica | 6 | 08-15 |
 | smicallef/spiderfoot | 6 | 10-09 |
-| tashfeenahmed/freellmapi | 7 | 10-13 |
+| tashfeenahmed/freellmapi | 8 | 10-14 |
 | wonderwhy-er/desktopcommandermcp | 6 | 08-31 |
 | zhaoxuya520/reverse-skill | 6 | 08-05 |
 | aipoch/open-science | 5 | 10-01 |
@@ -209,7 +210,7 @@
 | alphaxiv/openresearch | 5 | 09-18 |
 | andrewyng/aisuite | 5 | 08-28 |
 | apple/container | 5 | 06-26 |
-| bilawalsidhu/gods-eye-view | 6 | 10-13 |
+| bilawalsidhu/gods-eye-view | 7 | 10-14 |
 | bojieli/ai-agent-book | 5 | 10-10 |
 | cloudflare/security-audit-skill | 5 | 09-21 |
 | coder/coder | 5 | 09-22 |
@@ -264,7 +265,7 @@
 | chatwoot/chatwoot | 4 | 08-01 |
 | chrislgarry/apollo-11 | 4 | 07-25 |
 | codecrafters-io/build-your-own-x | 4 | 08-03 |
-| crosstalk-solutions/project-nomad | 5 | 10-13 |
+| crosstalk-solutions/project-nomad | 6 | 10-14 |
 | d4vinci/scrapling | 4 | 09-11 |
 | different-ai/openwork | 4 | 08-03 |
 | donnemartin/system-design-primer | 4 | 09-11 |
@@ -361,7 +362,7 @@
 | meshery/meshery | 3 | 06-18 |
 | microsoft/powertoys | 3 | 06-29 |
 | mobile-next/mobile-mcp | 3 | 09-30 |
-| morluto/rea | 4 | 10-13 |
+| morluto/rea | 5 | 10-14 |
 | multimodal-art-projection/yue | 4 | 10-13 |
 | mvschwarz/openrig | 3 | 10-01 |
 | mvt-project/mvt | 3 | 09-25 |
@@ -377,12 +378,12 @@
 | robbyant/lingbot-map | 3 | 10-10 |
 | simplex-chat/simplex-chat | 3 | 06-29 |
 | sngyai/sequoia-x | 3 | 09-06 |
-| storytold/artcraft | 4 | 10-13 |
+| storytold/artcraft | 5 | 10-14 |
 | superdesigndev/treg | 3 | 10-09 |
 | supermemoryai/supermemory | 3 | 09-21 |
 | tailwindlabs/tailwindcss | 3 | 09-11 |
 | tapxworld/chinatextbook | 3 | 08-09 |
-| tencent/teamai-cli | 3 | 09-11 |
+| tencent/teamai-cli | 4 | 10-14 |
 | tencentcloud/cubesandbox | 3 | 07-09 |
 | the-swarm-corporation/autohedge | 3 | 09-09 |
 | thesysdev/openui | 3 | 10-10 |
@@ -528,7 +529,7 @@
 | ruanyf/weekly | 2 | 09-22 |
 | rustdesk/rustdesk | 2 | 08-15 |
 | schollz/croc | 2 | 07-23 |
-| sgl-project/sglang | 2 | 10-11 |
+| sgl-project/sglang | 3 | 10-14 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | shareai-lab/learn-claude-code | 2 | 09-09 |
 | SimplifyJobs/Summer2027-Internships | 2 | 09-25 |
@@ -571,6 +572,7 @@
 | zhouxiaoka/autoclip | 2 | 09-24 |
 | zie619/n8n-workflows | 2 | 09-09 |
 | 0xnyk/council-of-high-intelligence | 1 | 07-02 |
+| 1panel-dev/maxkb | 1 | 10-14 |
 | 521xueweihan/hellogithub | 1 | 06-30 |
 | 777genius/agent-teams-ai | 1 | 09-06 |
 | a2ui-project/a2ui | 1 | 09-03 |
@@ -597,6 +599,7 @@
 | anil-matcha/open-generative-ai | 1 | 06-28 |
 | apache/cassandra | 1 | 07-28 |
 | apache/maven | 1 | 07-04 |
+| apify/apify-mcp-server | 1 | 10-14 |
 | apify/crawlee | 1 | 10-10 |
 | apirrone/open_duck_mini | 1 | 08-30 |
 | argoproj/argo-cd | 1 | 07-09 |
@@ -605,7 +608,7 @@
 | atomicbot-ai/atomic-chat | 1 | 09-24 |
 | atomicstrata/llm-wiki-compiler | 1 | 09-25 |
 | awesome-selfhosted/awesome-selfhosted | 1 | 06-30 |
-| baidu/unlimited-ocr | 1 | 07-21 |
+| baidu/unlimited-ocr | 2 | 10-14 |
 | bendlang/bend | 1 | 09-22 |
 | bergside/awesome-design-skills | 1 | 07-21 |
 | bigskysoftware/htmx | 1 | 08-30 |
@@ -630,7 +633,7 @@
 | composiohq/awesome-claude-plugins | 1 | 07-21 |
 | continuedev/continue | 1 | 06-18 |
 | copilotkit/copilotkit | 1 | 09-24 |
-| CopilotKit/OpenIntelligentUI | 2 | 10-13 |
+| CopilotKit/OpenIntelligentUI | 3 | 10-14 |
 | coplaydev/unity-mcp | 1 | 07-06 |
 | cv-cat/douyin_spider | 1 | 09-22 |
 | cybertimon/rapidraw | 1 | 09-07 |
@@ -709,7 +712,7 @@
 | kepano/obsidian-skills | 1 | 08-14 |
 | keycloak/keycloak | 1 | 06-28 |
 | keygraphhq/shannon | 1 | 09-03 |
-| krillinai/opencreator | 1 | 09-22 |
+| krillinai/opencreator | 2 | 10-14 |
 | kvcache-ai/ktransformers | 1 | 07-20 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
 | lancezpf/agent-as-a-router | 1 | 07-21 |
@@ -761,6 +764,7 @@
 | nodepassproject/nowhere | 1 | 07-31 |
 | nvidia/garak | 1 | 09-11 |
 | nvidia/megatron-lm | 1 | 08-28 |
+| nvidia/personaplex | 1 | 10-14 |
 | ocornut/imgui | 1 | 07-28 |
 | ollama/ollama | 1 | 06-30 |
 | onyx-dot-app/onyx | 1 | 09-18 |
@@ -789,7 +793,7 @@
 | pydantic/pydantic | 1 | 06-29 |
 | radixark/miles | 1 | 09-06 |
 | rakyll/hey | 1 | 09-30 |
-| ranxianglei/billion-context | 1 | 10-13 |
+| ranxianglei/billion-context | 2 | 10-14 |
 | react/react | 1 | 06-30 |
 | reconworldlab/godot-gaussian-splatting | 1 | 07-21 |
 | remotion-dev/remotion | 1 | 09-25 |
@@ -843,6 +847,7 @@
 | tradingview/lightweight-charts | 1 | 09-06 |
 | trailofbits/skills | 1 | 09-18 |
 | twbs/bootstrap | 1 | 06-30 |
+| twigpine/openclaude | 1 | 10-14 |
 | twostraws/SwiftUI-Agent-Skill | 1 | 10-10 |
 | unclebob/swarm-forge | 1 | 08-08 |
 | unicity-aos/aos-ce | 1 | 07-31 |
@@ -850,7 +855,7 @@
 | vastsa/pi-desktop | 1 | 09-11 |
 | veracrypt/veracrypt | 1 | 06-29 |
 | vercel-labs/deepsec | 1 | 07-01 |
-| vercel-labs/skills | 1 | 09-11 |
+| vercel-labs/skills | 2 | 10-14 |
 | VERT-sh/VERT | 1 | 10-10 |
 | volcano-sh/volcano | 1 | 06-29 |
 | vudovn/ag-kit | 1 | 07-28 |
@@ -862,6 +867,7 @@
 | x4gking/x4g | 1 | 07-21 |
 | xiaomimimo/mimo-code | 1 | 09-24 |
 | XiaoYouChR/Ghost-Downloader-3 | 1 | 10-11 |
+| xtool-org/xtool | 1 | 10-14 |
 | yairm210/unciv | 1 | 06-18 |
 | yifanfeng97/hyper-extract | 1 | 08-30 |
 | yuliskov/smarttube | 1 | 09-14 |
@@ -959,3 +965,7 @@
 - #空间情报 — bilawalsidhu/gods-eye-view（浏览器里的写实 3D 地球 + 实时公开空间数据：情报源的另一种形态，Cesium+WebGL 把重渲染丢给浏览器）
 - #数据Agent — getnao/nao（开源 analytics agent：先用 CLI 显式建上下文产物，再暴露 chat——「上下文是建出来的，不是 prompt 里塞的」）
 - #上下文管理 — ranxianglei/billion-context（上下文压缩插件：自述 100K 窗口省 ~5× token、支撑数月级/数十亿 token 单会话——与「按需检索」相对的「压缩」思路）
+- #Agent技能分发 — vercel-labs/skills（Vercel 官方技能管理 CLI：npx skills 装/查/管 agent 技能目录，MIT、官网 skills.sh）, ComposioHQ/awesome-claude-skills（社区技能清单：命名与边界的横向样本）, apify/apify-mcp-server（把云爬虫平台暴露成 MCP 工具：tool 的 name/description/入参写法可照搬到自建情报源）
+- #语音模型 — NVIDIA/personaplex（人格化语音：音色与说话风格可切换）, debpalash/VoiceStudio（本地语音全家桶：克隆/音色设计/配音/听写，AGPL-3.0）
+- #视频渲染 — heygen-com/hyperframes（写 HTML 渲染成视频，面向 agent：ffmpeg + GSAP）, krillinai/OpenCreator（转写→翻译→配音流水线）
+- #文档理解 — baidu/Unlimited-OCR（一次前向跑完整篇文档，RAG 文档入口层）, 1Panel-dev/MaxKB（文档→切分→检索→对话的成品知识库平台，GPL-3.0）
