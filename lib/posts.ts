@@ -197,8 +197,13 @@ function linkifyText(text: string, patterns: { pattern: string; url: string }[])
         }
       }
 
-      if (insideLink) {
-        // 在链接文本内，不转换
+      // 情况4: 裸网址内（如「- **上手**：只读浏览 https://github.com/owner/repo」）
+      // 没有这条守卫会在网址中间插出 [owner/repo](url)，渲染成 https://github.com/[owner/repo
+      // （href 还会带上 %5B）——8 期共 35 行的坏链接就是这么来的。
+      const insideBareUrl = /https?:\/\/\S*$/.test(preceding);
+
+      if (insideLink || insideBareUrl) {
+        // 在链接文本 / 链接 URL / 裸网址内，不转换
         result += pattern;
       } else {
         result += '[' + pattern + '](' + url + ')';
