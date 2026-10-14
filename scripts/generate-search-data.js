@@ -47,6 +47,29 @@ function extractLabeledText(block, labels) {
   return '';
 }
 
+/**
+ * 「上手」行专用。实测 2110 行里 1941 行（92%）只是 `git clone <仓库地址>`——
+ * 仓库名与地址本来就在 searchText 里，重复收录只会挤掉长条目尾部的「对你的价值」正文
+ * （searchText 每条 1600 字符硬上限，已有 65 条顶格）。因此只保留带真实信息的行：
+ * 安装命令、官网、特别说明；纯 clone / 纯「只读浏览 <地址>」一律丢弃。
+ */
+function extractActionable(block) {
+  // 标签有历史变体：`上手` 2110 行 / `快速上手` 20 行 / `怎么使用` 10 行
+  const raw = extractLabeledText(block, ['上手', '快速上手', '怎么使用']);
+  if (!raw) return '';
+  const cleaned = raw
+    .replace(/git clone\s+https?:\/\/[^\s）)，,；;]+/gi, ' ')
+    .replace(/https?:\/\/[^\s）)，,；;]+/gi, ' ')
+    .replace(/\bgit clone\b/gi, ' ')
+    .replace(/[（(]\s*[)）]/g, ' ')
+    .replace(/^(?:只读浏览|直接浏览|浏览仓库|浏览|访问仓库|访问|查看仓库|查看)\s*/, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // 判空用副本：去掉标点与空白后再看还剩多少实义字符（纯 clone / 纯「只读浏览 <地址>」→ 丢弃）
+  const probe = cleaned.replace(/[，,、；;：:。.（）()《》【】「」\s]+/g, '');
+  return probe.length >= 4 ? cleaned : '';
+}
+
 function extractLanguage(heading, block) {
   const primary = extractLanguageFromHeading(heading);
   if (primary) return primary;
@@ -79,6 +102,7 @@ function extractRepositories(content, slug, date) {
     const description = extractLabeledText(block, ['是什么', '一句话', '简单介绍', '介绍']) || `收录于 ${date} 的 GitHub Trending 学习笔记。`;
     const reason = extractLabeledText(block, ['为什么热']);
     const value = extractLabeledText(block, ['对你有什么用', '对你的价值']);
+    const actionable = extractActionable(block);
     const language = extractLanguage(lines[start], block);
     const stars = extractStars(lines[start], block);
 
@@ -92,7 +116,8 @@ function extractRepositories(content, slug, date) {
       dates: [date],
       languages: language ? [language] : [],
       appearances: 1,
-      searchText: plainText(`${name} ${language} ${date} ${description} ${reason} ${value}`).toLocaleLowerCase().slice(0, 1600),
+      // actionable 放在 description 之后：searchText 有 1600 字符截断，靠前才不会被长条目切掉
+      searchText: plainText(`${name} ${language} ${date} ${description} ${actionable} ${reason} ${value}`).toLocaleLowerCase().slice(0, 1600),
     });
   }
 
