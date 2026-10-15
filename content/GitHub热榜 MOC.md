@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-10-15]]
 - [[trending-2026-10-14]]
 - [[trending-2026-10-13]]
 - [[trending-2026-10-11]]
@@ -127,16 +128,16 @@
 | calesthio/openmontage | 13 | 09-14 |
 | rohitg00/ai-engineering-from-scratch | 13 | 09-11 |
 | anthropics/claude-code | 12 | 09-22 |
-| stablyai/orca | 12 | 09-25 |
+| stablyai/orca | 13 | 10-15 |
 | nousresearch/hermes-agent | 11 | 09-07 |
 | cursor/plugins | 10 | 09-25 |
-| debpalash/voicestudio | 12 | 10-14 |
+| debpalash/voicestudio | 13 | 10-15 |
 | hkuds/vibe-trading | 10 | 09-09 |
 | composiohq/awesome-claude-skills | 10 | 10-14 |
 | diegosouzapw/omniroute | 9 | 09-11 |
 | dietrichgebert/ponytail | 9 | 09-07 |
 | harry0703/MoneyPrinterTurbo | 10 | 10-14 |
-| jamiepine/voicebox | 9 | 09-19 |
+| jamiepine/voicebox | 10 | 10-15 |
 | koala73/worldmonitor | 9 | 10-09 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
 | mvanhorn/last30days-skill | 10 | 10-14 |
@@ -145,14 +146,14 @@
 | tauricresearch/tradingagents | 9 | 09-16 |
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
 | zhulinsen/daily_stock_analysis | 9 | 09-22 |
-| anthropics/claude-plugins-official | 8 | 09-27 |
+| anthropics/claude-plugins-official | 9 | 10-15 |
 | cactus-compute/needle | 8 | 09-25 |
 | can1357/oh-my-pi | 8 | 09-25 |
 | cathrynlavery/diagram-design | 8 | 09-09 |
-| chromedevtools/chrome-devtools-mcp | 8 | 10-01 |
+| chromedevtools/chrome-devtools-mcp | 9 | 10-15 |
 | deusdata/codebase-memory-mcp | 8 | 09-24 |
 | every-app/open-seo | 8 | 09-25 |
-| heygen-com/hyperframes | 9 | 10-14 |
+| heygen-com/hyperframes | 10 | 10-15 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | opencut-app/opencut | 8 | 08-28 |
 | panniantong/agent-reach | 8 | 09-17 |
@@ -177,7 +178,7 @@
 | usestrix/strix | 7 | 09-27 |
 | 1jehuang/jcode | 6 | 08-01 |
 | 3b1b/manim | 6 | 09-04 |
-| alishahryar1/free-claude-code | 8 | 10-14 |
+| alishahryar1/free-claude-code | 9 | 10-15 |
 | anomalyco/opencode | 6 | 09-09 |
 | anthropics/skills | 6 | 09-25 |
 | ayghri/i-have-adhd | 6 | 09-11 |
@@ -191,15 +192,15 @@
 | hasaneyldrm/exercises-dataset | 6 | 07-17 |
 | juliusbrussee/caveman | 6 | 09-04 |
 | justvugg/colibri | 6 | 09-18 |
-| k-dense-ai/scientific-agent-skills | 6 | 10-10 |
-| makazhanalpamys/soup | 6 | 09-27 |
+| k-dense-ai/scientific-agent-skills | 7 | 10-15 |
+| makazhanalpamys/soup | 7 | 10-15 |
 | n8n-io/n8n | 6 | 09-19 |
 | nvidia/skillspector | 6 | 09-19 |
 | oblien/openship | 6 | 10-01 |
 | paperclipai/paperclip | 7 | 10-13 |
 | pascalorg/editor | 6 | 09-11 |
 | roboflow/supervision | 6 | 09-19 |
-| ruvnet/ruflo | 6 | 09-09 |
+| ruvnet/ruflo | 7 | 10-15 |
 | semantica-agi/semantica | 6 | 08-15 |
 | smicallef/spiderfoot | 6 | 10-09 |
 | tashfeenahmed/freellmapi | 8 | 10-14 |
@@ -222,7 +223,7 @@
 | google/skills | 6 | 10-13 |
 | graphify-labs/graphify | 5 | 09-19 |
 | harvard-edge/cs249r_book | 5 | 09-30 |
-| HKUDS/CLI-Anything | 5 | 09-27 |
+| HKUDS/CLI-Anything | 6 | 10-15 |
 | hkuds/deeptutor | 5 | 09-02 |
 | hugohe3/ppt-master | 6 | 10-13 |
 | imbad0202/academic-research-skills | 5 | 09-06 |
@@ -265,7 +266,7 @@
 | chatwoot/chatwoot | 4 | 08-01 |
 | chrislgarry/apollo-11 | 4 | 07-25 |
 | codecrafters-io/build-your-own-x | 4 | 08-03 |
-| crosstalk-solutions/project-nomad | 6 | 10-14 |
+| crosstalk-solutions/project-nomad | 7 | 10-15 |
 | d4vinci/scrapling | 4 | 09-11 |
 | different-ai/openwork | 4 | 08-03 |
 | donnemartin/system-design-primer | 4 | 09-11 |
@@ -291,7 +292,7 @@
 | maziyarpanahi/openmed | 4 | 09-07 |
 | microsoft/generative-ai-for-beginners | 4 | 08-05 |
 | music-assistant/server | 4 | 06-17 |
-| nationalsecurityagency/ghidra | 4 | 09-18 |
+| nationalsecurityagency/ghidra | 5 | 10-15 |
 | ogulcancelik/herdr | 4 | 07-07 |
 | open-dev-society/openstock | 4 | 09-24 |
 | openai/codex | 4 | 08-26 |
@@ -326,7 +327,7 @@
 | anthropics/claude-code-action | 3 | 09-27 |
 | aprilnea/openlogi | 3 | 08-24 |
 | automattic/harper | 3 | 07-26 |
-| aws/agent-toolkit-for-aws | 3 | 10-01 |
+| aws/agent-toolkit-for-aws | 4 | 10-15 |
 | bikini/exploitarium | 3 | 09-07 |
 | boykopovar/AnyPS5 | 3 | 10-11 |
 | builderio/agent-native | 3 | 09-24 |
@@ -362,7 +363,7 @@
 | meshery/meshery | 3 | 06-18 |
 | microsoft/powertoys | 3 | 06-29 |
 | mobile-next/mobile-mcp | 3 | 09-30 |
-| morluto/rea | 5 | 10-14 |
+| morluto/rea | 6 | 10-15 |
 | multimodal-art-projection/yue | 4 | 10-13 |
 | mvschwarz/openrig | 3 | 10-01 |
 | mvt-project/mvt | 3 | 09-25 |
@@ -509,13 +510,13 @@
 | nvidia-nemo/switchyard | 2 | 08-14 |
 | NVIDIA/Model-Optimizer | 2 | 09-27 |
 | nvidia/openshell | 2 | 10-01 |
-| nvm-sh/nvm | 2 | 09-06 |
+| nvm-sh/nvm | 3 | 10-15 |
 | open-webui/open-webui | 2 | 08-28 |
 | openai/plugins | 2 | 09-09 |
 | openbmb/voxcpm | 3 | 10-13 |
 | opencv/opencv | 2 | 06-09 |
 | openinterpreter/openinterpreter | 2 | 07-17 |
-| p-e-w/heretic | 2 | 09-03 |
+| p-e-w/heretic | 3 | 10-15 |
 | pacifio/atlas | 2 | 09-16 |
 | paddlepaddle/paddleocr | 2 | 09-24 |
 | paperless-ngx/paperless-ngx | 2 | 09-22 |
@@ -529,7 +530,7 @@
 | ruanyf/weekly | 2 | 09-22 |
 | rustdesk/rustdesk | 2 | 08-15 |
 | schollz/croc | 2 | 07-23 |
-| sgl-project/sglang | 3 | 10-14 |
+| sgl-project/sglang | 4 | 10-15 |
 | shanraisshan/claude-code-best-practice | 2 | 06-26 |
 | shareai-lab/learn-claude-code | 2 | 09-09 |
 | SimplifyJobs/Summer2027-Internships | 2 | 09-25 |
@@ -560,7 +561,7 @@
 | vinta/awesome-python | 2 | 06-30 |
 | virattt/ai-hedge-fund | 2 | 07-15 |
 | voltagent/awesome-agent-skills | 2 | 08-27 |
-| vxcontrol/pentagi | 2 | 09-14 |
+| vxcontrol/pentagi | 3 | 10-15 |
 | warpdotdev/common-skills | 2 | 08-31 |
 | wei-shaw/sub2api | 2 | 08-23 |
 | yangshun/tech-interview-handbook | 2 | 08-31 |
@@ -599,7 +600,7 @@
 | anil-matcha/open-generative-ai | 1 | 06-28 |
 | apache/cassandra | 1 | 07-28 |
 | apache/maven | 1 | 07-04 |
-| apify/apify-mcp-server | 1 | 10-14 |
+| apify/apify-mcp-server | 2 | 10-15 |
 | apify/crawlee | 1 | 10-10 |
 | apirrone/open_duck_mini | 1 | 08-30 |
 | argoproj/argo-cd | 1 | 07-09 |
@@ -689,7 +690,7 @@
 | huggingface/datasets | 1 | 09-06 |
 | HunxByts/GhostTrack | 1 | 10-11 |
 | IAmTomShaw/f1-race-replay | 1 | 10-09 |
-| ifixai-ai/iFixAi | 1 | 10-01 |
+| ifixai-ai/iFixAi | 2 | 10-15 |
 | imbad0202/academic-research-skills-codex | 1 | 07-21 |
 | imthenachoman/how-to-secure-a-linux-server | 1 | 07-10 |
 | injaneity/pi-computer-use | 1 | 07-16 |
@@ -712,7 +713,7 @@
 | kepano/obsidian-skills | 1 | 08-14 |
 | keycloak/keycloak | 1 | 06-28 |
 | keygraphhq/shannon | 1 | 09-03 |
-| krillinai/opencreator | 2 | 10-14 |
+| krillinai/opencreator | 3 | 10-15 |
 | kvcache-ai/ktransformers | 1 | 07-20 |
 | kyutai-labs/pocket-tts | 1 | 07-10 |
 | lancezpf/agent-as-a-router | 1 | 07-21 |
@@ -803,6 +804,7 @@
 | rocketchat/rocket.chat | 1 | 06-18 |
 | rohitg00/agentmemory | 1 | 08-28 |
 | rtk-ai/rtk | 1 | 07-01 |
+| rust-lang/rust | 1 | 10-15 |
 | rustfs/rustfs | 1 | 09-19 |
 | ryanmcdermott/clean-code-javascript | 1 | 07-03 |
 | samugit83/redamon | 1 | 09-29 |
@@ -855,7 +857,7 @@
 | vastsa/pi-desktop | 1 | 09-11 |
 | veracrypt/veracrypt | 1 | 06-29 |
 | vercel-labs/deepsec | 1 | 07-01 |
-| vercel-labs/skills | 2 | 10-14 |
+| vercel-labs/skills | 3 | 10-15 |
 | VERT-sh/VERT | 1 | 10-10 |
 | volcano-sh/volcano | 1 | 06-29 |
 | vudovn/ag-kit | 1 | 07-28 |
@@ -867,7 +869,7 @@
 | x4gking/x4g | 1 | 07-21 |
 | xiaomimimo/mimo-code | 1 | 09-24 |
 | XiaoYouChR/Ghost-Downloader-3 | 1 | 10-11 |
-| xtool-org/xtool | 1 | 10-14 |
+| xtool-org/xtool | 2 | 10-15 |
 | yairm210/unciv | 1 | 06-18 |
 | yifanfeng97/hyper-extract | 1 | 08-30 |
 | yuliskov/smarttube | 1 | 09-14 |
@@ -895,7 +897,7 @@
 - #AIGC生图 — freestylefly/awesome-gpt-image-2（GPT-Image2工业级提示词模板库）, Comfy-Org/ComfyUI（节点式生图工作流，实验室 8188 在跑）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
 - #知识库工具 — tolaria（本地优先 Markdown 管理）, AgriciDaniel/claude-obsidian（自组织AI第二大脑+知识图谱）, lfnovo/open-notebook（开源NotebookLM：多源检索问答+笔记）
-- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）, microsoft/TypeScript（Go原生编译器）, vlang/v（V语言）, dani-garcia/vaultwarden（自托管Bitwarden兼容服务端）, actions/checkout（GitHub Actions检出）, google/googletest（C++测试框架）, open-webui/open-webui（自托管LLM UI）, cilium/cilium（eBPF网络/安全/可观测性，K8s CNI 事实标准）, rustfs/rustfs（Rust实现S3兼容高性能对象存储，MinIO/Ceph迁移共存）, cloudflare/quiche（QUIC / HTTP/3 的 Rust 实现）, oblien/openship（自托管部署平台：构建/发布/回滚/域名/证书/日志的自建 PaaS 组件清单）
+- #基础设施 — trivy, nginx, golang/go, restic, apple/container, PowerToys, Self-Hosting-Guide, iroh, bun（超快JS运行时）, terraform（IaC）, tailscale（零配置WireGuard VPN）, grpc（高性能RPC）, nvm（Node版本管理）, basecamp/omarchy（有主见的现代Linux配置）, toxiproxy（故障注入代理，混沌工程）, microsoft/TypeScript（Go原生编译器）, vlang/v（V语言）, dani-garcia/vaultwarden（自托管Bitwarden兼容服务端）, actions/checkout（GitHub Actions检出）, google/googletest（C++测试框架）, open-webui/open-webui（自托管LLM UI）, cilium/cilium（eBPF网络/安全/可观测性，K8s CNI 事实标准）, rustfs/rustfs（Rust实现S3兼容高性能对象存储，MinIO/Ceph迁移共存）, cloudflare/quiche（QUIC / HTTP/3 的 Rust 实现）, oblien/openship（自托管部署平台：构建/发布/回滚/域名/证书/日志的自建 PaaS 组件清单）, xtool（跨平台 Xcode 替代：用 SwiftPM 在 Linux / Windows 上构建并部署 iOS 应用，MIT）
 - #向量数据库 — zvec（边缘嵌入式向量库，阿里出品），milvus-io/milvus（顶级开源向量库），turbovec（TurboQuant量化向量索引）
 - #语音AI — VoxCPM（Tokenizer-Free TTS），voicebox（开源AI语音工作室）, livekit/agents（实时语音Agent框架）, FluidVoice（macOS端侧听写）, pipecat-ai/pipecat（语音Agent框架）, debpalash/VoiceStudio（本地ElevenLabs替代：克隆/配音/转录646语言）, k2-fsa/OmniVoice（600+语言语音克隆TTS）, moeru-ai/airi（自托管 AI 伴侣：Live2D/VRM + 实时语音链路 + 桌面打包）
 - #开源客服 — chatwoot（Intercom/Zendesk 替代品）
@@ -937,7 +939,7 @@
 - #设计语言 — pbakaus/impeccable（让 AI harness 更懂设计的「设计语言」：agent 产出物的审美下限）
 - #3D重建 — harry7557558/spirula-studio（跨厂商 3D Gaussian Splatting 训练器：视频→splat→网格，Vulkan/CUDA 双后端）, Robbyant/lingbot-map（流式 3D 重建的几何上下文 Transformer，仓库自述 ECCV 2026 最佳论文候选）
 - #本地推理 — AtomicBot-ai/Atomic-Chat（面向 agent 的本地 AI 应用与推理引擎：开源权重、100% 离线）
-- #模型压缩与推理优化 — NVIDIA/Model-Optimizer（量化/剪枝/蒸馏/NAS/投机解码统一库，输入 HF/PyTorch/ONNX，对接 Megatron 与 HF Accelerate）, leejet/stable-diffusion.cpp（纯 C/C++ 扩散模型推理：SD/Flux/Wan/Qwen Image/Z-Image，零 Python 依赖）, SemiAnalysisAI/InferenceX（SemiAnalysis 开源推理基准标准：先看指标定义与可复现方法论，1,790⭐ 早期项目）, microsoft/BitNet（微软官方 1-bit LLM 推理框架：BitNet b1.58 三值权重把矩阵乘换成加减法，低比特推理的官方参考实现）
+- #模型压缩与推理优化 — NVIDIA/Model-Optimizer（量化/剪枝/蒸馏/NAS/投机解码统一库，输入 HF/PyTorch/ONNX，对接 Megatron 与 HF Accelerate）, leejet/stable-diffusion.cpp（纯 C/C++ 扩散模型推理：SD/Flux/Wan/Qwen Image/Z-Image，零 Python 依赖）, SemiAnalysisAI/InferenceX（SemiAnalysis 开源推理基准标准：先看指标定义与可复现方法论，1,790⭐ 早期项目）, microsoft/BitNet（微软官方 1-bit LLM 推理框架：BitNet b1.58 三值权重把矩阵乘换成加减法，低比特推理的官方参考实现）, p-e-w/heretic（abliteration 去审查：直接改权重让模型不再拒答，AGPL-3.0；代价是连带损伤模型其他能力）
 - #本地优先应用 — julyx10/lap（本地优先照片管理：本地 AI 搜索 + 文件夹优先 + 不强制上传，8 语言桌面应用）
 - #文本润色 — op7418/Humanizer-zh（中文去 AI 味编辑 Skill：保留事实/确定性/作者声音，明示不是检测器、不做无据补写；与 impeccable 同属「产出物下限」命题）
 - #知识编译 — atomicstrata/llm-wiki-compiler（原始材料→互链 wiki 页：段落级引用可 lint、页面健康度/新鲜度修复、评审门、语义+BM25+wikilink 混合检索）
@@ -969,3 +971,4 @@
 - #语音模型 — NVIDIA/personaplex（人格化语音：音色与说话风格可切换）, debpalash/VoiceStudio（本地语音全家桶：克隆/音色设计/配音/听写，AGPL-3.0）
 - #视频渲染 — heygen-com/hyperframes（写 HTML 渲染成视频，面向 agent：ffmpeg + GSAP）, krillinai/OpenCreator（转写→翻译→配音流水线）
 - #文档理解 — baidu/Unlimited-OCR（一次前向跑完整篇文档，RAG 文档入口层）, 1Panel-dev/MaxKB（文档→切分→检索→对话的成品知识库平台，GPL-3.0）
+- #编程语言 — rust-lang/rust（Rust 语言本体：编译器 + 标准库 + 工具链，2010-06 创建、12 万星的老仓，主榜中后段的常客）
