@@ -36,7 +36,8 @@
 ## 搜索实现
 
 构建时 `scripts/generate-search-data.js` 扫描 `content/`，生成带仓库简介、出现日期和检索文本的
-`public/search-data.json`。导航栏和 `/search` 共用 `lib/search.ts`，索引只在用户开始搜索时加载，
+`public/search-data.json`。同一仓库多次上榜时，检索文本按「最新一期在前」拼接并截断到 600 字符，
+使索引规模随榜单积累缓慢增长（每条上限约 1.5 KB）。导航栏和 `/search` 共用 `lib/search.ts`，索引只在用户开始搜索时加载，
 同一浏览器标签页共享请求。顶部搜索使用有界 Top-8 排序，避免仓库增长后对全部命中结果排序。
 
 `npm test` 会检查仓库去重、字段完整性、单条文本上限和 Brotli 压缩体积。索引超过 2 MiB 时测试会失败，

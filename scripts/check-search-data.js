@@ -15,8 +15,8 @@ assert.ok(index.repositories.every(repository => (
   && typeof repository.searchText === 'string' && repository.searchText.length > 0
 )), 'every entry must contain a repository name, intro, note link, date and searchable text');
 assert.ok(
-  index.repositories.every(repository => repository.searchText.length <= 1600),
-  'each repository search text must stay within the size budget',
+  index.repositories.every(repository => repository.searchText.length <= 600),
+  'each repository search text must stay within the 600-character budget',
 );
 assert.equal(
   new Set(index.repositories.map(repository => repository.name.toLowerCase())).size,

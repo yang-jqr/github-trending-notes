@@ -23,6 +23,15 @@ const contentDir = process.env.TRENDING_CONTENT_DIR
   : path.resolve(__dirname, '..', 'content');
 const outputPath = path.resolve(__dirname, '..', 'public', 'search-data.json');
 
+/**
+ * 单条 searchText 的字符上限。searchText 把一个仓库历次上榜的检索正文首尾相接，长度随上榜次数线性
+ * 增长，因此必须封顶——否则 check-search-data.js 的「每条 1800 字节」预算会随榜单积累必然失效
+ * （1600 字符上限时可到 3400 字节/条，实测 2026-10 每条已 1560 字节、约 2 个月后触线）。
+ * 600 字符 ≈ 1526 字节/条（正文约 40% 是中文，平均 1.94 字节/字符），留 15% 余量，
+ * 同时保留「最近一期完整 + 最近数期部分」的可检索正文。
+ */
+const SEARCH_TEXT_LIMIT = 600;
+
 function plainText(value) {
   return value
     .replace(/`([^`]+)`/g, '$1')
@@ -50,7 +59,7 @@ function extractLabeledText(block, labels) {
 /**
  * 「上手」行专用。实测 2110 行里 1941 行（92%）只是 `git clone <仓库地址>`——
  * 仓库名与地址本来就在 searchText 里，重复收录只会挤掉长条目尾部的「对你的价值」正文
- * （searchText 每条 1600 字符硬上限，已有 65 条顶格）。因此只保留带真实信息的行：
+ * （searchText 每条 600 字符上限，越靠后越先被截掉）。因此只保留带真实信息的行：
  * 安装命令、官网、特别说明；纯 clone / 纯「只读浏览 <地址>」一律丢弃。
  */
 function extractActionable(block) {
@@ -116,8 +125,8 @@ function extractRepositories(content, slug, date) {
       dates: [date],
       languages: language ? [language] : [],
       appearances: 1,
-      // actionable 放在 description 之后：searchText 有 1600 字符截断，靠前才不会被长条目切掉
-      searchText: plainText(`${name} ${language} ${date} ${description} ${actionable} ${reason} ${value}`).toLocaleLowerCase().slice(0, 1600),
+      // actionable 放在 description 之后：searchText 按 SEARCH_TEXT_LIMIT 截断，靠前才不会被长条目切掉
+      searchText: plainText(`${name} ${language} ${date} ${description} ${actionable} ${reason} ${value}`).toLocaleLowerCase().slice(0, SEARCH_TEXT_LIMIT),
     });
   }
 
@@ -148,7 +157,7 @@ if (fs.existsSync(contentDir)) {
       if (!existing.language && repository.language) existing.language = repository.language;
       if (!existing.stars && repository.stars) existing.stars = repository.stars;
       if (repository.language && !existing.languages.includes(repository.language)) existing.languages.push(repository.language);
-      existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, 1600);
+      existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, SEARCH_TEXT_LIMIT);
     }
   }
 }
