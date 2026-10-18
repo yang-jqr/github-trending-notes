@@ -11,6 +11,16 @@ export interface SearchRepository {
   languages: string[];
   appearances: number;
   searchText: string;
+  /** 最近一期在该期笔记里的序号（#1 起）。 */
+  rank?: number;
+  /** 最近一期的当日增量（+N今日）。 */
+  todayDelta?: number;
+  /** 来源：主榜 / python 子榜 / typescript 子榜。 */
+  source?: 'main' | 'py' | 'ts';
+  /** 该来源内的位次。 */
+  sourceRank?: number;
+  /** 作者给的价值分级：高 / 中高 / 中 / 低。 */
+  valueTier?: string;
 }
 
 export interface SearchIndex {

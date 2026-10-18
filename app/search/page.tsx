@@ -8,6 +8,19 @@ import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 
 const PAGE_SIZE = 24;
 const EXAMPLES = ['能自动整理笔记的工具', 'python 爬虫', '本地语音克隆', '类似 notion 的开源笔记', '语言:Rust'];
+const SORTS = [
+  { value: 'relevance', label: '相关度' },
+  { value: 'delta', label: '日增' },
+  { value: 'stars', label: '星数' },
+] as const;
+type SortKey = (typeof SORTS)[number]['value'];
+
+function sourceLabel(repository: { source?: string; sourceRank?: number }): string {
+  if (!repository.sourceRank) return '';
+  if (repository.source === 'py') return `Python 子榜 #${repository.sourceRank}`;
+  if (repository.source === 'ts') return `TypeScript 子榜 #${repository.sourceRank}`;
+  return `主榜 #${repository.sourceRank}`;
+}
 
 function SearchPageInner() {
   const searchParams = useSearchParams();
@@ -17,6 +30,7 @@ function SearchPageInner() {
   const [index, setIndex] = useState<SearchIndex | null>(null);
   const [failed, setFailed] = useState(false);
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [sort, setSort] = useState<SortKey>('relevance');
   const deferredInput = useDeferredValue(input);
 
   useEffect(() => setInput(query), [query]);
@@ -26,14 +40,19 @@ function SearchPageInner() {
       .catch(() => setFailed(true));
   }, []);
 
-  useEffect(() => setVisible(PAGE_SIZE), [input]);
+  useEffect(() => setVisible(PAGE_SIZE), [input, sort]);
 
   const results = useMemo(() => {
     const matches = index ? searchRepositories(index, deferredInput) : [];
-    // 有查询词时保持相关性排序（BM25）；空查询时才按 Star 排「最近收录」
-    if (deferredInput.trim()) return matches;
-    return [...matches].sort((a, b) => b.stars - a.stars || b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
-  }, [deferredInput, index]);
+    // 空查询：按 Star 排「最近收录」
+    if (!deferredInput.trim()) {
+      return [...matches].sort((a, b) => b.stars - a.stars || b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
+    }
+    // 有查询词：默认相关性（BM25）；也可按日增 / 星数重排
+    if (sort === 'delta') return [...matches].sort((a, b) => (b.todayDelta || 0) - (a.todayDelta || 0) || b.stars - a.stars || b.date.localeCompare(a.date));
+    if (sort === 'stars') return [...matches].sort((a, b) => b.stars - a.stars || b.date.localeCompare(a.date));
+    return matches;
+  }, [deferredInput, index, sort]);
   const interpretation = useMemo(
     () => (index && deferredInput.trim() ? interpretQuery(deferredInput) : null),
     [deferredInput, index],
@@ -81,6 +100,16 @@ function SearchPageInner() {
           ))}
         </div>
         <p className="mt-3 text-xs leading-5 text-muted">高级输入：<code>语言:Python</code>、<code>日期:2026-08</code>、<code>仓库:openai</code>，也可以与普通关键词组合。</p>
+        {deferredInput.trim() && (
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <span className="text-xs font-bold text-muted">排序：</span>
+            {SORTS.map(option => (
+              <button key={option.value} onClick={() => setSort(option.value)} className={`rounded-full border px-3 py-1 text-xs font-bold transition ${sort === option.value ? 'border-accent bg-accent/10 text-accent' : 'border-border bg-white/80 text-muted hover:-translate-y-0.5 hover:border-accent'}`}>
+                {option.label}
+              </button>
+            ))}
+          </div>
+        )}
         {interpretation && (interpretation.concepts.length > 0 || interpretation.language || interpretation.date || interpretation.repository) && (
           <div className="mt-3 flex flex-wrap items-center gap-2" aria-live="polite">
             <span className="text-xs font-bold text-muted">理解为：</span>
@@ -118,6 +147,9 @@ function SearchPageInner() {
                     <p className="repo-description mt-2 text-sm leading-6 text-muted">{repository.description}</p>
                     <div className="mt-3 flex flex-wrap gap-2 text-[11px] font-bold text-muted">
                       {(repository.language || repository.languages[0]) && <span className="rounded-full bg-[#e8f8ff] px-2.5 py-1">{repository.language || repository.languages[0]}</span>}
+                      {sourceLabel(repository) && <span className="rounded-full bg-[#e8fff0] px-2.5 py-1">{sourceLabel(repository)}</span>}
+                      {(repository.todayDelta || 0) > 0 && <span className="rounded-full bg-[#fff0d4] px-2.5 py-1">+{repository.todayDelta!.toLocaleString('en-US')} 今日</span>}
+                      {repository.valueTier && <span className="rounded-full bg-[#f3edff] px-2.5 py-1">价值 {repository.valueTier}</span>}
                       {repository.stars > 0 && <span className="rounded-full bg-[#fff0d4] px-2.5 py-1">⭐ {repository.stars.toLocaleString('en-US')}</span>}
                       <span className="rounded-full bg-[#f3edff] px-2.5 py-1">{repository.date}</span>
                       {repository.appearances > 1 && <span className="rounded-full bg-[#fff0d4] px-2.5 py-1">上榜 {repository.appearances} 次</span>}

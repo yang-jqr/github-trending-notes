@@ -34,6 +34,23 @@ assert.ok(
   'every repository must be findable by its own name',
 );
 
+// 展示/排序用元数据：来源、榜位、星数、当日增量、价值分级
+const sources = new Set(['main', 'py', 'ts']);
+const tiers = new Set(['高', '中高', '中', '低']);
+assert.ok(
+  index.repositories.every(repository => (
+    Number.isInteger(repository.rank) && repository.rank > 0
+    && Number.isInteger(repository.sourceRank) && repository.sourceRank > 0
+    && sources.has(repository.source)
+    && Number.isInteger(repository.stars) && repository.stars >= 0
+    && Number.isInteger(repository.todayDelta) && repository.todayDelta >= 0
+    && (!repository.valueTier || tiers.has(repository.valueTier))
+  )),
+  'every entry must carry rank/source/sourceRank/stars/todayDelta and a valid optional valueTier',
+);
+const withTier = index.repositories.filter(repository => repository.valueTier).length;
+console.log(`Search metadata: ${withTier}/${index.repositories.length} entries carry a value tier (older notes may omit it)`);
+
 const bytes = Buffer.byteLength(JSON.stringify(index));
 const brotliBytes = brotliCompressSync(JSON.stringify(index)).length;
 const bytesPerRepository = Math.round(bytes / Math.max(index.repositories.length, 1));

@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import PostSearchHighlight from '@/components/PostSearchHighlight';
-import { extractLanguages, extractRepoNames, getAllPosts, getPost, linkifyRepoNames, resolveWikiLinks, stripObsidianBreadcrumbs } from '@/lib/posts';
+import RepositoryGithubLink from '@/components/RepositoryGithubLink';
+import { extractHighlights, extractLanguages, extractRepoNames, getAllPosts, getPost, linkifyRepoNames, resolveWikiLinks, stripObsidianBreadcrumbs } from '@/lib/posts';
 
 type PostPageProps = { params: Promise<{ slug: string }> };
 
@@ -46,6 +47,7 @@ export default async function PostPage({ params }: PostPageProps) {
   const next = index > 0 ? datedPosts[index - 1] : null;
   const languages = extractLanguages(post.content);
   const names = extractRepoNames(post.content);
+  const highlights = extractHighlights(post.content, 3);
 
   return (
     <article className="mx-auto max-w-4xl">
@@ -67,6 +69,30 @@ export default async function PostPage({ params }: PostPageProps) {
           {languages.slice(0, 4).map(language => <span key={language} className="rounded-full bg-[#e8f8ff] px-3 py-1">{language}</span>)}
         </div>
       </header>
+
+      {highlights.length > 0 && (
+        <section className="anime-card mt-6 p-5 sm:p-7" aria-label="本期速览">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-lg font-black text-ink">本期速览</h2>
+            <span className="text-[11px] font-bold text-muted">自动生成：优先取「价值=高」的前 {highlights.length} 条</span>
+          </div>
+          <ol className="mt-3 space-y-3">
+            {highlights.map((item, index) => (
+              <li key={item.name} className="flex items-start gap-3">
+                <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10 text-[11px] font-black text-accent">{index + 1}</span>
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <RepositoryGithubLink name={item.name} className="text-sm font-black text-accent hover:underline" />
+                    {item.tier && <span className="rounded-full bg-[#f3edff] px-2 py-0.5 text-[10px] font-bold text-ink">价值 {item.tier}</span>}
+                    {item.rank > 0 && <span className="text-[10px] font-bold text-muted">#{item.rank}</span>}
+                  </div>
+                  {item.reason && <p className="mt-0.5 text-xs leading-5 text-muted">{item.reason}</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       <section className="anime-card mt-6 p-5 sm:p-8">
         <div id="post-content" className="prose max-w-none">

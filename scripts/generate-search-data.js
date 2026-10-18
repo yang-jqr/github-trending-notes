@@ -97,6 +97,34 @@ function extractStars(heading, block) {
   return Math.round(Number.parseFloat(multiplier === 1 ? value : value.slice(0, -1)) * multiplier);
 }
 
+/** 标题行里的当日排名（## 1. / **#1 owner/repo** / 旧格式 **1. name**）。 */
+function extractRank(line) {
+  let match = line.match(/^## (\d+)\./);
+  if (!match) match = line.match(/^\*\*#(\d+)\s/);
+  if (!match) match = line.match(/^\*\*(\d+)\./);
+  return match ? Number(match[1]) : 0;
+}
+
+/** 标题行里的「+1,397今日」。 */
+function extractTodayDelta(line) {
+  const match = line.match(/\+([\d,]+)\s*今日/);
+  return match ? Number(match[1].replace(/,/g, '')) : 0;
+}
+
+/** 描述里的来源标注：「（py 子榜 #6）」/「（ts 子榜 #5）」；没有则视为主榜。 */
+function extractSource(block, rank) {
+  const match = block.match(/[（(]\s*(py|ts)\s*子榜\s*#\s*(\d+)\s*[）)]/i);
+  if (match) return { source: match[1].toLowerCase(), sourceRank: Number(match[2]) };
+  return { source: 'main', sourceRank: rank };
+}
+
+/** 「对你的价值」分级：高 / 中高 / 中 / 低。 */
+function extractValueTier(block) {
+  const match = block.match(/\*\*对你的价值\*\*[：:]\s*\*\*(高|中高|中|低)\*\*/)
+    || block.match(/\*\*对你有什么用\*\*[：:]\s*\*\*(高|中高|中|低)\*\*/);
+  return match ? match[1] : '';
+}
+
 function extractRepositories(content, slug, date) {
   const lines = content.split('\n');
   const repositories = [];
@@ -114,6 +142,10 @@ function extractRepositories(content, slug, date) {
     const actionable = extractActionable(block);
     const language = extractLanguage(lines[start], block);
     const stars = extractStars(lines[start], block);
+    const rank = extractRank(lines[start]);
+    const todayDelta = extractTodayDelta(lines[start]);
+    const { source, sourceRank } = extractSource(block, rank);
+    const valueTier = extractValueTier(block);
 
     repositories.push({
       name,
@@ -125,6 +157,11 @@ function extractRepositories(content, slug, date) {
       dates: [date],
       languages: language ? [language] : [],
       appearances: 1,
+      rank,
+      todayDelta,
+      source,
+      sourceRank,
+      valueTier,
       // actionable 放在 description 之后：searchText 按 SEARCH_TEXT_LIMIT 截断，靠前才不会被长条目切掉
       searchText: plainText(`${name} ${language} ${date} ${description} ${actionable} ${reason} ${value}`).toLocaleLowerCase().slice(0, SEARCH_TEXT_LIMIT),
     });
@@ -156,6 +193,8 @@ if (fs.existsSync(contentDir)) {
       if (!existing.dates.includes(repository.date)) existing.dates.push(repository.date);
       if (!existing.language && repository.language) existing.language = repository.language;
       if (!existing.stars && repository.stars) existing.stars = repository.stars;
+      if (!existing.valueTier && repository.valueTier) existing.valueTier = repository.valueTier;
+      if (!existing.todayDelta && repository.todayDelta) existing.todayDelta = repository.todayDelta;
       if (repository.language && !existing.languages.includes(repository.language)) existing.languages.push(repository.language);
       existing.searchText = `${existing.searchText} ${repository.searchText}`.slice(0, SEARCH_TEXT_LIMIT);
     }

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { extractLanguageFromHeading, extractRepoNames, normalizeRepoName } from "./parsing";
+import { extractLanguageFromHeading, extractRepoNames, normalizeRepoName, repoNameFromHeading } from "./parsing";
 
 export { extractRepoNames, normalizeRepoName };
 
@@ -80,6 +80,45 @@ export function extractLanguages(content: string): string[] {
     }
   }
   return Array.from(langs).slice(0, 10);
+}
+
+export interface PostHighlight {
+  name: string;
+  rank: number;
+  tier: string;
+  reason: string;
+}
+
+/**
+ * 「本期速览」：优先取价值=高的前几条，不足再按正文顺序补齐。
+ * 数据全部来自笔记本身（标题行 + 为什么热 + 价值分级），不依赖额外生成，历史笔记也能用。
+ */
+export function extractHighlights(content: string, limit = 3): PostHighlight[] {
+  const lines = content.split("\n");
+  const entries: PostHighlight[] = [];
+  for (let start = 0; start < lines.length; start += 1) {
+    const name = repoNameFromHeading(lines[start]);
+    if (!name) continue;
+    let end = start + 1;
+    while (end < lines.length && !repoNameFromHeading(lines[end])) end += 1;
+    const block = lines.slice(start, end).join("\n");
+    const rankMatch = lines[start].match(/^## (\d+)\./)
+      || lines[start].match(/^\*\*#(\d+)\s/)
+      || lines[start].match(/^\*\*(\d+)\./);
+    const tierMatch = block.match(/\*\*对你的价值\*\*[：:]\s*\*\*(高|中高|中|低)\*\*/)
+      || block.match(/\*\*对你有什么用\*\*[：:]\s*\*\*(高|中高|中|低)\*\*/);
+    const reasonMatch = block.match(/\*\*为什么热\*\*[：:]\s*(.+)/);
+    entries.push({
+      name,
+      rank: rankMatch ? Number(rankMatch[1]) : 0,
+      tier: tierMatch ? tierMatch[1] : "",
+      reason: reasonMatch ? reasonMatch[1].replace(/[*`]/g, "").replace(/\s+/g, " ").trim().slice(0, 90) : "",
+    });
+    start = end - 1;
+  }
+  const preferred = entries.filter(entry => entry.tier === "高");
+  const rest = entries.filter(entry => entry.tier !== "高");
+  return [...preferred, ...rest].slice(0, limit);
 }
 
 export function getStats(): BlogStats {
