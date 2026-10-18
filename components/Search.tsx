@@ -95,7 +95,7 @@ export default function Search() {
         autoCorrect="off"
         autoCapitalize="none"
         spellCheck={false}
-        placeholder="搜仓库、技术或需求…  /"
+        placeholder="搜仓库、技术或中文需求…  /"
         value={query}
         onChange={event => {
           setQuery(event.target.value);

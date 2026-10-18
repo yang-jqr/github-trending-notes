@@ -3,11 +3,11 @@
 import { Suspense, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { loadSearchIndex, repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
+import { interpretQuery, loadSearchIndex, repositoryPostHref, searchRepositories, type SearchIndex } from '@/lib/search';
 import RepositoryGithubLink from '@/components/RepositoryGithubLink';
 
 const PAGE_SIZE = 24;
-const EXAMPLES = ['Python RAG', 'agent 安全', '语言:Rust', '日期:2026-08', '仓库:codex'];
+const EXAMPLES = ['能自动整理笔记的工具', 'python 爬虫', '本地语音克隆', '类似 notion 的开源笔记', '语言:Rust'];
 
 function SearchPageInner() {
   const searchParams = useSearchParams();
@@ -30,8 +30,14 @@ function SearchPageInner() {
 
   const results = useMemo(() => {
     const matches = index ? searchRepositories(index, deferredInput) : [];
+    // 有查询词时保持相关性排序（BM25）；空查询时才按 Star 排「最近收录」
+    if (deferredInput.trim()) return matches;
     return [...matches].sort((a, b) => b.stars - a.stars || b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
   }, [deferredInput, index]);
+  const interpretation = useMemo(
+    () => (index && deferredInput.trim() ? interpretQuery(deferredInput) : null),
+    [deferredInput, index],
+  );
   const shown = results.slice(0, visible);
 
   const submitSearch = (event: React.FormEvent<HTMLFormElement>) => {
@@ -46,7 +52,7 @@ function SearchPageInner() {
       <section className="anime-card mt-4 p-5 sm:p-7">
         <span className="kicker">SMART REPOSITORY FINDER</span>
         <h1 className="manga-title mt-2 text-3xl font-black text-ink">按你的需求找仓库</h1>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">搜索仓库名、技术栈、项目介绍或学习需求。结果保持去重，点击进入本站对应的学习笔记。</p>
+        <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">直接用中文描述你要做的事，例如「能自动整理笔记的工具」「本地跑语音克隆」；也可以搜仓库名、技术栈，或用 <code>语言:Python</code> 这类高级语法过滤。</p>
         <label htmlFor="repository-search" className="sr-only">输入搜索需求</label>
         <form className="relative mt-5" role="search" onSubmit={submitSearch}>
           <input
@@ -54,7 +60,7 @@ function SearchPageInner() {
             type="search"
             value={input}
             onChange={event => setInput(event.target.value)}
-            placeholder="例如：Python RAG、agent 安全、语言:Rust"
+            placeholder="例如：能自动整理笔记的工具、python 爬虫、语言:Rust"
             autoComplete="off"
             autoCorrect="off"
             autoCapitalize="none"
@@ -75,6 +81,17 @@ function SearchPageInner() {
           ))}
         </div>
         <p className="mt-3 text-xs leading-5 text-muted">高级输入：<code>语言:Python</code>、<code>日期:2026-08</code>、<code>仓库:openai</code>，也可以与普通关键词组合。</p>
+        {interpretation && (interpretation.concepts.length > 0 || interpretation.language || interpretation.date || interpretation.repository) && (
+          <div className="mt-3 flex flex-wrap items-center gap-2" aria-live="polite">
+            <span className="text-xs font-bold text-muted">理解为：</span>
+            {interpretation.concepts.map(concept => (
+              <span key={concept} className="rounded-full bg-[#e8f8ff] px-2.5 py-1 text-[11px] font-bold text-ink">{concept}</span>
+            ))}
+            {interpretation.language && <span className="rounded-full bg-[#f3edff] px-2.5 py-1 text-[11px] font-bold text-ink">语言 {interpretation.language}</span>}
+            {interpretation.date && <span className="rounded-full bg-[#f3edff] px-2.5 py-1 text-[11px] font-bold text-ink">日期 {interpretation.date}</span>}
+            {interpretation.repository && <span className="rounded-full bg-[#f3edff] px-2.5 py-1 text-[11px] font-bold text-ink">仓库 {interpretation.repository}</span>}
+          </div>
+        )}
       </section>
 
       <section className="mt-6" aria-live="polite">
