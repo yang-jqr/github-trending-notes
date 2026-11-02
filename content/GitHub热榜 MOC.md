@@ -3,6 +3,7 @@
 > 每日自动抓取 GitHub Trending，分析趋势并关联到 AI 工程化学习路径。
 
 ## 📅 按日期
+- [[trending-2026-11-02]]
 - [[trending-2026-11-01]]
 - [[trending-2026-10-31]]
 - [[trending-2026-10-24]]
@@ -135,7 +136,7 @@
 | alibaba/open-code-review | 13 | 10-10 |
 | calesthio/openmontage | 13 | 09-14 |
 | rohitg00/ai-engineering-from-scratch | 13 | 09-11 |
-| anthropics/claude-code | 15 | 10-21 |
+| anthropics/claude-code | 16 | 11-02 |
 | stablyai/orca | 22 | 11-01 |
 | nousresearch/hermes-agent | 11 | 09-07 |
 | cursor/plugins | 13 | 10-20 |
@@ -149,7 +150,7 @@
 | koala73/worldmonitor | 9 | 10-09 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
 | mvanhorn/last30days-skill | 10 | 10-14 |
-| shiyu-coder/Kronos | 13 | 10-23 |
+| shiyu-coder/Kronos | 14 | 11-02 |
 | shubhamsaboo/awesome-llm-apps | 9 | 10-11 |
 | tauricresearch/tradingagents | 11 | 10-24 |
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
@@ -188,7 +189,7 @@
 | 3b1b/manim | 6 | 09-04 |
 | alishahryar1/free-claude-code | 9 | 10-15 |
 | anomalyco/opencode | 6 | 09-09 |
-| anthropics/skills | 8 | 11-01 |
+| anthropics/skills | 9 | 11-02 |
 | ayghri/i-have-adhd | 6 | 09-11 |
 | basecamp/omarchy | 6 | 08-27 |
 | bradautomates/claude-video | 6 | 07-31 |
@@ -205,7 +206,7 @@
 | n8n-io/n8n | 6 | 09-19 |
 | nvidia/skillspector | 6 | 09-19 |
 | oblien/openship | 6 | 10-01 |
-| paperclipai/paperclip | 9 | 11-01 |
+| paperclipai/paperclip | 10 | 11-02 |
 | pascalorg/editor | 6 | 09-11 |
 | roboflow/supervision | 6 | 09-19 |
 | ruvnet/ruflo | 12 | 10-22 |
@@ -309,15 +310,15 @@
 | osmantic/ods | 4 | 09-02 |
 | paperswithbacktest/awesome-systematic-trading | 4 | 08-02 |
 | pbakaus/impeccable | 6 | 11-01 |
-| pingdotgg/t3code | 8 | 11-01 |
-| public-apis/public-apis | 5 | 10-13 |
+| pingdotgg/t3code | 9 | 11-02 |
+| public-apis/public-apis | 6 | 11-02 |
 | rmyndharis/openwa | 6 | 10-21 |
 | rommapp/romm | 4 | 09-16 |
 | santifer/career-ops | 4 | 08-21 |
 | significant-gravitas/autogpt | 4 | 09-06 |
 | snailsploit/claude-red | 5 | 10-24 |
 | strands-agents/harness-sdk | 4 | 09-27 |
-| thu-maic/openmaic | 6 | 11-01 |
+| thu-maic/openmaic | 7 | 11-02 |
 | topoteretes/cognee | 4 | 08-27 |
 | unclecode/crawl4ai | 4 | 09-14 |
 | vectorize-io/hindsight | 4 | 09-30 |
@@ -449,7 +450,7 @@
 | dokploy/dokploy | 2 | 09-02 |
 | dongdongbh/mindwtr | 2 | 09-02 |
 | dottxt-ai/outlines | 2 | 07-23 |
-| eriklindernoren/ml-from-scratch | 2 | 09-07 |
+| eriklindernoren/ml-from-scratch | 3 | 11-02 |
 | f/prompts.chat | 2 | 09-04 |
 | fastapi/full-stack-fastapi-template | 2 | 09-25 |
 | flowseal/zapret-discord-youtube | 2 | 07-20 |
@@ -471,9 +472,9 @@
 | humanlayer/skills | 2 | 09-07 |
 | huxingyi/autoremesher | 2 | 07-10 |
 | hydralauncher/hydra | 2 | 09-14 |
-| hyprwm/hyprland | 2 | 07-23 |
+| hyprwm/hyprland | 3 | 11-02 |
 | inkeep/open-knowledge | 2 | 09-02 |
-| ItzCrazyKns/Vane | 3 | 10-22 |
+| ItzCrazyKns/Vane | 4 | 11-02 |
 | jakubantalik/libraries.dev | 2 | 09-27 |
 | jetbrains/go-modern-guidelines | 2 | 08-30 |
 | jihe520/mathmodelagent | 2 | 09-14 |
@@ -485,7 +486,7 @@
 | ladybirdbrowser/ladybird | 2 | 08-11 |
 | langflow-ai/langflow | 2 | 07-03 |
 | levy-street/world-of-claudecraft | 2 | 08-31 |
-| lfnovo/open-notebook | 2 | 09-19 |
+| lfnovo/open-notebook | 3 | 11-02 |
 | lightricks/ltx-2 | 2 | 08-14 |
 | liquidslr/system-design-notes | 2 | 10-09 |
 | lmcache/lmcache | 2 | 06-14 |
@@ -527,7 +528,7 @@
 | p-e-w/heretic | 3 | 10-15 |
 | pacifio/atlas | 2 | 09-16 |
 | paddlepaddle/paddleocr | 2 | 09-24 |
-| paperless-ngx/paperless-ngx | 3 | 10-31 |
+| paperless-ngx/paperless-ngx | 4 | 11-02 |
 | par274/sharpemu | 2 | 07-15 |
 | pipecat-ai/pipecat | 2 | 08-26 |
 | practical-tutorials/project-based-learning | 2 | 09-29 |
@@ -701,7 +702,7 @@
 | huggingface/datasets | 1 | 09-06 |
 | HunxByts/GhostTrack | 1 | 10-11 |
 | IAmTomShaw/f1-race-replay | 1 | 10-09 |
-| ifixai-ai/iFixAi | 2 | 10-15 |
+| ifixai-ai/iFixAi | 3 | 11-02 |
 | imbad0202/academic-research-skills-codex | 1 | 07-21 |
 | imthenachoman/how-to-secure-a-linux-server | 1 | 07-10 |
 | injaneity/pi-computer-use | 1 | 07-16 |
@@ -897,7 +898,7 @@
 | mlabonne/llm-course | 1 | 10-19 |
 | kruk2/jasna | 3 | 10-21 |
 | anthropics/claude-quickstarts | 2 | 10-20 |
-| librechat-ai/librechat | 1 | 10-19 |
+| librechat-ai/librechat | 2 | 11-02 |
 | nvlabs/aspire | 2 | 10-21 |
 | mozilla-ai/otari | 1 | 10-19 |
 | withmarbleapp/os-taxonomy | 1 | 10-20 |
@@ -910,14 +911,14 @@
 | php/php-src | 2 | 10-24 |
 | Meloong-Git/PCL | 1 | 10-23 |
 | genspark-ai/genoffice | 2 | 10-24 |
-| CopilotKit/OpenBot | 3 | 11-01 |
+| CopilotKit/OpenBot | 4 | 11-02 |
 | bowenliang123/dsh-context | 1 | 10-23 |
 | Renhuai123/ziwei-doushu | 3 | 11-01 |
 | Anil-matcha/open-duet | 1 | 10-24 |
 | promptfoo/promptfoo | 1 | 10-24 |
 | liguobao/ds-harness-remote | 1 | 10-24 |
 | OpenHands/OpenHands | 1 | 10-24 |
-| lightpanda-io/browser | 2 | 11-01 |
+| lightpanda-io/browser | 3 | 11-02 |
 | Orkas-AI/Orkas | 2 | 11-01 |
 | The-PR-Agent/pr-agent | 2 | 11-01 |
 | 0x0funky/agent-sprite-forge | 2 | 11-01 |
