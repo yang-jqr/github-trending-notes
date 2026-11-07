@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-07]]
 - [[trending-2026-11-06]]
 - [[trending-2026-11-05]]
 - [[trending-2026-11-04]]
@@ -138,7 +139,7 @@
 | addyosmani/agent-skills | 24 | 10-10 |
 | mattpocock/skills | 22 | 09-07 |
 | obra/superpowers | 22 | 09-11 |
-| stablyai/orca | 22 | 11-01 |
+| stablyai/orca | 23 | 11-07 |
 | affaan-m/ecc | 16 | 09-09 |
 | anthropics/claude-code | 16 | 11-02 |
 | shiyu-coder/kronos | 16 | 11-04 |
@@ -177,7 +178,7 @@
 | k-dense-ai/scientific-agent-skills | 9 | 10-19 |
 | panniantong/agent-reach | 9 | 10-22 |
 | usestrix/strix | 9 | 10-22 |
-| cloudflare/security-audit-skill | 9 | 10-24 |
+| cloudflare/security-audit-skill | 10 | 11-07 |
 | anthropics/skills | 9 | 11-02 |
 | crosstalk-solutions/project-nomad | 10 | 11-04 |
 | msitarzewski/agency-agents | 8 | 08-14 |
@@ -233,7 +234,7 @@
 | bytedance/deer-flow | 6 | 09-30 |
 | oblien/openship | 6 | 10-01 |
 | smicallef/spiderfoot | 6 | 10-09 |
-| google/skills | 8 | 11-06 |
+| google/skills | 9 | 11-07 |
 | hugohe3/ppt-master | 6 | 10-13 |
 | morluto/rea | 6 | 10-15 |
 | earendil-works/pi | 6 | 10-19 |
@@ -588,7 +589,7 @@
 | simplifyjobs/summer2027-internships | 2 | 09-25 |
 | fxembed/fxembed | 2 | 09-27 |
 | jakubantalik/libraries.dev | 2 | 09-27 |
-| microsoft/vscode | 2 | 09-27 |
+| microsoft/vscode | 3 | 11-07 |
 | nvidia/model-optimizer | 4 | 11-06 |
 | tensorflow/tensorflow | 2 | 09-27 |
 | vercel/ai | 2 | 09-27 |
@@ -668,7 +669,7 @@
 | ebookfoundation/free-programming-books | 1 | 06-30 |
 | nilbuild/developer-roadmap | 1 | 06-30 |
 | ollama/ollama | 1 | 06-30 |
-| react/react | 1 | 06-30 |
+| react/react | 2 | 11-07 |
 | twbs/bootstrap | 1 | 06-30 |
 | evermind-ai/everos | 1 | 07-01 |
 | rtk-ai/rtk | 1 | 07-01 |
@@ -743,7 +744,7 @@
 | microsoft/agent-governance-toolkit | 1 | 07-29 |
 | grokability/snipe-it | 1 | 07-30 |
 | maderix/ane | 1 | 07-30 |
-| microsoft/vibevoice | 3 | 11-06 |
+| microsoft/vibevoice | 4 | 11-07 |
 | moonshotai/flashkda | 1 | 07-30 |
 | agentscope-ai/qwenpaw | 1 | 07-31 |
 | bryanthaboi/gen1recomp | 1 | 07-31 |
@@ -758,7 +759,7 @@
 | geo-tp/esp32-bit-pirate | 1 | 08-01 |
 | github/gh-stack | 1 | 08-02 |
 | harbourmasters/lighthouse | 1 | 08-03 |
-| angular/angular | 1 | 08-05 |
+| angular/angular | 2 | 11-07 |
 | denoland/deno | 1 | 08-05 |
 | gabime/spdlog | 1 | 08-05 |
 | webpack/webpack | 1 | 08-05 |
@@ -913,7 +914,7 @@
 | 1panel-dev/maxkb | 1 | 10-14 |
 | nvidia/personaplex | 1 | 10-14 |
 | twigpine/openclaude | 1 | 10-14 |
-| rust-lang/rust | 1 | 10-15 |
+| rust-lang/rust | 2 | 11-07 |
 | openbmb/pilotdeck | 1 | 10-18 |
 | scrapecreators/social-media-research-skills | 1 | 10-18 |
 | xerj-org/xerj | 1 | 10-18 |
@@ -942,8 +943,8 @@
 | aminblg/simpleenglish | 1 | 11-04 |
 | github/copilot-cli | 1 | 11-04 |
 | usagi-org/ai-goofish-monitor | 3 | 11-06 |
-| nvidia/auto-ontology | 2 | 11-06 |
-| lz4/lz4 | 2 | 11-06 |
+| nvidia/auto-ontology | 3 | 11-07 |
+| lz4/lz4 | 3 | 11-07 |
 | vercel-labs/agent-browser | 2 | 11-06 |
 | jiafeimiao-k-cat/discimagestudio | 2 | 11-06 |
 | sandbox-quantum/switch | 2 | 11-06 |
