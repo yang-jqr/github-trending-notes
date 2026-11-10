@@ -4,6 +4,8 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-10]]
+
 - [[trending-2026-11-09]]
 - [[trending-2026-11-07]]
 - [[trending-2026-11-06]]
@@ -150,7 +152,7 @@
 | debpalash/voicestudio | 13 | 10-15 |
 | cursor/plugins | 13 | 10-20 |
 | graphify-labs/graphify | 13 | 11-01 |
-| anthropics/claude-plugins-official | 12 | 10-20 |
+| anthropics/claude-plugins-official | 13 | 11-10 |
 | ruvnet/ruflo | 12 | 10-22 |
 | tashfeenahmed/freellmapi | 13 | 11-04 |
 | nousresearch/hermes-agent | 11 | 09-07 |
@@ -172,7 +174,7 @@
 | dietrichgebert/ponytail | 9 | 09-07 |
 | diegosouzapw/omniroute | 9 | 09-11 |
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
-| zhulinsen/daily_stock_analysis | 9 | 09-22 |
+| zhulinsen/daily_stock_analysis | 10 | 11-10 |
 | shubhamsaboo/awesome-llm-apps | 9 | 10-11 |
 | alishahryar1/free-claude-code | 9 | 10-15 |
 | chromedevtools/chrome-devtools-mcp | 9 | 10-15 |
@@ -180,7 +182,7 @@
 | panniantong/agent-reach | 9 | 10-22 |
 | usestrix/strix | 9 | 10-22 |
 | cloudflare/security-audit-skill | 10 | 11-07 |
-| anthropics/skills | 10 | 11-09 |
+| anthropics/skills | 11 | 11-10 |
 | crosstalk-solutions/project-nomad | 10 | 11-04 |
 | msitarzewski/agency-agents | 8 | 08-14 |
 | opencut-app/opencut | 8 | 08-28 |
@@ -195,7 +197,7 @@
 | thesysdev/openui | 8 | 10-22 |
 | jcodesmore/ai-website-cloner-template | 7 | 07-01 |
 | lyogavin/airllm | 7 | 08-06 |
-| ruvnet/ruview | 7 | 08-11 |
+| ruvnet/ruview | 8 | 11-10 |
 | nanmicoder/mediacrawler | 7 | 08-13 |
 | madslorentzen/ai-job-search | 7 | 08-28 |
 | firecrawl/pdf-inspector | 7 | 09-03 |
@@ -209,7 +211,7 @@
 | moeru-ai/airi | 7 | 09-30 |
 | bilawalsidhu/gods-eye-view | 7 | 10-14 |
 | makazhanalpamys/soup | 8 | 11-04 |
-| hkuds/deeptutor | 7 | 11-01 |
+| hkuds/deeptutor | 8 | 11-10 |
 | thu-maic/openmaic | 7 | 11-02 |
 | justvugg/colibri | 8 | 11-04 |
 | public-apis/public-apis | 8 | 11-04 |
@@ -338,7 +340,7 @@
 | strands-agents/harness-sdk | 4 | 09-27 |
 | averygan/reclip | 4 | 09-30 |
 | vectorize-io/hindsight | 4 | 09-30 |
-| backnotprop/plannotator | 4 | 10-09 |
+| backnotprop/plannotator | 5 | 11-10 |
 | earthtojake/text-to-cad | 4 | 10-09 |
 | alsk1992/cloddsbot | 4 | 10-10 |
 | langgenius/dify | 4 | 10-11 |
@@ -352,7 +354,7 @@
 | krillinai/opencreator | 4 | 10-18 |
 | the-swarm-corporation/autohedge | 4 | 10-18 |
 | anthropics/claude-code-action | 4 | 10-20 |
-| openbmb/voxcpm | 4 | 10-24 |
+| openbmb/voxcpm | 5 | 11-10 |
 | melgarafael/deskcommcrm | 4 | 11-01 |
 | copilotkit/openbot | 4 | 11-02 |
 | itzcrazykns/vane | 4 | 11-02 |
@@ -414,7 +416,7 @@
 | ahmedkhaleel2004/gitdiagram | 3 | 09-21 |
 | supermemoryai/supermemory | 3 | 09-21 |
 | docling-project/docling | 3 | 09-22 |
-| vercel-labs/json-render | 4 | 11-09 |
+| vercel-labs/json-render | 5 | 11-10 |
 | builderio/agent-native | 3 | 09-24 |
 | mvt-project/mvt | 3 | 09-25 |
 | tnt-likely/panwatch | 3 | 09-25 |
@@ -432,7 +434,7 @@
 | nvm-sh/nvm | 3 | 10-15 |
 | vxcontrol/pentagi | 3 | 10-15 |
 | awslabs/aidlc-workflows | 4 | 11-06 |
-| ranxianglei/billion-context | 4 | 11-09 |
+| ranxianglei/billion-context | 5 | 11-10 |
 | elie222/rakazo | 4 | 11-09 |
 | google/artemis | 3 | 10-21 |
 | kruk2/jasna | 3 | 10-21 |
@@ -609,7 +611,7 @@
 | apify/apify-mcp-server | 2 | 10-15 |
 | xtool-org/xtool | 2 | 10-15 |
 | android/skills | 2 | 10-19 |
-| anthropics/claude-quickstarts | 3 | 11-09 |
+| anthropics/claude-quickstarts | 4 | 11-10 |
 | abus-aikorea/voice-pro | 2 | 10-21 |
 | nvlabs/aspire | 2 | 10-21 |
 | croffasia/itsaplan | 2 | 10-22 |
@@ -845,7 +847,7 @@
 | ever-co/ever-gauzy | 1 | 09-14 |
 | jiji262/douyin-downloader | 1 | 09-14 |
 | mattpocock/dictionary-of-ai-coding | 1 | 09-14 |
-| sherlock-project/sherlock | 2 | 11-09 |
+| sherlock-project/sherlock | 3 | 11-10 |
 | simonlin1212/tradingagents-astock | 1 | 09-14 |
 | swordfish90/cool-retro-term | 1 | 09-14 |
 | tonhowtf/omniget | 1 | 09-14 |
@@ -857,7 +859,7 @@
 | memtensor/memos | 1 | 09-17 |
 | rlaope/oh-my-hermes | 1 | 09-17 |
 | cilium/cilium | 1 | 09-18 |
-| codebuffai/freebuff | 1 | 09-18 |
+| codebuffai/freebuff | 2 | 11-10 |
 | trailofbits/skills | 1 | 09-18 |
 | microsoft/agent-lightning | 1 | 09-19 |
 | rustfs/rustfs | 1 | 09-19 |
@@ -946,14 +948,14 @@
 | usagi-org/ai-goofish-monitor | 3 | 11-06 |
 | nvidia/auto-ontology | 3 | 11-07 |
 | lz4/lz4 | 3 | 11-07 |
-| vercel-labs/agent-browser | 3 | 11-09 |
+| vercel-labs/agent-browser | 4 | 11-10 |
 | jiafeimiao-k-cat/discimagestudio | 2 | 11-06 |
 | sandbox-quantum/switch | 2 | 11-06 |
 | thysrael/horizon | 1 | 11-05 |
 | google-gemini/gemini-skills | 1 | 11-06 |
 | dsx-ai-factory/nvke | 1 | 11-09 |
-| meta/astryx | 1 | 11-09 |
-| google-deepmind/mujoco | 1 | 11-09 |
+| meta/astryx | 2 | 11-10 |
+| google-deepmind/mujoco | 2 | 11-10 |
 | SWE-agent/mini-swe-agent | 1 | 11-09 |
 | neuml/txtai | 1 | 11-09 |
 | googlecolab/google-colab-cli | 1 | 11-09 |
@@ -961,7 +963,7 @@
 | ParadevAI/Paradev | 2 | 11-09 |
 | snarktank/ralph | 1 | 11-09 |
 | poco-ai/Agentero | 1 | 11-09 |
-| kortix-ai/CompanyOS | 1 | 11-09 |
+| kortix-ai/CompanyOS | 2 | 11-10 |
 | Albert-Weasker/niubigeo | 1 | 11-09 |
 
 ## 🏷️ 主题标签
@@ -1090,3 +1092,6 @@
 - #PR评审 — The-PR-Agent/pr-agent（开源 PR 评审 agent：读 diff→写意见，可挂 GitHub Action 或本地 CLI；2023 老仓）
 - #压缩与存储 — lz4/lz4（极快无损压缩算法，2014 老仓，日增十几也能留在榜尾：非 AI 仓的进榜窗口）
 - #数字归档 — JiaFeiMiao-K-Cat/DiscImageStudio（光盘镜像制作/管理，C#，GPL-3.0，仓库无自述）
+
+
+- #Agent接现有系统 — garrytan/gbrain（给 agent 可控记忆：事实带来源、可更正撤回）, homeassistant-ai/ha-mcp（Home Assistant 的 MCP 服务器，87 个工具）, ruvnet/RuView（WiFi 信号做空间感知与体征监测）, opensandbox-group/OpenSandbox（agent 沙箱运行时，K8s 隔离）
