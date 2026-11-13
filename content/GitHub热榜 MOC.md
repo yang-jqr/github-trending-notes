@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-13]]
 - [[trending-2026-11-12]]
 - [[trending-2026-11-11]]
 - [[trending-2026-11-10]]
@@ -141,7 +142,7 @@
 
 | 仓库 | 上榜次数 | 最近出现 |
 |------|---------|---------|
-| addyosmani/agent-skills | 26 | 11-12 |
+| addyosmani/agent-skills | 27 | 11-13 |
 | mattpocock/skills | 22 | 09-07 |
 | obra/superpowers | 22 | 09-11 |
 | stablyai/orca | 23 | 11-07 |
@@ -162,7 +163,7 @@
 | anthropics/knowledge-work-plugins | 11 | 10-24 |
 | tauricresearch/tradingagents | 11 | 10-24 |
 | github/spec-kit | 13 | 11-06 |
-| mvanhorn/last30days-skill | 11 | 11-03 |
+| mvanhorn/last30days-skill | 12 | 11-13 |
 | paperclipai/paperclip | 11 | 11-03 |
 | composiohq/awesome-claude-skills | 10 | 10-14 |
 | harry0703/moneyprinterturbo | 10 | 10-14 |
@@ -176,10 +177,10 @@
 | dietrichgebert/ponytail | 9 | 09-07 |
 | diegosouzapw/omniroute | 9 | 09-11 |
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
-| zhulinsen/daily_stock_analysis | 12 | 11-12 |
+| zhulinsen/daily_stock_analysis | 13 | 11-13 |
 | shubhamsaboo/awesome-llm-apps | 9 | 10-11 |
-| alishahryar1/free-claude-code | 11 | 11-12 |
-| chromedevtools/chrome-devtools-mcp | 9 | 10-15 |
+| alishahryar1/free-claude-code | 12 | 11-13 |
+| chromedevtools/chrome-devtools-mcp | 10 | 11-13 |
 | k-dense-ai/scientific-agent-skills | 9 | 10-19 |
 | panniantong/agent-reach | 9 | 10-22 |
 | usestrix/strix | 9 | 10-22 |
@@ -232,8 +233,8 @@
 | anomalyco/opencode | 6 | 09-09 |
 | ayghri/i-have-adhd | 6 | 09-11 |
 | pascalorg/editor | 6 | 09-11 |
-| n8n-io/n8n | 6 | 09-19 |
-| nvidia/skillspector | 6 | 09-19 |
+| n8n-io/n8n | 7 | 11-13 |
+| nvidia/skillspector | 7 | 11-13 |
 | roboflow/supervision | 6 | 09-19 |
 | browser-use/browser-use | 8 | 11-12 |
 | bytedance/deer-flow | 6 | 09-30 |
@@ -279,7 +280,7 @@
 | alirezarezvani/claude-skills | 5 | 10-01 |
 | tencentcloud/octop | 5 | 10-01 |
 | bojieli/ai-agent-book | 5 | 10-10 |
-| huggingface/transformers | 5 | 10-13 |
+| huggingface/transformers | 6 | 11-13 |
 | storytold/artcraft | 5 | 10-14 |
 | nationalsecurityagency/ghidra | 5 | 10-15 |
 | bmad-code-org/bmad-method | 5 | 10-18 |
@@ -358,7 +359,7 @@
 | anthropics/claude-code-action | 4 | 10-20 |
 | openbmb/voxcpm | 5 | 11-10 |
 | melgarafael/deskcommcrm | 4 | 11-01 |
-| copilotkit/openbot | 4 | 11-02 |
+| copilotkit/openbot | 5 | 11-13 |
 | itzcrazykns/vane | 4 | 11-02 |
 | paperless-ngx/paperless-ngx | 4 | 11-02 |
 | hyprwm/hyprland | 4 | 11-03 |
@@ -433,7 +434,7 @@
 | chthollyphile/folia-major | 3 | 10-13 |
 | home-assistant/core | 3 | 10-13 |
 | copilotkit/openintelligentui | 3 | 10-14 |
-| nvm-sh/nvm | 3 | 10-15 |
+| nvm-sh/nvm | 4 | 11-13 |
 | vxcontrol/pentagi | 3 | 10-15 |
 | awslabs/aidlc-workflows | 4 | 11-06 |
 | ranxianglei/billion-context | 7 | 11-12 |
@@ -578,7 +579,7 @@
 | vercel/eve | 2 | 09-18 |
 | ankitects/anki | 2 | 09-19 |
 | tradesdontlie/tradingview-mcp | 2 | 09-19 |
-| google-labs-code/stitch-skills | 4 | 11-12 |
+| google-labs-code/stitch-skills | 5 | 11-13 |
 | higgsfield-ai/higgsfield | 2 | 09-21 |
 | cloudflare/mcp-server-cloudflare | 2 | 09-22 |
 | cloudflare/quiche | 2 | 09-22 |
@@ -617,7 +618,7 @@
 | abus-aikorea/voice-pro | 2 | 10-21 |
 | nvlabs/aspire | 2 | 10-21 |
 | croffasia/itsaplan | 2 | 10-22 |
-| fastapi/fastapi | 2 | 10-23 |
+| fastapi/fastapi | 3 | 11-13 |
 | remotion-dev/remotion | 2 | 10-23 |
 | genspark-ai/genoffice | 2 | 10-24 |
 | php/php-src | 2 | 10-24 |
@@ -630,7 +631,7 @@
 | lum1104/understand-anything | 1 | 06-07 |
 | pewdiepie-archdaemon/odysseus | 1 | 06-07 |
 | unicity-astrid/astrid | 1 | 06-07 |
-| ggml-org/llama.cpp | 1 | 06-08 |
+| ggml-org/llama.cpp | 2 | 11-13 |
 | andyyyy64/whichllm | 1 | 06-09 |
 | masterking32/masterdnsvpn | 1 | 06-10 |
 | restic/restic | 1 | 06-12 |
@@ -717,7 +718,7 @@
 | lobehub/lobehub | 1 | 07-17 |
 | ossu/computer-science | 1 | 07-17 |
 | prismml-eng/bonsai-demo | 1 | 07-17 |
-| elder-plinius/g0dm0d3 | 1 | 07-19 |
+| elder-plinius/g0dm0d3 | 2 | 11-13 |
 | andrewrabert/jellium-desktop | 1 | 07-20 |
 | canner/wrenai | 1 | 07-20 |
 | kvcache-ai/ktransformers | 1 | 07-20 |
@@ -831,7 +832,7 @@
 | clash-verge-rev/clash-verge-rev | 1 | 09-07 |
 | cybertimon/rapidraw | 1 | 09-07 |
 | llvm/llvm-project | 1 | 09-07 |
-| openai/whisper | 1 | 09-07 |
+| openai/whisper | 2 | 11-13 |
 | openwhispr/openwhispr | 1 | 09-07 |
 | soju06/codex-lb | 1 | 09-07 |
 | sooryathejas/metatron | 1 | 09-07 |
@@ -903,7 +904,7 @@
 | epicgames/raddebugger | 1 | 10-09 |
 | iamtomshaw/f1-race-replay | 1 | 10-09 |
 | microsoft/agent-framework | 1 | 10-09 |
-| openai/codex-security | 3 | 11-12 |
+| openai/codex-security | 4 | 11-13 |
 | tester-army/e2e | 2 | 11-06 |
 | apify/crawlee | 1 | 10-10 |
 | cartesiancs/map3d | 1 | 10-10 |
@@ -956,7 +957,7 @@
 | thysrael/horizon | 1 | 11-05 |
 | google-gemini/gemini-skills | 1 | 11-06 |
 | dsx-ai-factory/nvke | 1 | 11-09 |
-| meta/astryx | 4 | 11-12 |
+| meta/astryx | 5 | 11-13 |
 | google-deepmind/mujoco | 2 | 11-10 |
 | SWE-agent/mini-swe-agent | 1 | 11-09 |
 | neuml/txtai | 1 | 11-09 |
@@ -968,11 +969,11 @@
 | kortix-ai/CompanyOS | 2 | 11-10 |
 | Albert-Weasker/niubigeo | 1 | 11-09 |
 
-| homeassistant-ai/ha-mcp | 3 | 11-12 |
+| homeassistant-ai/ha-mcp | 4 | 11-13 |
 | opensandbox-group/OpenSandbox | 3 | 11-12 |
 | garrytan/gbrain | 3 | 11-12 |
-| GoogleChrome/modern-web-guidance-src | 2 | 11-12 |
-| we-promise/sure | 2 | 11-12 |
+| GoogleChrome/modern-web-guidance-src | 3 | 11-13 |
+| we-promise/sure | 3 | 11-13 |
 | TheAlgorithms/Java | 2 | 11-12 |
 | sgl-project/sglang-omni | 2 | 11-12 |
 | WhiteTowerAI/ohmygame | 2 | 11-12 |
@@ -1108,3 +1109,4 @@
 - #Agent接现有系统 — garrytan/gbrain（给 agent 可控记忆：事实带来源、可更正撤回）, homeassistant-ai/ha-mcp（Home Assistant 的 MCP 服务器，87 个工具）, ruvnet/RuView（WiFi 信号做空间感知与体征监测）, opensandbox-group/OpenSandbox（agent 沙箱运行时，K8s 隔离）
 
 - #连续榜与存量续榜 — meta/astryx（设计系统 + agent 组件元信息：第 4 天在榜，日增 2,776 仍是全期最高）, ranxianglei/billion-context（上下文压缩：11.4% 相对增幅第二）, we-promise/sure（自托管记账：892 条未关 issue 对 984 fork）, TheAlgorithms/Java（十年老仓：0.1% 增幅仍在主榜尾）, googleads/google-ads-mcp（广告数据 MCP：本期唯一新面孔，仓库无描述无 topics）
+- #换血与技能审计 — GoogleChrome/modern-web-guidance-src（规范仓：23.0% 相对增幅本期第一）, QwenLM/qwen-code（终端编码 agent：首次进正文，2,251 条未关 issue）, CopilotKit/OpenBot（每个 AI 同事一台自己的电脑：决策前判定、执行后留痕）, NVIDIA/SkillSpector + NVIDIA/SkillEvaluator（同日进 python 子榜：技能生态从「写」转向「验」）, ggml-org/llama.cpp（本地推理：2,592 条未关 issue，本期最多）, pookjw/HermesEnabler（Apple Watch 表盘：主榜最小存量 1,684⭐）
