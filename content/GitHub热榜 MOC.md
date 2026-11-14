@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-15]]
 - [[trending-2026-11-13]]
 - [[trending-2026-11-12]]
 - [[trending-2026-11-11]]
@@ -151,11 +152,11 @@
 | shiyu-coder/kronos | 16 | 11-04 |
 | rohitg00/ai-engineering-from-scratch | 13 | 09-11 |
 | calesthio/openmontage | 13 | 09-14 |
-| alibaba/open-code-review | 13 | 10-10 |
+| alibaba/open-code-review | 14 | 11-15 |
 | debpalash/voicestudio | 13 | 10-15 |
 | cursor/plugins | 13 | 10-20 |
 | graphify-labs/graphify | 13 | 11-01 |
-| anthropics/claude-plugins-official | 13 | 11-10 |
+| anthropics/claude-plugins-official | 14 | 11-15 |
 | ruvnet/ruflo | 12 | 10-22 |
 | tashfeenahmed/freellmapi | 13 | 11-04 |
 | nousresearch/hermes-agent | 11 | 09-07 |
@@ -179,8 +180,8 @@
 | tencentcloud/tencentdb-agent-memory | 9 | 09-14 |
 | zhulinsen/daily_stock_analysis | 13 | 11-13 |
 | shubhamsaboo/awesome-llm-apps | 9 | 10-11 |
-| alishahryar1/free-claude-code | 12 | 11-13 |
-| chromedevtools/chrome-devtools-mcp | 10 | 11-13 |
+| alishahryar1/free-claude-code | 13 | 11-15 |
+| chromedevtools/chrome-devtools-mcp | 11 | 11-15 |
 | k-dense-ai/scientific-agent-skills | 9 | 10-19 |
 | panniantong/agent-reach | 9 | 10-22 |
 | usestrix/strix | 9 | 10-22 |
@@ -274,7 +275,7 @@
 | alphaxiv/openresearch | 5 | 09-18 |
 | tencent/browserskill | 5 | 09-21 |
 | coder/coder | 5 | 09-22 |
-| dream-num/univer | 5 | 09-30 |
+| dream-num/univer | 6 | 11-15 |
 | harvard-edge/cs249r_book | 6 | 11-06 |
 | aipoch/open-science | 5 | 10-01 |
 | alirezarezvani/claude-skills | 5 | 10-01 |
@@ -283,12 +284,12 @@
 | huggingface/transformers | 6 | 11-13 |
 | storytold/artcraft | 5 | 10-14 |
 | nationalsecurityagency/ghidra | 5 | 10-15 |
-| bmad-code-org/bmad-method | 5 | 10-18 |
+| bmad-code-org/bmad-method | 6 | 11-15 |
 | 666ghj/mirofish | 5 | 10-20 |
 | cline/cline | 5 | 10-22 |
 | k2-fsa/omnivoice | 5 | 10-22 |
 | everyinc/compound-engineering-plugin | 5 | 10-23 |
-| headroomlabs-ai/headroom | 5 | 10-23 |
+| headroomlabs-ai/headroom | 6 | 11-15 |
 | snailsploit/claude-red | 5 | 10-24 |
 | superdesigndev/treg | 5 | 11-01 |
 | vercel-labs/scriptc | 5 | 11-03 |
@@ -343,7 +344,7 @@
 | strands-agents/harness-sdk | 4 | 09-27 |
 | averygan/reclip | 4 | 09-30 |
 | vectorize-io/hindsight | 4 | 09-30 |
-| backnotprop/plannotator | 7 | 11-12 |
+| backnotprop/plannotator | 8 | 11-15 |
 | earthtojake/text-to-cad | 4 | 10-09 |
 | alsk1992/cloddsbot | 4 | 10-10 |
 | langgenius/dify | 4 | 10-11 |
@@ -359,7 +360,7 @@
 | anthropics/claude-code-action | 4 | 10-20 |
 | openbmb/voxcpm | 5 | 11-10 |
 | melgarafael/deskcommcrm | 4 | 11-01 |
-| copilotkit/openbot | 5 | 11-13 |
+| copilotkit/openbot | 6 | 11-15 |
 | itzcrazykns/vane | 4 | 11-02 |
 | paperless-ngx/paperless-ngx | 4 | 11-02 |
 | hyprwm/hyprland | 4 | 11-03 |
@@ -446,7 +447,7 @@
 | onyx-dot-app/onyx | 3 | 10-24 |
 | twentyhq/twenty | 3 | 10-24 |
 | vincentwei1021/video-shotcraft | 3 | 10-24 |
-| a2ui-project/a2ui | 3 | 11-01 |
+| a2ui-project/a2ui | 4 | 11-15 |
 | mempalace/mempalace | 3 | 11-01 |
 | renhuai123/ziwei-doushu | 3 | 11-01 |
 | eriklindernoren/ml-from-scratch | 3 | 11-02 |
@@ -734,7 +735,7 @@
 | hexiecs/talk-normal | 1 | 07-21 |
 | imbad0202/academic-research-skills-codex | 1 | 07-21 |
 | lancezpf/agent-as-a-router | 1 | 07-21 |
-| lidge-jun/opencodex | 1 | 07-21 |
+| lidge-jun/opencodex | 2 | 11-15 |
 | moonshotai/kimi-code | 1 | 07-21 |
 | reconworldlab/godot-gaussian-splatting | 1 | 07-21 |
 | x4gking/x4g | 1 | 07-21 |
@@ -904,7 +905,7 @@
 | epicgames/raddebugger | 1 | 10-09 |
 | iamtomshaw/f1-race-replay | 1 | 10-09 |
 | microsoft/agent-framework | 1 | 10-09 |
-| openai/codex-security | 4 | 11-13 |
+| openai/codex-security | 5 | 11-15 |
 | tester-army/e2e | 2 | 11-06 |
 | apify/crawlee | 1 | 10-10 |
 | cartesiancs/map3d | 1 | 10-10 |
@@ -972,25 +973,25 @@
 | homeassistant-ai/ha-mcp | 4 | 11-13 |
 | opensandbox-group/OpenSandbox | 3 | 11-12 |
 | garrytan/gbrain | 3 | 11-12 |
-| GoogleChrome/modern-web-guidance-src | 3 | 11-13 |
-| we-promise/sure | 3 | 11-13 |
+| GoogleChrome/modern-web-guidance-src | 4 | 11-15 |
+| we-promise/sure | 4 | 11-15 |
 | TheAlgorithms/Java | 2 | 11-12 |
 | sgl-project/sglang-omni | 2 | 11-12 |
 | WhiteTowerAI/ohmygame | 2 | 11-12 |
 | googleads/google-ads-mcp | 1 | 11-12 |
 ## 🏷️ 主题标签
-- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）, THU-MAIC/OpenMAIC（清华多Agent互动课堂）, datawhalechina/hello-agents（《从零开始构建智能体》中文教程）, 777genius/agent-teams-ai（多agent团队看板协作）, cobusgreyling/loop-engineering（agent循环工程工具）, vercel/eve（Vercel官方Agent构建框架）, cline/cline（agent SDK/IDE/CLI 三形态）, TencentCloud/Octop（自托管多用户多agent助手）, strands-agents/harness-sdk（agent harness SDK：Python+TS，任意模型/云）, vercel/eve（Vercel agent框架）, CodebuffAI/freebuff（免费coding agent）, Fission-AI/OpenSpec（SDD规范驱动开发：规格先行再让agent实现）, backnotprop/plannotator（agent计划/diff可视化审阅，反馈一键回传）, BuilderIO/agent-native（agentic 应用框架：把 agent 概念固定进应用层）, earendil-works/pi（AI agent 工具包：统一 LLM API + agent loop + TUI + coding agent CLI 四层切分）, vercel-labs/agent-desktop（computer-use 驱动层：桌面点击/读屏收成命令）, max-sixty/worktrunk（worktree 隔离并行 agent）, liguobao/ds-harness-remote（P2P 接回本机 agent 工作区）, NVIDIA/auto-ontology（语义图谱本体层：确定性查询生成）, tester-army/e2e（Web/移动 e2e 测试框架）, vercel-labs/agent-browser（把浏览器开页/点击/读 DOM 收成 agent 命令）, snarktank/ralph（按 PRD 条目循环推进 agent，带轮次上限）, ParadevAI/Paradev（并行 agent 工作台：一棵工作树一个 agent）, humanlayer/12-factor-agents（交付级 agent 的十二条原则：哪一层归谁负责）, kortix-ai/CompanyOS（公司流程当代码，多角色 agent 执行）
-- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, openai/skills（OpenAI官方Codex Skill目录）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）, kepano/obsidian-skills（Obsidian CEO出品的笔记Agent技能）, cursor/plugins（Cursor插件规范）, multica-ai/andrej-karpathy-skills（Karpathy编码方法论CLAUDE.md）, twostraws/SwiftUI-Agent-Skill（把具体 UI 框架的隐性规矩编码成 skill：SwiftUI）, VoltAgent/awesome-agent-skills（1000+技能合集）, anthropics/claude-plugins-community（Claude插件社区市场）, virgiliojr94/book-to-skill（书PDF→技能）, tt-a1i/archify（架构图/流程图skill）, ConardLi/garden-skills（Web设计+知识检索skills合集）, K-Dense-AI/scientific-agent-skills（科学计算技能库）, blader/humanizer（去AI写作痕迹skill）, humanlayer/skills（人在环审批skill）, nowork-studio/notfair-plugin（SEO/GEO营销skills）, cloudflare/security-audit-skill（Cloudflare官方多阶段安全审计Skill）, anthropics/knowledge-work-plugins（Anthropic官方知识工作插件目录）, trailofbits/skills（安全研究/漏洞检测/审计技能集）, EveryInc/compound-engineering-plugin（一份插件跨Claude Code/Codex/Cursor）, microsoft/SkillOpt（文本空间优化 skill：轨迹编辑 + 验证门控，产物 best_skill.md）, ComposioHQ/awesome-claude-skills（Claude Skills 精选清单，7.6 万星）, alirezarezvani/claude-skills（380+ skills/30+ agents/70+ 命令合集，兼容 10+ coding agents）, AminBlg/SimpleEnglish（ASD-STE100 简化技术英语写作技能）, jordan-gibbs/hyperresearch（deep research 技能：抓取→检索→引用落盘）, google-gemini/gemini-skills（Gemini API/SDK 技能）, scenario-labs/skills（生成式素材技能：选模型+预算前置）
+- #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）, THU-MAIC/OpenMAIC（清华多Agent互动课堂）, datawhalechina/hello-agents（《从零开始构建智能体》中文教程）, 777genius/agent-teams-ai（多agent团队看板协作）, cobusgreyling/loop-engineering（agent循环工程工具）, vercel/eve（Vercel官方Agent构建框架）, cline/cline（agent SDK/IDE/CLI 三形态）, TencentCloud/Octop（自托管多用户多agent助手）, strands-agents/harness-sdk（agent harness SDK：Python+TS，任意模型/云）, vercel/eve（Vercel agent框架）, CodebuffAI/freebuff（免费coding agent）, Fission-AI/OpenSpec（SDD规范驱动开发：规格先行再让agent实现）, backnotprop/plannotator（agent计划/diff可视化审阅，反馈一键回传）, BuilderIO/agent-native（agentic 应用框架：把 agent 概念固定进应用层）, earendil-works/pi（AI agent 工具包：统一 LLM API + agent loop + TUI + coding agent CLI 四层切分）, vercel-labs/agent-desktop（computer-use 驱动层：桌面点击/读屏收成命令）, max-sixty/worktrunk（worktree 隔离并行 agent）, liguobao/ds-harness-remote（P2P 接回本机 agent 工作区）, NVIDIA/auto-ontology（语义图谱本体层：确定性查询生成）, tester-army/e2e（Web/移动 e2e 测试框架）, vercel-labs/agent-browser（把浏览器开页/点击/读 DOM 收成 agent 命令）, snarktank/ralph（按 PRD 条目循环推进 agent，带轮次上限）, ParadevAI/Paradev（并行 agent 工作台：一棵工作树一个 agent）, humanlayer/12-factor-agents（交付级 agent 的十二条原则：哪一层归谁负责）, kortix-ai/CompanyOS（公司流程当代码，多角色 agent 执行）, andrewyng/openworker（桌面 AI 同事 + Harness SDK）, Tencent/LoopForge（多编码 agent 编排，人工审批门）
+- #Agent技能生态 — superpowers, agent-skills, pm-skills, last30days-skill, mattpocock/skills, google/skills（Google官方Agent Skills）, openai/skills（OpenAI官方Codex Skill目录）, Anthropic-Cybersecurity-Skills, stitch-skills（Google Labs官方Skills）, claude-plugins-official（Anthropic官方插件目录）, revfactory/harness（用Skill生成Skill的元技能）, claude-code-best-practice（2026年6月核心趋势）, zhangxuefeng-skill（专家认知操作系统编码）, claude-code-templates（Agent工作流模板化）, hallmark（品味编码Skill）, diagram-design（Claude Code图表Skills）, kepano/obsidian-skills（Obsidian CEO出品的笔记Agent技能）, cursor/plugins（Cursor插件规范）, multica-ai/andrej-karpathy-skills（Karpathy编码方法论CLAUDE.md）, twostraws/SwiftUI-Agent-Skill（把具体 UI 框架的隐性规矩编码成 skill：SwiftUI）, VoltAgent/awesome-agent-skills（1000+技能合集）, anthropics/claude-plugins-community（Claude插件社区市场）, virgiliojr94/book-to-skill（书PDF→技能）, tt-a1i/archify（架构图/流程图skill）, ConardLi/garden-skills（Web设计+知识检索skills合集）, K-Dense-AI/scientific-agent-skills（科学计算技能库）, blader/humanizer（去AI写作痕迹skill）, humanlayer/skills（人在环审批skill）, nowork-studio/notfair-plugin（SEO/GEO营销skills）, cloudflare/security-audit-skill（Cloudflare官方多阶段安全审计Skill）, anthropics/knowledge-work-plugins（Anthropic官方知识工作插件目录）, trailofbits/skills（安全研究/漏洞检测/审计技能集）, EveryInc/compound-engineering-plugin（一份插件跨Claude Code/Codex/Cursor）, microsoft/SkillOpt（文本空间优化 skill：轨迹编辑 + 验证门控，产物 best_skill.md）, ComposioHQ/awesome-claude-skills（Claude Skills 精选清单，7.6 万星）, alirezarezvani/claude-skills（380+ skills/30+ agents/70+ 命令合集，兼容 10+ coding agents）, AminBlg/SimpleEnglish（ASD-STE100 简化技术英语写作技能）, jordan-gibbs/hyperresearch（deep research 技能：抓取→检索→引用落盘）, google-gemini/gemini-skills（Gemini API/SDK 技能）, scenario-labs/skills（生成式素材技能：选模型+预算前置）, NVIDIA/SkillEvaluator（技能质量门/语义重叠检测）, tradermonty/claude-trading-skills（金融分析技能包）
 - #Agent基础设施 — codebase-memory-mcp（MCP代码知识图谱），continue（开源Coding Agent），UI-TARS-desktop（字节Agent桌面端），firecrawl（Web抓取API），aws/agent-toolkit-for-aws（AWS官方MCP工具包），page-agent（阿里页面内GUI Agent）, macro（Rust统一工作区+共享AI记忆），agent-substrate/substrate（agent运行时核心系统）, apache/maka（Apache本地优先Agent工作区+append-only事件日志）, pacifio/atlas（agent源码管理：并行agent变更追踪/查询）, coder/coder（开发者与agent的安全远程环境，Terraform定义workspace）, ChromeDevTools/chrome-devtools-mcp（把 DevTools 能力接给 agent 的 MCP server）
 - #Agent编排 — OpenMontage（多Agent视频制作流水线），rlm（递归推理框架），deer-flow（字节长周期SuperAgent），ai-berkshire（多Agent对抗分析框架）, ai-job-search（Agent多步骤编排）, prefect（工作流编排MLOps方向）, ai-hedge-fund（多Agent金融决策）, LifeOS（爬山式目标驱动）, NVIDIA-NeMo/Switchyard（并行Agent舰队ADE）, n8n-io/n8n（可视化AI工作流编排）, ruvnet/ruflo（多Agent swarm元harness）, Tencent/teamai-cli（腾讯团队AI原生CLI）, bmad-code-org/BMAD-METHOD（角色化AI敏捷开发方法，5.3万星）, Tracer-Cloud/opensre（AI SRE agent工具包）, google/ax（Google 声明式 agent 编排运行时：workspace/gateway 规格声明，运行时负责沙箱/网络隔离与集群级规模化，构建在 Agent Substrate 之上）, mvschwarz/openrig（把 Claude Code 与 Codex 当同一个系统跑的多 agent harness），langgenius/dify（低代码 agentic 工作流 + RAG 平台：对照「先别上框架」，用来判「条件路径是否真复杂到需要可视化编排」）, sandbox-quantum/switch（把 agent 接进 Slack/Teams/Discord 等 IM）
 - #Agent记忆 — cognee（自托管知识图谱记忆引擎）, EverMind-AI/EverOS（跨平台可移植Agent记忆层）, TencentDB-Agent-Memory（4层渐进式记忆pipeline）, semantica（图原生记忆）, ai-memory（跨agent厂商长期记忆交接）, volcengine/OpenViking（自进化上下文数据库），MemPalace/mempalace（开源AI记忆系统，benchmark最强宣称）, thedotmack/claude-mem（跨会话记忆压缩注入，兼容Hermes）, rohitg00/agentmemory（coding agent持久记忆，benchmark第一宣称）, MemTensor/MemOS（自进化记忆OS：混合检索+跨任务技能复用）, supermemoryai/supermemory（记忆与上下文引擎：可完全本地的 Memory API）, mem0ai/mem0（可插拔记忆层：抽取→存储→检索，面向生产）, vectorize-io/hindsight（agent 记忆系统：retain/recall/reflect 三段操作 + observations/mental models/banks 分层，LongMemEval SOTA 宣称并有第三方独立复现，arXiv:2512.12818）
-- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, strix（AI渗透测试agent）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测），Tencent/AI-Infra-Guard（全栈AI红队扫描）, SnailSploit/Claude-Red（Claude技能系统进攻性安全技能库）, NationalSecurityAgency/ghidra（NSA逆向工程框架，与ASC同波）, morluto/rea（用 agent 做逆向：从应用行为穿透到裸二进制，接 Ghidra/Hopper，带 MCP 与 DSH 插件）, cloudflare/security-audit-skill（安全审计Skill：独立验证+机器可读输出）, trailofbits/skills（Trail of Bits：安全审计工作流技能）, 0x4m4/hexstrike-ai（150+ 安全工具的 MCP server）, samugit83/redamon（agentic 红队：侦察→利用→后渗透全自动）, NVIDIA/OpenShell（NVIDIA 的 agent 安全私有运行时：权限/文件系统/网络边界定义在哪一层，Rust，v0.1.2 早期，连续两天在榜并升到主榜 #1）, ifixai-ai/iFixAi（对 agent 做独立审计：agent-evaluation / 幻觉检测 / ai-governance），cloudflare/security-audit-skill（Cloudflare 的多阶段安全审计技能：每条发现要能独立复核、输出机器可读，2026-06 建）
+- #Agent安全 — NVIDIA/SkillSpector（Agent Skills 安全扫描），Anthropic-Cybersecurity-Skills（817个安全技能）, strix（AI渗透测试agent）, VulnClaw（AI Agent渗透全流程自动化）, vercel-labs/deepsec（Agent驱动安全审计）, CubeSandbox（Agent安全沙箱）, pentagi（全自主渗透测试Agent）, destructive_command_guard（Agent命令安全守护）, uber/ADR（企业Agent可观测性+威胁检测），Tencent/AI-Infra-Guard（全栈AI红队扫描）, SnailSploit/Claude-Red（Claude技能系统进攻性安全技能库）, NationalSecurityAgency/ghidra（NSA逆向工程框架，与ASC同波）, morluto/rea（用 agent 做逆向：从应用行为穿透到裸二进制，接 Ghidra/Hopper，带 MCP 与 DSH 插件）, cloudflare/security-audit-skill（安全审计Skill：独立验证+机器可读输出）, trailofbits/skills（Trail of Bits：安全审计工作流技能）, 0x4m4/hexstrike-ai（150+ 安全工具的 MCP server）, samugit83/redamon（agentic 红队：侦察→利用→后渗透全自动）, NVIDIA/OpenShell（NVIDIA 的 agent 安全私有运行时：权限/文件系统/网络边界定义在哪一层，Rust，v0.1.2 早期，连续两天在榜并升到主榜 #1）, ifixai-ai/iFixAi（对 agent 做独立审计：agent-evaluation / 幻觉检测 / ai-governance），cloudflare/security-audit-skill（Cloudflare 的多阶段安全审计技能：每条发现要能独立复核、输出机器可读，2026-06 建）, microsoft/PyRIT（红队：多轮自适应攻击）, openai/codex-security（先验证可利用再报）
 - #Agent监控 — agentsview（本地化 Agent 会话分析，新品类）
 - #AI工程化 — mempalace, headroom, ECC, supermemory, Personal_AI_Infrastructure, LMCache, aisuite, ai-engineering-from-scratch, cognee, cordis（时空组合元框架）, modular/modular（Mojo/MAX AI平台）, marin-community/marin（基础模型研发框架）, NVIDIA/Megatron-LM（大规模Transformer训练框架）, radixark/miles（企业级LLM后训练RL框架，fork自slime）, microsoft/agent-lightning（Agent RL训练器：强化学习点亮agent能力）, higgsfield-ai/higgsfield（容错 GPU 编排 + 万亿参数级训练框架）, aipoch/open-science（开源 AI 科研工作台：本地优先 + skills/MCP 可扩展 + 产物可溯源），huggingface/transformers（模型定义层的事实标准：tokenizer/model/pipeline 三层，新模型进生态的接口由它定）, pytorch/pytorch（模型定义与自动微分这一层：nn.Module / autograd / 算子派发）
 - #时序预测 — google-research/timesfm（Google时序基础模型：免训练预测，监控/容量/金融场景）
 - #LLM推理加速 — LMCache（KV Cache 层，推理吞吐瓶颈），airllm（4GB GPU跑70B模型）, unsloth（2倍速微调+显存优化）, Soup（单YAML微调+分层流式，4GB显存跑8B训练）, omlx（连续批处理+SSD缓存的端侧推理服务器）, sgl-project/sglang（生产级LLM serving框架）, magnitudedev/magnitude（本地模型推理服务器，兼容Hermes等agent）, JustVugg/colibri（纯C MoE推理：专家权重磁盘流式加载）, NVIDIA/Model-Optimizer（量化/蒸馏/剪枝/投机解码统一库）
 - #Token优化 — headroom（60-95% token压缩，不减质量）, rtk-ai/rtk（60-90% token节省CLI代理）, JuliusBrussee/caveman（caveman式极端压缩，砍65% token）, ranxianglei/billion-context（DSH 上下文压缩插件：长会话撑月级）
-- #多模型统一接口 — aisuite（一行代码切模型，吴恩达出品）, freellmapi（16家LLM免费额度聚合代理）, Wei-Shaw/sub2api（订阅统一接入中转），Alishahryar1/free-claude-code（1.3B免费token聚合网关），diegosouzapw/OmniRoute（多供应商路由/负载均衡/故障转移网关，你正在用）, experientiallabs/experiential（BYOK零加价LLM网关，自学习路由降本）, yynxxxxx/Codex-X（Codex 多 Provider/API 切换与会话管理面板）
+- #多模型统一接口 — aisuite（一行代码切模型，吴恩达出品）, freellmapi（16家LLM免费额度聚合代理）, Wei-Shaw/sub2api（订阅统一接入中转），Alishahryar1/free-claude-code（1.3B免费token聚合网关），diegosouzapw/OmniRoute（多供应商路由/负载均衡/故障转移网关，你正在用）, experientiallabs/experiential（BYOK零加价LLM网关，自学习路由降本）, yynxxxxx/Codex-X（Codex 多 Provider/API 切换与会话管理面板）, lidge-jun/opencodex（Codex/Claude Code 转任意模型）
 - #AIGC视频 — MoneyPrinterTurbo, OpenMontage, hyperframes（HTML-to-Video Agent范式）, manim（数学动画引擎）, LTX-2（音视频生成模型推理包）, OpenCut（开源CapCut替代品）, hpcaitech/Open-Sora（开源视频生成，潞晨）, zhouxiaoka/autoclip（AI 高光提取与二创剪辑：转写→打分→切片流水线）, krillinai/OpenCreator（Codex 驱动的开源 AI 创作工作台：视频/图像/语音/数字人/翻译）, browser-use/video-use（用编码 agent 剪视频：把非结构化素材变成 agent 可迭代的中间表示）, remotion-dev/remotion（用 React 写视频：数据→组件→帧，适合批量/参数化产出）, Emily2040/seedance-2.0（围绕 Seedance 2.0 的四模态 AI 电影生产管线：分镜→素材→合成，239 天仓）
 - #AIGC生图 — freestylefly/awesome-gpt-image-2（GPT-Image2工业级提示词模板库）, Comfy-Org/ComfyUI（节点式生图工作流，实验室 8188 在跑）
 - #SystemPrompt — system-prompts-and-models-of-ai-tools, system_prompts_leaks（逆向工程学习）
@@ -1017,7 +1018,7 @@
 - #隐私通讯 — simplex-chat（零标识符通讯网络）
 - #数据库底层 — pgrust（Rust重写Postgres，系统编程里程碑）, questdb（Rust时序数据库）
 - #RAG实战 — awesome-llm-apps（100+可运行RAG/Agent应用合集）, code-graph-rag（代码图谱RAG）, ragflow（开源RAG引擎+Agent融合）, ItzCrazyKns/Vane（AI回答引擎：检索增强自托管问答）, Tencent/WeKnora（腾讯LLM知识平台：文档→RAG→自维护Wiki）, onyx-dot-app/onyx（自托管企业AI平台：连接器+权限+引用溯源）, Graphify-Labs/graphify（代码库+文档+schema→可查询知识图谱）
-- #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）, browser-use/browser-use（agent操作浏览器的开源库）, Tencent/BrowserSkill（腾讯：让agent用真实已登录浏览器且不打断工作）, jo-inc/camofox-browser（隐形headless浏览器，过反爬检测）, browser-use/browser-harness（自愈式浏览器 harness：结构变化后仍能完成任务）, browserbase/stagehand（网页交互 SDK：act/extract/observe 抽象）
+- #Agent浏览器 — ego-lite（AI Agent专用浏览器，共享登录态）, browser-use/browser-use（agent操作浏览器的开源库）, Tencent/BrowserSkill（腾讯：让agent用真实已登录浏览器且不打断工作）, jo-inc/camofox-browser（隐形headless浏览器，过反爬检测）, browser-use/browser-harness（自愈式浏览器 harness：结构变化后仍能完成任务）, browserbase/stagehand（网页交互 SDK：act/extract/observe 抽象）, CopilotKit/OpenBot（每个 agent 一台电脑 + 审计记录）
 - #LLM教程 — dive-into-llms（动手学大模型，中文实战教程）, awesome-deepseek-agent（DeepSeek官方agent集成指南）, FareedKhan-dev/train-llm-from-scratch（从下载数据到生成文本的从零训练全流程）, harvard-edge/cs249r_book（哈佛 CS249r ML 系统四卷：Foundations/Scaling/Agentic AI/Physical AI）, owainlewis/awesome-artificial-intelligence（AI 课程/书籍/视频/论文精选清单）, datawhalechina/hello-agents（中文《从零开始构建智能体》：原理与实践教程，8.2 万星）, bojieli/ai-agent-book（《深入理解 AI Agent：设计原理与工程实践》正文 + PDF + 按章配套代码）
 - #架构即代码 — likec4（C4模型+实时架构可视化）
 - #隐私AI — RuView（WiFi信号空间感知）, harper（离线语法检查）, Rizzo-AI-Academy/rizzo-pii（local-first PII 护栏：外发 LLM 前先匿名化，映射表留本地）
@@ -1025,7 +1026,7 @@
 - #计算机视觉 — roboflow/supervision（可复用CV工具库：检测/跟踪/标注/区域统计，边缘视觉监控管线积木）
 - #音乐生成 — multimodal-art-projection/YuE（符号化规划+零样本翻唱+agentic音乐编辑）
 - #代码理解 — ahmedkhaleel2004/gitdiagram（任意仓库→免费交互式架构图）, Graphify-Labs/graphify（代码库+文档+SQL schema→可查询知识图谱）, alibaba/open-code-review（确定性规则+LLM Agent的行级代码审查）
-- #生成式UI — vercel-labs/json-render（JSON→UI 的 Generative UI 框架：agent 产出前端资产的中间表示）, thesysdev/openui（生成式 UI 的开放标准：让模型输出可渲染界面，AG-UI/LangChain/Mastra 已接）
+- #生成式UI — vercel-labs/json-render（JSON→UI 的 Generative UI 框架：agent 产出前端资产的中间表示）, thesysdev/openui（生成式 UI 的开放标准：让模型输出可渲染界面，AG-UI/LangChain/Mastra 已接）, a2ui-project/a2ui（agent 流式吐布局数据，原生组件渲染）
 - #机器翻译 — Tencent-Hunyuan/Hy-MT2（腾讯混元多语言翻译模型族：1.8B / 7B / 30B-A3B MoE，「fast-thinking」；权重仓、许可证非标准，商业复用前先确认）
 - #英语学习 — ZuodaoTech/everyone-can-use-english（人人都能用英语：开源学习方法与配套工具）
 - #文档管理 — paperless-ngx（扫描/索引/归档：文档资产长期可检索、全文搜索）
