@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-19]]
 - [[trending-2026-11-17]]
 - [[trending-2026-11-16]]
 - [[trending-2026-11-15]]
@@ -156,7 +157,7 @@
 | calesthio/openmontage | 13 | 09-14 |
 | alibaba/open-code-review | 16 | 11-17 |
 | debpalash/voicestudio | 13 | 10-15 |
-| cursor/plugins | 13 | 10-20 |
+| cursor/plugins | 14 | 11-19 |
 | graphify-labs/graphify | 13 | 11-01 |
 | anthropics/claude-plugins-official | 14 | 11-15 |
 | ruvnet/ruflo | 12 | 10-22 |
@@ -166,16 +167,16 @@
 | anthropics/knowledge-work-plugins | 11 | 10-24 |
 | tauricresearch/tradingagents | 11 | 10-24 |
 | github/spec-kit | 13 | 11-06 |
-| mvanhorn/last30days-skill | 13 | 11-17 |
+| mvanhorn/last30days-skill | 14 | 11-19 |
 | paperclipai/paperclip | 11 | 11-03 |
 | composiohq/awesome-claude-skills | 10 | 10-14 |
 | harry0703/moneyprinterturbo | 10 | 10-14 |
 | heygen-com/hyperframes | 10 | 10-15 |
 | jamiepine/voicebox | 11 | 11-09 |
-| hkuds/cli-anything | 10 | 10-21 |
+| hkuds/cli-anything | 11 | 11-19 |
 | comfy-org/comfyui | 10 | 10-23 |
 | koala73/worldmonitor | 11 | 11-17 |
-| pingdotgg/t3code | 12 | 11-05 |
+| pingdotgg/t3code | 13 | 11-19 |
 | mukul975/anthropic-cybersecurity-skills | 9 | 08-20 |
 | dietrichgebert/ponytail | 9 | 09-07 |
 | diegosouzapw/omniroute | 9 | 09-11 |
@@ -236,7 +237,7 @@
 | anomalyco/opencode | 6 | 09-09 |
 | ayghri/i-have-adhd | 6 | 09-11 |
 | pascalorg/editor | 6 | 09-11 |
-| n8n-io/n8n | 7 | 11-13 |
+| n8n-io/n8n | 8 | 11-19 |
 | nvidia/skillspector | 7 | 11-13 |
 | roboflow/supervision | 6 | 09-19 |
 | browser-use/browser-use | 8 | 11-12 |
@@ -277,12 +278,12 @@
 | alphaxiv/openresearch | 5 | 09-18 |
 | tencent/browserskill | 5 | 09-21 |
 | coder/coder | 5 | 09-22 |
-| dream-num/univer | 8 | 11-17 |
+| dream-num/univer | 9 | 11-19 |
 | harvard-edge/cs249r_book | 6 | 11-06 |
 | aipoch/open-science | 5 | 10-01 |
 | alirezarezvani/claude-skills | 5 | 10-01 |
 | tencentcloud/octop | 5 | 10-01 |
-| bojieli/ai-agent-book | 5 | 10-10 |
+| bojieli/ai-agent-book | 6 | 11-19 |
 | huggingface/transformers | 7 | 11-17 |
 | storytold/artcraft | 5 | 10-14 |
 | nationalsecurityagency/ghidra | 5 | 10-15 |
@@ -326,7 +327,7 @@
 | osmantic/ods | 4 | 09-02 |
 | gitlawb/openclaude | 4 | 09-04 |
 | ibelick/ui-skills | 4 | 09-04 |
-| jingyaogong/minimind | 4 | 09-04 |
+| jingyaogong/minimind | 5 | 11-19 |
 | significant-gravitas/autogpt | 4 | 09-06 |
 | blader/humanizer | 5 | 11-04 |
 | maziyarpanahi/openmed | 4 | 09-07 |
@@ -346,7 +347,7 @@
 | strands-agents/harness-sdk | 4 | 09-27 |
 | averygan/reclip | 4 | 09-30 |
 | vectorize-io/hindsight | 4 | 09-30 |
-| backnotprop/plannotator | 10 | 11-17 |
+| backnotprop/plannotator | 11 | 11-19 |
 | earthtojake/text-to-cad | 4 | 10-09 |
 | alsk1992/cloddsbot | 4 | 10-10 |
 | langgenius/dify | 4 | 10-11 |
@@ -367,7 +368,7 @@
 | paperless-ngx/paperless-ngx | 4 | 11-02 |
 | hyprwm/hyprland | 4 | 11-03 |
 | lfnovo/open-notebook | 4 | 11-03 |
-| p-e-w/heretic | 5 | 11-04 |
+| p-e-w/heretic | 6 | 11-19 |
 | vercel-labs/skills | 4 | 11-03 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
@@ -437,7 +438,7 @@
 | chthollyphile/folia-major | 3 | 10-13 |
 | home-assistant/core | 3 | 10-13 |
 | copilotkit/openintelligentui | 3 | 10-14 |
-| nvm-sh/nvm | 4 | 11-13 |
+| nvm-sh/nvm | 5 | 11-19 |
 | vxcontrol/pentagi | 3 | 10-15 |
 | awslabs/aidlc-workflows | 4 | 11-06 |
 | ranxianglei/billion-context | 7 | 11-12 |
@@ -582,7 +583,7 @@
 | vercel/eve | 2 | 09-18 |
 | ankitects/anki | 2 | 09-19 |
 | tradesdontlie/tradingview-mcp | 2 | 09-19 |
-| google-labs-code/stitch-skills | 7 | 11-17 |
+| google-labs-code/stitch-skills | 8 | 11-19 |
 | higgsfield-ai/higgsfield | 2 | 09-21 |
 | cloudflare/mcp-server-cloudflare | 2 | 09-22 |
 | cloudflare/quiche | 2 | 09-22 |
@@ -971,12 +972,12 @@
 | poco-ai/Agentero | 1 | 11-09 |
 | kortix-ai/CompanyOS | 2 | 11-10 |
 | Albert-Weasker/niubigeo | 1 | 11-09 |
-| ag-ui-protocol/ag-ui | 3 | 11-17 |
+| ag-ui-protocol/ag-ui | 4 | 11-19 |
 | tradermonty/claude-trading-skills | 3 | 11-17 |
-| getarcaneapp/arcane | 1 | 11-17 |
-| deanchensj/jiangshan-map | 1 | 11-17 |
-| nvidia/skillevaluator | 4 | 11-17 |
-| google-research/paper-orchestra | 1 | 11-17 |
+| getarcaneapp/arcane | 2 | 11-19 |
+| deanchensj/jiangshan-map | 2 | 11-19 |
+| nvidia/skillevaluator | 5 | 11-19 |
+| google-research/paper-orchestra | 2 | 11-19 |
 | vstorm-co/agenticos | 1 | 11-17 |
 | isair/jarvis | 1 | 11-17 |
 | googlechrome/modern-web-guidance-src | 6 | 11-17 |
@@ -1122,3 +1123,4 @@
 
 - #连续榜与存量续榜 — meta/astryx（设计系统 + agent 组件元信息：第 4 天在榜，日增 2,776 仍是全期最高）, ranxianglei/billion-context（上下文压缩：11.4% 相对增幅第二）, we-promise/sure（自托管记账：892 条未关 issue 对 984 fork）, TheAlgorithms/Java（十年老仓：0.1% 增幅仍在主榜尾）, googleads/google-ads-mcp（广告数据 MCP：本期唯一新面孔，仓库无描述无 topics）
 - #换血与技能审计 — GoogleChrome/modern-web-guidance-src（规范仓：23.0% 相对增幅本期第一）, QwenLM/qwen-code（终端编码 agent：首次进正文，2,251 条未关 issue）, CopilotKit/OpenBot（每个 AI 同事一台自己的电脑：决策前判定、执行后留痕）, NVIDIA/SkillSpector + NVIDIA/SkillEvaluator（同日进 python 子榜：技能生态从「写」转向「验」）, ggml-org/llama.cpp（本地推理：2,592 条未关 issue，本期最多）, pookjw/HermesEnabler（Apple Watch 表盘：主榜最小存量 1,684⭐）
+- #Agent接口层 — cursor/plugins（插件规范）, ag-ui-protocol/ag-ui（前端事件协议）, HKUDS/CLI-Anything（软件→CLI）, punkpeye/awesome-mcp-servers（MCP 目录）, NVIDIA/SkillEvaluator（技能评测）, anthropics/claude-code-security-review（CI 安全审查）, pingdotgg/t3code（远程接管）, backnotprop/plannotator（审阅介入）
