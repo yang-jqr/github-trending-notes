@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-25]]
 - [[trending-2026-11-24]]
 - [[trending-2026-11-23]]
 - [[trending-2026-11-22]]
@@ -162,7 +163,7 @@
 | calesthio/openmontage | 13 | 09-14 |
 | alibaba/open-code-review | 16 | 11-17 |
 | debpalash/voicestudio | 13 | 10-15 |
-| cursor/plugins | 19 | 11-24 |
+| cursor/plugins | 20 | 11-25 |
 | graphify-labs/graphify | 13 | 11-01 |
 | anthropics/claude-plugins-official | 14 | 11-15 |
 | ruvnet/ruflo | 12 | 10-22 |
@@ -171,14 +172,14 @@
 | hkuds/vibe-trading | 13 | 11-17 |
 | anthropics/knowledge-work-plugins | 11 | 10-24 |
 | tauricresearch/tradingagents | 11 | 10-24 |
-| github/spec-kit | 17 | 11-23 |
-| mvanhorn/last30days-skill | 19 | 11-24 |
+| github/spec-kit | 18 | 11-25 |
+| mvanhorn/last30days-skill | 20 | 11-25 |
 | paperclipai/paperclip | 11 | 11-03 |
 | composiohq/awesome-claude-skills | 10 | 10-14 |
 | harry0703/moneyprinterturbo | 10 | 10-14 |
 | heygen-com/hyperframes | 10 | 10-15 |
 | jamiepine/voicebox | 11 | 11-09 |
-| hkuds/cli-anything | 16 | 11-24 |
+| hkuds/cli-anything | 17 | 11-25 |
 | comfy-org/comfyui | 10 | 10-23 |
 | koala73/worldmonitor | 11 | 11-17 |
 | pingdotgg/t3code | 13 | 11-19 |
@@ -252,10 +253,10 @@
 | google/skills | 9 | 11-07 |
 | hugohe3/ppt-master | 6 | 10-13 |
 | morluto/rea | 6 | 10-15 |
-| earendil-works/pi | 11 | 11-24 |
-| imbad0202/academic-research-skills | 10 | 11-24 |
+| earendil-works/pi | 12 | 11-25 |
+| imbad0202/academic-research-skills | 11 | 11-25 |
 | rmyndharis/openwa | 6 | 10-21 |
-| firecrawl/firecrawl | 11 | 11-24 |
+| firecrawl/firecrawl | 12 | 11-25 |
 | pbakaus/impeccable | 6 | 11-01 |
 | apple/container | 5 | 06-26 |
 | refactoringhq/tolaria | 5 | 07-02 |
@@ -299,7 +300,7 @@
 | everyinc/compound-engineering-plugin | 5 | 10-23 |
 | headroomlabs-ai/headroom | 6 | 11-15 |
 | snailsploit/claude-red | 6 | 11-16 |
-| superdesigndev/treg | 8 | 11-24 |
+| superdesigndev/treg | 9 | 11-25 |
 | vercel-labs/scriptc | 5 | 11-03 |
 | music-assistant/server | 4 | 06-17 |
 | google-labs-code/design.md | 4 | 06-28 |
@@ -332,7 +333,7 @@
 | osmantic/ods | 4 | 09-02 |
 | gitlawb/openclaude | 4 | 09-04 |
 | ibelick/ui-skills | 4 | 09-04 |
-| jingyaogong/minimind | 10 | 11-24 |
+| jingyaogong/minimind | 11 | 11-25 |
 | significant-gravitas/autogpt | 4 | 09-06 |
 | blader/humanizer | 5 | 11-04 |
 | maziyarpanahi/openmed | 4 | 09-07 |
@@ -362,7 +363,7 @@
 | tencent/teamai-cli | 4 | 10-14 |
 | aws/agent-toolkit-for-aws | 5 | 11-05 |
 | sgl-project/sglang | 4 | 10-15 |
-| fission-ai/openspec | 11 | 11-23 |
+| fission-ai/openspec | 12 | 11-25 |
 | krillinai/opencreator | 4 | 10-18 |
 | the-swarm-corporation/autohedge | 4 | 10-18 |
 | anthropics/claude-code-action | 4 | 10-20 |
@@ -373,7 +374,7 @@
 | paperless-ngx/paperless-ngx | 4 | 11-02 |
 | hyprwm/hyprland | 4 | 11-03 |
 | lfnovo/open-notebook | 4 | 11-03 |
-| p-e-w/heretic | 6 | 11-19 |
+| p-e-w/heretic | 7 | 11-25 |
 | vercel-labs/skills | 4 | 11-03 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
@@ -563,7 +564,7 @@
 | hpcaitech/open-sora | 2 | 09-09 |
 | jo-inc/camofox-browser | 2 | 09-09 |
 | maotoumao/musicfree | 2 | 09-09 |
-| microsoft/markitdown | 7 | 11-24 |
+| microsoft/markitdown | 8 | 11-25 |
 | moontechlab/lunatv | 2 | 09-09 |
 | neka-nat/freecad-mcp | 2 | 09-09 |
 | nowork-studio/notfair-plugin | 2 | 09-09 |
@@ -588,7 +589,7 @@
 | vercel/eve | 2 | 09-18 |
 | ankitects/anki | 2 | 09-19 |
 | tradesdontlie/tradingview-mcp | 2 | 09-19 |
-| google-labs-code/stitch-skills | 13 | 11-24 |
+| google-labs-code/stitch-skills | 14 | 11-25 |
 | higgsfield-ai/higgsfield | 2 | 09-21 |
 | cloudflare/mcp-server-cloudflare | 2 | 09-22 |
 | cloudflare/quiche | 2 | 09-22 |
@@ -598,7 +599,7 @@
 | agent-substrate/substrate | 2 | 09-24 |
 | browserbase/stagehand | 2 | 09-24 |
 | paddlepaddle/paddleocr | 2 | 09-24 |
-| zhouxiaoka/autoclip | 7 | 11-24 |
+| zhouxiaoka/autoclip | 8 | 11-25 |
 | fastapi/full-stack-fastapi-template | 2 | 09-25 |
 | google/ax | 2 | 09-25 |
 | simplifyjobs/summer2027-internships | 2 | 09-25 |
@@ -614,11 +615,11 @@
 | microsoft/skillopt | 2 | 09-30 |
 | byoungd/up | 2 | 10-01 |
 | cloudflare/vinext | 2 | 10-01 |
-| colbymchenry/codegraph | 7 | 11-24 |
+| colbymchenry/codegraph | 8 | 11-25 |
 | t8y2/dbx | 2 | 10-01 |
 | liquidslr/system-design-notes | 2 | 10-09 |
 | reconurge/flowsint | 2 | 10-09 |
-| tracer-cloud/opensre | 7 | 11-24 |
+| tracer-cloud/opensre | 8 | 11-25 |
 | microsoft/trellis.2 | 2 | 10-11 |
 | apify/apify-mcp-server | 2 | 10-15 |
 | xtool-org/xtool | 2 | 10-15 |
@@ -792,7 +793,7 @@
 | amadeusprotocol/node | 1 | 08-20 |
 | marceloprates/prettymaps | 1 | 08-20 |
 | dani-garcia/vaultwarden | 1 | 08-24 |
-| mastra-ai/mastra | 6 | 11-24 |
+| mastra-ai/mastra | 7 | 11-25 |
 | nvidia/megatron-lm | 1 | 08-28 |
 | rohitg00/agentmemory | 1 | 08-28 |
 | thedotmack/claude-mem | 1 | 08-28 |
@@ -924,7 +925,7 @@
 | vert-sh/vert | 1 | 10-10 |
 | getnao/nao | 1 | 10-11 |
 | hunxbyts/ghosttrack | 1 | 10-11 |
-| xiaoyouchr/ghost-downloader-3 | 6 | 11-24 |
+| xiaoyouchr/ghost-downloader-3 | 7 | 11-25 |
 | microsoft/bitnet | 1 | 10-13 |
 | 1panel-dev/maxkb | 1 | 10-14 |
 | nvidia/personaplex | 1 | 10-14 |
@@ -968,7 +969,7 @@
 | dsx-ai-factory/nvke | 1 | 11-09 |
 | meta/astryx | 5 | 11-13 |
 | google-deepmind/mujoco | 2 | 11-10 |
-| SWE-agent/mini-swe-agent | 6 | 11-24 |
+| SWE-agent/mini-swe-agent | 7 | 11-25 |
 | neuml/txtai | 1 | 11-09 |
 | googlecolab/google-colab-cli | 1 | 11-09 |
 | humanlayer/12-factor-agents | 1 | 11-09 |
@@ -982,7 +983,7 @@
 | getarcaneapp/arcane | 2 | 11-19 |
 | deanchensj/jiangshan-map | 2 | 11-19 |
 | nvidia/skillevaluator | 5 | 11-19 |
-| google-research/paper-orchestra | 7 | 11-24 |
+| google-research/paper-orchestra | 8 | 11-25 |
 | vstorm-co/agenticos | 1 | 11-17 |
 | isair/jarvis | 1 | 11-17 |
 | googlechrome/modern-web-guidance-src | 6 | 11-17 |
@@ -995,16 +996,51 @@
 | sgl-project/sglang-omni | 2 | 11-12 |
 | whitetowerai/ohmygame | 2 | 11-12 |
 | googleads/google-ads-mcp | 1 | 11-12 |
-| nginx/nginx | 5 | 11-24 |
-| openvinotoolkit/openvino | 6 | 11-24 |
-| agentscope-ai/agentscope | 5 | 11-24 |
+| nginx/nginx | 6 | 11-25 |
+| openvinotoolkit/openvino | 7 | 11-25 |
+| agentscope-ai/agentscope | 6 | 11-25 |
 | awslabs/cli-agent-orchestrator | 4 | 11-23 |
 | pytorch/torchtitan | 4 | 11-24 |
 | appwrite/appwrite | 2 | 11-20 |
 | apache/airflow | 2 | 11-23 |
 | phone-harness/phone-harness | 3 | 11-24 |
-| flashml-org/freevideo | 2 | 11-24 |
+| flashml-org/freevideo | 3 | 11-25 |
 | tianma-if/edgeever | 1 | 11-24 |
+| rails/rails | 1 | 11-07 |
+| mpv-player/mpv | 1 | 11-07 |
+| symfony/symfony | 1 | 11-07 |
+| prometheus/prometheus | 1 | 11-07 |
+| nushell/nushell | 1 | 11-07 |
+| etcd-io/etcd | 1 | 11-07 |
+| astral-sh/ruff | 1 | 11-07 |
+| nvidia/tensorrt-llm | 1 | 11-07 |
+| pipeshub-ai/pipeshub-ai | 1 | 11-07 |
+| mlflow/mlflow | 1 | 11-07 |
+| airbytehq/airbyte | 1 | 11-07 |
+| elder-plinius/t3mp3st | 1 | 11-07 |
+| snap-stanford/memorilla | 1 | 11-10 |
+| virattt/dexter | 1 | 11-10 |
+| basketikun/infinite-canvas | 1 | 11-10 |
+| pookjw/hermesenabler | 1 | 11-13 |
+| qwenlm/qwen-code | 2 | 11-15 |
+| tencent/loopforge | 2 | 11-16 |
+| likely7/veyra-nrvideo | 1 | 11-15 |
+| martin-olivier/airgorah | 1 | 11-15 |
+| andrewyng/openworker | 2 | 11-16 |
+| microsoft/pyrit | 1 | 11-15 |
+| ggml-org/ggml | 1 | 11-16 |
+| prefecthq/fastmcp | 1 | 11-16 |
+| hkuds/autoswarm | 1 | 11-16 |
+| bojieli/ai-infra-book | 1 | 11-16 |
+| assistant-ui/assistant-ui | 1 | 11-16 |
+| simonlin1212/vibe-research | 1 | 11-16 |
+| astral-sh/uv | 1 | 11-19 |
+| jquery/jquery | 1 | 11-19 |
+| solidjs/solid | 1 | 11-19 |
+| punkpeye/awesome-mcp-servers | 1 | 11-19 |
+| anthropics/claude-code-security-review | 1 | 11-19 |
+
+
 ## 🏷️ 主题标签
 - #Agent治理与审计 — NVIDIA/SkillEvaluator（技能质量门与语义重叠检测）, ifixai-ai/iFixAi（agent 行为独立审计）, vstorm-co/agenticos（自托管：预算/审批/审计日志）, superdesigndev/treg（agent 工具的凭据分发）
 - #Agent开发 — superpowers, agent-skills, last30days-skill, pm-skills, CopilotKit, Agent-Reach, aisuite, deer-flow, gstack, hermes-agent, revfactory/harness（元技能）, claude-code-best-practice（Vibe→Agentic Engineering）, stablyai/orca（并行Agent舰队ADE）, design.md（Agent-人协作标准化）, ai-job-search（Agent求职自动化）, OfficeCLI（Agent办公套件）, DesktopCommanderMCP（MCP桌面控制）, crawl4ai（LLM爬虫）, claude-cookbooks（Anthropic官方示例）, claude-video（视频Agent）, awesome-design-md（DESIGN.md标准库）, destructive_command_guard（Agent安全守护）, background-agents（后台Agent）, claude-code-templates（Agent模板化）, paperclip（Agent管理控制面）, prime-agent（RLM自我改进Agent）, DeepTutor（终身个性化辅导Agent）, anthropics/skills（Anthropic官方Skill）, embabel-agent（JVM Agent框架）, ppt-master（原生PPT生成Agent）, holaOS（一体化Agent工作区）, agency-agents（专家Agent集合SOP沉淀）, CLI-Anything（CLI工具Agent原生化）, munder-difflin（本地多Agent协同）, openai/codex（OpenAI官方CLI agent）, anthropics/claude-code（Anthropic官方CLI agent）, langchain-ai/deepagents（LangChain全家桶harness）, can1357/oh-my-pi（IDE接入coding agent）, DietrichGebert/ponytail（让agent像最懒的资深工程师），mastra-ai/mastra（TS agent框架），openclaw/openclaw（开源个人agent平台），github/spec-kit（spec驱动开发）, JetBrains/go-modern-guidelines（给AI coding agent的Go工程规范）, THU-MAIC/OpenMAIC（清华多Agent互动课堂）, datawhalechina/hello-agents（《从零开始构建智能体》中文教程）, 777genius/agent-teams-ai（多agent团队看板协作）, cobusgreyling/loop-engineering（agent循环工程工具）, vercel/eve（Vercel官方Agent构建框架）, cline/cline（agent SDK/IDE/CLI 三形态）, TencentCloud/Octop（自托管多用户多agent助手）, strands-agents/harness-sdk（agent harness SDK：Python+TS，任意模型/云）, vercel/eve（Vercel agent框架）, CodebuffAI/freebuff（免费coding agent）, Fission-AI/OpenSpec（SDD规范驱动开发：规格先行再让agent实现）, backnotprop/plannotator（agent计划/diff可视化审阅，反馈一键回传）, BuilderIO/agent-native（agentic 应用框架：把 agent 概念固定进应用层）, earendil-works/pi（AI agent 工具包：统一 LLM API + agent loop + TUI + coding agent CLI 四层切分）, vercel-labs/agent-desktop（computer-use 驱动层：桌面点击/读屏收成命令）, max-sixty/worktrunk（worktree 隔离并行 agent）, liguobao/ds-harness-remote（P2P 接回本机 agent 工作区）, NVIDIA/auto-ontology（语义图谱本体层：确定性查询生成）, tester-army/e2e（Web/移动 e2e 测试框架）, vercel-labs/agent-browser（把浏览器开页/点击/读 DOM 收成 agent 命令）, snarktank/ralph（按 PRD 条目循环推进 agent，带轮次上限）, ParadevAI/Paradev（并行 agent 工作台：一棵工作树一个 agent）, humanlayer/12-factor-agents（交付级 agent 的十二条原则：哪一层归谁负责）, kortix-ai/CompanyOS（公司流程当代码，多角色 agent 执行）, andrewyng/openworker（桌面 AI 同事 + Harness SDK）, Tencent/LoopForge（多编码 agent 编排，人工审批门）, agentscope-ai/agentscope（可观测多 agent 框架：消息路由/ReAct/记忆一层内）
@@ -1143,3 +1179,4 @@
 
 - #榜单四日冻结 — 主榜 11 条连续第 4 天同序，换血只发生在补充位；Ghost-Downloader-3 今日 +1,087 / 6.9% 同时拿下最高日增与最高相对增幅（基数 1.68 万星），20 万星的 firecrawl 只有 0.4%
 - #Agent落到载体 — academic-research-skills（学术流程：读→写→审→改）, phone-harness（手机真机）, FreeVideo（消费级显卡出视频）, edgeever（笔记库 + MCP + 自托管）, treg（工具凭据与端点注册表）
+- #榜单五日冻结 — 主榜 11 条连续第 5 天同序，换血仍只在补充位（heretic / spec-kit / OpenSpec 回榜）；Ghost-Downloader-3 +1,092 拿最高日增，autoclip 6.6% 拿最高相对增幅，两把尺子落在不同仓
