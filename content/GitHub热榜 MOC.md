@@ -4,6 +4,7 @@
 
 ## 📅 按日期
 
+- [[trending-2026-11-28]]
 - [[trending-2026-11-27]]
 - [[trending-2026-11-26]]
 - [[trending-2026-11-25]]
@@ -165,7 +166,7 @@
 | calesthio/openmontage | 13 | 09-14 |
 | alibaba/open-code-review | 16 | 11-17 |
 | debpalash/voicestudio | 13 | 10-15 |
-| cursor/plugins | 22 | 11-27 |
+| cursor/plugins | 23 | 11-28 |
 | graphify-labs/graphify | 13 | 11-01 |
 | anthropics/claude-plugins-official | 14 | 11-15 |
 | ruvnet/ruflo | 12 | 10-22 |
@@ -174,14 +175,14 @@
 | hkuds/vibe-trading | 13 | 11-17 |
 | anthropics/knowledge-work-plugins | 11 | 10-24 |
 | tauricresearch/tradingagents | 11 | 10-24 |
-| github/spec-kit | 20 | 11-27 |
-| mvanhorn/last30days-skill | 22 | 11-27 |
+| github/spec-kit | 21 | 11-28 |
+| mvanhorn/last30days-skill | 23 | 11-28 |
 | paperclipai/paperclip | 11 | 11-03 |
 | composiohq/awesome-claude-skills | 10 | 10-14 |
 | harry0703/moneyprinterturbo | 10 | 10-14 |
 | heygen-com/hyperframes | 10 | 10-15 |
 | jamiepine/voicebox | 11 | 11-09 |
-| hkuds/cli-anything | 19 | 11-27 |
+| hkuds/cli-anything | 20 | 11-28 |
 | comfy-org/comfyui | 10 | 10-23 |
 | koala73/worldmonitor | 11 | 11-17 |
 | pingdotgg/t3code | 13 | 11-19 |
@@ -255,10 +256,10 @@
 | google/skills | 9 | 11-07 |
 | hugohe3/ppt-master | 6 | 10-13 |
 | morluto/rea | 6 | 10-15 |
-| earendil-works/pi | 14 | 11-27 |
+| earendil-works/pi | 15 | 11-28 |
 | imbad0202/academic-research-skills | 13 | 11-27 |
 | rmyndharis/openwa | 6 | 10-21 |
-| firecrawl/firecrawl | 14 | 11-27 |
+| firecrawl/firecrawl | 15 | 11-28 |
 | pbakaus/impeccable | 6 | 11-01 |
 | apple/container | 5 | 06-26 |
 | refactoringhq/tolaria | 5 | 07-02 |
@@ -302,7 +303,7 @@
 | everyinc/compound-engineering-plugin | 5 | 10-23 |
 | headroomlabs-ai/headroom | 6 | 11-15 |
 | snailsploit/claude-red | 6 | 11-16 |
-| superdesigndev/treg | 11 | 11-27 |
+| superdesigndev/treg | 12 | 11-28 |
 | vercel-labs/scriptc | 5 | 11-03 |
 | music-assistant/server | 4 | 06-17 |
 | google-labs-code/design.md | 4 | 06-28 |
@@ -335,7 +336,7 @@
 | osmantic/ods | 4 | 09-02 |
 | gitlawb/openclaude | 4 | 09-04 |
 | ibelick/ui-skills | 4 | 09-04 |
-| jingyaogong/minimind | 13 | 11-27 |
+| jingyaogong/minimind | 14 | 11-28 |
 | significant-gravitas/autogpt | 4 | 09-06 |
 | blader/humanizer | 5 | 11-04 |
 | maziyarpanahi/openmed | 4 | 09-07 |
@@ -365,7 +366,7 @@
 | tencent/teamai-cli | 4 | 10-14 |
 | aws/agent-toolkit-for-aws | 5 | 11-05 |
 | sgl-project/sglang | 4 | 10-15 |
-| fission-ai/openspec | 13 | 11-27 |
+| fission-ai/openspec | 14 | 11-28 |
 | krillinai/opencreator | 4 | 10-18 |
 | the-swarm-corporation/autohedge | 4 | 10-18 |
 | anthropics/claude-code-action | 4 | 10-20 |
@@ -376,7 +377,7 @@
 | paperless-ngx/paperless-ngx | 4 | 11-02 |
 | hyprwm/hyprland | 4 | 11-03 |
 | lfnovo/open-notebook | 4 | 11-03 |
-| p-e-w/heretic | 9 | 11-27 |
+| p-e-w/heretic | 10 | 11-28 |
 | vercel-labs/skills | 4 | 11-03 |
 | x1xhlol/system-prompts-and-models-of-ai-tools | 3 | 06-12 |
 | phuryn/pm-skills | 3 | 06-13 |
@@ -566,7 +567,7 @@
 | hpcaitech/open-sora | 2 | 09-09 |
 | jo-inc/camofox-browser | 2 | 09-09 |
 | maotoumao/musicfree | 2 | 09-09 |
-| microsoft/markitdown | 10 | 11-27 |
+| microsoft/markitdown | 11 | 11-28 |
 | moontechlab/lunatv | 2 | 09-09 |
 | neka-nat/freecad-mcp | 2 | 09-09 |
 | nowork-studio/notfair-plugin | 2 | 09-09 |
@@ -591,7 +592,7 @@
 | vercel/eve | 2 | 09-18 |
 | ankitects/anki | 2 | 09-19 |
 | tradesdontlie/tradingview-mcp | 2 | 09-19 |
-| google-labs-code/stitch-skills | 16 | 11-27 |
+| google-labs-code/stitch-skills | 17 | 11-28 |
 | higgsfield-ai/higgsfield | 2 | 09-21 |
 | cloudflare/mcp-server-cloudflare | 2 | 09-22 |
 | cloudflare/quiche | 2 | 09-22 |
@@ -601,7 +602,7 @@
 | agent-substrate/substrate | 2 | 09-24 |
 | browserbase/stagehand | 2 | 09-24 |
 | paddlepaddle/paddleocr | 2 | 09-24 |
-| zhouxiaoka/autoclip | 10 | 11-27 |
+| zhouxiaoka/autoclip | 11 | 11-28 |
 | fastapi/full-stack-fastapi-template | 2 | 09-25 |
 | google/ax | 2 | 09-25 |
 | simplifyjobs/summer2027-internships | 2 | 09-25 |
@@ -617,11 +618,11 @@
 | microsoft/skillopt | 2 | 09-30 |
 | byoungd/up | 2 | 10-01 |
 | cloudflare/vinext | 2 | 10-01 |
-| colbymchenry/codegraph | 9 | 11-27 |
+| colbymchenry/codegraph | 10 | 11-28 |
 | t8y2/dbx | 2 | 10-01 |
 | liquidslr/system-design-notes | 2 | 10-09 |
 | reconurge/flowsint | 2 | 10-09 |
-| tracer-cloud/opensre | 10 | 11-27 |
+| tracer-cloud/opensre | 11 | 11-28 |
 | microsoft/trellis.2 | 2 | 10-11 |
 | apify/apify-mcp-server | 2 | 10-15 |
 | xtool-org/xtool | 2 | 10-15 |
@@ -795,7 +796,7 @@
 | amadeusprotocol/node | 1 | 08-20 |
 | marceloprates/prettymaps | 1 | 08-20 |
 | dani-garcia/vaultwarden | 1 | 08-24 |
-| mastra-ai/mastra | 9 | 11-27 |
+| mastra-ai/mastra | 10 | 11-28 |
 | nvidia/megatron-lm | 1 | 08-28 |
 | rohitg00/agentmemory | 1 | 08-28 |
 | thedotmack/claude-mem | 1 | 08-28 |
@@ -927,7 +928,7 @@
 | vert-sh/vert | 1 | 10-10 |
 | getnao/nao | 1 | 10-11 |
 | hunxbyts/ghosttrack | 1 | 10-11 |
-| xiaoyouchr/ghost-downloader-3 | 9 | 11-27 |
+| xiaoyouchr/ghost-downloader-3 | 10 | 11-28 |
 | microsoft/bitnet | 1 | 10-13 |
 | 1panel-dev/maxkb | 1 | 10-14 |
 | nvidia/personaplex | 1 | 10-14 |
@@ -971,7 +972,7 @@
 | dsx-ai-factory/nvke | 1 | 11-09 |
 | meta/astryx | 5 | 11-13 |
 | google-deepmind/mujoco | 2 | 11-10 |
-| swe-agent/mini-swe-agent | 9 | 11-27 |
+| swe-agent/mini-swe-agent | 10 | 11-28 |
 | neuml/txtai | 1 | 11-09 |
 | googlecolab/google-colab-cli | 1 | 11-09 |
 | humanlayer/12-factor-agents | 1 | 11-09 |
@@ -985,7 +986,7 @@
 | getarcaneapp/arcane | 2 | 11-19 |
 | deanchensj/jiangshan-map | 2 | 11-19 |
 | nvidia/skillevaluator | 5 | 11-19 |
-| google-research/paper-orchestra | 9 | 11-26 |
+| google-research/paper-orchestra | 10 | 11-28 |
 | vstorm-co/agenticos | 1 | 11-17 |
 | isair/jarvis | 1 | 11-17 |
 | googlechrome/modern-web-guidance-src | 6 | 11-17 |
@@ -998,15 +999,15 @@
 | sgl-project/sglang-omni | 2 | 11-12 |
 | whitetowerai/ohmygame | 2 | 11-12 |
 | googleads/google-ads-mcp | 1 | 11-12 |
-| nginx/nginx | 8 | 11-27 |
-| openvinotoolkit/openvino | 9 | 11-27 |
-| agentscope-ai/agentscope | 8 | 11-27 |
+| nginx/nginx | 9 | 11-28 |
+| openvinotoolkit/openvino | 10 | 11-28 |
+| agentscope-ai/agentscope | 9 | 11-28 |
 | awslabs/cli-agent-orchestrator | 5 | 11-26 |
-| pytorch/torchtitan | 4 | 11-24 |
+| pytorch/torchtitan | 5 | 11-28 |
 | appwrite/appwrite | 2 | 11-20 |
 | apache/airflow | 2 | 11-23 |
 | phone-harness/phone-harness | 5 | 11-27 |
-| flashml-org/freevideo | 5 | 11-27 |
+| flashml-org/freevideo | 6 | 11-28 |
 | tianma-if/edgeever | 1 | 11-24 |
 | rails/rails | 1 | 11-07 |
 | mpv-player/mpv | 1 | 11-07 |
@@ -1183,3 +1184,5 @@
 - #Agent落到载体 — academic-research-skills（学术流程：读→写→审→改）, phone-harness（手机真机）, FreeVideo（消费级显卡出视频）, edgeever（笔记库 + MCP + 自托管）, treg（工具凭据与端点注册表）
 - #榜单五日冻结 — 主榜 11 条连续第 5 天同序，换血仍只在补充位（heretic / spec-kit / OpenSpec 回榜）；Ghost-Downloader-3 +1,092 拿最高日增，autoclip 6.6% 拿最高相对增幅，两把尺子落在不同仓
 - #八日同序与上下文入口 — 主榜 11 条自 11-20 起连续第 8 天同序，本期 24 条全部回榜、无首次进正文；补充位集中在「agent 的上下文从哪来」：markitdown（文档）、codegraph（代码图谱）、spec-kit + OpenSpec（规格）、academic-research-skills（研究流程），权限侧是 treg（凭据注册表）；firecrawl +1,046 最高日增，treg 5.5% 最高相对增幅
+
+- #九日同序与两把尺子合一 — 主榜 11 条自 11-20 起连续第 9 天同序；24 条中 22 条与上一期重合，torchtitan（训练底座）与 paper-orchestra（研究流程）回榜；Ghost-Downloader-3 以 +836 最高日增与 4.3% 最高相对增幅同时拿下（分母 1.93 万），20 万星的 firecrawl 只有 0.4%
